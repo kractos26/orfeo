@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/db
+END
+ConnectionHandler.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/db/ConnectionHandler.php
+END
+ConnectionHandlerSUI.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/db/ConnectionHandlerSUI.php
+END
+OracleConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/db/OracleConnection.php
+END

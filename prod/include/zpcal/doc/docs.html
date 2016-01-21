@@ -1,0 +1,1378 @@
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<title>Javascript Calendar Support Zapatec.com</title>
+ <meta name="description" content="Zapatec's Javascript Calendar is a cross browser calendar that includes a wizard for easy configuration">
+ <meta name="keywords" content="dhtml calendar, javascript, DHTML Calendar, Javascript, calendar control, simple javascript calendar">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <META Name="Robots" Content="index,follow">
+ <META Name="Googlebot" Content="index,follow">
+ <META http-equiv="Pragma" content="no-cache">
+<link href="./css/zpcal.css" rel="stylesheet" type="text/css">
+<link href="./css/template.css" rel="stylesheet" type="text/css">
+<link rel="SHORTCUT ICON" href="./favicon.ico">
+
+<link rel="stylesheet" type="text/css" href="./css/docs.css" title=default>
+
+
+<!-- Left - STart -->
+<div class="leftSide">
+	<div class="leftBGTab"><div class="leftTab"><strong>Zapatec Calendar</strong></div></div>
+
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Point arrow' src="./images/arrow-grey.gif" >&nbsp;&nbsp;&nbsp;<a href="coding.html" class="lnksubpage">Wizard</a></div></div>
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Point arrow'  src="./images/arrow-grey.gif" >&nbsp;&nbsp;&nbsp;<a href="demo.html" class="lnksubpage">Demos</a></div></div>
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Point arrow' src="./images/arrow-grey.gif" >&nbsp;&nbsp;&nbsp;<a href="docs.html" class="lnksubpage">Quick Guide</a></div></div>
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Point arrow' src="./images/arrow-grey.gif" >&nbsp;&nbsp;&nbsp;<a href="tutorial.html" class="lnksubpage">Reference Manual</a></div></div>
+
+</div>
+
+<!-- Left - End -->
+<!-- start - Page content -->
+	<div class="rightSide">
+		<div class="pageImage"></div>
+
+		<div class="frameContent">
+			<div class="pageContent">
+
+
+	
+
+
+
+<h1 class=title align=center><br><br>The Zapatec DHTML Calendar Reference Manual</h1>
+<a name="node_sec_Temp_1"></a>
+<h1><a href="#node_toc_node_sec_Temp_1">Contents</a></h1>
+<p><a name="node_toc_start"></a></p>
+<p><b>
+&nbsp; &nbsp; <a name="node_toc_node_sec_1"></a><a href="#node_sec_1">1&nbsp;&nbsp;Overview</a></b><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_1.1"></a><a href="#node_sec_1.1">1.1&nbsp;&nbsp;How does The Calendar work?</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_1.2"></a><a href="#node_sec_1.2">1.2&nbsp;&nbsp;Project files</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_1.2.1"></a><a href="#node_sec_1.2.1">1.2.1&nbsp;&nbsp;The zpcal folder</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_1.2.2"></a><a href="#node_sec_1.2.2">1.2.2&nbsp;&nbsp;The src folder</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_1.2.3"></a><a href="#node_sec_1.2.3">1.2.3&nbsp;&nbsp; The demo folder</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_1.2.4"></a><a href="#node_sec_1.2.4">1.2.4&nbsp;&nbsp;The doc folder</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_1.2.5"></a><a href="#node_sec_1.2.5">1.2.5&nbsp;&nbsp;The lang folder</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_1.2.6"></a><a href="#node_sec_1.2.6">1.2.6&nbsp;&nbsp;The themes folder</a><br>
+</p>
+<p><b>
+&nbsp; &nbsp; <a name="node_toc_node_sec_2"></a><a href="#node_sec_2">2&nbsp;&nbsp;Quick startup</a></b><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_2.1"></a><a href="#node_sec_2.1">2.1&nbsp;&nbsp;Installing a popup calendar</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_2.2"></a><a href="#node_sec_2.2">2.2&nbsp;&nbsp;Installing a flat calendar</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_2.3"></a><a href="#node_sec_2.3">2.3&nbsp;&nbsp;<tt>Zapatec.Calendar.setup</tt> in detail</a><br>
+</p>
+<p><b>
+&nbsp; &nbsp; <a name="node_toc_node_sec_3"></a><a href="#node_sec_3">3&nbsp;&nbsp;The Calendar object overview</a></b><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.1"></a><a href="#node_sec_3.1">3.1&nbsp;&nbsp;Creating a calendar</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.2"></a><a href="#node_sec_3.2">3.2&nbsp;&nbsp;Order Matters</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.3"></a><a href="#node_sec_3.3">3.3&nbsp;&nbsp;Caching the Calendar object</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.4"></a><a href="#node_sec_3.4">3.4&nbsp;&nbsp;Callback functions</a><br>
+</p>
+<p><b>
+&nbsp; &nbsp; <a name="node_toc_node_sec_4"></a><a href="#node_sec_4">4&nbsp;&nbsp;The Calendar object API reference</a></b><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.1"></a><a href="#node_sec_4.1">4.1&nbsp;&nbsp;<tt>Calendar</tt> constructor</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.2"></a><a href="#node_sec_4.2">4.2&nbsp;&nbsp;Useful member variables (properties)</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.3"></a><a href="#node_sec_4.3">4.3&nbsp;&nbsp;Public methods</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.3.1"></a><a href="#node_sec_4.3.1">4.3.1&nbsp;&nbsp;<tt>Calendar.create</tt></a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.3.2"></a><a href="#node_sec_4.3.2">4.3.2&nbsp;&nbsp;<tt>Calendar.callHandler</tt></a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.3.3"></a><a href="#node_sec_4.3.3">4.3.3&nbsp;&nbsp;<tt>Calendar.callCloseHandler</tt></a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.3.4"></a><a href="#node_sec_4.3.4">4.3.4&nbsp;&nbsp;<tt>Calendar.hide</tt></a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.3.5"></a><a href="#node_sec_4.3.5">4.3.5&nbsp;&nbsp;<tt>Calendar.setDateFormat</tt></a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.3.6"></a><a href="#node_sec_4.3.6">4.3.6&nbsp;&nbsp;<tt>Calendar.setTtDateFormat</tt></a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.3.7"></a><a href="#node_sec_4.3.7">4.3.7&nbsp;&nbsp;<tt>Calendar.setDateStatusHandler</tt></a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.3.8"></a><a href="#node_sec_4.3.8">4.3.8&nbsp;&nbsp;<tt>Calendar.show</tt></a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.3.9"></a><a href="#node_sec_4.3.9">4.3.9&nbsp;&nbsp;<tt>Calendar.showAt</tt></a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.3.10"></a><a href="#node_sec_4.3.10">4.3.10&nbsp;&nbsp;<tt>Calendar.showAtElement</tt></a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_Temp_4"></a><a href="#node_sec_Temp_4">Vertical alignment</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_Temp_5"></a><a href="#node_sec_Temp_5">Horizontal alignment</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_Temp_6"></a><a href="#node_sec_Temp_6">Default values</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.3.11"></a><a href="#node_sec_4.3.11">4.3.11&nbsp;&nbsp;<tt>Calendar.setDate</tt></a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.3.12"></a><a href="#node_sec_4.3.12">4.3.12&nbsp;&nbsp;<tt>Calendar.setFirstDayOfWeek</tt></a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.3.13"></a><a href="#node_sec_4.3.13">4.3.13&nbsp;&nbsp;<tt>Calendar.parseDate</tt></a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.3.14"></a><a href="#node_sec_4.3.14">4.3.14&nbsp;&nbsp;<tt>Calendar.setRange</tt></a><br>
+</p>
+<p><b>
+&nbsp; &nbsp; <a name="node_toc_node_sec_5"></a><a href="#node_sec_5">5&nbsp;&nbsp;Side effects</a></b><br>
+</p>
+<p><b>
+&nbsp; &nbsp; <a name="node_toc_node_sec_6"></a><a href="#node_sec_6">6&nbsp;&nbsp;Credits</a></b><br>
+</p>
+<p>
+</p>
+<p>
+</p>
+<a name="node_sec_1"></a>
+<h1><a href="#node_toc_node_sec_1">1&nbsp;&nbsp;Overview</a></h1>
+<p>The Zapatec DHTML Calendar provides your site's end-users with an easy-to-use,
+versatile, and interactive way to select the date and time. The Calendar can be
+set up to pop up (&quot;popup version&quot;) on user action or remain on the screen all
+the time (&quot;flat version&quot;  great for blogging!). The Calendar works in many
+different browsers including Internet Explorer, Mozilla, Opera 7, Firefox,
+Safari, and Konqueror. The DHTML Calendar is the best choice for ensuring that your
+site's visitors can use your form or application because of this cross-browser
+compatibility.</p>
+<p>
+You can find the latest info and version at the Calendar in the products section
+of Zapatec's home page at</p>
+<p>
+<a href="http://www.zapatec.com"><tt>http://www.zapatec.com</tt></a></p>
+<p>
+</p>
+<a name="node_sec_1.1"></a>
+<h2><a href="#node_toc_node_sec_1.1">1.1&nbsp;&nbsp;How does The Calendar work?</a></h2>
+<p>The Calendar employs DHTML (dynamic HTML) for a combination of an easily
+customizable application and an attractive, simple, end-user experience. DHTML
+refers to the combination of Hyper Text Markup Language (HTML), Cascading Style
+Sheets (CSS), JavaScript and Document Object Model (DOM). DOM is a set of
+interfaces that glues the other three together. In other words, DOM allows
+dynamic modification of an HTML page through a program. The Calendar's
+programming and modifications are in JavaScript, and its appearance is
+customized with Cascading Style Sheets (CSS).</p>
+<p>
+Using DOM calls, the program dynamically creates a <tt>&lt;table&gt;</tt> element
+that contains a calendar for the given date and then inserts it in the document
+body.  It then shows this table at a specified position.  Usually the position
+is related to some element in which the date needs to be displayed/entered,
+such as an input field.</p>
+<p>
+The layout and colors of the calendar are controlled by CSS attributes.  By
+assigning a certain CSS class to the table we can control the look of the
+calendar. To change the colors, backgrounds, rollover effects and other CSS
+properties, you can change the CSS file -- modification of the program itself
+is not necessary.</p>
+<p>
+</p>
+<a name="node_sec_1.2"></a>
+<h2><a href="#node_toc_node_sec_1.2">1.2&nbsp;&nbsp;Project files</a></h2>
+<p>Here's a description of the project files, excluding documentation and example
+files.</p>
+<p>
+</p>
+<a name="node_sec_1.2.1"></a>
+<h3><a href="#node_toc_node_sec_1.2.1">1.2.1&nbsp;&nbsp;The zpcal folder</a></h3>
+<p>The main directory containing all of the other directories and files</p>
+<p>
+</p>
+<a name="node_sec_1.2.2"></a>
+<h3><a href="#node_toc_node_sec_1.2.2">1.2.2&nbsp;&nbsp;The src folder</a></h3>
+<p>The src folder contains the JavaScript that makes the program work</p>
+<p>
+</p>
+<ul>
+<li><p>the main program file (<tt>calendar.js</tt>).  This defines all the logic
+behind the calendar widget.</p>
+<p>
+</p>
+<li><p>helper functions for quick setup of the calendar (<tt>calendar-setup.js</tt>).  
+</p>
+</ul><p></p>
+<p>
+</p>
+<a name="node_sec_1.2.3"></a>
+<h3><a href="#node_toc_node_sec_1.2.3">1.2.3&nbsp;&nbsp; The demo folder</a></h3>
+<p>The demo folder holds examples of many of the types of calendars you can use. It is a great resource for examples of usage and the HTML code needed to make it happen.
+</p>
+<ul>
+<li><p>Example1.html: 
+a basic, single-click version of the Calendar
+</p>
+<li><p>Example2.html: 
+requires the user to double-click and displays the time
+</p>
+<li><p>Example3.html: 
+an example of the single-click calendar with icon and disabled weekends
+</p>
+<li><p>Example4.html: 
+an example of the single-click calendar with a different alignment
+</p>
+<li><p>Example5.html: 
+a flat calendar with special days highlighted
+</p>
+<li><p>Example6.html: 
+a flat calendar with notes and dates with special names
+</p>
+<li><p>Example7.html:
+offers the end-user the opportunity to select multiple dates
+</p>
+<li><p>Example8.html: 
+simulates coordinated dates like check-in and check-out at a hotel
+</p>
+</ul><p></p>
+<p>
+</p>
+<a name="node_sec_1.2.4"></a>
+<h3><a href="#node_toc_node_sec_1.2.4">1.2.4&nbsp;&nbsp;The doc folder</a></h3>
+<p>The doc folder contains all of the help and support files to assist you with the Calendar. Help is provided in HTML, and PDF formats with and without screenshots for ease of use and display.</p>
+<p>
+</p>
+<a name="node_sec_1.2.5"></a>
+<h3><a href="#node_toc_node_sec_1.2.5">1.2.5&nbsp;&nbsp;The lang folder</a></h3>
+<p>The language folder contains up to twenty different languages - from English to French, Spanish, Italian and more - to provide you with the greatest possible versatility and ease of use for you and your end-users.
+Afrikaans, English, French, German, Spanish, Finnish, Croatian, Hungarian, Italian, Romanian, Slovenian, and Turkish are currently available.</p>
+<p>
+</p>
+<a name="node_sec_1.2.6"></a>
+<h3><a href="#node_toc_node_sec_1.2.6">1.2.6&nbsp;&nbsp;The themes folder</a></h3>
+<p>The themes folder contains the CSS files  that control the aesthetics of your calendar including special themes.</p>
+<p>
+</p>
+<p>
+</p>
+<a name="node_sec_2"></a>
+<h1><a href="#node_toc_node_sec_2">2&nbsp;&nbsp;Quick startup</a></h1>
+<p></p>
+<p>
+First you have to include the needed scripts and style-sheet.  Make sure you do
+this in your document's <tt>&lt;head&gt;</tt> section. Make sure you put the
+correct paths to the scripts.</p>
+<p>
+</p>
+<pre class=verbatim>&lt;style type=&quot;text/css&quot;&gt;@import url(calendar-win2k-1.css);&lt;/style&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;calendar.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;lang/calendar-en.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;calendar-setup.js&quot;&gt;&lt;/script&gt;
+</pre><p></p>
+<p>
+</p>
+<a name="node_sec_2.1"></a>
+<h2><a href="#node_toc_node_sec_2.1">2.1&nbsp;&nbsp;Installing a popup calendar</a></h2>
+<p></p>
+<p>
+Now suppose you have the following HTML:</p>
+<p>
+</p>
+<pre class=verbatim>&lt;form ...&gt;
+  &lt;input type=&quot;text&quot; id=&quot;data&quot; name=&quot;data&quot; /&gt;
+  &lt;button id=&quot;trigger&quot;&gt;...&lt;/button&gt;
+&lt;/form&gt;
+</pre><p></p>
+<p>
+You want the button to popup a calendar widget when clicked?  Just
+insert the following code immediately <em>after</em> the HTML form:</p>
+<p>
+</p>
+<pre class=verbatim>&lt;script type=&quot;text/javascript&quot;&gt;
+  Zapatec.Calendar.setup(
+    {
+      inputField  : &quot;data&quot;,         // ID of the input field
+      ifFormat    : &quot;%m %d, %Y&quot;,    // the date format
+      button      : &quot;trigger&quot;       // ID of the button
+    }
+  );
+&lt;/script&gt;
+&lt;noscript&gt;
+&lt;br/&gt;
+	This page uses a &lt;a href='http://www.zapatec.com/products/prod1'&gt; Javascript Calendar &lt;/a&gt;, but
+	your browser does not support Javascript. 
+&lt;br/&gt;
+Either enable Javascript in your Browser or upgrade to a newer version.
+&lt;/noscript&gt;
+</pre><p></p>
+<p>
+The <tt>Calendar.setup</tt> function, defined in <tt>calendar-setup.js</tt>,
+takes care of &quot;patching&quot; the button to display a calendar when clicked.  The
+calendar is by default in single-click mode and linked with the given input
+field, so that when the end-user selects a date it will update the input field
+with the date in the given format and close the calendar.  </p>
+<p>
+By looking at the example above we can see that the function
+<tt>Calendar.setup</tt> receives only one parameter: a JavaScript object.
+Further, that object can have lots of properties that tell to the setup
+function how would we like to have the calendar.  For instance, if we would
+like a calendar that closes at double-click instead of single-click we would
+also include the following: <tt>singleClick:false</tt>.</p>
+<p>
+For a list of all supported parameters please see the section
+<a href="#node_sec_2.3">2.3</a>.</p>
+<p>
+</p>
+<a name="node_sec_2.2"></a>
+<h2><a href="#node_toc_node_sec_2.2">2.2&nbsp;&nbsp;Installing a flat calendar</a></h2>
+<p></p>
+<p>
+You can configure a flat calendar, using the same <tt>Calendar.setup</tt>
+function.  First, you should have an empty element with an ID.  This element
+will act as a container for the calendar.  It can be any block-level element,
+such as DIV, TABLE, etc.  We will use a DIV in this example.</p>
+<p>
+</p>
+<pre class=verbatim>&lt;div id=&quot;calendar-container&quot;&gt;&lt;/div&gt;
+</pre><p></p>
+<p>
+Then there is the JavaScript code that sets up the calendar into the
+&quot;calendar-container&quot; DIV.  The code can occur anywhere in HTML
+<em>after</em> the DIV element.</p>
+<p>
+</p>
+<pre class=verbatim>&lt;script type=&quot;text/javascript&quot;&gt;
+  function dateChanged(calendar) {
+    // Beware that this function is called even if the end-user only
+    // changed the month/year.  In order to determine if a date was
+    // clicked you can use the dateClicked property of the calendar:
+    if (calendar.dateClicked) {
+      // OK, a date was clicked, redirect to /yyyy/mm/dd/index.php
+      var y = calendar.date.getFullYear();
+      var m = calendar.date.getMonth();     // integer, 0..11
+      var d = calendar.date.getDate();      // integer, 1..31
+      // redirect...
+      window.location = &quot;/&quot; + y + &quot;/&quot; + m + &quot;/&quot; + d + &quot;/index.php&quot;;
+    }
+  };
+
+  Zapatec.Calendar.setup(
+    {
+      flat         : &quot;calendar-container&quot;, // ID of the parent element
+      flatCallback : dateChanged           // our callback function
+    }
+  );
+&lt;/script&gt;
+&lt;noscript&gt;
+&lt;br/&gt;
+	This page uses a &lt;a href='http://www.zapatec.com/products/prod1'&gt; Javascript Calendar &lt;/a&gt;, but
+	your browser does not support Javascript. 
+&lt;br/&gt;
+Either enable Javascript in your Browser or upgrade to a newer version.
+&lt;/noscript&gt;
+</pre><p></p>
+<p>
+</p>
+<a name="node_sec_2.3"></a>
+<h2><a href="#node_toc_node_sec_2.3">2.3&nbsp;&nbsp;<tt>Zapatec.Calendar.setup</tt> in detail</a></h2>
+<p></p>
+<p>
+Below is the complete list of properties interpreted by
+Zapatec.Calendar.setup.  All of them have default values, so you can pass only those
+that you would like to customize.  Regardless, you <em>must</em> pass at least one
+of <tt>inputField</tt>, <tt>displayArea</tt> or <tt>button</tt>, for a popup
+calendar, or <tt>flat</tt> for a flat calendar.  Otherwise you will get a
+warning message saying that there is nothing to setup.</p>
+<p>
+</p>
+<span class=small><table border=0><tr><td valign=top ><table border=1><tr><td valign=top ><b>property</b> </td><td valign=top ><b>type</b> </td><td valign=top ><b>description</b> </td><td valign=top ><b>default</b>
+</td></tr>
+<tr><td valign=top ><p>
+<tt>align</tt>
+</p>
+</td><td valign=top >string 
+</td><td valign=top >Alignment of the calendar, relative to the reference element. The
+reference element is dynamically chosen like this: if a displayArea is
+specified then it will be the reference element. Otherwise, the input field
+is the reference element.  For the meaning of the alignment characters
+please section <a href="#node_sec_4.3.10">4.3.10</a>.
+</td><td valign=top >Bl
+</td></tr>
+<tr><td valign=top ><p>
+<tt>button</tt>
+</p>
+</td><td valign=top >string 
+</td><td valign=top >The ID of the button, image, or other element that triggers the calendar.
+</td><td valign=top >null
+</td></tr>
+<tr><td valign=top ><p>
+<tt>cache</tt>
+</p>
+</td><td valign=top >boolean 
+</td><td valign=top >Set this to ``true'' if you want to cache the calendar object.
+This means that a single calendar object will be used for all fields that
+require a popup calendar 
+</td><td valign=top >false
+</td></tr>
+<tr><td valign=top ><p>
+<tt>closeEventName</tt>
+</p>
+</td><td valign=top >string 
+</td><td valign=top >Name of the event that triggers the closing of the calendar without
+the ``on'' prefix. There's no default event, but the calendar will close if one
+of the following happens: the user clicks (in single-click mode), or clicks a
+second time (in double-click mode) on a date, clicks on the &quot;X&quot; or clicks
+outside the calendar area.
+</td><td valign=top >None. 
+</td></tr>
+<tr><td valign=top ><p>
+<tt>daFormat</tt>
+</p>
+</td><td valign=top >string 
+</td><td valign=top >Format of the date displayed in the displayArea (if specified).
+</td><td valign=top >%Y/%m/%d
+</td></tr>
+<tr><td valign=top ><p>
+<tt>date</tt>
+</p>
+</td><td valign=top >date 
+</td><td valign=top >This allows you to setup an the default date for the calendar.
+positioned to.  If absent then the calendar will open to the today date.
+</td><td valign=top >today
+</td></tr>
+<tr><td valign=top ><p>
+<tt>dateStatusFunc</tt>
+</p>
+</td><td valign=top >function 
+</td><td valign=top >A function that receives a JS Date object and returns a boolean
+or a string.  This function allows one to set a certain CSS class to some
+date, therefore making it look different.  If it returns <tt>true</tt> then
+the date will be disabled.  If it returns <tt>false</tt> nothing special
+happens with the given date.  If it returns a string then that will be taken
+as a CSS class and appended to the date element.  If this string contains
+``disabled'' then the date is also disabled (therefore is like returning
+<tt>true</tt>) but with your own custom style.  For more information please
+refer to section <a href="#node_sec_4.3.7">4.3.7</a>.
+</td><td valign=top >null
+</td></tr>
+<tr><td valign=top ><p>
+<tt>displayArea</tt>
+</p>
+</td><td valign=top >string 
+</td><td valign=top >This is the ID of a &lt;span&gt;, &lt;div&gt;, or any other element that
+you would like to use to display the current date. Useful in flat calendars or
+if the input field is hidden, as an area to display the date.
+</td><td valign=top >null
+</td></tr>
+<tr><td valign=top ><p>
+<tt>electric</tt>
+</p>
+</td><td valign=top >boolean 
+</td><td valign=top >Not applicable with single-click. With double-click setting to true (default)
+fields/date areas are updated for each click; otherwise they are updated only on
+close.
+</td><td valign=top >true
+</td></tr>
+<tr><td valign=top ><p>
+<tt>eventName</tt>
+</p>
+</td><td valign=top >string 
+</td><td valign=top >Name of the event that triggers the calendar without the ``on''
+prefix (default click). For instance use``click'' instead of ``onclick''.
+Virtually all users will want to let this have the default value (``click'').
+But, it could be useful if, for example, you want the calendar to appear when the
+input field is focused and have no trigger button (in this case use ``focus''
+as the event name).
+</td><td valign=top >click
+</td></tr>
+<tr><td valign=top ><p>
+<tt>firstDay</tt>
+</p>
+</td><td valign=top >integer 
+</td><td valign=top >Specifies which day is to be displayed as the first day of
+week.  Possible values are 0 to 6; 0 means Sunday, 1 means Monday, ..., 6
+means Saturday.  The end user can easily change this too, by clicking on the
+day name in the calendar header.
+</td><td valign=top >0
+</td></tr>
+<tr><td valign=top ><p>
+<tt>flat</tt>
+</p>
+</td><td valign=top >string 
+</td><td valign=top >To create a flat calendar pass the ID of the object where the calendar will be created.  
+<tt>null</tt> is the default value).
+</td><td valign=top >null
+</td></tr>
+<tr><td valign=top ><p>
+<tt>flatCallback</tt>
+</p>
+</td><td valign=top >function 
+</td><td valign=top >You should provide this function if the calendar is flat.  It
+will be called when the date in the calendar is changed with a reference to
+the calendar object.  See section <a href="#node_sec_2.2">2.2</a> for an example
+of how to set up a flat calendar.
+</td><td valign=top >null
+</td></tr>
+<tr><td valign=top ><p>
+<tt>ifFormat</tt>
+</p>
+</td><td valign=top >string 
+</td><td valign=top >The format string that will be used to enter the date in the input field.
+This format will be honored even if the input field is hidden.
+</td><td valign=top >%Y/%m/%d
+</td></tr>
+<tr><td valign=top ><p>
+<tt>inputField</tt>
+</p>
+</td><td valign=top >string 
+</td><td valign=top >The ID of your input field. This is where the date/time users chose goes.
+</td><td valign=top >null
+</td></tr>
+<tr><td valign=top ><p>
+<tt>multiple</tt>
+</p>
+</td><td valign=top >array of dates
+</td><td valign=top >Allow choosing multiple days in the calendar. The javascript array that you pass as the
+argument contains the array of dates initially chosen. The user can than click to select or deselect
+dates in the calendar. Single-click or double-click don't apply in here. The user needs to explicitly close
+the calendar by clicking on the &quot;X&quot; button.
+</td><td valign=top >null
+</td></tr>
+<tr><td valign=top ><p>
+<tt>onClose</tt>
+</p>
+</td><td valign=top >function 
+</td><td valign=top >This handler will be called when the calendar needs to close.  If
+you set a handler here, it is your responsibility to hide/destroy the calendar.
+Check the calendar-setup.js file for an example.
+</td><td valign=top >null
+</td></tr>
+<tr><td valign=top ><p>
+<tt>onSelect</tt>
+</p>
+</td><td valign=top >function 
+</td><td valign=top >Function that gets called when a date is selected.  You don't  have to supply
+this (the default is generally OK). If you do provide a handler, you will have to manage
+the ``click-on-date'' event by yourself.  Look in the file calendar-setup.js and
+use the onSelect handler that you can see in it as an example.
+</td><td valign=top >null
+</td></tr>
+<tr><td valign=top ><p>
+<tt>onUpdate</tt>
+</p>
+</td><td valign=top >function 
+</td><td valign=top >function that gets called after the date is updated in the input
+field.  Receives a reference to the calendar.  after the target field is
+updated with a new date.  You can use this to chain two calendars. For example
+you can setup a default date in the second calendar after a date was selected
+in the first.
+</td><td valign=top >null
+</td></tr>
+<tr><td valign=top ><p>
+<tt>position</tt>
+</p>
+</td><td valign=top >array 
+</td><td valign=top >Specifies the [x, y] position, relative to page's top-left corner,
+where the calendar will be displayed.  If not passed then the position will
+be computed based on the ``align'' parameter.  Defaults to ``null'' (not
+used). 
+</td><td valign=top >null
+</td></tr>
+<tr><td valign=top ><p>
+<tt>range</tt>
+</p>
+</td><td valign=top >array 
+</td><td valign=top >An array having exactly 2 integers. The first [0] element is the
+first year allowed, and the second [1] element is the last year allowed.
+</td><td valign=top >[1900, 2999]
+</td></tr>
+<tr><td valign=top ><p>
+<tt>showOthers</tt>
+</p>
+</td><td valign=top >boolean 
+</td><td valign=top >If set to ``true'' if you want the calendar to display days from
+adjacent months. Note that calendars that display days from other months are fixed size
+- they always display six weeks. Calendars that do not display days from other months
+will sometimes display five weeks and at other times six.
+</td><td valign=top >false
+</td></tr>
+<tr><td valign=top ><p>
+<tt>showsTime</tt>
+</p>
+</td><td valign=top >boolean 
+</td><td valign=top >When set to <tt>true</tt> the calendar lets users select the time as well as the date.
+</td><td valign=top >false
+</td></tr>
+<tr><td valign=top ><p>
+<tt>singleClick</tt>
+</p>
+</td><td valign=top >boolean 
+</td><td valign=top >Whether the calendar is in single click mode or not (default: true). Notice
+that double-click is somewhat a misnomer. It's not the quick double click that
+often used when opening a program. It means that rather than submitting the
+data right away when the user clicks on a date, the calendar will stay open. 
+Only when the user clicks on the same date a second time will the data be
+submitted.
+</td><td valign=top >true
+</td></tr>
+<tr><td valign=top ><p>
+<tt>step</tt>
+</p>
+</td><td valign=top >integer 
+</td><td valign=top >Configures the step in the year drop-down menus. So setting  it to 5 will display 
+1900, 1905, 1910, ...
+</td><td valign=top >2
+</td></tr>
+<tr><td valign=top ><p>
+<tt>timeFormat</tt>
+</p>
+</td><td valign=top >string 
+</td><td valign=top >The time format; can be &quot;12&quot; or &quot;24&quot;.
+</td><td valign=top >``24''
+</td></tr>
+<tr><td valign=top ><p>
+<tt>weekNumbers</tt>
+</p>
+</td><td valign=top >boolean 
+</td><td valign=top >If ``true'' the calendar will display week numbers. Week numbers are displayed 
+using the ISO 8601 standard.
+</td><td valign=top >true<p>
+</p>
+</td></tr></table>
+
+</td></tr></table>
+
+</span><p>
+</p>
+<a name="node_sec_3"></a>
+<h1><a href="#node_toc_node_sec_3">3&nbsp;&nbsp;The Calendar object overview</a></h1>
+<p></p>
+<p>
+You can set up a fully functional Calendar with the function presented in the
+previous section. </p>
+<p>
+This advanced section will give you the information you need to add
+functionality and customize the calendar even further.</p>
+<p>
+The file <tt>calendar.js</tt> implements the functionality of the calendar.
+Almost all functions and variables are embedded in the JavaScript object
+&quot;Calendar&quot;.</p>
+<p>
+You can instantiate a <tt>Calendar</tt> object by calling the constructor with
+the following code: <tt>var cal = new Calendar(<tt>...</tt>)</tt>.  We will discuss the
+parameters later.  After creating the object, the variable <tt>cal</tt>
+contains a reference to the Calendar object.  You can use this reference to
+access further options of the calendar, for instance:</p>
+<p>
+</p>
+<pre class=verbatim>cal.weekNumbers = false; // do not display week numbers
+cal.showsTime = true;    // include a time selector
+cal.setDateFormat(&quot;%Y.%m.%d %H:%M&quot;); // set this format: 2003.12.31 23:59
+cal.setDateStatusHandler(function(date, year, month, day) {
+	
+  // verify date and return true if it has to be disabled
+  // &quot;date&quot; is a JS Date object, but if you only need the
+  // year, month and/or day you can get them separately as
+  // next 3 parameters, as you can see in the declaration
+  if (year == 2004) {
+    // disable all dates from 2004
+    return true;
+  }
+  return false;
+});
+</pre><p></p>
+<p>
+</p>
+<a name="node_sec_3.1"></a>
+<h2><a href="#node_toc_node_sec_3.1">3.1&nbsp;&nbsp;Creating a calendar</a></h2>
+<p>The Calendar is created by following some of the same steps as are found in
+section <a href="#node_sec_2">2</a>.   
+While you can skip optional (marked &quot;opt&quot;) steps if you're happy with the
+defaults, using the order outlined below will make it easier for you to
+customize and avoid errors.</p>
+<p>
+</p>
+<ol><p>
+</p>
+<li><p><em>Instantiate</em> a <tt>Calendar</tt> object.  Details about this in
+section <a href="#node_sec_4.1">4.1</a>.</p>
+<p>
+</p>
+<li><p><b>opt</b>&nbsp;&nbsp; Set the <tt>weekNumbers</tt> property to <tt>false</tt> if you don't want
+the calendar to display week numbers.</p>
+<p>
+</p>
+<li><p><b>opt</b>&nbsp;&nbsp; Set the <tt>showsTime</tt> property to <tt>true</tt> if you
+want the calendar to also provide a time selector.</p>
+<p>
+</p>
+<li><p><b>opt</b>&nbsp;&nbsp; Set the <tt>time24</tt> property to <tt>false</tt> if you want
+the time selector to be in 12-hour format.  Default is 24-hour format.  This
+property only has effect if you also set <tt>showsTime</tt> to
+<tt>true</tt>.</p>
+<p>
+</p>
+<li><p><b>opt</b>&nbsp;&nbsp; Set the range of years available for selection (see section
+<a href="#node_sec_4.3.14">4.3.14</a>).  The default range is [1970..2050].</p>
+<p>
+</p>
+<li><p><b>opt</b>&nbsp;&nbsp; Set the <tt>getDateStatus</tt> property.  You should pass
+here a function that receives a JavaScript <tt>Date</tt> object and returns
+<tt>true</tt> if the given date should be disabled, false otherwise (details in
+section <a href="#node_sec_4.3.7">4.3.7</a>).</p>
+<p>
+</p>
+<li><p><b>opt</b>&nbsp;&nbsp; Set a date format.  Your handler function, passed to the
+calendar constructor, will be called when a date is selected with a reference
+to the calendar and a date string in this format.</p>
+<p>
+</p>
+<li><p><em>Create</em> the HTML elements related to the calendar.  This step
+actually puts the calendar in your HTML page.  You simply call
+<tt>Calendar.create()</tt>.  You can give an optional parameter if you want
+to create a flat calendar (details in section <a href="#node_sec_4.3.1">4.3.1</a>).</p>
+<p>
+</p>
+<li><p><b>opt</b>&nbsp;&nbsp; Initialize the calendar to a certain date, from
+the input field, or a default date that is application specific.</p>
+<p>
+</p>
+<li><p>Show the javascript calendar (details in section <a href="#node_sec_4.3.8">4.3.8</a>).</p>
+<p>
+</p>
+</ol><p></p>
+<p>
+</p>
+<a name="node_sec_3.2"></a>
+<h2><a href="#node_toc_node_sec_3.2">3.2&nbsp;&nbsp;Order Matters</a></h2>
+<p>Two things happen when you create a Calendar. First, you create the JavaScript
+object. Second, the HTML elements that actually let you see and manipulate the
+Calendar are created.</p>
+<p>
+When we instantiate the Calendar, we in effect create the JavaScript object. We
+configure properties and create the HTML elements that will provide the
+end-user with a visible, interactive UI. The function <tt>Calendar.create</tt>
+described in section <a href="#node_sec_4.3.1">4.3.1</a>, is responsible for creation of
+the HTML element, and with it you can create pop up or flat Calendars.</p>
+<p>
+Some properties will not work unless they are set before creating the HTML
+elements. One example is <tt>weekNumbers</tt>. WeekNumbers is true by default. If you do
+not want the Calendar to display the week numbers, you must set this to false.
+If you set the value to false after calling the <tt>calendar.create</tt>
+file, however, it will not work. Calling the calendar.create creates the HTML
+elements (tables, cells, etc.) and it will create the table based on your
+property values.  So, if weekNumbers falls after the calendar.create is called,
+your calendar will still display the table elements required for the week
+number because it didn't see the information to leave it out (a value of
+<tt>false</tt> ahead of time. For this reason the order of the steps above is
+important.</p>
+<p>
+The order of actions also matters when you want to show the calendar.  The
+&quot;create&quot; function does create the HTML elements, but they are initially
+hidden (have the style &quot;display: none&quot;) unless the calendar is a flat
+calendar which should always be visible in the page.  Obviously, the
+<tt>Calendar.show</tt> function should be called <em>after</em> calling
+<tt>Calendar.create</tt>.</p>
+<p>
+</p>
+<a name="node_sec_3.3"></a>
+<h2><a href="#node_toc_node_sec_3.3">3.3&nbsp;&nbsp;Caching the Calendar object</a></h2>
+<p>Suppose the end-user has popped up a calendar and selects a date.  The calendar
+then closes. What is really happening?</p>
+<p>
+The <tt>Zapatec.Calendar.setup</tt> function caches the JavaScript object.  It
+does this by checking the global variable <tt>window.calendar</tt> and if it is
+not null it assumes it is the created Calendar object.  When the end-user
+closes the calendar, our code will only call &quot;<tt>hide</tt>&quot; on it, therefore
+keeping the JavaScript object and the HTML elements in place.</p>
+<p>
+Caching the calendar improves speed, specifically when you have several
+calendars on one pages, and when the user opens and closes the same
+calendar several times.</p>
+<p>
+</p>
+<a name="node_sec_3.4"></a>
+<h2><a href="#node_toc_node_sec_3.4">3.4&nbsp;&nbsp;Callback functions</a></h2>
+<p>The calendar uses callback functions as a way to tell that a date is selected;
+it has to update an input field or go to a certain URL when a date is clicked
+in flat mode.The Calendar object has no awareness of an input field and it does
+not know where to redirect the browser when a date is clicked in the flat
+calendar. </p>
+<p>
+The calendar object calls the callback when a particular event is triggered,
+and your code is responsible for handling it from there. For a general-purpose
+library, this is the best model for making a truly reusable widget.</p>
+<p>
+The calendar supports the following user callbacks:</p>
+<p>
+</p>
+<ul><p>
+</p>
+<li><p><b>onSelect</b>&nbsp;&nbsp;  --  this function gets called when the end-user changes the date in the
+calendar.  Documented in section <a href="#node_sec_4.1">4.1</a>.</p>
+<p>
+</p>
+<li><p><b>onClose</b>&nbsp;&nbsp;  --  this function gets called when the calendar should close.  It is
+your responsibility to close the calendar.  Details in section
+<a href="#node_sec_4.1">4.1</a>.</p>
+<p>
+</p>
+<li><p><b>getDateStatus</b>&nbsp;&nbsp;  --  Prior to displaying a specific month this function
+gets called for any day in that month.  It is called with a JavaScript
+<tt>Date</tt> object as a parameter. This function should return <tt>true</tt>
+for dates that should be disabled, false for an ordinary date where no action
+should be taken. It can also return a string, in which case the returned value
+will be appended to the element's CSS class. This provides a powerful way to
+make some dates &quot;special&quot;, i.e. highlight them differently.  Details in
+section <a href="#node_sec_4.3.7">4.3.7</a>.</p>
+<p>
+</p>
+</ul><p></p>
+<p>
+</p>
+<a name="node_sec_4"></a>
+<h1><a href="#node_toc_node_sec_4">4&nbsp;&nbsp;The DHTML Calendar object API reference</a></h1>
+<p></p>
+<p>
+</p>
+<a name="node_sec_4.1"></a>
+<h2><a href="#node_toc_node_sec_4.1">4.1&nbsp;&nbsp;<tt>Calendar</tt> constructor</a></h2>
+<p></p>
+<p>
+</p>
+<pre class=verbatim>var calendar = Calendar(firstDayOfWeek, date, onSelect, onClose);
+</pre><p></p>
+<p>
+Parameters are as follows:</p>
+<p>
+</p>
+<ul><p>
+</p>
+<li><p><b>firstDayOfWeek</b>&nbsp;&nbsp;  --  specifies which day is to be displayed as the first
+day of week.  Possible values are 0 to 6; 0 means Sunday, 1 means Monday,
+..., 6 means Saturday.</p>
+<p>
+</p>
+<li><p><b>date</b>&nbsp;&nbsp;  --  a JavaScript Date object or <tt>null</tt>.  If <tt>null</tt>
+is passed then the calendar will default to today date.  Otherwise it will
+initialize to the given date.</p>
+<p>
+</p>
+<li><p><b>onSelect</b>&nbsp;&nbsp;  --  your callback for the &quot;onChange&quot; event.  See above.</p>
+<p>
+</p>
+<li><p><b>onClose</b>&nbsp;&nbsp;  --  your callback for the &quot;onClose&quot; event.  See above.</p>
+<p>
+</p>
+</ul><p></p>
+<p>
+</p>
+<a name="node_sec_Temp_2"></a>
+<h3><a href="#node_toc_node_sec_Temp_2">The <tt>onSelect</tt> event</a></h3>
+<p></p>
+<p>
+Assuming you have a input field with an id &quot;myInputField&quot;, here is a typical
+implementation of this function:</p>
+<p>
+</p>
+<pre class=verbatim>function onSelect(calendar, date) {
+  var input_field = document.getElementById(&quot;myInputField&quot;);
+  input_field.value = date;
+};
+</pre><p></p>
+<p>
+<tt>date</tt> is displayed in the format selected with <tt>calendar.setDateFormat</tt>
+(see section <a href="#node_sec_4.3.5">4.3.5</a>).  This code simply updates the
+input field.  If you want the calendar to be in single-click mode then you
+should also close the calendar after you updated the input field. Here's the
+updated version:</p>
+<p>
+</p>
+<pre class=verbatim>function onSelect(calendar, date) {
+  var input_field = document.getElementById(&quot;myInputField&quot;);
+  input_field.value = date;
+  if (calendar.dateClicked) {
+    calendar.callCloseHandler(); // this calls &quot;onClose&quot; (see above)
+  }
+};
+</pre><p></p>
+<p>
+Note that this function is called when the user clicks inside the
+calendar.  We check the member variable <tt>dateClicked</tt> and only hide
+the calendar if it's <tt>true</tt>.  If this variable is <tt>false</tt> it
+means that no date was actually selected, but the user only clicked to change
+the month/year using the navigation buttons or the menus.  We do not want to
+hide the calendar in that case.</p>
+<p>
+</p>
+<a name="node_sec_Temp_3"></a>
+<h3><a href="#node_toc_node_sec_Temp_3">The <tt>onClose</tt> event</a></h3>
+<p></p>
+<p>
+This event is triggered when the calendar should close.  It should hide or
+destroy the calendar object -- the calendar itself just triggers the event, but
+it won't close itself.</p>
+<p>
+A typical implementation of this function is the following:</p>
+<p>
+</p>
+<pre class=verbatim>function onClose(calendar) {
+  calendar.hide();
+  // or calendar.destroy();
+};
+</pre><p></p>
+<p>
+</p>
+<a name="node_sec_4.2"></a>
+<h2><a href="#node_toc_node_sec_4.2">4.2&nbsp;&nbsp;Useful member variables (properties)</a></h2>
+<p></p>
+<p>
+After creating the Calendar object you can access the following properties:</p>
+<p>
+</p>
+<ul><p>
+</p>
+<li><p><tt>date</tt>  --  a JavaScript <tt>Date</tt> object that always
+reflects the date shown in the calendar, even if the calendar is hidden.</p>
+<p>
+</p>
+<li><p><tt>isPopup</tt>  --  when true the current Calendar object is
+a popup calendar.  If false we have a flat calendar.  This variable is
+set from <tt>Calendar.create</tt> and has no meaning before this function is
+called.</p>
+<p>
+</p>
+<li><p><tt>dateClicked</tt>  --  particularly useful in the <tt>onSelect</tt>
+handler, this variable tells us if a date was really clicked.  That's because
+the <tt>onSelect</tt> handler is called even if the end-user only changed the
+month/year but did not select a date.  We don't want to close the calendar in
+that case.</p>
+<p>
+</p>
+<li><p><tt>weekNumbers</tt>  --  when <tt>true</tt> (default) then the calendar
+displays week numbers.  If you don't want week numbers you have to set this
+variable to <tt>false</tt> <em>before</em> calling <tt>Calendar.create</tt>.</p>
+<p>
+</p>
+<li><p><tt>showsTime</tt> - if you set this to <tt>true</tt> (it is
+<tt>false</tt> by default) then the calendar will also include a time selector.</p>
+<p>
+</p>
+<li><p><tt>time24</tt> - if you set this to <tt>false</tt> then the time
+selector will be in 12-hour format.  It is in 24-hour format by default.</p>
+<p>
+</p>
+<li><p><tt>firstDayOfWeek</tt>  --  specifies the first day of week (0 to 6, pass
+0 for Sunday, 1 for Monday, ..., 6 for Saturday).  This variable is set in
+the constructor, but you still have a chance to modify it <em>before</em> calling
+<tt>Calendar.create</tt>.</p>
+<p>
+</p>
+</ul><p></p>
+<p>
+</p>
+<a name="node_sec_4.3"></a>
+<h2><a href="#node_toc_node_sec_4.3">4.3&nbsp;&nbsp;Public methods</a></h2>
+<p></p>
+<a name="node_sec_4.3.1"></a>
+<h3><a href="#node_toc_node_sec_4.3.1">4.3.1&nbsp;&nbsp;<tt>Calendar.create</tt></a></h3>
+<p></p>
+<p>
+This function creates the different HTML elements that are needed to display the
+calendar.  You should call it after setting the calendar properties.  
+</p>
+<pre class=verbatim>calendar.create(); // creates a popup calendar
+  // -- or --
+calendar.create(document.getElementById(parent_id)); // makes a flat calendar
+</pre><p></p>
+<p>
+The function creates a popup or a flat calendar.  If the &quot;parent&quot; argument
+is present (it should be a <em>reference</em> -- not ID -- to an HTML element) then
+a flat calendar is created and it is inserted in the given element.</p>
+<p>
+At any moment, given a reference to a calendar object, we can check the boolean
+member variable <tt>isPopup</tt> to see if it's a popup or a flat calendar:</p>
+<p>
+</p>
+<pre class=verbatim>if (calendar.isPopup) {
+   // this is a popup calendar
+} else {
+   // this is a flat calendar
+}
+</pre><p></p>
+<p>
+</p>
+<a name="node_sec_4.3.2"></a>
+<h3><a href="#node_toc_node_sec_4.3.2">4.3.2&nbsp;&nbsp;<tt>Calendar.callHandler</tt></a></h3>
+<p></p>
+<p>
+This function calls the first user callback (the
+<tt>onSelect</tt> handler) with the required parameters.</p>
+<p>
+</p>
+<a name="node_sec_4.3.3"></a>
+<h3><a href="#node_toc_node_sec_4.3.3">4.3.3&nbsp;&nbsp;<tt>Calendar.callCloseHandler</tt></a></h3>
+<p></p>
+<p>
+This function calls the second user callback (the
+<tt>onClose</tt> handler).  It is useful when you want to have a
+&quot;single-click&quot; calendar -- just call this in your <tt>onSelect</tt> handler,
+if a date was clicked.</p>
+<p>
+</p>
+<a name="node_sec_4.3.4"></a>
+<h3><a href="#node_toc_node_sec_4.3.4">4.3.4&nbsp;&nbsp;<tt>Calendar.hide</tt></a></h3>
+<p></p>
+<p>
+Call this function to hide the calendar.  The calendar object and HTML elements
+will not be destroyed, thus you can later call one of the <tt>show</tt>
+functions on the same element.</p>
+<p>
+</p>
+<a name="node_sec_4.3.5"></a>
+<h3><a href="#node_toc_node_sec_4.3.5">4.3.5&nbsp;&nbsp;<tt>Calendar.setDateFormat</tt></a></h3>
+<p></p>
+<p>
+This function configures the format in which the calendar reports the date to
+your &quot;onSelect&quot; handler.  Call it like this:</p>
+<p>
+</p>
+<pre class=verbatim>calendar.setDateFormat(&quot;%y/%m/%d&quot;);
+</pre><p></p>
+<p>
+It receives only one parameter, the required format. In addition to special
+characters, you can insert spaces, commas, tabs and other constant characters.
+The special characters are the following:</p>
+<p>
+</p>
+<table border=0><tr><td valign=top ></td></tr>
+<tr><td valign=top ><tt>%a</tt> </td><td valign=top >abbreviated weekday name </td></tr>
+<tr><td valign=top ><tt>%A</tt> </td><td valign=top >full weekday name </td></tr>
+<tr><td valign=top ><tt>%b</tt> </td><td valign=top >abbreviated month name </td></tr>
+<tr><td valign=top ><tt>%B</tt> </td><td valign=top >full month name </td></tr>
+<tr><td valign=top ><tt>%C</tt> </td><td valign=top >century number </td></tr>
+<tr><td valign=top ><tt>%d</tt> </td><td valign=top >the day of the month ( 00 .. 31 ) </td></tr>
+<tr><td valign=top ><tt>%e</tt> </td><td valign=top >the day of the month ( 0 .. 31 ) </td></tr>
+<tr><td valign=top ><tt>%H</tt> </td><td valign=top >hour ( 00 .. 23 ) </td></tr>
+<tr><td valign=top ><tt>%I</tt> </td><td valign=top >hour ( 01 .. 12 ) </td></tr>
+<tr><td valign=top ><tt>%j</tt> </td><td valign=top >day of the year ( 000 .. 366 ) </td></tr>
+<tr><td valign=top ><tt>%k</tt> </td><td valign=top >hour ( 0 .. 23 ) </td></tr>
+<tr><td valign=top ><tt>%l</tt> </td><td valign=top >hour ( 1 .. 12 ) </td></tr>
+<tr><td valign=top ><tt>%m</tt> </td><td valign=top >month ( 01 .. 12 ) </td></tr>
+<tr><td valign=top ><tt>%M</tt> </td><td valign=top >minute ( 00 .. 59 ) </td></tr>
+<tr><td valign=top ><tt>%n</tt> </td><td valign=top >a newline character </td></tr>
+<tr><td valign=top ><tt>%p</tt> </td><td valign=top >&quot;PM&quot; or &quot;AM&quot; </td></tr>
+<tr><td valign=top ><tt>%P</tt> </td><td valign=top >&quot;pm&quot; or &quot;am&quot; </td></tr>
+<tr><td valign=top ><tt>%S</tt> </td><td valign=top >second ( 00 .. 59 ) </td></tr>
+<tr><td valign=top ><tt>%s</tt> </td><td valign=top >number of seconds since Epoch (since Jan 01 1970 00:00:00 UTC) </td></tr>
+<tr><td valign=top ><tt>%t</tt> </td><td valign=top >a tab character </td></tr>
+<tr><td valign=top ><tt>%U, %W, %V</tt> </td><td valign=top >the week number</td></tr>
+<tr><td valign=top ><tt>%u</tt> </td><td valign=top >the day of the week ( 1 .. 7, 1 = MON )</td></tr>
+<tr><td valign=top ><tt>%w</tt> </td><td valign=top >the day of the week ( 0 .. 6, 0 = SUN )</td></tr>
+<tr><td valign=top ><tt>%y</tt> </td><td valign=top >year without the century ( 00 .. 99 )</td></tr>
+<tr><td valign=top ><tt>%Y</tt> </td><td valign=top >year including the century ( ex. 1979 )</td></tr>
+<tr><td valign=top ><tt>%%</tt> </td><td valign=top >a literal <tt>%</tt> character
+</td></tr></table><p>
+
+All three specifiers %U, %W, %V currently implement the same week number
+algorithm, as defined by ISO 8601: &quot;Week 01 is the week that has the Thursday
+in the current year, which is equivalent to the week that contains the fourth
+day of January. Weeks start on Monday.&quot;</p>
+<p>
+</p>
+<a name="node_sec_4.3.6"></a>
+<h3><a href="#node_toc_node_sec_4.3.6">4.3.6&nbsp;&nbsp;<tt>Calendar.setTtDateFormat</tt></a></h3>
+<p>
+uses the same format as <tt>Calendar.setDateFormat</tt>, but refers to the
+format of the date displayed in the &quot;status bar&quot; when the mouse is over some
+date.</p>
+<p>
+</p>
+<a name="node_sec_4.3.7"></a>
+<h3><a href="#node_toc_node_sec_4.3.7">4.3.7&nbsp;&nbsp;<tt>Calendar.setDateStatusHandler</tt></a></h3>
+<p></p>
+<p>
+Sets the callback for disabling and customizing specific dates. You need to
+write the callback that will return a <em>boolean</em> or a <em>string</em>.  If
+the return value is (<tt>true</tt> the date is disabled and the user cannot click
+on it. If it is <tt>false</tt>) it is available for clicking.</p>
+<p>
+If the returned value is a string then the given date will gain an additional
+CSS class, namely the returned value.  You can use this to highlight some dates
+in some way.  Note that you are responsible for defining the CSS class that you
+return.  If you return  string that contains &quot;disabled&quot; the date will be
+disabled, just as if you returned <tt>true</tt>. This provides you with custom
+ways to display disabled dates.</p>
+<p>
+Here is a simple scenario that shows what you can do with this function.  The
+following should be present in some of your styles, or in the document head in
+a STYLE tag (but put it <em>after</em> the place where the calendar styles were
+loaded):</p>
+<p>
+</p>
+<pre class=verbatim>.special { background-color: #000; color: #fff; }
+</pre><p></p>
+<p>
+And you would use the following code before calling <tt>Calendar.create()</tt>:</p>
+<p>
+</p>
+<pre class=verbatim>// this table holds your &quot;special&quot; days, so that we can automatize
+// things a bit:
+var SPECIAL_DAYS = {
+    0 : [ 13, 24 ],             // &quot;special days&quot; in January
+    2 : [ 1, 6, 8, 12, 18 ],    // &quot;special days&quot; in March
+    8 : [ 21, 11 ],             // &quot;special days&quot; in September
+   11 : [ 25, 28 ]              // &quot;special days&quot; in December
+};
+
+// this function returns true if the passed date is special
+function dateIsSpecial(year, month, day) {
+    var m = SPECIAL_DAYS[month];
+    if (!m) return false;
+    for (var i in m) if (m[i] == day) return true;
+    return false;
+}
+
+// this is the actual date status handler.  Note that it receives the
+// date object as well as separate values of year, month and date, for
+// your confort.
+function dateStatusHandler(date, y, m, d) {
+    if (dateIsSpecial(y, m, d)) return &quot;special&quot;;
+    else return false;
+    // return true above if you want to disable other dates
+}
+
+// configure it to the calendar
+calendar.setDateStatusHandler(dateStatusHandler);
+</pre><p></p>
+<p>
+The above code adds the &quot;special&quot; class name to some dates that are defined
+in the SPECIAL_DAYS table.  Other dates will simply be displayed as default,
+enabled.</p>
+<p>
+</p>
+<a name="node_sec_4.3.8"></a>
+<h3><a href="#node_toc_node_sec_4.3.8">4.3.8&nbsp;&nbsp;<tt>Calendar.show</tt></a></h3>
+<p></p>
+<p>
+Call this function do show the calendar.  It basically sets the CSS &quot;display&quot;
+property to &quot;block&quot;.  It doesn't modify the calendar position.</p>
+<p>
+This function only makes sense when the javascript calendar is in popup mode.</p>
+<p>
+</p>
+<a name="node_sec_4.3.9"></a>
+<h3><a href="#node_toc_node_sec_4.3.9">4.3.9&nbsp;&nbsp;<tt>Calendar.showAt</tt></a></h3>
+<p></p>
+<p>
+Call this to show the calendar at a certain (x, y) position.</p>
+<p>
+</p>
+<pre class=verbatim>calendar.showAt(x, y);
+</pre><p></p>
+<p>
+The parameters are absolute coordinates relative to the top left
+corner <em>of the page</em>, thus they are <em>page</em> coordinates not screen
+coordinates.</p>
+<p>
+After setting the given coordinates it calls Calendar.show.  This function only
+makes sense when the calendar is in popup mode.</p>
+<p>
+</p>
+<a name="node_sec_4.3.10"></a>
+<h3><a href="#node_toc_node_sec_4.3.10">4.3.10&nbsp;&nbsp;<tt>Calendar.showAtElement</tt></a></h3>
+<p></p>
+<p>
+This function is useful if you want to display the calendar near some element.</p>
+<p>
+</p>
+<pre class=verbatim>calendar.showAtElement(element, align);
+</pre><p></p>
+<p>
+where element is a reference to your element (for instance it can be the input
+field that displays the date) and align is an optional parameter, of type string,
+containing one or two characters.  For instance, if you pass <tt>&quot;Br&quot;</tt> as
+align, the calendar will appear <em>below</em> the element and with its right
+margin continuing the element's right margin.</p>
+<p>
+Align may contain one or two characters.  The first character dictates the
+vertical alignment relative to the element, and the second character dictates
+the horizontal alignment.  If the second character is missing, it will be
+assumed <tt>&quot;l&quot;</tt> (the left margin of the calendar will be at the same
+horizontal position as the left margin of the element).</p>
+<p>
+The characters given for the align parameters are case sensitive.  This
+function only makes sense when the calendar is in popup mode.  After computing
+the position, it uses <tt>Calendar.showAt</tt> to display the calendar as specified.</p>
+<p>
+</p>
+<a name="node_sec_Temp_4"></a>
+<h4><a href="#node_toc_node_sec_Temp_4">Vertical alignment</a></h4>
+<p>The first character in &quot;<tt>align</tt>&quot; can take one of the following values:</p>
+<p>
+</p>
+<ul><p>
+</p>
+<li><p><tt>T</tt>  --  completely above the reference element (bottom margin of
+the calendar aligned to the top margin of the element).</p>
+<p>
+</p>
+<li><p><tt>t</tt>  --  above the element but may overlap it (bottom margin of the calendar aligned to
+the bottom margin of the element).</p>
+<p>
+</p>
+<li><p><tt>c</tt>  --  the calendar displays vertically centered to the reference
+element.  It might overlap it (that depends on the horizontal alignment).</p>
+<p>
+</p>
+<li><p><tt>b</tt>  --  below the element but may overlap it (top margin of the calendar aligned to
+the top margin of the element).</p>
+<p>
+</p>
+<li><p><tt>B</tt>  --  completely below the element (top margin of the calendar
+aligned to the bottom margin of the element).</p>
+<p>
+</p>
+</ul><p></p>
+<p>
+</p>
+<a name="node_sec_Temp_5"></a>
+<h4><a href="#node_toc_node_sec_Temp_5">Horizontal alignment</a></h4>
+<p>The second character in &quot;<tt>align</tt>&quot; can take one of the following values:</p>
+<p>
+</p>
+<ul><p>
+</p>
+<li><p><tt>L</tt>  --  completely to the left of the reference element (right
+margin of the calendar aligned to the left margin of the element).</p>
+<p>
+</p>
+<li><p><tt>l</tt>  --  to the left of the element but may overlap it (left margin
+of the calendar aligned to the left margin of the element).</p>
+<p>
+</p>
+<li><p><tt>c</tt>  --  horizontally centered to the element.  Might overlap it,
+depending on the vertical alignment.</p>
+<p>
+</p>
+<li><p><tt>r</tt>  --  to the right of the element but may overlap it (right
+margin of the calendar aligned to the right margin of the element).</p>
+<p>
+</p>
+<li><p><tt>R</tt>  --  completely to the right of the element (left margin of the
+calendar aligned to the right margin of the element).</p>
+<p>
+</p>
+</ul><p></p>
+<p>
+</p>
+<a name="node_sec_Temp_6"></a>
+<h4><a href="#node_toc_node_sec_Temp_6">Default values</a></h4>
+<p>If the &quot;<tt>align</tt>&quot; parameter is not set the calendar defaults to
+&quot;<tt>Br</tt>&quot;.</p>
+<p>
+</p>
+<a name="node_sec_4.3.11"></a>
+<h3><a href="#node_toc_node_sec_4.3.11">4.3.11&nbsp;&nbsp;<tt>Calendar.setDate</tt></a></h3>
+<p></p>
+<p>
+Sets the Calendar to the date passed in the parameter. This parameter needs to
+be a JavaScript <tt>Date</tt> object.  If the calendar is visible the new date
+is displayed immediately.</p>
+<p>
+</p>
+<pre class=verbatim>calendar.setDate(new Date()); // go today
+</pre><p></p>
+<p>
+</p>
+<a name="node_sec_4.3.12"></a>
+<h3><a href="#node_toc_node_sec_4.3.12">4.3.12&nbsp;&nbsp;<tt>Calendar.setFirstDayOfWeek</tt></a></h3>
+<p></p>
+<p>
+Changes the first day of week.  The parameter has to be a numeric value ranging
+from 0 to 6.  Pass 0 for Sunday, 1 for Monday, ..., 6 for Saturday.</p>
+<p>
+</p>
+<pre class=verbatim>calendar.setFirstDayOfWeek(5); // start weeks on Friday
+</pre><p></p>
+<p>
+</p>
+<a name="node_sec_4.3.13"></a>
+<h3><a href="#node_toc_node_sec_4.3.13">4.3.13&nbsp;&nbsp;<tt>Calendar.parseDate</tt></a></h3>
+<p></p>
+<p>
+Use this function to parse a date given as string and to move the calendar to
+that date.</p>
+<p>
+The algorithm tries to parse the date according to the format that was
+previously set with <tt>Calendar.setDateFormat</tt>; if that fails, it still
+tries to get a valid date.</p>
+<p>
+</p>
+<pre class=verbatim>calendar.parseDate(&quot;2003/07/06&quot;);
+</pre><p></p>
+<p>
+</p>
+<a name="node_sec_4.3.14"></a>
+<h3><a href="#node_toc_node_sec_4.3.14">4.3.14&nbsp;&nbsp;<tt>Calendar.setRange</tt></a></h3>
+<p></p>
+<p>
+Sets the range of years that are allowed in the calendar.  </p>
+<p>
+</p>
+<pre class=verbatim>calendar.setRange(1970, 2050);
+</pre><p></p>
+<p>
+</p>
+<a name="node_sec_5"></a>
+<h1><a href="#node_toc_node_sec_5">5&nbsp;&nbsp;Side effects</a></h1>
+<p>The &lt;strong&gt; DHTML calendar &lt;/strong&gt; code was intentionally embedded in an object to make it have as
+few as possible side effects.  There are some side effects.
+This following is a list of the side effects;</p>
+<p>
+</p>
+<ol><p>
+</p>
+<li><p>The global variable <tt>window.calendar</tt> is initially set to null.
+This variable is used by the calendar code, especially when doing drag &amp; drop
+for moving the calendar.  </p>
+<p>
+</p>
+<li><p>The JavaScript <tt>Date</tt> object is modified.  We add some properties
+and functions that are useful to our calendar.  It made more sense to add them
+directly to the <tt>Date</tt> object than to the calendar itself. </p>
+<p>
+</p>
+<ol><p>
+</p>
+<li><p><tt>Date._MD    = new Array(31,28,31,30,31,30,31,31,30,31,30,31);</tt>
+</p>
+<li><p><tt>Date.SECOND = 1000 /* milliseconds */;</tt>
+</p>
+<li><p><tt>Date.MINUTE = 60 * Date.SECOND;</tt>
+</p>
+<li><p><tt>Date.HOUR   = 60 * Date.MINUTE;</tt>
+</p>
+<li><p><tt>Date.DAY    = 24 * Date.HOUR;</tt>
+</p>
+<li><p><tt>Date.WEEK   =  7 * Date.DAY;</tt></p>
+<p>
+</p>
+<li><p><tt>Date.prototype.getMonthDays</tt>(month)  --  returns the number of days
+of the given month, or of the current date object if no month was given.</p>
+<p>
+</p>
+<li><p><tt>Date.prototype.getWeekNumber</tt>()  --  returns the week number of the
+date in the current object.</p>
+<p>
+</p>
+<li><p><tt>Date.prototype.equalsTo</tt>(other_date)  --  compare the current date
+object with <tt>other_date</tt> and returns <tt>true</tt> if the dates are
+equal.  <em>It ignores time</em>.</p>
+<p>
+</p>
+<li><p><tt>Date.prototype.print</tt>(format)  --  returns a string with the
+current date object represented in the given format.  It implements the format
+specified in section <a href="#node_sec_4.3.5">4.3.5</a>.</p>
+<p>
+</p>
+</ol><p></p>
+<p>
+</p>
+</ol><p></p>
+<p>
+</p>
+<a name="node_sec_6"></a>
+<h1><a href="#node_toc_node_sec_6">6&nbsp;&nbsp;Credits</a></h1>
+<p>The Zapatec DHTML Calendar is a commercial version of the open source calendar written by Mihai Bazon. </p>
+<p>
+
+</p>
+<div align=right class=colophon>
+<i>Last modified: Thursday, December 30th, 2004<br>
+</i>
+</div>
+
+
+		</div>
+	</div>
+</div>
+
+<div class="footer" align=center> 
+<a href="./contact.jsp" class="lnkblue">Contact Us</a> | <a href="./employment.jsp" class="lnkblue">Employment</a> 
+            <br>
+<br>
+&copy; 2004 <strong>Zapatec, Inc.</strong>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,116 @@
+html, body {
+  height: 100%; background: #fff; color: #000;
+  padding: 0; margin: 0;
+}
+html, body, table { font: 12px "Bitstream Vera Sans",Verdana,Tahoma,sans-serif; }
+.FIXME:before { content: "[FIXME] "; }
+.FIXME { color: #f00; }
+h1 { border-bottom: 1px solid #888; font-size: 18px; margin: 1em 0; }
+h2 { border-bottom: 1px solid ButtonShadow; font-size: 14px; margin: 1em 0;
+  padding: 5px 10px; color: ButtonText; }
+pre { background-color: #fff; padding: 5px; }
+code { background-color: #fff; }
+#customize { background-color: ButtonFace; color: ButtonText; width: 100%;
+  vertical-align: top; -moz-border-radius: 10px; }
+#tabs .tab { padding: 0 1em; width: 640px; }
+#tabs .tab .tab-title { display: none; }
+.hide { display: none }
+#tab-bar { width: 14em; vertical-align: top; padding-top: 2em; }
+#tab-bar a .bullet { padding: 0 3px 0 0; visibility: hidden; }
+#tab-bar a { white-space: nowrap; display: block; padding: 5px 10px; width: 14em;
+  -moz-border-radius: 10px 0 0 10px; border-left: 2px solid #f5f5ff; }
+#tab-bar a, #tab-bar a:link, #tab-bar a:visited { color: ButtonText; text-decoration: none; }
+#tab-bar a:hover { background-color: Highlight; color: HighlightText; border-color: Highlight; }
+#tab-bar a.active { background-color: ButtonFace; color: ButtonText; border-left: 2px solid ButtonShadow; }
+#tab-bar a.active .bullet { visibility: visible; color: #f42; }
+acronym { color: #0c0; border-bottom: 1px dotted #c00; }
+
+table.form { font: 11px Tahoma,Verdana,sans-serif; margin: 0 1em; cursor: default; }
+table.form td.label { text-align: right; }
+label { white-space: nowrap; }
+
+td.help { padding-left: 1em; color: #2a2; }
+
+tr.nav { height: 1em; }
+tr.nav td.nav-buttons {
+  text-align: right;
+  padding: 5px 5em 5px 0;
+  background: ButtonFace;
+  color: ButtonText; -moz-border-radius: 10px;
+  border-top: 1px solid ButtonShadow;
+}
+
+tr.preview { height: 1em; }
+tr.preview td { padding-top: 5px; }
+
+table.tokens { white-space: nowrap; font: 90% "Trebuchet MS",arial,sans-serif; }
+table.tokens a, table.tokens a:link {
+  display: block;
+  padding: 1px 5px;
+  margin: 1px;
+  text-decoration: none;
+  color: ButtonText;
+  background-color: ButtonFace;
+  border: 1px solid;
+  border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
+}
+table.tokens span { font-family: monospace; }
+table.tokens a:hover { background-color: ButtonHighlight; }
+table.tokens a:active { border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow; padding: 2px 4px 0 6px; }
+
+td.border-right { border-right: 1px solid #999; }
+
+div.tabs { padding: 1em; }
+
+input { padding-left: 3px; }
+
+.hover { background-color: yellow; }
+
+div.separator { margin: 3px 0; background-color: ButtonShadow; overflow: auto; font-size: 0px; height: 1px; }
+
+#code { font-size: 80%; }
+
+#copyright {
+  text-align: center;
+  font-size: 90%;
+  font-family: 'Trebuchet MS',tahoma,sans-serif;
+  vertical-align: center;
+  color: #999;
+}
+#copyright div { background-color: #eee; padding: 3px; border: 1px solid #ddd; margin: 0 1em; }
+#copyright a:link, #copyright a:visited { color: #888; }
+
+button.advanced-button { float: left; margin-left: 5em; width: 15em; }
+.advanced { visibility: hidden; }
+
+button { text-align: center; }
+.top-right { float: right; }
+
+#calendar-anchor div { margin-right: 1em; height: 2em; font-size: 150%; }
+
+.format-test { font-weight: bold; }
+.tooltip {
+	position: absolute;
+	width: 15em;
+	border: 1px solid #8e8a50;
+	background-color: #fefad0;
+	color: #000;
+	padding: 0 10px 3px 10px;
+	display: none;
+	z-index: 100;
+	font: 9px tahoma,arial,sans-serif;
+}
+
+.tooltip .title {
+	background-color: #fefac0; color: #000; padding: 2px 4px; margin: 1px -9px 3px -9px; border-bottom: 1px solid #8e8a50;
+	font-weight: bold;
+}
+
+.helpIcon {
+	font-size: 160%;
+	margin-left:0.5em;
+	margin-right:1em;
+	font-weight:bold;
+	color: #003066;
+}
+

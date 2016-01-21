@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Documento sin t&iacute;tulo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF">
+<h1><font size="5" face="Arial Narrow">  <span class="orfeot2">Cambiar el Estado
+      Actual de un documento en tr&aacute;mite</span></font></h1>
+<p align="justify" class="orfeopar"><font size="+1" face="Arial Narrow">Dependiendo
+    del tipo de documento que se est&eacute; tramitando y de acuerdo con lo establecido
+    en el respectivo proceso de gesti&oacute;n de la SSPD, los usuarios de una dependencia
+    espec&iacute;fica que intervienen en el desarrollo de un proceso determinado, podr&aacute;n
+    modificar el estado en el que se encuentre el tr&aacute;mite de cada documento.</font></p>
+<p align="justify" class="orfeopar"><font size="+1" face="Arial Narrow">Ejemplo:</font></p>
+<blockquote>
+  <p align="justify" class="orfeopar"><font size="+1" face="Arial Narrow">Para
+        el caso espec&iacute;fico de la gesti&oacute;n de una Solicitud de Silencio Administrativo
+        Positivo - SAP, los funcionarios del grupo que se encarga de dar tr&aacute;mite
+        a los documentos involucrados en este tipo de proceso, podr&aacute;n ir determinando
+        a medida que el caso vaya avanzando, las etapas por las cuales estos deben
+        pasar. La identificaci&oacute;n de cada una de las etapas de este proceso con cuya
+        especificaci&oacute;n se podr&aacute; llevar un control estad&iacute;stico corresponden a:</font></p>
+  <ol type="a">
+    <li><strong class="orfeolistnum" align="justify">S<span class="orfeolistnum">in
+              tramitar: </span></strong><span class="orfeolistnum">Se refiere
+            a que el documento SAP o Anexo a SAP ya ha sido radicado de entrada y remitido
+              para su respectivo an&aacute;lisis pero a&uacute;n no se ha comenzado el tr&aacute;mite correspondiente.</span></li>
+    <li><strong class="orfeolistnum" align="justify">En an&aacute;lisis: </strong><span class="orfeolistnum">El
+            documento SAP o Anexo a SAP ya ha sido revisado y est&aacute; siendo analizado
+        para detrminar su procedencia. </span></li>
+    <li><strong class="orfeolistnum" align="justify">En espera de Descargos: </strong><span class="orfeolistnum">Se
+            ha abierto Pliego de Cargos contra la ESP y se est&aacute; a la espera de sus
+            respectivos Dscargos.</span></li>
+    <li><strong class="orfeolistnum" align="justify">En sustanciaci&oacute;n: </strong><span class="orfeolistnum">El
+            documento ha sido trasladado al abogado para su respectiva sustanciaci&oacute;n
+            y elaboraci&oacute;n del proyecto de resoluci&oacute;n.</span></li>
+    <li><strong class="orfeolistnum" align="justify">En revisi&oacute;n: </strong><span class="orfeolistnum">El
+            documento ha sido trasladado al funcionario encargado de la revisi&oacute;n del
+            proyecto de resoluci&oacute;n .</span></li>
+    <li><strong class="orfeolistnum" align="justify">Para firma: </strong><span class="orfeolistnum">La
+            resoluci&oacute;n fue aprobada por el revisor y ha sido trasladada al Director
+            de la Territorial para su respectiva firma.</span></li>
+    <li><strong class="orfeolistnum" align="justify">En Notificaci&oacute;n: </strong><span class="orfeolistnum">El
+            documento ha sido firmado y se encuentra en proceso de notificaci&oacute;n.</span></li>
+    <li><strong class="orfeolistnum" align="justify">Archivado: </strong><span class="orfeolistnum">El
+            documento ha sido enviado a archivo por culminaci&oacute;n de su tr&aacute;mite.. </span></li>
+    <li><strong class="orfeolistnum" align="justify">Retomado: </strong><span class="orfeolistnum">El
+            documento que hab&iacute;a sido archivado, fue retomado por alguna causa justificada.</span></li>
+  </ol>
+</blockquote>
+<p><font size="+1" face="Arial Narrow">Para
+      que esta informaci&oacute;n quede registrada en el sistema, como usuario usted
+    debera seguir las siguientes indicaciones:</font></p>
+<p>&nbsp;</p>
+<ol start="1">
+  <li class="orfeopar"><font class="orfeolistnum" align="center">Haga click
+        sobre el v&iacute;nculo
+      de
+      &quot;Fecha de radicado&quot; del documento que desea clasificar para ingresar
+      a la vista de informaci&oacute;n general del documento.</font></li>
+</ol>
+<p align="center"><img src="images/link_f_rad.jpg" width="720" height="540"></p>
+<blockquote>
+  <p align="justify" class="orfeolistnum">&nbsp;</p>
+</blockquote>
+<ol start="2">
+  <li class="orfeopar"><font class="orfeolistnum" align="center">En la vista de &quot;Informaci&oacute;n General&quot;
+      encontrar&aacute; un bot&oacute;n (...) con el cual acceder&aacute; a la vista de clasificaci&oacute;n
+      del &quot;ESTADO ACTUAL&quot;. Haga click sobre ese bot&oacute;n.</font></li>
+</ol>
+<p align="center"><img src="images/win_vinculo_actu_state.jpg" width="720" height="540"></p>
+<p align="center">&nbsp;</p>
+<ol start="3">
+  <li class="orfeopar"><font class="orfeolistnum" align="center">Observar&aacute; una vista
+      en la cual podr&aacute; desplegar una lista de las etapas establecidas en el flujo
+      de
+      trabajo
+      del proceso correspondiente al documento que est&eacute; tramitando. Abajo
+      la figura muestra la informaci&oacute;n correspondiente a un documento SAP y puede
+      observar las etapas descritas en el ejemplo.</font></li>
+</ol>
+<p align="center"><img src="images/list_est_actual.jpg" width="717" height="280"></p>
+<ol start="4">
+  <li class="orfeopar"><span class="orfeolistnum">Seleccione una de las opciones y haga click
+      sobre el bot&oacute;n &quot;Grabar Cambio&quot;. El sistema mostrar&aacute; un aviso en el que
+      indica que el estado ha sido actualizado</span>.</li>
+</ol>
+<p align="center"><img src="images/vali_change_actu_state.jpg" width="719" height="167"></p>
+<ol start="4" type="1">
+  <li class="orfeolistnum">  </li>
+  <li class="orfeopar">Vuelva
+          a la vista de informaci&oacute;n general haciendo click sobre la pesta&ntilde;a &quot;Informaci&oacute;n
+General&quot;. All&iacute; podr&aacute; comprobar que la informaci&oacute;n est&aacute; correcta
+y continuar con el tr&aacute;mite normal del documento.</li>
+  <ol start="4">
+    <ol start="4" type="1">
+    </ol>
+  </ol>
+</ol>
+<blockquote>
+  <p class="orfeolistnum"><img src="images/view_grl_info_change_state.jpg" width="719" height="383"></p>
+</blockquote>
+<blockquote>
+  <p align="center">&nbsp;</p>
+</blockquote>
+</body>
+</html>

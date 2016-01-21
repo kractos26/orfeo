@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control
+END
+ControlAplIntegrada.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/ControlAplIntegrada.php
+END
+Contactos.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/Contactos.php
+END
+class_gen.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/class_gen.php
+END
+Sancionados.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/Sancionados.php
+END
+Transaccion.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/Transaccion.php
+END
+class_gen
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/class_gen
+END
+anexo.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/anexo.php
+END
+Recuperador.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/Recuperador.php
+END
+AplExternaError.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/AplExternaError.php
+END
+CombinaError.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/CombinaError.php
+END
+Departamento.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/Departamento.php
+END
+Recuperador
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/Recuperador
+END
+usuario.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/usuario.php
+END
+class_control3.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/class_control3.php
+END
+TipoDocumento.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/TipoDocumento.php
+END
+Error.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/Error.php
+END
+TipoDecision.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/TipoDecision.php
+END
+AplIntegrada.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/AplIntegrada.php
+END
+Municipio.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/Municipio.php
+END
+GrupoMasiva.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/GrupoMasiva.php
+END
+Dependencia.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/Dependencia.php
+END
+argumentoPliego.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/argumentoPliego.php
+END
+Notificacion.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/Notificacion.php
+END
+class_control.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/class_control.php
+END
+Radicado.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/Radicado.php
+END
+RemitenteDocumento.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/RemitenteDocumento.php
+END
+Mensaje.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/Mensaje.php
+END
+firmaRadicado.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/firmaRadicado.php
+END
+anex_tipo.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/anex_tipo.php
+END
+class_controlExcel.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/class_controlExcel.php
+END
+Esp.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/Esp.php
+END
+TipoDocumental.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/class_control/TipoDocumental.php
+END

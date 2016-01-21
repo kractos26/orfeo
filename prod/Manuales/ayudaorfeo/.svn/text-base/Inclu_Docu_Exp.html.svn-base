@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>Incluir Documentos en Expediente</title>
+</head>
+<body>
+<p class="orfeot2" align="center"><font color="#000066"><font
+ face="Arial Narrow"><font size="5"><i><b><span
+ style="background: rgb(204, 204, 204) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">Incluir
+Documentos en Expediente<br>
+</span></b></i></font></font></font></p>
+<p class="orfeot2" align="right"><span style=""><font size="4"><br>
+</font><strong><a href="content.htm"><i><font size="3">Contenido</font></i></a></strong></span></p>
+<p class="orfeot2" style="font-style: normal; font-weight: bold;"
+ align="justify">
+<font face="helvetica, arial, sans-serif"><font size="4">Esta
+funcionalidad permite al usuario anexar documentos relacionados con los
+radicados mostrados en pantalla a un expediente. <br>
+</font></font></p>
+<font style="font-weight: bold;" face="helvetica, arial, sans-serif"><font
+ size="4">Para anexar un
+documentos relacionados al expediente virtual se debe:</font></font>
+<p style="font-weight: bold;" class="orfeopar"><font
+ face="helvetica, arial, sans-serif">1.
+Seleccionar la carpeta donde se encuentra el radicado que ya posee un
+Expediente el cual se quiere incluir en un nuevo expediente:</font></p>
+<p><br>
+<br>
+</p>
+<p class="orfeopar" align="center"><img src="images/select_carp.jpg"
+ name="gr&aacute;ficos1" alt="select_carp.jpg" align="bottom" border="0"
+ height="391" width="168"></p>
+<p style="font-weight: bold;" class="orfeopar"><font
+ face="helvetica, arial, sans-serif">2.
+Ingresar al radicado por la fecha de radicaci&oacute;n:</font></p>
+<p class="orfeopar" align="center"><img src="images/link_f_rad.jpg"
+ name="gr&aacute;ficos2" alt="/link_f_rad.jpg" align="bottom" border="0"
+ height="302" width="1036"></p>
+<p style="font-weight: bold;" class="orfeopar"><br>
+<br>
+</p>
+<p class="orfeopar"><font face="helvetica, arial, sans-serif"><span
+ style="font-weight: bold;">3. Dar
+click en la pesta&ntilde;a Expedientes</span>:</font></p>
+<p class="orfeopar" align="center"><img alt="images/pest_exped.jpeg"
+ src="images/pest_exped.jpeg" style="width: 1020px; height: 527px;"><br>
+</p>
+<p class="orfeopar"><br>
+<br style="font-weight: bold;">
+</p>
+<p style="font-weight: bold;" class="orfeopar"><font
+ face="helvetica, arial, sans-serif">4. El
+sistema se ubica en la vista de "Expedientes"&nbsp; la cual
+est&aacute; compuesta por:</font></p>
+<p class="orfeopar" align="center"><img
+ alt="images/view_expediente3.jpg" src="images/view_expediente3.jpg"
+ style="width: 1253px; height: 750px;"><br>
+</p>
+<p class="orfeopar" style="margin-left: 2.12cm; font-weight: bold;"
+ align="justify"><font face="helvetica, arial, sans-serif">a. </font><font
+ face="helvetica, arial, sans-serif">Datos Radicado</font><font
+ face="helvetica, arial, sans-serif">: Indica el numero de radicado con
+el que se va a
+trabajar.</font></p>
+<p class="orfeopar" style="margin-left: 2.12cm; font-weight: bold;"
+ align="justify"><font face="helvetica, arial, sans-serif">b.
+Nombre de Expediente: Muestra el numero del expediente donde se
+encuentra actualmente el radicado.</font></p>
+<p class="orfeopar" style="margin-left: 2.12cm; font-weight: bold;"
+ align="justify"><font face="helvetica, arial, sans-serif">c.
+<a href="History_Trash_Exp.html">Historia del Expediente</a>: Muestra
+todas las operaciones realizadas al
+expediente donde se encuentra el radicado.</font></p>
+<p class="orfeopar" style="margin-left: 2.12cm; font-weight: bold;"
+ align="justify"><font face="helvetica, arial, sans-serif">d.
+<a href="History_Trash_Exp.html">Ver Borrados</a>: Muestra los
+documentos anexos que han sido borrados del
+expediente por radicado.</font></p>
+<p class="orfeopar" style="margin-left: 2.12cm;" align="justify"><font
+ face="helvetica, arial, sans-serif"><span style="font-weight: bold;">e.
+Enlace </span><a style="font-weight: bold;"
+ href="Create_exped_exist.html">Crear</a><span
+ style="font-weight: bold;">: Nos permite crear un nuevo expediente
+para el mismo
+radicado</span>. </font><font face="helvetica, arial, sans-serif">(</font><font
+ face="helvetica, arial, sans-serif"><font size="4">Se debe tener en
+cuenta que para qu&eacute; este enlace aparezca se debe poseer permiso
+de creaci&oacute;n de expedientes.</font></font><font
+ face="helvetica, arial, sans-serif">)</font><font
+ face="helvetica, arial, sans-serif"></font></p>
+<p class="orfeopar" style="margin-left: 2.12cm; font-weight: bold;"
+ align="justify"><font face="helvetica, arial, sans-serif">f.
+Enlace <a href="Excluir_exped_exist.html">Excluir
+de</a>: Nos permite excluir un radicado de un expediente
+determinado.</font></p>
+<p class="orfeopar" style="margin-left: 2.12cm; font-weight: bold;"
+ align="justify"><font face="helvetica, arial, sans-serif">g.
+Enlace <a href="Include_exped.html">Incluir
+en</a>: Nos permite incluir este radicado en un expediente
+distinto<br>
+</font></p>
+<p class="orfeopar" style="margin-left: 2.12cm; font-weight: bold;"
+ align="justify"><font face="helvetica, arial, sans-serif">h. Al dar
+clic sobre
+cualquiera de los numeros de expedientes este actualiza la pagina con
+la informacion de los radicados que se encuentran en el numero
+seleccionado (La cual aparece abajo de ver borrados).<br>
+</font></p>
+<p class="orfeopar" style="margin-left: 2.12cm; font-weight: bold;"
+ align="justify"><font face="helvetica, arial, sans-serif">i. </font><font
+ face="helvetica, arial, sans-serif">Enlace &#8220;INCLUIR DOCUMENTOS EN
+EXPEDIENTE&#8221;muestra la pantalla de
+permite anexar los documentos necesarios en el mismo expediente donde
+se encuentra el radicado.</font></p>
+<br>
+<font style="font-weight: bold;" face="helvetica, arial, sans-serif"><br>
+5. Incluir documentos anexos a un expediente:<br>
+<br>
+</font>
+<div style="text-align: center;"><img
+ alt="images/incluir_asociados1.jpg" src="images/incluir_asociados1.jpg"
+ style="width: 962px; height: 639px;"><br>
+</div>
+<font style="font-weight: bold;" face="helvetica, arial, sans-serif"><br>
+Los primero que se debe hacer es seleccionar el(los) radicado(s) que
+desea incluir en un expediente y da click en el link&nbsp; "INCLUIR
+DOCUMENTOS EN EXPEDIENTE". Esto asu vez despliega una ventana donde se
+encuentra la informaci&oacute;n de los expedientes asociados al
+radicado actual y indica el n&uacute;mero de expediente en el cual se
+desea incluir los documentos relacionados como anexos o asociados:<br>
+&nbsp;<br>
+</font>
+<div style="text-align: center;"><font style="font-weight: bold;"
+ face="helvetica, arial, sans-serif">&nbsp;<img
+ alt="images/incluir_asociados2.jpg" src="images/incluir_asociados2.jpg"
+ style="width: 512px; height: 239px;"><br>
+<br>
+</font>
+<div
+ style="text-align: justify; font-weight: bold; font-family: helvetica,arial,sans-serif;">Luego
+se hace click sobre la caja de chequeo del(os) expediente(s) al cual
+desea incluir los radicados seleccionados en la pesta&ntilde;a de
+Expedientes .&nbsp; Se pueden seleccionar varias a la vez &oacute; si
+es necesario todas haciendo click sobre la caja de chequeo del
+encabezado de la columna. Despues se hace click&nbsp; en el
+bot&oacute;n "INCLUIR EN EXPEDIENTE", a lo que el nos&nbsp; solicita la
+confirmaci&oacute;n de la inclusi&oacute;n de los documentos en el
+expediente:<br>
+<br>
+<div style="text-align: center;"><img
+ alt="images/incluir_expediente2.jpg"
+ src="images/incluir_expediente2.jpg"
+ style="width: 574px; height: 189px;"><br>
+<br>
+<div style="text-align: justify;">A lo que se incluyen los documentos
+seleccionados en el expediente indicado por el usuario y muestra la
+vista "EXPEDIENTES" reflejando el resultado de la transacci&oacute;n.<br>
+<br>
+<i><font><font><strong></strong></font></font></i><i><font><font><i><font><font><strong><a
+ href="content.htm"><i><font size="2"><font
+ face="helvetica, arial, sans-serif">Contenido</font></font></i></a></strong></font></font></i></font></font></i><br>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

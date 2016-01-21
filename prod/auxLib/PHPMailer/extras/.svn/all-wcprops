@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/extras
+END
+htmlfilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/extras/htmlfilter.php
+END
+ntlm_sasl_client.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/extras/ntlm_sasl_client.php
+END
+class.html2text.inc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/extras/class.html2text.inc
+END

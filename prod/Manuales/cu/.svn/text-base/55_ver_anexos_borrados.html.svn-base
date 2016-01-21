@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>CU-ORFEO-55 Ver anexos borrados</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="Generator" content="Kate, the KDE Advanced Text Editor">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="Autor" content="NCASTRO">
+  <meta name="Creado" content="20051130;17410000">
+  <style>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		P { margin-bottom: 0.21cm }
+	--</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta content="Martha Yaneth Mera" name="author">
+</head>
+<body>
+<div style="text-align: right;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+<h1
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 153);">CU-ORFEO-55&nbsp;
+Ver anexos borrados.</h1>
+<br>
+<h2 style="font-family: helvetica,arial,sans-serif;"><span
+ style="font-weight: bold;">Historia de revisi&oacute;n</span><br>
+</h2>
+<table style="text-align: left; width: 965px; height: 124px;" border="1"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">FECHA<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">VERSION<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">DESCRIPCION<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">AUTOR<br>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Marzo
+31 de 2005<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; font-family: helvetica,arial,sans-serif;">1.0<br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Inclusi&oacute;n
+inicial para desarrollo de acuerdo a solicitud de los usuarios<br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Martha
+Mera</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<h2 style="font-family: helvetica,arial,sans-serif;">1.
+Descripci&oacute;n</h2>
+<span style="font-family: helvetica,arial,sans-serif;">Permite
+visualizar los documentos anexos que han sido borrados desde la
+pesta&ntilde;a documentos por el usuario propietario del documento</span><br
+ style="font-family: helvetica,arial,sans-serif;">
+<h2 style="font-family: helvetica,arial,sans-serif;">2. Actores</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">2.1
+Usuario <br>
+</h3>
+<div style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">Usuario
+b&aacute;sico del sistema con permiso especial para consultar estos
+documentos.<span style="font-family: helvetica,arial,sans-serif;"></span><br>
+</div>
+<span style="font-family: helvetica,arial,sans-serif;"></span>
+<h2 style="font-family: helvetica,arial,sans-serif;">3. Flujo de Eventos</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.1.
+Flujo B&aacute;sico &oacute; Normal : Ver anexos borrados.</h3>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.1
+Precondiciones</h4>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+3.1.1.1. El actor debe haber ingresado al sistema.<br>
+3.1.1.2. El actor debe haber seleccionado el link de <span
+ style="font-weight: bold;">&#8220;Expedientes&#8221;</span> en el men&uacute;
+principal<br>
+3.1.1.3. Debe haber sido borrado al menos un
+radicado que pertenece al expediente, por un usuario propietario.<br>
+3.1.1.4 El actor debe tener asignado el permiso respectivo para
+realizar este caso de uso<br>
+<br>
+</div>
+<div style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">1.
+<span style="font-weight: bold;">A:</span> <span
+ style="font-style: italic; font-weight: bold;">INICIO</span><span
+ style="font-weight: bold;"> -</span>
+Verifica encontrarse en la vista <span style="font-weight: bold;">"EXPEDIENTES"</span>
+(pesta&ntilde;a) del
+&aacute;rea de datos del radicado &oacute; hace click en la
+pesta&ntilde;a del
+mismo nombre.<br>
+</div>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: center;"><img
+ alt="imgs/40_vta_crear_expediente0.jpg"
+ src="imgs/40_vta_crear_expediente0.jpg"
+ style="width: 611px; height: 121px;"><br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">2.
+<span style="font-weight: bold;">S:</span> Muestra la vista
+<span style="font-weight: bold;">"EXPEDIENTES"</span> la cual
+est&aacute; compuesta por: <br>
+</p>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+<div style="margin-left: 40px;">Secci&oacute;n uno: Informaci&oacute;n
+general del expediente:<br>
+2.1.
+Un mensaje con el texto <span style="font-weight: bold;">"ESTE
+DOCUMENTO SE ENCUENTRA INCLUIDO EN EL(LOS) SIGUIENTE(S) EXPEDIENTE:<br>
+</span>2.2 Una lista desplegable con los n&uacute;mero de expediente a
+los cuales pertenece<br>
+2.2. Un v&iacute;nculo rotulado como <span style="font-weight: bold;">"Incluir
+en"</span>.<br>
+2.3. Un v&iacute;nculo rotulado como <span style="font-weight: bold;">"Excluir
+de"</span><br>
+2.3. Un v&iacute;nculo rotulado como <span style="font-weight: bold;">"Crear"</span>.<br>
+2.4 R&oacute;tulo llamado <span style="font-weight: bold;">"TRD" </span>indicando
+la serie y subserie del expediente<br>
+2.5 R&oacute;tulo llamado <span style="font-weight: bold;">"Proceso" </span>al
+cual se
+encuentra asociado dicho expediente, en caso de tenerlo.<br>
+2.6 R&oacute;tulo llamado <span style="font-weight: bold;">"Fecha de
+inicio"</span>, indicando la fecha inicial del proceso.<br>
+2.7 Bot&oacute;n Rotulado con <span style="font-weight: bold;">"Estado"</span><br>
+2.8 Bot&oacute;n Rotulado con <span style="font-weight: bold;">"Historia
+del Expediente"</span><br>
+2.9 R&oacute;tulos de acuerdo a los campos parametrizados<br>
+2.10 Mensaje que indica que el Documento no se ha ubicado
+f&iacute;sicamente en el archivo.<br>
+2.11 Bot&oacute;n rotulado <span style="font-weight: bold;">"Ver
+borrados (...)", </span>para poder consultar los anexos que han sido
+borrados.<br>
+<br>
+Secci&oacute;n dos: Lista con los radicados que pertenecen a dicho
+expediente :<br>
+2.12 N&uacute;mero de radicado<br>
+2.13 Fecha de Radicaci&oacute;n<br>
+2.14 Tipo documental del radicado<br>
+2.15 Asunto del radicado<br>
+2.16 Link con el n&uacute;mero del expediente en el cual se encuentra
+archivado el radicado (proceso realizado en archivo).<br>
+2.17 Anexos del radicado con los datos de Tipo de Documento.<br>
+<span style="font-weight: bold;"></span><br>
+Secci&oacute;n tres: Lista de los documentos que tienen relaci&oacute;n
+con el radicado actual.<br>
+2.18 Cuadro de selecci&oacute;n <br>
+2.19<span style="font-weight: bold;"> "Radicado" </span>con acceso
+para ingresar a la imagen del radicado<span style="font-weight: bold;"><br>
+</span>2.20 <span style="font-weight: bold;">"Fecha de
+radicaci&oacute;n</span>" con acceso para ingresar a los datos del
+radicado<br>
+2.21 <span style="font-weight: bold;">"Tipo de documento"</span><br>
+2.22 <span style="font-weight: bold;">"Asunto"</span><br>
+2.23 <span style="font-weight: bold;">"Tipo de Relaci&oacute;n"</span><br>
+2.24 Link rotulado <span style="font-weight: bold;">"INCLUIR
+DOCUMENTOS EN EXPEDIENTE"</span><br>
+<br>
+<br>
+<img alt="/55_vta_ver_borrados1.jpg" src="imgs/55_vta_ver_borrados1.jpg"
+ style="width: 958px; height: 406px;"><br>
+</div>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;"><br>
+3.<span style="font-weight: bold;"> A: </span>Da clik en el
+bot&oacute;n que indica <span style="font-weight: bold;">"Ver borrados
+(...)"</span><br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif;">
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;"></p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">
+4. <span style="font-weight: bold;">S</span>: Despliega una vista
+donde se visualizan los anexos que han sido borrados, los cuales
+est&aacute;n indicados con un "equis" en el n&uacute;mero del anexo.<br>
+El bot&oacute;n de <span style="font-weight: bold;">"Ver borrados
+(...)"</span> se cambia por <span style="font-weight: bold;">"Ocultar
+borrados" (...) </span><br>
+</p>
+<br>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;"></p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;"></p>
+<div style="text-align: center;"><img alt="55_vta_ver_borrados2.jpg"
+ src="imgs/55_vta_ver_borrados2.jpg"
+ style="width: 965px; height: 434px;"><br>
+</div>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;"><br>
+5.
+<span style="font-weight: bold;">A</span>: Da click en el bot&oacute;n
+<span style="font-weight: bold;">"Ocultar borrados" (...)</span><br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">6.
+<span style="font-weight: bold;">S</span>: Vuelve a la vista inicial
+del expediente. -
+<span style="font-weight: bold; font-style: italic;">FIN</span><br>
+</p>
+<br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif;">
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.2
+Post-condiciones</h4>
+<div style="margin-left: 120px;"><span
+ style="font-family: helvetica,arial,sans-serif;"></span><span
+ style="font-family: helvetica,arial,sans-serif;"></span><br>
+</div>
+</div>
+<div style="font-family: helvetica,arial,sans-serif;">
+<div style="font-family: helvetica,arial,sans-serif;">
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.3.
+Flujo Alterno : <br>
+</h3>
+</div>
+<div style="margin-left: 80px;"><br>
+</div>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;"></div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 40px;">
+</div>
+<div style="font-family: helvetica,arial,sans-serif;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+</body>
+</html>

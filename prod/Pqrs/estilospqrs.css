@@ -1,0 +1,149 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15/12/2015, 09:28:18 AM
+    Author     : working
+*/
+body{
+    font-family: Calibri, "Trebuchet MS", sans-serif;
+}
+.astirisco
+{
+    color:#EF4237;
+    font-size: 15pt;
+}
+.cabetabla
+{
+    text-align:center;
+    font-weight:bold;
+}
+td{
+    width: 150px;
+}
+
+
+form input:required 
+{
+ border:2px solid red;
+ /* otras propiedades */
+}
+
+form input[type="tel"]:focus:valid{
+ border:2px solid green;
+ /* otras propiedades */
+}
+
+form input[type="tel"]:focus:invalid
+{
+    border:2px solid red; 
+}
+form textarea:required{
+    border:2px solid red;
+}
+form textarea:required:valid{
+   border:2px solid green; 
+}
+
+form input:required:valid{
+ border:2px solid green;
+ /* otras propiedades */
+}
+/*caso contrario, el color sera rojo*/
+form input:focus:required:invalid{
+ border:2px solid red;
+ /* otras propiedades */
+}
+form select:required
+{
+    border:2px solid red;
+}
+form select:required:valid
+{
+    border:2px solid green;
+}
+
+
+#u2_input {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 290px;
+    height: 22px;
+    font-family: "Calibri", "Trebuchet MS", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.ax_droplist {
+    font-family: "Calibri", "Trebuchet MS", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #000000;
+    text-align: left;
+    line-height: normal;
+}
+
+p{
+    text-align:center;
+}
+
+textarea
+{
+    width: 300px;
+}
+
+tr:nth-child(odd) {
+    
+    background: #8CA448;
+   
+}
+tr:nth-child(even)
+{
+  
+    background: #C9D743;
+}
+
+
+
+.caja 
+{
+    width: 300px;
+    height: 30px;
+}
+.etiqueta{
+    width:250px;
+    height:30px;
+}
+
+select{
+	background: #fff url(arrow.png);
+	background-position: 260px center;
+    background-repeat: no-repeat;
+   	padding: 10px;
+   	font-size: 16px;
+   	border: 0;
+   	border-radius: 3px;
+   -webkit-appearance: none;
+   -webkit-transition: all 0.4s;
+   -moz-transition: all 0.4s;
+   transition: all 0.4s;
+   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+   width: 300px;
+}
+select:hover{
+	background-color: #ddd;
+}
+
+
+
+
+    
+  
+    

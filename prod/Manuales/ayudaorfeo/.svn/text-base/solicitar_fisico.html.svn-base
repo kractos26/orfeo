@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Solicitar documento f&iacute;sico</title>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link
+ href="file://///Apolo/OFICINA_INFORMATICA/ORFEO/AyudaOrfeo/styles.css"
+ rel="stylesheet" type="text/css">
+  <style type="text/css">
+<!--
+.style7 {	font-family: "Arial Narrow";
+	font-size: 14pt;
+}
+.style12 {
+	font-family: "Arial Narrow";
+	font-size: 14pt;
+	font-style: italic;
+	font-weight: bold;
+}
+-->
+  </style>
+  <meta content="Martha Yaneth Mera Velasco" name="author">
+  <meta content="Orfeo 3.5" name="description">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="GENERATOR" content="OpenOffice.org 2.0  (Linux)">
+  <meta name="AUTHOR" content="JMCORDOB">
+  <meta name="CREATED" content="19951121;17410000">
+  <meta name="CHANGEDBY" content="PCORREA">
+  <meta name="CHANGED" content="20041020;12120000">
+  <style>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		P { margin-bottom: 0.21cm }
+	-->
+	</style>
+</head>
+<body>
+<p class="orfeot2" align="center"><span class="orfeot1">Solicitar
+documento f&iacute;sico</span><span
+ style="font-family: helvetica,arial,sans-serif;" class="orfeot1"></span></p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeot2"
+ align="right"><span class="orfeopar"><br>
+<strong><a href="content.htm"><span class="orfeolk1">Contenido</span></a></strong></span></p>
+<big><span style="font-family: helvetica,arial,sans-serif;"><br>
+<br>
+</span></big>
+<div style="text-align: justify;"><big><span
+ style="font-family: helvetica,arial,sans-serif;">Por medio de esta
+funcionalidad el sistema permite
+solicitar los documentos f&iacute;sicos correspondientes a los
+radicados generados a trav&eacute;s del aplicativo, como los radicados
+de entrada</span></big><span
+ style="font-family: helvetica,arial,sans-serif;">, </span><big
+ style="font-family: helvetica,arial,sans-serif;">salida, etc. los
+cuales reposan en el &aacute;rea central de Archivo, y que el usuario
+requiere para realizar alg&uacute;n tipo de an&aacute;lisis o se
+incluir&aacute; en el expediente respectivo.</big><br>
+</div>
+<big><span style="font-family: helvetica,arial,sans-serif;"></span></big><br>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeot2"
+ align="justify"><span style="font-family: helvetica,arial,sans-serif;"
+ class="orfeopar">Para solicitar el pr&eacute;stamo de un documento se
+debe:</span><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar">1.
+Seleccionar la carpeta donde se encuentra el radicado que ser&aacute;
+solicitado:</p>
+<br style="font-family: helvetica,arial,sans-serif;">
+<p style="text-align: center; font-family: helvetica,arial,sans-serif;"
+ class="orfeopar"><img alt="select_carp.jpg"
+ src="images/select_carp.jpg" style="width: 168px; height: 391px;"><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar">2.
+Ingresar al radicado por la fecha de radicaci&oacute;n:<br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif; text-align: center;"
+ class="orfeopar"><img alt="/link_f_rad.jpg" src="images/link_f_rad.jpg"
+ style="width: 1036px; height: 302px;"><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar"><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar">3.
+El sistema despliega la informaci&oacute;n
+general del radicado
+seleccionado, con los datos grabados en el proceso de
+radicaci&oacute;n.
+En la parte superior aparece un v&iacute;nculo&nbsp; para "Solicitar
+F&iacute;sico": <br>
+<br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif; text-align: center;"
+ class="orfeopar"><img alt="44_vta_solicitar_documento1.jpg"
+ src="../cu/imgs/44_vta_solicitar_documento1.jpg"
+ style="width: 1044px; height: 388px;"><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar"><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar">4.
+Dar click en el v&iacute;nculo "Solicitar F&iacute;sico" y el sistema
+despliega el m&oacute;dulo de Reserva del documento.<br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar"><br>
+</p>
+<div style="text-align: center;"><img
+ alt="44_vta_solicitar_documento2.jpg"
+ src="../cu/imgs/44_vta_solicitar_documento2.jpg"
+ style="width: 252px; height: 260px;"></div>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar"></p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar">5.
+Seleccionar de la lista desplegable la "Acci&oacute;n"
+deseada "Solicitar"; el tipo de requerimiento deseado (este puede ser
+Documento o Anexo, si el documento tiene Anexos) y seleccionar el
+bot&oacute;n "Enviar Solicitud".</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar">6.
+El sistema realiza una reserva del documento indicando el n&uacute;mero
+del radicado, el login del usuario que realiza la solicitud, la
+dependencia, la fecha de solicitud, fecha de vencimiento, tipo de
+requerimiento, estado, acci&oacute;n.<br>
+<br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif; text-align: left;"
+ class="orfeopar"></p>
+<div style="text-align: center;"><img alt="prestamo.jpg"
+ src="images/prestamo.jpg" style="width: 707px; height: 135px;"><br>
+</div>
+<p style="font-family: helvetica,arial,sans-serif; text-align: left;"
+ class="orfeopar">&nbsp;7. Si se seleccion&oacute; por
+equivocaci&oacute;n la solicitud del documento y este ya no se
+necesita, se da click en el link que aparece en la Acci&oacute;n
+"Cancelar Solicitud"</p>
+<p style="font-family: helvetica,arial,sans-serif; text-align: left;"
+ class="orfeopar">8. El sistema realiza la cancelaci&oacute;n de esta
+reserva siempre&nbsp; y cuando no se haya hecho efectivo el
+pr&eacute;stamo por parte del grupo de Archivo.<br>
+</p>
+<br>
+<div style="text-align: center;"><img alt="/prestamo1.jpg"
+ src="images/prestamo1.jpg" style="width: 389px; height: 193px;"><br>
+</div>
+<p style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ class="orfeopar" align="justify"><small><strong><br>
+Nota: <br>
+</strong></small></p>
+<p style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ class="orfeopar" align="justify"><small><strong>1. Un usuario puede
+solicitar el documento f&iacute;sico de un radicado, que se encuentre
+en su usuario o que se encuentre en el usuario de Salida.<br>
+2. El pr&eacute;stamo del documento y del anexo se pueden manejar
+independientes, es decir, se puede solicitar el documento y luego
+solicitar el anexo.<br>
+3. Un radicado no se puede prestar m&aacute;s de una vez&nbsp; a varios
+usuarios al mismo tiempo.<br>
+4. Luego de haber hecho la solicitud del radicado por el sistema, el
+usuario solicitante debe ir personalmente al &aacute;rea de Archivo,
+para que le entreguen el documento f&iacute;sico.&nbsp; En esta
+&aacute;rea se realiza una validaci&oacute;n por medio del sistema
+donde se deber&aacute; digitar la clave del usuario que solicita el
+documento, para poder entregar el documento.<br>
+</strong></small></p>
+<p style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ class="orfeopar" align="justify"><small><strong><br>
+<a href="content.htm">Contenido</a></strong></small></p>
+</body>
+</html>

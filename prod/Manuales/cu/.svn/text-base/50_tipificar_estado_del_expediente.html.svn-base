@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>CU-ORFEO-50 Tipificar estado del expediente</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="Generator" content="Kate, the KDE Advanced Text Editor">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="Autor" content="NCASTRO">
+  <meta name="Creado" content="20051130;17410000">
+  <style>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		P { margin-bottom: 0.21cm }
+	--</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="GENERATOR" content="OpenOffice.org 2.0-pre  (Linux)">
+  <meta name="AUTHOR" content="JMCORDOB">
+  <meta name="CREATED" content="19951121;17410000">
+  <meta name="CHANGED" content="20050825;12322300">
+</head>
+<body>
+<div style="text-align: right;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+<h1
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 153);">CU-ORFEO-50&nbsp;
+Tipificar estado del expediente<br>
+</h1>
+<h2 style="font-family: helvetica,arial,sans-serif;"><br>
+</h2>
+<h2 style="font-family: helvetica,arial,sans-serif;"><span
+ style="font-weight: bold;">Historia de revisi&oacute;n</span><br>
+</h2>
+<table style="text-align: left; width: 965px; height: 124px;" border="1"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">FECHA<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">VERSION<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">DESCRIPCION<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">AUTOR<br>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Noviembre
+30 de 2005<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; font-family: helvetica,arial,sans-serif;">1.0<br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Versi&oacute;n
+inicial
+de acuerdo a los requerimientos entregados<span
+ style="font-weight: bold;"><br>
+      </span></td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Nicol&aacute;s
+Castro<br>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Marzo
+21 de 2005<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; font-family: helvetica,arial,sans-serif;">1.1<br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Ajustes
+realizados teniendo en
+cuenta las necesidades en el m&oacute;dulo de flujos autom&aacute;tico <br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Martha
+Mera<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h2 style="font-family: helvetica,arial,sans-serif;">1.
+Descripci&oacute;n</h2>
+<span style="font-family: helvetica,arial,sans-serif;">Permite la
+especificaci&oacute;n del estado de un expediente mediante la
+selecci&oacute;n de una de varias opciones presentadas al usuario.
+Dichas opciones se establecen mediante una previa&nbsp;
+parametrizaci&oacute;n en la cual se establecen las etapas del proceso
+al cual pertenece dicho expediente.</span><br
+ style="font-family: helvetica,arial,sans-serif;">
+<h2 style="font-family: helvetica,arial,sans-serif;">2. Actores</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">2.1
+Creador Expediente</h3>
+<div style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">Usuario
+con permisos para la creaci&oacute;n de expedientes.<span
+ style="font-family: helvetica,arial,sans-serif;"></span><br>
+</div>
+<span style="font-family: helvetica,arial,sans-serif;"></span>
+<h2 style="font-family: helvetica,arial,sans-serif;">3. Flujo de Eventos</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.1.
+Flujo B&aacute;sico &oacute; Normal : Tipificar estado del expediente <span
+ style="font-family: monospace;"></span></h3>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.1
+Precondiciones</h4>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+3.1.1.1. El actor debe haber ingresado al sistema.<br>
+3.1.1.2. El actor debe haber invocado la vista &#8220;EXPEDIENTES&#8221; por alguno
+de los v&iacute;nculos establecidos.<br>
+3.1.1.3. El expediente debe haber sido creado previamente.<br>
+3.1.1.4 El expediente creado debe tener asignado flujo documental para
+tipificar su estado<br>
+</div>
+<br>
+<div style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">1.
+<span style="font-weight: bold;">A:</span> <span
+ style="font-style: italic; font-weight: bold;">INICIO</span><span
+ style="font-weight: bold;"> -</span>
+Verifica encontrarse en la vista "EXPEDIENTES" (pesta&ntilde;a) del
+&aacute;rea de datos del radicado &oacute; hace click en la
+pesta&ntilde;a del
+mismo nombre.<br>
+</div>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: center;"><img
+ alt="imgs/40_vta_crear_expediente0.jpg"
+ src="imgs/40_vta_crear_expediente0.jpg"
+ style="width: 611px; height: 121px;"><br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">2.
+<span style="font-weight: bold;">S:</span> Muestra la vista
+"EXPEDIENTES" la cual est&aacute; compuesta por: <br>
+</p>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;"><br>
+Secci&oacute;n uno: Informaci&oacute;n general del expediente:<br>
+2.1 Lista desplegable con la lista de los expedientes en los cuales se
+encuentra incluido el radicado.<br>
+2.2 Caja de texto inhabilitada rotulada <span
+ style="font-weight: bold;">"N&uacute;mero del expediente"</span>, en
+esta
+caja aparece el nombre del expediente que se haya seleccionado en el
+punto 10.1.<br>
+2.3 Link rotulado <span style="font-weight: bold;">"Incluir En"</span>
+para anexar el radicado en un expediente existente<br>
+2.4 Link rotulado <span style="font-weight: bold;">"Excluir de" </span>si
+se desea sacar el radicado de alg&uacute;n expediente al cual ya se
+encuentra asociado. <br>
+2.5 Link rotulado <span style="font-weight: bold;">"Crear"</span> si
+se desea crear un nuevo expediente donde ir&aacute; el radicado.<br>
+2.6 R&oacute;tulo llamado <span style="font-weight: bold;">"TRD" </span>indicando
+la serie y subserie del expediente<br>
+2.7 R&oacute;tulo llamado <span style="font-weight: bold;">"Proceso" </span>al
+cual se
+encuentra asociado dicho expediente, en caso de tenerlo.<br>
+2.8 R&oacute;tulo llamado <span style="font-weight: bold;">"Fecha de
+inicio"</span>, indicando la fecha inicial del proceso.<br>
+2.9 Bot&oacute;n Rotulado con <span style="font-weight: bold;">"Estado"</span><br>
+2.10 Bot&oacute;n Rotulado con <span style="font-weight: bold;">"Historia
+del Expediente"</span><br>
+2.11 R&oacute;tulos de acuerdo a los campos parametrizados<br>
+2.12 Mensaje que indica que el Documento no se ha ubicado
+f&iacute;sicamente en el archivo.<br>
+<br>
+Secci&oacute;n dos: Lista con los radicados que pertenecen a dicho
+expediente :<br>
+2.10 N&uacute;mero de radicado<br>
+2.11 Fecha de Radicaci&oacute;n<br>
+2.12 Tipo documental del radicado<br>
+2.13 Asunto del radicado<br>
+2.14 Link con el n&uacute;mero del subexpediente en el cual se
+encuentra
+archivado el radicado (proceso realizado en archivo, con posibilidad de
+ser cambiado desde el expediente)<br>
+2.15 Anexos del radicado con los datos de Tipo de Documento.<br>
+<br>
+<br>
+<img alt="40_vta_crear_expediente8.jpg"
+ src="imgs/40_vta_crear_expediente8.jpg"
+ style="width: 922px; height: 432px;"><br>
+<br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;"><br>
+3.
+<span style="font-weight: bold;">A: </span>Hace click sobre el
+bot&oacute;n <span style="font-weight: bold;">"..."</span> del campo <span
+ style="font-weight: bold;">"Estado"</span>.<br>
+<br>
+4. <span style="font-weight: bold;">S: </span>Muestra una ventana
+emergente con:<br>
+&nbsp;<br>
+<div style="margin-left: 40px;">4.1 Lista desplegable con los
+diferentes estados o etapas del flujo.<br>
+4.2 Cuadro de texto para diligenciar comentario<br>
+4.3 Bot&oacute;n habilitado "Grabar Cambio"<br>
+4.4 Bot&oacute;n habilitado "Cerrar"<br>
+</div>
+<br>
+<div style="text-align: center;"><img
+ alt="50_vta_tipificar_estado_expediente1.jpg"
+ src="imgs/50_vta_tipificar_estado_expediente1.jpg"
+ style="width: 692px; height: 219px;"><br>
+<br>
+<div style="text-align: center;">
+<div style="text-align: left;">5. <span style="font-weight: bold;">A</span>:
+Selecciona el estado o etapa en que se debe ubicar el expediente,
+diligencia el campo de comentario y selecciona el bot&oacute;n "Grabar
+Cambio"<br>
+<br>
+6.<span style="font-weight: bold;"> S</span>: Realiza la
+confirmaci&oacute;n de la actualizaci&oacute;n del estado:<br>
+</div>
+<br>
+<div style="text-align: center;"><img
+ alt="/50_vta_tipificar_estado_expediente2.jpg"
+ src="imgs/50_vta_tipificar_estado_expediente2.jpg"
+ style="width: 685px; height: 217px;"><br>
+<div style="text-align: left;">7. <span style="font-weight: bold;">A</span>:
+Selecciona el bot&oacute;n cerrar<br>
+<br>
+8. <span style="font-weight: bold;">S</span>: Se ubica en la pantalla
+inicial del expediente indicando el estado del proceso (a)&nbsp; y la
+opci&oacute;n para ingresar al registro hist&oacute;rico(b) del
+expediente:<br>
+<br>
+</div>
+</div>
+<br>
+<img alt="50_vta_tipificar_estado_expediente3.jpg"
+ src="imgs/50_vta_tipificar_estado_expediente3.jpg"
+ style="width: 948px; height: 193px;"><br>
+<div style="text-align: left;"><br>
+9. <span style="font-weight: bold;">A</span>: Hace click sobre el
+bot&oacute;n <span style="font-weight: bold;">"..."</span> del campo <span
+ style="font-weight: bold;">"Historia del expediente"</span>.<br>
+<br>
+10. <span style="font-weight: bold;">S</span>: Despliega la
+informaci&oacute;n del expediente con la siguiente informaci&oacute;n:<br>
+<br>
+Secci&oacute;n uno: datos generales del expediente<br>
+<br>
+10.1 "Estado Actual" del expediente, de acuerdo a la etapa del flujo en
+el cual se encuentra<br>
+10.2 "Dias esperados para este estado", teniendo en cuenta los
+d&iacute;as que se han parametrizado para cada etapa<br>
+10.3 "Dias h&aacute;biles de proceso", el total de los d&iacute;as
+h&aacute;biles para el t&eacute;rmino del proceso<br>
+10.4 "D&iacute;as h&aacute;biles legales"<br>
+<br>
+Secci&oacute;n dos: lista de radicados y cambio de estados<br>
+<br>
+10.5 Dependencia<br>
+10.6 Fecha de inclusi&oacute;n en expediente<br>
+10.7 Tipo de transacci&oacute;n<br>
+10.8 Usuario <br>
+10.9 Radicado<br>
+10.10 Comentario<br>
+10.11 Etapas para cada proceso indicando cuantos d&iacute;as se
+llev&oacute; por cada una. - <span
+ style="font-weight: bold; font-style: italic;">FIN</span><br>
+</div>
+</div>
+</div>
+</div>
+<br>
+<div style="text-align: center;"><img
+ alt="50_vta_tipificar_estado_expediente4.jpg"
+ src="imgs/50_vta_tipificar_estado_expediente4.jpg"
+ style="width: 1036px; height: 276px;"><br>
+</div>
+<br>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.2
+Post-condiciones</h4>
+<div style="margin-left: 120px;"><span
+ style="font-family: helvetica,arial,sans-serif;">3.1.2 Todas las
+transacciones se deben guardar en el registro hist&oacute;rico del
+expediente.</span><br>
+</div>
+<span style="font-family: helvetica,arial,sans-serif;"></span><br>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.2.
+Flujo Alterno: El Usuario hace click sobre el v&iacute;nculo "Cerrar"
+sin haber especificado estado.</h3>
+<div style="margin-left: 80px;"><span
+ style="font-style: italic; font-weight: bold;"></span><span
+ style="font-family: helvetica,arial,sans-serif;">4.1 <span
+ style="font-weight: bold;">A</span>: Selecciona el bot&oacute;n
+"Cerrar"</span><br>
+<span style="font-family: helvetica,arial,sans-serif;">4.2 <span
+ style="font-weight: bold;">S</span>: Cierra la ventana devolviendo a
+la vista de expedientes sin realizar ninguna operaci&oacute;n. -<span
+ style="font-weight: bold; font-style: italic;">FIN</span> </span><br>
+</div>
+<br>
+<br>
+<br style="font-family: helvetica,arial,sans-serif;">
+<a style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a><br
+ style="font-family: helvetica,arial,sans-serif;">
+<br>
+</body>
+</html>

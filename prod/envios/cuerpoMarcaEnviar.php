@@ -1,0 +1,697 @@
+<?
+/* * ********************************************************************************** */
+/* ORFEO GPL:Sistema de Gestion Documental		http://www.orfeogpl.org	     */
+/* 	Idea Original de la SUPERINTENDENCIA DE SERVICIOS PUBLICOS DOMICILIARIOS     */
+/* 				COLOMBIA TEL. (57) (1) 6913005  orfeogpl@gmail.com   */
+/* ===========================                                                       */
+/*                                                                                   */
+/* Este programa es software libre. usted puede redistribuirlo y/o modificarlo       */
+/* bajo los terminos de la licencia GNU General Public publicada por                 */
+/* la "Free Software Foundation"; Licencia version 2. 			             */
+/*                                                                                   */
+/* Copyright (c) 2005 por :	  	  	                                     */
+/* SSPS "Superintendencia de Servicios Publicos Domiciliarios"                       */
+/*   Jairo Hernan Losada  jlosada@gmail.com                Desarrollador             */
+/*   Sixto Angel Pinzón López --- angel.pinzon@gmail.com   Desarrollador             */
+/* C.R.A.  "COMISION DE REGULACION DE AGUAS Y SANEAMIENTO AMBIENTAL"                 */
+/*   Liliana Gomez        lgomezv@gmail.com                Desarrolladora            */
+/*   Lucia Ojeda          lojedaster@gmail.com             Desarrolladora            */
+/* D.N.P. "Departamento Nacional de Planeación"                                      */
+/*   Hollman Ladino       hollmanlp@gmail.com                Desarrollador           */
+/*                                                                                   */
+/* Colocar desde esta lInea las Modificaciones Realizadas Luego de la Version 3.5    */
+/*  Nombre Desarrollador   Correo     Fecha   Modificacion                           */
+/* * ********************************************************************************** */
+?>
+<?
+//Programa que genera el listado de todos los grupos de masiva generados por la dependencia, que no han sido enviados y da la opci�n de
+//generar el env�o respectivo
+
+session_start();
+$ruta_raiz = "..";
+
+
+
+include_once "$ruta_raiz/class_control/usuario.php";
+require_once("$ruta_raiz/include/db/ConnectionHandler.php");
+include_once "$ruta_raiz/class_control/TipoDocumento.php";
+include_once "$ruta_raiz/class_control/firmaRadicado.php";
+
+
+
+$db = new ConnectionHandler($ruta_raiz);
+$db->conn->SetFetchMode(ADODB_FETCH_ASSOC);
+//Se crea el objeto de an�lisis de firmas
+$objFirma = new FirmaRadicado($db);
+
+if (!$_SESSION['dependencia'])
+    include "../rec_session.php";
+$nombusuario = $_SESSION['usua_nomb'];
+if (!$dep_sel)
+    $dep_sel = $dependencia;
+
+$sqlFechaHoy = $db->conn->DBDate($fecha_hoy);
+?>
+
+<html>
+    <head>
+        <meta http-equiv="Cache-Control" content="cache">
+        <meta http-equiv="Pragma" content="public">
+        <?
+//variable con la fecha formateada
+        $fechah = date("dmy") . "_" . time("h_m_s");
+//variable con elementos de sesi�n
+        $encabezado = session_name() . "=" . session_id() . "&krd=$krd";
+        ?>
+        <script>
+
+            pedientesFirma="";
+            function back() {
+                history.go(-1);
+            }
+
+            function recargar(){
+                window.location.reload();
+            }
+
+            function editFirmantes(rad){
+                nombreventana="EdiFirms";
+                url="<?= $ruta_raiz ?>/firma/editarFirmates.php?radicado=" + rad +"&<?= "&usua_nomb=$usua_nomb&&depe_nomb=$depe_nomb&usua_doc=$usua_doc&krd=$krd&" . session_name() . "=" . trim(session_id()) ?>&usua=<?= $krd ?>";
+                window.open(url,nombreventana,'height=500,width=750,scrollbars=yes,resizable=yes');
+                return;
+            }
+
+            function solicitarFirma () {
+                marcados = 0;
+                radicados = "";
+
+                for(i=0;i<document.formEnviar.elements.length;i++){
+                    if(document.formEnviar.elements[i].checked==1)	{
+                        marcados++;
+                        if (radicados.length > 0)
+                            radicados = radicados + ",";
+                        radicados = radicados +  (document.formEnviar.elements[i].value) ;
+                    }
+                }
+
+                if(marcados>=1)	{
+
+                    nombreventana="SolFirma";
+                    url="<?= $ruta_raiz ?>/firma/seleccFirmantes.php?codigo=&<?= "&usua_nomb=$usua_nomb&&depe_nomb=$depe_nomb&usua_doc=$usua_doc&krd=$krd&" . session_name() . "=" . trim(session_id()) ?>&usua=<?= $krd ?>&radicados="+radicados;
+                    window.open(url,nombreventana,'height=550,width=1000,scrollbars=yes,resizable=yes');
+                    return;
+
+                }else{
+                    alert("Debe seleccionar un radicado");
+                }
+
+            }
+            function markAll()
+            {
+                if(document.formEnviar.elements['checkAll'].checked)
+                    for(i=1;i<document.formEnviar.elements.length;i++)
+                        document.formEnviar.elements[i].checked=true;
+                else
+                    for(i=1;i<document.formEnviar.elements.length;i++)
+                        document.formEnviar.elements[i].checked=false;
+            }
+
+            function valPendsFirma (){
+
+                for(i=0;i<document.formEnviar.elements.length;i++){
+                    if(document.formEnviar.elements[i].checked==1)	{
+                        if (pedientesFirma.indexOf(document.formEnviar.elements[i].value)!=-1){
+                            alert ("No se puede enviar el radicado " + document.formEnviar.elements[i].value + " pues se encuentra pendiente de firma ");
+                            return false;
+                        }
+
+                    }
+                }
+
+                return true;
+            }
+
+            function continuar(){
+                accion = '<?= $pagina_sig ?>?<?= session_name() . "=" . session_id() . "&krd=$krd&fechah=$fechah&dep_sel=$dep_sel&estado_sal=$estado_sal&usua_perm_impresion=$usua_perm_impresion&estado_sal_max=$estado_sal_max" ?>';
+                alert (accion);
+            }
+
+        </script>
+        <?php
+        error_reporting(7);
+        ?>
+        <link rel="stylesheet" href="<?=$ruta_raiz."/estilos/".$_SESSION["ESTILOS_PATH"]?>/orfeo.css">
+        <?
+        if (!$carpeta)
+            $carpeta = 0;
+
+        if (!$_GET['estado_sal']) {
+            $estado_sal = 2;
+        }
+
+        if (!$_GET['estado_sal_max'])
+            $estado_sal_max = 3;
+
+        if ($estado_sal) {
+            $accion_sal = "Marcar Documentos Como Impresos";
+            $nomcarpeta = utf8_encode("Documentos Para Impresi�n");
+
+            $pagina_sig = "cuerpoMarcaEnviar.php";
+            if ($dep_sel != 9999) {
+                $dependencia_busq1 = " and c.radi_depe_radi = $dep_sel ";
+                $dependencia_busq2 = " and c.radi_depe_radi = $dep_sel";
+            }
+        }
+        if ($usua_perm_impresion == 2) {
+            $swBusqDep = "S";
+        }
+        switch ($db->driver) {
+            case 'mssql':
+                $varBuscada = "radi_nume_salida";
+                break;
+            case 'oracle':
+            case 'oci8':
+            case 'oci8po':
+                $varBuscada = "radi_nume_salida";
+                break;
+            case 'postgres':
+            default:
+                $varBuscada = "cast(radi_nume_salida as varchar) ";
+        }
+        //variable que indica la acci�n a ejecutar en el formulario
+        $accion_sal = "Marcar documentos como impresos";
+        //variable que indica la acci�n a ejecutar en el formulario
+        $nomcarpeta = "Marcar Documentos como Impresos";
+        $carpeta = "nada";
+        $pagina_sig = "../envios/marcaEnviar.php";
+        $pagina_actual = "../envios/cuerpoMarcaEnviar.php";
+
+        $swListar = "si";
+
+
+        if ($orden_cambio == 1) {
+            if (!$orderTipo) {
+                $orderTipo = " DESC";
+            } else {
+                $orderTipo = "";
+            }
+        }
+
+
+
+//var de formato para la tabla
+        $tbbordes = "#CEDFC6";
+//var de formato para la tabla
+        $tbfondo = "#FFFFCC";
+
+//le pone valor a la variable que maneja el criterio de ordenamiento inicial
+        if (!$orno) {
+            $orno = 4;
+            $ascdesc = " DESC";
+        }
+
+        $imagen = "flechaasc.gif";
+        ?> 
+        <script>
+            <!-- Esta funcion esconde el combo de las dependencia e inforados Se activan cuando el menu envie una señal de cambio.-->
+
+            function window_onload()
+
+            {
+
+                form1.depsel.style.display = '';
+                form1.enviara.style.display = '';
+                form1.depsel8.style.display = 'none';
+                form1.carpper.style.display = 'none';
+                setVariables();
+                setupDescriptions();
+            }
+
+
+
+
+<?php
+
+//include "libjs.php";
+function tohtml($strValue) {
+    return htmlspecialchars($strValue);
+}
+?>
+
+        </script>
+        <script>
+            function cambioDependecia (dep){
+                document.formDep.action="cuerpo_masiva.php?krd=<?= $krd ?>&dep_sel="+dep;
+                //alert(document.formDep.action);
+                document.formDep.submit();
+            }
+
+            function marcar()
+            {
+                marcados = 0;
+
+                for(i=0;i<document.formEnviar.elements.length;i++)
+                {
+                    if(document.formEnviar.elements[i].checked==1)
+                    {
+                        marcados++;
+                    }
+                }
+                if(marcados>=1)
+                {
+
+                    if (valPendsFirma())
+                        document.formEnviar.submit();
+                }
+                else
+                {
+                    alert("Debe seleccionar un radicado");
+                }
+            }
+
+            function verMedioEnvio(rad,tip)
+            {
+                var anchoPantalla = screen.availWidth;
+                var altoPantalla  = screen.availHeight;
+                window.open('<?= $ruta_raiz ?>/envios/cambiarMedioEnvio.php?krd=<?= $krd ?>&numRad='+rad+'&tip='+tip,'Cambio Medio Envio', 'top='+(altoPantalla/3)+',left='+(anchoPantalla/3)+', height='+(altoPantalla*0.20)+', width='+(anchoPantalla*0.37)+', scrollbars=yes,resizable=yes')
+            }
+
+            function regresar()
+            {	
+                window.location.reload();
+            }
+        </script>
+        <style type="text/css">
+            <!--
+            .textoOpcion {  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000; text-decoration: underline}
+            -->
+        </style>
+    </head>
+
+    <body  topmargin="0" >
+
+        <div id="object1" style="position:absolute; visibility:show; left:10px; top:-50px; width=80%; z-index:2" >
+            <p>Cuadro de Historico</p>
+        </div>
+        <?php
+        $sqlFecha = $db->conn->SQLDate("Y/m/d", "r.SGD_RENV_FECH");
+        $img1 = "";
+        $img2 = "";
+        $img3 = "";
+        $img4 = "";
+        $img5 = "";
+        $img6 = "";
+        $img7 = "";
+        $img8 = "";
+        $img9 = "";
+        IF ($ordcambio) {
+            IF ($ascdesc == "") {
+                $ascdesc = "DESC";
+                $imagen = "flechadesc.gif";
+            } else {
+                $ascdesc = "";
+                $imagen = "flechaasc.gif";
+            }
+        } else
+        if ($ascdesc == "DESC")
+            $imagen = "flechadesc.gif";
+        else
+            $imagen = "flechaasc.gif";
+
+
+
+        if ($orno == 1) {
+            $order = " a.radi_nume_salida  $ascdesc";
+            $img1 = "<img src='../iconos/$imagen' border=0 alt='$data'>";
+        }
+        if ($orno == 2) {
+            $order = " 6  $ascdesc";
+            $img2 = "<img src='../iconos/$imagen' border=0 alt='$data'>";
+        }
+        if ($orno == 3) {
+            $order = " a.anex_radi_nume $ascdesc";
+            $img3 = "<img src='../iconos/$imagen' border=0 alt='$data'>";
+        }
+        If ($orno == 4) {
+            $order = " c.radi_fech_radi  $ascdesc";
+            $img4 = "<img src='../iconos/$imagen' border=0 alt='$data'>";
+        }
+        If ($orno == 41) {
+            $order = " d.sgd_dir_nomremdes  $ascdesc";
+            $img41 = "<img src='../iconos/$imagen' border=0 alt='$data'>";
+        }
+        If ($orno == 5) {
+            $order = " a.anex_desc  $ascdesc";
+            $img5 = "<img src='../iconos/$imagen' border=0 alt='$data'>";
+        }
+        If ($orno == 6) {
+            $order = " a.sgd_fech_impres  $ascdesc";
+            $img6 = "<img src='../iconos/$imagen' border=0 alt='$data'>";
+        }
+        If ($orno == 7) {
+            $order = " a.anex_creador $ascdesc";
+            $img7 = "<img src='../iconos/$imagen' border=0 alt='$data'>";
+        }
+        If ($orno == 8) {
+            $order = " m.mrec_desc $ascdesc";
+            $img8 = "<img src='../iconos/$imagen' border=0 alt='$data'>";
+        }
+        If ($orno == 97) {
+            $order = " c.radi_fech_radi $ascdesc";
+            $img4 = "<img src='../iconos/$imagen' border=0 alt='$data'>";
+        }
+        If ($orno == 99) {
+            $order = " c.radi_fech_radi $ascdesc";
+            $img4 = "<img src='../iconos/$imagen' border=0 alt='$data'>";
+        }
+
+
+        $encabezado = session_name() . "=" . session_id() . "&dep_sel=$dep_sel&krd=$krd&estado_sal=$estado_sal&usua_perm_impresion=$usua_perm_impresion&fechah=$fechah&estado_sal_max=$estado_sal_max&ascdesc=$ascdesc&orno=";
+        $fechah = date("dmy") . "_" . time("h_m_s");
+        $check = 1;
+        $fechaf = date("dmy") . "_" . time("hms");
+        $row = array();
+        ?>
+
+
+        <br>
+        <table border=0 width='100%' class='t_bordeGris' align='center'>
+            <tr >
+                <td height="20" >
+                    <table width="98%" align="center" cellspacing="0" cellpadding="0">
+                        <tr>
+
+                            <td height="73">
+                                <?
+                                include "../envios/paEncabeza.php";
+                                include "../envios/paBuscar.php";
+// include "../envios/paOpciones.php";
+                                /*
+                                 * GENERAR LISTADO ENTREGA FISICOS
+                                 */
+                                ?>
+                                <table BORDER=0  cellpad=2 cellspacing='2'  width="100%" >
+                                    <tr>
+                                        <td width='50%' align='left' height="40" class="titulos2" >
+                                            <b>Listar por </b>
+                                            <a href='<?= $PHP_SELF . "?" . $encabezado ?>1&ordcambio=1&orno=97&estado_sal=3&estado_sal_max=3' class='textoOpcion' alt='Ordenamiento'>
+                                                <span class='leidos'>impresos</span></a>
+                                            <?= $img4 ?> <a href='<?= $PHP_SELF . "?" . $encabezado ?>1&ordcambio=1&orno=99&estado_sal=2&estado_sal_max=2' class='textoOpcion' alt='Ordenamiento'><span class='no_leidos'>
+                                                    por imprimir</span></a>
+
+                                        </td>
+                                        <td class="titulos2" align="center">
+
+
+
+                                            <a href='<?= $pagina_sig ?>?<?= $encabezado ?> '></a>
+                                            <input type=submit value="<?= $accion_sal ?>" name=Enviar id=Enviar valign='middle' class='botones_largo' onclick="marcar();">
+
+
+
+                                        </td>
+
+                                    </tr>
+                                </table>
+
+
+
+                            </td>
+
+
+                        </tr>
+                    </table>
+                    <?
+                    $accion_sal2 = "Generar listado de entrega";
+                    include "../envios/paListado.php";
+                    /*  GENERACION LISTADO DE RADICADOS
+                     *  Aqui utilizamos la clase adodb para generar el listado de los radicados
+                     *  Esta clase cuenta con una adaptacion a las clases utiilzadas de orfeo.
+                     *  el archivo original es adodb-pager.inc.php la modificada es adodb-paginacion.inc.php
+                     */
+
+                    include "$ruta_raiz/include/query/envios/queryCuerpoMarcaEnviar.php";
+
+
+                    $db->conn->SetFetchMode(ADODB_FETCH_ASSOC);
+//$db->conn->debug=true;
+                    $rs = $db->query($isql);
+
+                    if ($usua_perm_firma == 2 || $usua_perm_firma == 3) {
+                        ?>
+                        <table cellpad=2 cellspacing='0' WIDTH=100% class='borde_tab' valign='top' align='center' >
+                            <tr  class="titulos2" >
+                                <td align='left' height="17"  > <span class='etextomenu'>
+                                    </span> </td>
+                                <td width='10%' align="left" height="17">
+                                    <input type=button value='Solicitar Firma' name=solicfirma valign='middle' class='botones' onclick="solicitarFirma();" >
+                                </td>
+                            </tr>
+                        </table>
+
+                        <?
+                    }
+                    ?>
+
+                </td>
+            </tr>
+        </table>
+        <form name='formEnviar'  method=post onsubmit=" return alert ('12345')" action=<?= $pagina_sig ?>?<?= session_name() . "=" . session_id() . "&krd=$krd&fechah=$fechah&dep_sel=$dep_sel&estado_sal=$estado_sal&usua_perm_impresion=$usua_perm_impresion&estado_sal_max=$estado_sal_max" ?> >
+            <table width="98%" align="center" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td class="grisCCCCCC">
+                        <table width="100%"  border="0"  cellpadding="0" cellspacing="5" class="borde_tab"'>
+                               <tr class='titulos3' >
+                                <td  align="center" width="14%"> <img src='<?= $ruta_raiz ?>/imagenes/estadoDoc.gif'  border=0 >
+                                </td>
+                                <td width='8%' align="center">
+                                    <a href='<?= $PHP_SELF . "?" . $encabezado ?>1&ordcambio=1&orno=1' class='textoOpcion' alt='Ordenamiento'>
+                                        <?= $img1 ?>
+                                        Radicado salida
+                                    </a>
+                                </td>
+                                <td  width='5%' align="center">
+                                    <a href='<?= $PHP_SELF . "?" . $encabezado ?>1&ordcambio=1&orno=2' class='textoOpcion' alt='Ordenamiento'>
+                                        <?= $img2 ?>
+                                        Copia
+                                    </a>
+                                </td>
+                                <td  width='9%' align="center">
+                                    <a href='<?= $PHP_SELF . "?" . $encabezado ?>1&ordcambio=1&orno=3' class='textoOpcion' alt='Ordenamiento'>
+                                        <?= $img3 ?>
+                                        Radicado padre
+                                    </a>
+                                </td>
+                                <td  width='9%' align="center">
+                                    <a href='<?= $PHP_SELF . "?" . $encabezado ?>1&ordcambio=1&orno=4' class='textoOpcion' alt='Ordenamiento'>
+                                        <?= $img4 ?>
+                                        Fecha radicado
+                                    </a>
+                                </td>
+                                <td  width='30%' align="center"> <a href='<?= $PHP_SELF . "?" . $encabezado ?>1&ordcambio=1&orno=41' class='textoOpcion' alt='Ordenamiento'>
+                                        <?= $img41 ?>
+                                        Destinatario </a> </td>
+                                <td  width='30%' align="center"> <a href='<?= $PHP_SELF . "?" . $encabezado ?>1&ordcambio=1&orno=5' class='textoOpcion' alt='Ordenamiento'> 
+                                        <?= $img5 ?>
+                                        Descripci&oacute;n</a> </td><!--Descripci&oacute;n-->
+                                <td  width='12%' align="center"> <a href='<?= $PHP_SELF . "?" . $encabezado ?>1&ordcambio=1&orno=6' class='textoOpcion' alt='Ordenamiento'>
+                                        <?= $img6 ?>
+                                        Fecha impresi&oacute;n</a>  </td><!--Fecha impresi&oacute;n-->
+                                <td  width='10%' align="center"> <a href='<?= $PHP_SELF . "?" . $encabezado ?>1&ordcambio=1&orno=7' class='textoOpcion' alt='Ordenamiento'>	
+                                        <?= $img7 ?>
+                                        Generado por </a> </td>
+                                <td  width='10%' align="center"> <a href='<?= $PHP_SELF . "?" . $encabezado ?>1&ordcambio=1&orno=8' class='textoOpcion' alt='Ordenamiento'>
+                                        <?= $img8 ?>
+                                        Medio env&iacute;o</a> </td><!--Medio env&iacute;o -->
+                                <td  width='3%' align="center"><input type=checkbox name=checkAll value=checkAll onClick='markAll();'> </td>
+                            </tr>
+                            <?
+                            $i = 1;
+                            $ki = 0;
+                            $registro = $pagina * 20;
+                            while ($rs && !$rs->EOF) {
+
+                                if ($ki >= $registro and $ki < ($registro + 20)) {
+
+                                    $swEsperaFirma = false;
+                                    $estado = $rs->fields['CHU_ESTADO'];
+                                    $copia = $rs->fields['COPIA'];
+                                    $SgdDirTipo = $rs->fields['COPIA0'];
+                                    $documentos = $rs->fields['DOCUMENTOS'];
+                                    $rad_salida = $rs->fields['IMG_RADICADO_SALIDA'];
+                                    $rad_padre = $rs->fields['RADICADO_PADRE'];
+                                    $cod_dev = $rs->fields['HID_DEVE_CODIGO'];
+                                    $fech_radicado = $rs->fields['FECHA_RADICADO'];
+                                    $descripcion = $rs->fields['DESCRIPCION'];
+                                    $fecha_impre = $rs->fields['FECHA_IMPRESION'];
+                                    $fecha_dev = $rs->fields['HID_SGD_DEVE_FECH'];
+                                    $generadoPor = $rs->fields['GENERADO_POR'];
+                                    $path_imagen = $rs->fields['HID_RADI_PATH'];
+                                    $medio_envio = $rs->fields['MEDIO_ENVIO'];
+                                    $destinatario = $rs->fields['DESTINATARIO'];
+
+                                    //***********************************************
+                                    $edoDev = 0;
+
+                                    if ($cod_dev == 0 OR $cod_dev == NULL) {
+                                        $edoDev = 97;
+                                    } else {
+                                        if ($cod_dev > 0)
+                                            $edoDev = 98;
+                                    }
+                                    if ($cod_dev == 99)
+                                        $edoDev = 99;
+
+                                    switch ($edoDev) {
+                                        case 99:
+                                            $imgEstado = "<img src='$ruta_raiz/imagenes/docDevuelto_tiempo.gif'  border=0 alt='Fecha Devolucionyy :$fecha_dev' title='Fecha Devolucion :$fecha_dev'>";
+                                            break;
+                                        case 98:
+                                            $imgEstado = "<img src='$ruta_raiz/imagenes/docDevuelto.gif'  border=0 alt='Fecha Devolucion :$fecha_dev' title='Fecha Devolucion :$fecha_dev'>";
+                                            break;
+                                        case 97:
+                                            $fecha_dev = $rs->fields["HID_SGD_DEVE_FECH"];
+                                            if ($rs->fields["HID_DEVE_CODIGO1"] == 99) {
+                                                $imgEstado = "<img src='$ruta_raiz/imagenes/docDevuelto_tiempo.gif'  border=0 alt='Fecha Devolucionx :$fecha_dev' title='Devolucion por Tiempo de Espera'>";
+                                                $noCheckjDevolucion = "enable";
+                                                break;
+                                            }
+                                            if ($rs->fields["HID_DEVE_CODIGO"] >= 1 and $rs->fields["HID_DEVE_CODIGO"] <= 98) {
+                                                $imgEstado = "<img src='$ruta_raiz/imagenes/docDevuelto.gif'  border=0 alt='Fecha Devolucionn :$fecha_dev' title='Fecha Devolucion :$fecha_dev'>";
+                                                $noCheckjDevolucion = "disable";
+                                                break;
+                                            }
+                                            switch ($estado) {
+                                                case 2:
+                                                    $estadoFirma = $objFirma->firmaCompleta($rad_salida);
+                                                    if ($estadoFirma == "NO_SOLICITADA")
+                                                        $imgEstado = "<img src=$ruta_raiz/imagenes/docRadicado.gif  border=0>";
+                                                    else if ($estadoFirma == "COMPLETA") {
+                                                        $imgEstado = "<a  href='javascript:editFirmantes($rad_salida)' > <img src=$ruta_raiz/imagenes/docFirmado.gif  border=0></a>";
+                                                    } else if ($estadoFirma == "INCOMPLETA") {
+                                                        $imgEstado = "<a  href='javascript:editFirmantes($rad_salida)' >
+								  	<img src=$ruta_raiz/imagenes/docEsperaFirma.gif border=0>
+								  </a>";
+                                                        $swEsperaFirma = true;
+                                                    }
+                                                    break;
+                                                case 3:
+                                                    $imgEstado = "<img src=$ruta_raiz/imagenes/docImpreso.gif  border=0>";
+                                                    break;
+                                                case 4:
+                                                    $imgEstado = "<img src=$ruta_raiz/imagenes/docEnviado.gif  border=0>";
+                                                    break;
+                                            }
+                                            break;
+                                    }
+
+                                    //************************************************
+
+
+
+
+
+
+
+
+                                    if ($data == "")
+                                        $data = "NULL";
+                                    error_reporting(7);
+
+
+                                    if ($i == 1) {
+                                        $formato = "listado2";
+
+                                        $i = 2;
+                                    } else {
+                                        $formato = "listado1";
+
+                                        $i = 1;
+                                    }
+                                    ?>
+                                    <tr class='<?= $formato ?>'>
+                                        <td class='<?= $leido ?>' align="center" width="14%">
+                                            <?= $imgEstado ?>
+                                        </td>
+                                        <td class='<?= $leido ?>' width="8%"> 
+                                            <a href='<?= $ruta_raiz ?>/seguridadImagen.php?fec=<?= base64_encode($path_imagen) ?>' >
+                                                <?= $rad_salida ?> </a>
+                                        </td>
+                                        <td class='<?= $leido ?>' width="5%"> <span class='leido'>
+                                                <?= $copia ?>
+                                            </span> </td>
+                                        <td class='<?= $leido ?>' width="9%">
+                                            <?= $rad_padre ?>
+                                        </td>
+                                        <td  class='<?= $leido ?>' width="9%">
+                                            <?= $fech_radicado ?>
+                                        </td>
+                                        <td class='<?= $leido ?>' width="30%"> 
+                                            <?= $destinatario ?>
+                                        </td>
+                                        <td class='<?= $leido ?>' width="30%">
+                                            <?= $descripcion ?>
+                                        </td>
+                                        <td class='<?= $leido ?>' width="12%"> &nbsp;
+                                            <?= $fecha_impre; ?>
+                                        </td>
+                                        <td class='<?= $leido ?>' width="10%" >
+                                            <?= $generadoPor ?>
+                                        </td>
+                                        <td class='<?= $leido ?>' width="10%" > 
+                                            <span id="<?= $rad_salida ?>-<?= $SgdDirTipo ?>"> <?= $medio_envio ?></span><a title='' onClick="JavaScript:verMedioEnvio('<?= $rad_salida ?>','<?= $SgdDirTipo ?>');" class='botones_2' >&nbsp;...&nbsp;</a>
+                                        </td>
+                                        <td align='center' class='<?= $leido ?>' width="3%">
+                                            <? if ($swEsperaFirma) { ?>
+                                                <script>
+                                                    pedientesFirma = pedientesFirma + <?= $rad_salida ?> + "," ;
+                                                </script>
+                                            <? } ?>
+                                            <input type=checkbox name='checkValue[<?= $rad_salida ?>]' value='<?= $rad_salida ?>'  >
+
+
+
+                                        </td>
+                                    </tr>
+                                    <?
+                                }
+                                $ki = $ki + 1;
+                                $rs->MoveNext();
+                            }
+                            ?>         </td></tr>
+            </table>
+        </table>
+
+    </form>
+    <table border=0 cellspace=2 cellpad=2 WIDTH=98% class='t_bordeGris' align='center'>
+        <tr align="center">
+            <td> <?
+                            $numerot = $ki;
+
+                            // Se calcula el numero de | a mostrar
+                            $paginas = ($numerot / 20);
+                            ?><span class='leidos'> Paginas</span> <?
+                if (intval($paginas) <= $paginas) {
+                    $paginas = $paginas;
+                } else {
+                    $paginas = $paginas - 1;
+                }
+                // Se imprime el numero de Paginas.
+                for ($ii = 0; $ii < $paginas; $ii++) {
+                    if ($pagina == $ii) {
+                        $letrapg = "<font color=green size=3>";
+                    } else {
+                        $letrapg = "<font color=blue size=2>";
+                    }
+                    echo " <a  class=paginacion  href='$PHP_SELF?dep_sel=$dep_sel&pagina=$ii&$encabezado&orno=$orno'>$letrapg" . ($ii + 1) . "</font></a>\n";
+                }
+                            ?> </td>
+        </tr>
+    </table>
+</td>
+</tr></table>
+
+
+<br>
+</body>
+</html>

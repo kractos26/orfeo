@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>Seguridad a Radicados</title>
+</head>
+<body>
+<p class="orfeot2" align="center"><font color="#000066"><font
+ face="Arial Narrow"><font size="5"><i><b><span
+ style="background: rgb(204, 204, 204) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">Seguridad
+de Radicados<br>
+</span></b></i></font></font></font></p>
+<p class="orfeot2" align="right"><span style=""><font size="4"><br>
+<strong><a
+ href="file:///home/flosada/Desktop/Manuales/ayudaorfeo/content.htm"><i><font
+ size="3">Contenido</font></i></a></strong></font></span></p>
+<p class="orfeot2"
+ style="font-style: normal; font-family: helvetica,arial,sans-serif; font-weight: bold;"
+ align="justify">
+<font size="4">Esta
+funcionalidad permite al usuario ponerle seguridad a los radicados que
+se
+encuentren registrados en el sistema, pudiendose asi ser vistos solo
+por el usuario que lo creo. Por lo que al intentar otro usuario ver ese
+radicado aparecera una pantalla de que no tiene permiso para ver ese
+radicado.</font></p>
+<p class="orfeot2"
+ style="font-style: normal; font-family: helvetica,arial,sans-serif; font-weight: bold;"
+ align="justify"><font size="4">Para la asignacion de la seguridad al
+radicado se debe:</font></p>
+<p style="font-family: helvetica,arial,sans-serif; font-weight: bold;"
+ class="orfeopar">1.
+Seleccionar la carpeta donde se encuentra el radicado que se la
+asignara la seguridad:</p>
+<p style="font-family: helvetica,arial,sans-serif; font-weight: bold;"><br>
+<br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif; font-weight: bold;"
+ class="orfeopar" align="center"><img src="images/select_carp.jpg"
+ name="gr&aacute;ficos1" alt="select_carp.jpg"
+ style="border: 0px solid ; width: 168px; height: 391px;"></p>
+<p style="font-family: helvetica,arial,sans-serif; font-weight: bold;"
+ class="orfeopar">2.
+Ingresar al radicado por la fecha de radicaci&oacute;n:</p>
+<p style="font-family: helvetica,arial,sans-serif; font-weight: bold;"
+ class="orfeopar" align="center"><img src="images/link_f_rad.jpg"
+ name="gr&aacute;ficos2" alt="/link_f_rad.jpg"
+ style="border: 0px solid ; width: 1036px; height: 302px;"></p>
+<p style="font-family: helvetica,arial,sans-serif; font-weight: bold;"
+ class="orfeopar"><br>
+<br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif; font-weight: bold;"
+ class="orfeopar">3. Al aparecer la informacion se debe dar clic en el
+boton de "Nivel de Seguridad". Por defecto al crear un radicado el
+nivel de seguridad&nbsp; se encuentra en publico:</p>
+<p style="font-family: helvetica,arial,sans-serif; font-weight: bold;"
+ class="orfeopar" align="center"><img alt="images/seguridad.jpg"
+ src="images/seguridad.jpg" style="width: 768px; height: 474px;"><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif; font-weight: bold;"
+ class="orfeopar" align="center"><br>
+</p>
+<div
+ style="text-align: justify; font-family: helvetica,arial,sans-serif; font-weight: bold;">4.
+Al hacer esto aparecera la siguiente ventana donde puede seleccionar el
+nivel de reguridad que desea ponerle al radicado.<br>
+<br>
+<div style="text-align: center;"><img alt="images/conf_seguridad.jpg"
+ src="images/conf_seguridad.jpg" style="width: 228px; height: 154px;">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img
+ alt="images/conf_seguridad2.jpg" src="images/conf_seguridad2.jpg"
+ style="width: 230px; height: 156px;"> <br>
+</div>
+</div>
+<p style="font-family: helvetica,arial,sans-serif; font-weight: bold;"
+ class="orfeopar" align="center"><br>
+</p>
+<span
+ style="font-family: helvetica,arial,sans-serif; font-weight: bold;">5.
+Al dar clic en el boton Grabar Nivel, aparecera un aviso de que </span><span
+ style="font-family: helvetica,arial,sans-serif; font-weight: bold;"
+ class="leidos">"El nivel se actualizo correctamente.", por lo que se
+puede proceder a cerrar la ventana al dar clic en el boton Cerrar. Si
+se desea verificar si se hizo el cambio bastara con dar clic en la
+pestana de HISTORICO.<br>
+<br>
+</span>
+<div style="text-align: center;"><span
+ style="font-family: helvetica,arial,sans-serif; font-weight: bold;"
+ class="leidos"></span><img alt="images/ver_seguridad.jpg"
+ src="images/ver_seguridad.jpg"
+ style="width: 823px; height: 500px; font-family: helvetica,arial,sans-serif; font-weight: bold;"><br
+ style="font-family: helvetica,arial,sans-serif; font-weight: bold;">
+<br style="font-family: helvetica,arial,sans-serif; font-weight: bold;">
+<div style="text-align: justify;"><span
+ style="font-family: helvetica,arial,sans-serif;"><span
+ style="font-family: helvetica,arial,sans-serif; font-weight: bold;">Ante
+todo toca que tener en cuenta que al hacer esta operacion ningun otro
+usuario podra tener acceso a el, mas sin embargo en el historico
+quedara registrado que usuario fue el que realizo la modificacion</span><br>
+<br>
+</span><span style=""><font size="4"><strong></strong></font></span><i><font><font
+ size="4"><strong><a href="content.htm"><i><font size="3">Contenido</font></i></a></strong></font></font></i><br>
+</div>
+<span class="leidos"></span></div>
+</body>
+</html>

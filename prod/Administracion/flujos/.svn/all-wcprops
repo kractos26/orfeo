@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos
+END
+cuadriculaCrearFlujo.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/cuadriculaCrearFlujo.php
+END
+verFlujoCrear.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/verFlujoCrear.php
+END
+cuadriculaModificarFlujo.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/cuadriculaModificarFlujo.php
+END
+procesa.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/procesa.php
+END
+procesaAccionArista.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/procesaAccionArista.php
+END
+class.Etapa.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/class.Etapa.php
+END
+seleccionaProceso.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/seleccionaProceso.php
+END
+mnuFlujos.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/mnuFlujos.php
+END
+class.Flujo.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/class.Flujo.php
+END
+cuadriculaBuilder.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/cuadriculaBuilder.php
+END
+class.Arista.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/class.Arista.php
+END
+cuadriculaConsultarFlujo.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/cuadriculaConsultarFlujo.php
+END
+testOpener.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/testOpener.php
+END

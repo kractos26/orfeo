@@ -1,0 +1,223 @@
+<?php
+session_start();
+$verrad = "";
+$ruta_raiz = "..";
+if (!$dependencia)
+    include "$ruta_raiz/rec_session.php";
+if (!$dep_sel)
+    $dep_sel = "9999";
+
+$ruta_raiz = "..";
+define('ADODB_ASSOC_CASE', 2);
+include_once "$ruta_raiz/include/db/ConnectionHandler.php";
+$db = new ConnectionHandler("$ruta_raiz");
+
+if (!isset($carpeta))
+    $carpeta = 0;
+if (!$estado_sal) {
+    $estado_sal = 2;
+}
+if (!$estado_sal_max)
+    $estado_sal_max = 3;
+
+if ($estado_sal == 3) {
+    $accion_sal = utf8_encode("Envío de Documentos");
+    $pagina_sig = "cuerpoEnvioNormal.php";
+    $nomcarpeta = "Radicados Para Envio";
+    if (!$dep_sel) {
+        $dep_sel = $dependencia;
+        $dependencia_busq1 = " and c.radi_depe_radi = $dep_sel ";
+        $dependencia_busq2 = " and c.radi_depe_radi = $dep_sel";
+    } else if ($dep_sel == 9999) { //Aqui se supone que viene con dependencia 999 (TODAS)
+        $dependencia_busq1 = " and c.radi_depe_radi IS NOT NULL ";
+        $dependencia_busq2 = " and c.radi_depe_radi IS NOT NULL ";
+    } else {
+        $dependencia_busq1 = " and c.radi_depe_radi = $dep_sel ";
+        $dependencia_busq2 = " and c.radi_depe_radi = $dep_sel";
+    }
+}
+
+if ($orden_cambio == 1)
+    (!$orderTipo) ? $orderTipo = "desc" : $orderTipo = "";
+
+$encabezado = "" . session_name() . "=" . session_id() . "&krd=$krd&estado_sal=$estado_sal&estado_sal_max=$estado_sal_max&accion_sal=$accion_sal&dependencia_busq2=$dependencia_busq2&dep_sel=$dep_sel&filtroSelect=$filtroSelect&tpAnulacion=$tpAnulacion&nomcarpeta=$nomcarpeta&orderTipo=$orderTipo&orderNo=";
+$linkPagina = "$PHP_SELF?$encabezado&orderNo=$orderNo";
+$swBusqDep = "si";
+$carpeta = "nada";
+
+switch ($db->driver) {
+    case 'mssql':
+        $varBuscada = "convert(char(14),radi_nume_salida)";
+        break;
+    case 'postgres':
+        $varBuscada = "cast(radi_nume_salida as varchar(14))";
+        break;
+    case 'oci8po':
+    case 'oci8':
+        $varBuscada = "radi_nume_salida";
+        break;
+}
+?>
+<html>
+    <head>
+        <title>Envio de Documentos. Orfeo...</title>
+        <link rel="stylesheet" href="../estilos/orfeo.css">
+        <script type="text/javascript" src="../jquery/jquery-1.7.1.min.js"></script>
+    </head>
+    <body bgcolor="#FFFFFF" topmargin="0" onLoad='document.getElementById("busqRadicados").focus();'>
+        <script type="text/javascript">
+            function redireccionar(x)
+            {
+                window.location="<? echo "../envios/envia.php?$encabezado.&valRadio=" ?>"+x;
+            }
+        </script>
+        <div id="spiffycalendar" class="text"></div>
+        <link rel="stylesheet" type="text/css" href="js/spiffyCal/spiffyCal_v2_1.css">
+        <?
+        include "../envios/paEncabeza.php";
+        $pagina_actual = "../envios/cuerpoEnvioNormal.php";
+        include "../envios/paBuscar.php";
+        $pagina_sig = "../envios/envia.php";
+        include "../envios/paOpciones2.php";
+
+        /*  GENERACION LISTADO DE RADICADOS
+         *  Aqui utilizamos la clase adodb para generar el listado de los radicados
+         *  Esta clase cuenta con una adaptacion a las clases utiilzadas de orfeo.
+         *  el archivo original es adodb-pager.inc.php la modificada es adodb-paginacion.inc.php
+         */
+        ?>
+        <form name=formEnviar action='../envios/envia.php?<?= $encabezado ?>' method=post>
+            <?
+            if ($orderNo == 98 or $orderNo == 99) {
+                $order = 1;
+                if ($orderNo == 98)
+                    $orderTipo = "desc";
+                if ($orderNo == 99)
+                    $orderTipo = "";
+            }
+            else {
+                if (!$orderNo) {
+                    $orderNo = 3;
+                    $orderTipo = "desc";
+                }
+                $order = $orderNo + 1;
+            }
+
+            $radiPath = $db->conn->Concat($db->conn->substr . "(a.anex_codigo,1,4) ", "'/'", $db->conn->substr . "(a.anex_codigo,5,3) ", "'/docs/'", "a.anex_nomb_archivo");
+            include "$ruta_raiz/include/query/envios/queryCuerpoEnvioNormal.php";
+            $rsTestAnex = $db->conn->Execute($isqlTestAnex);
+            ?>
+            <script type="text/javascript">
+
+                function BuscaData(stg,Srch4){
+                    var i=0;
+                    var esta=false;
+                    for (i=0;i<stg.length;i++)
+                    {
+                        if(stg[i]==Srch4){
+                            esta=true;
+                            break;
+                        }
+                    }
+                    return esta;
+                }
+                var RadicadosCon=[];
+<? do {
+    ?>
+    <? if ($rsTestAnex->fields["TESTIMG"] == 'SI') { ?>
+                RadicadosCon.push('<?= $rsTestAnex->fields["CHR_RADI_NUME_SALIDA"] ?>'); 
+    <? } ?>
+    <?php
+    $rsTestAnex->MoveNext();
+} while (!$rsTestAnex->EOF);
+?> 
+    function RadiSearch(Radicado){
+        var esta=false;
+        esta=BuscaData(RadicadosCon,Radicado);
+        return esta;
+    }
+    
+   
+    function Marcar(tipoAnulacion)
+    {
+        marcados = 0;
+
+        for(i=0;i<document.formEnviar.elements.length;i++)
+        {
+            if(document.formEnviar.elements[i].name.slice(0,9)!='checkAll' && document.formEnviar.elements[i].checked==1)
+            {
+                marcados++;
+            }
+        }
+        if(marcados>=1)
+        {                     
+            
+            var esta=false;
+            var RadMarcados=$('input[name="valRadio"]:checked').val();
+            /*
+             *($('input[name="usua_super"]:checked').val()
+             **/
+            esta = RadiSearch(RadMarcados);
+            if(esta==false){
+                alert("El radicado seleccionado no tiene una imagen asociada");
+            }else{
+                document.formEnviar.submit();
+            }
+            
+        }
+        else
+        {
+            alert("Debe seleccionar un radicado");
+        }
+    }
+    <!-- Funcion que activa el sistema de marcar o desmarcar todos los check  -->
+    function getCheckedValue(radioObj) {
+        if(!radioObj)
+            return "";
+        var radioLength = radioObj.length;
+        if(radioLength == undefined)
+            if(radioObj.checked)
+                return radioObj.value;
+        else
+            return "";
+        for(var i = 0; i < radioLength; i++) {
+            if(radioObj[i].checked) {
+                return radioObj[i].value;
+            }
+        }
+        return "";
+    }
+
+    function markAll()
+    {
+        if(document.formEnviar.elements['checkAll'].checked)
+            for(i=1;i<document.formEnviar.elements.length;i++)
+                document.formEnviar.elements[i].checked=1;
+        else
+            for(i=1;i<document.formEnviar.elements.length;i++)
+                document.formEnviar.elements[i].checked=0;
+    }
+            
+            </script>
+            <?php
+            $ADODB_COUNTRECS = true;
+            $rs_env = $db->conn->Execute($isql);
+            $ADODB_COUNTRECS = false;
+            if ($rs_env && $rs_env->RecordCount() == 1 && (strtolower(substr($rs_env->fields['HID_IMGPPAL'],-4))==".pdf" || strtolower(substr($rs_env->fields['HID_IMGPPAL'],-4))==".tif")) {
+                $xx = $rs_env->fields('CHR_RADI_NUME_SALIDA');
+                echo '<script type="text/javascript">
+			setTimeout ("redireccionar(\'' . $xx . '\')", 0); //tiempo expresado en milisegundos 
+		</script>';
+            }
+            if (!$rs_env->fields["IMG_Radicado Salida"]) {
+                echo "<table class=borde_tab width='100%'><tr><td class=titulosError><center>NO se encontro nada con el criterio de busqueda</center></td></tr></table>";
+            } else {
+                $pager = new ADODB_Pager($db, $isql, 'adodb', true, $orderNo, $orderTipo);
+                $pager->toRefLinks = $linkPagina;
+                $pager->toRefVars = $encabezado;
+                $pager->Render($rows_per_page = 20, $linkPagina, $checkbox = chkEnviar);
+            }
+            ?>
+        </form>
+    </body>
+</html>

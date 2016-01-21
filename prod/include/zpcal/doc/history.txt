@@ -1,0 +1,19 @@
+Tue Mar 15 13:06:17 PST 2005
+1.0.6
+Change layout-common.css z-index should be for .calendar not .calendar .combo 
+otherwise images with z-index display over instead of under the calendar
+
+Fri Mar  4 15:14:46 PST 2005
+1.0.5
+Fixed bug where time was defaulting to current time instead of initializing from
+the text box.
+
+Mon Feb 14 11:37:20 PST 2005
+1.0.4
+Fixed bug where "date" param wasn't really setting the initial date
+
+Mon Feb  7 22:51:01 PST 2005
+1.0.3
+
+Provide a minimal Zip file too
+provide multiple icons to click to trigger the calendar -- example3.html

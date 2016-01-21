@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>CU-ORFEO-41 Incluir en Expediente</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="Generator" content="Kate, the KDE Advanced Text Editor">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="Autor" content="NCASTRO">
+  <meta name="Creado" content="20051130;17410000">
+  <style>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		P { margin-bottom: 0.21cm }
+	--</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta content="Martha Yaneth Mera Velasco" name="author">
+</head>
+<body>
+<div style="text-align: right;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="http://atlas.admin.gov.co/orfeo_3.5/Manuales/cu/index.html">Volver
+al indice</a></div>
+<h1
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 153);">CU-ORFEO-41&nbsp;
+Incluir en Expediente.<br>
+</h1>
+<h2 style="font-family: helvetica,arial,sans-serif;"><br>
+</h2>
+<h2 style="font-family: helvetica,arial,sans-serif;"><span
+ style="font-weight: bold;">Historia de revisi&oacute;n</span><br>
+</h2>
+<table style="text-align: left; width: 965px; height: 124px;" border="1"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">FECHA<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">VERSION<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">DESCRIPCION<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">AUTOR<br>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Noviembre
+30 de 2005<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; font-family: helvetica,arial,sans-serif;">1.0<br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Versi&oacute;n
+inicial de acuerdo a los requerimientos entregados<span
+ style="font-weight: bold;"><br>
+      </span></td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Nicol&aacute;s
+Castro<br>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Marzo
+21 de 2005<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; font-family: helvetica,arial,sans-serif;">1.1<br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Ajustes
+realizados teniendo en cuenta las necesidades en el m&oacute;dulo de
+flujos autom&aacute;tico <br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Martha
+Mera<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h2 style="font-family: helvetica,arial,sans-serif;">1.
+Descripci&oacute;n</h2>
+<span style="font-family: helvetica,arial,sans-serif;">Permite la
+inclusi&oacute;n de un documentos en un expediente que ya existe creado
+en el sistema.</span><br
+ style="font-family: helvetica,arial,sans-serif;">
+<h2 style="font-family: helvetica,arial,sans-serif;">2. Actores</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">2.1
+Creador Expediente</h3>
+<div style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">Usuario
+con permisos para la creaci&oacute;n de expedientes.<span
+ style="font-family: helvetica,arial,sans-serif;"></span><br>
+</div>
+<span style="font-family: helvetica,arial,sans-serif;"></span>
+<h2 style="font-family: helvetica,arial,sans-serif;">3. Flujo de Eventos</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.1.
+Flujo B&aacute;sico &oacute; Normal : Incluir en Expediente.</h3>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.1
+Precondiciones</h4>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+3.1.1.1. El actor debe haber ingresado al sistema.<br>
+3.1.1.2. El actor debe haber invocado la vista <span
+ style="font-weight: bold;">&#8220;EXPEDIENTES&#8221;</span> por alguno
+de los v&iacute;nculos establecidos.<br>
+<br>
+</div>
+<div style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">1.
+<span style="font-weight: bold;">A:</span> <span
+ style="font-style: italic; font-weight: bold;">INICIO</span><span
+ style="font-weight: bold;"> -</span>
+Verifica encontrarse en la vista <span style="font-weight: bold;">"EXPEDIENTES"</span>
+(pesta&ntilde;a) del
+&aacute;rea de datos del radicado &oacute; hace click en la
+pesta&ntilde;a del
+mismo nombre.<br>
+</div>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: center;"><img
+ alt="40_vta_crear_expediente0.jpg"
+ src="imgs/40_vta_crear_expediente0.jpg"
+ style="width: 611px; height: 121px;"><br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">2.<span
+ style="font-weight: bold;"></span><span style="font-weight: bold;">S:</span>
+Muestra la vista
+"EXPEDIENTES" la cual est&aacute; compuesta por: <br>
+</p>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">2.1.
+Un mensaje con el texto <span style="font-weight: bold;">"ESTE
+DOCUMENTO NO HA SIDO INCLUIDO EN NINGUN EXPEDIENTE"</span>.<br>
+2.2. Un v&iacute;nculo rotulado como <span style="font-weight: bold;">"Incluir
+en"</span>.<br>
+2.3. Un v&iacute;nculo rotulado como <span style="font-weight: bold;">"Crear"</span>.<br>
+<br>
+</div>
+<div style="text-align: center;"><img alt="40_vta_crear_expediente1.jpg"
+ src="imgs/40_vta_crear_expediente1.jpg"
+ style="width: 754px; height: 199px;"><br>
+</div>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;"><br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">3.<span
+ style="font-weight: bold;"> A: </span>Selecciona el v&iacute;nculo
+rotulado como<span style="font-weight: bold;"> </span><span
+ style="font-weight: bold;">"Incluir en"</span>.<br>
+4. <span style="font-weight: bold;">S</span>: Despliega una ventana
+donde se encuentra la informaci&oacute;n para indicar el n&uacute;mero
+de expediente en el cual se desea incluir:<br>
+&nbsp; &nbsp;
+4.1 Una caja de texto editable rotulada con "Nombre de Expediente"<br>
+&nbsp;&nbsp;&nbsp; 4.2 Un bot&oacute;n habilitado "Incluir en
+Expediente"<br>
+&nbsp;&nbsp;&nbsp; 4.3 Un bot&oacute;n habilitado "Cerrar" &nbsp;&nbsp;
+&nbsp; <span style="font-weight: bold;"><br>
+</span> </p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;"><br>
+</p>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: center;"><img
+ alt="41_vta_incluir_expediente1.jpg"
+ src="imgs/41_vta_incluir_expediente1.jpg"
+ style="width: 512px; height: 150px;"><br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;"><br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">5.
+<span style="font-weight: bold;">A</span>: Digita el n&uacute;mero de
+expediente en el cual se incluir&aacute; el radicado.<br>
+6.<span style="font-weight: bold;"> S</span>: Realiza la
+validaci&oacute;n del n&uacute;mero digitado y solicita la
+confirmaci&oacute;n:<br>
+<br>
+</p>
+<br>
+<div style="font-family: helvetica,arial,sans-serif; text-align: left;">
+<div style="margin-left: 40px; text-align: center;"><img
+ alt="41_vta_incluir_expediente2.jpg"
+ src="imgs/41_vta_incluir_expediente2.jpg"
+ style="width: 574px; height: 189px;"><br>
+</div>
+</div>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;"><br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">7.
+<span style="font-weight: bold;">A</span>: Da click en el bot&oacute;n
+"Confirmar"<br>
+8. <span style="font-weight: bold;">S</span>: Cierra la ventana y
+actualiza la vista de expedientes con la informaci&oacute;n del
+radicado que se incluy&oacute; en el expediente adicionando los
+radicados que pertenecen a dicho expediente. <span
+ style="font-weight: bold; font-style: italic;">- FIN</span><br>
+<br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;"><br>
+<div style="text-align: center;"><img
+ alt="/41_vta_incluir_expediente3.jpg"
+ src="imgs/41_vta_incluir_expediente3.jpg"
+ style="width: 927px; height: 512px;"><br>
+</div>
+<br>
+<span style="font-weight: bold;"></span></div>
+<div style="font-family: helvetica,arial,sans-serif;">
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.2
+Post-condiciones</h4>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">
+<div style="margin-left: 40px;">3.1.2.1.<span
+ style="font-family: helvetica,arial,sans-serif;"> Todas la
+transacciones que realicen mediante este caso de uso deben dejar
+registro en el
+hist&oacute;rico.</span><br
+ style="font-family: helvetica,arial,sans-serif;">
+</div>
+<div style="margin-left: 40px;"><span
+ style="font-family: helvetica,arial,sans-serif;"></span><span
+ style="font-family: helvetica,arial,sans-serif;">3.1.2.2
+En la lista de carpetas donde se encuentra un radicado debe existir un
+icono que indique que el radicado est&aacute; incluido en un expediente.</span><span
+ style="font-family: helvetica,arial,sans-serif;"></span><br>
+</div>
+<br>
+<span style="font-weight: bold;"></span><br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif;">
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.2.
+Flujo Alterno :&nbsp; El Usuario hace click sobre el v&iacute;nculo
+"Incluir en Exp" sin haber especificado Expediente.</h3>
+<br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">4.<span
+ style="font-weight: bold;"> S: </span><span
+ style="font-style: italic; font-weight: bold;">INICIO </span>Valida
+las condiciones de estructura del nombre del expediente y presenta un
+cuadro de
+di&aacute;logo en el que avisa al usuario que no ha especificado un
+expediente al cual incluir el documento actual con el texto&nbsp; <span
+ style="font-weight: bold;">"Error. Debe especificar el nombre de un
+Expediente "</span> y un bot&oacute;n con el texto<span
+ style="font-weight: bold;"> "Aceptar".</span><span
+ style="font-weight: bold;"></span><span style="font-weight: bold;"></span><br>
+<span style="font-weight: bold;"><br>
+</span>
+<div style="text-align: center;"><span style="font-weight: bold;"><img
+ alt="imgs/41_dia_no_especif_expediente.jpg"
+ src="imgs/41_dia_no_especif_expediente.jpg"
+ style="width: 623px; height: 143px;"><br>
+</span>
+<div style="text-align: justify;"><br>
+4. <span style="font-weight: bold;">A:</span> Hace click
+en el&nbsp;<span style="font-weight: bold;"> </span>bot&oacute;n <span
+ style="font-weight: bold;">"Aceptar" -</span><span
+ style="font-weight: bold; font-style: italic;">FIN</span><span
+ style="font-weight: bold;">.</span><br>
+<span style="font-weight: bold;"></span></div>
+<div style="text-align: justify;"><span style="font-weight: bold;"></span><br>
+<span style="font-weight: bold;"></span></div>
+<span style="font-weight: bold;"></span></div>
+<br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif;">
+<div style="font-family: helvetica,arial,sans-serif;">
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.3.
+Flujo Alterno :&nbsp; El Usuario hace click sobre el v&iacute;nculo
+"Incluir en Exp"&nbsp; con un dato de expediente que no existe.</h3>
+<br>
+<br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">
+4.<span style="font-weight: bold;"> S: </span><span
+ style="font-style: italic; font-weight: bold;">INICIO </span>Valida
+las condiciones de estructura del nombre del expediente y presenta un
+cuadro de
+di&aacute;logo en el que avisa al usuario que el n&uacute;mero de
+expediente que ha digitado no se encuentra en el sistema y por lo tanto
+no se puede realizar la operaci&oacute;n. <span
+ style="font-weight: bold;">"Error. El nombre de Expediente al que
+desea incluir no existe en el sistema. Por favor verifique e intente de
+nuevo"</span> y un bot&oacute;n con el
+texto<span style="font-weight: bold;"> "Aceptar".</span><span
+ style="font-weight: bold;">-</span><span
+ style="font-weight: bold; font-style: italic;">FIN</span><span
+ style="font-weight: bold;">.<br>
+<br>
+<br>
+</span><br>
+<div style="text-align: center;"><img alt="41_dia_mal_exp.jpg"
+ src="imgs/41_dia_mal_exp.jpg" style="width: 623px; height: 143px;"><br>
+</div>
+<br>
+4. <span style="font-weight: bold;">A:</span> Hace click
+en el&nbsp;<span style="font-weight: bold;"> </span>bot&oacute;n <span
+ style="font-weight: bold;">"Aceptar" -</span><span
+ style="font-weight: bold; font-style: italic;">FIN</span><span
+ style="font-weight: bold;">.</span><br>
+<span style="font-weight: bold;"></span><br>
+<span style="font-weight: bold;"></span></div>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 40px;">
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;"><span
+ style="font-weight: bold;"></span></div>
+</div>
+<div style="font-family: helvetica,arial,sans-serif;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="http://atlas.admin.gov.co/orfeo_3.5/Manuales/cu/index.html">Volver
+al indice</a></div>
+</body>
+</html>

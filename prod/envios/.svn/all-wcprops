@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/envios
+END
+paEncabeza.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/envios/paEncabeza.php
+END
+oracle_pdf.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/envios/oracle_pdf.php
+END
+paOpciones.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/envios/paOpciones.php
+END
+paBuscar.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/envios/paBuscar.php
+END
+envia.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/orfeoSGC/!svn/ver/47/branches/3.7.5/secure/prod/envios/envia.php
+END
+cuerpoMarcaEnviar.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/envios/cuerpoMarcaEnviar.php
+END
+cuerpoEnvioNormal.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/envios/cuerpoEnvioNormal.php
+END
+cuerpoListaImpresos.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/orfeoSGC/!svn/ver/32/branches/3.7.5/secure/prod/envios/cuerpoListaImpresos.php
+END
+cambiarMedioEnvio.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/envios/cambiarMedioEnvio.php
+END
+listaEnvio.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/envios/listaEnvio.php
+END
+cuerpoModifEnvio.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/orfeoSGC/!svn/ver/65/branches/3.7.5/secure/prod/envios/cuerpoModifEnvio.php
+END
+classControlLis.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/orfeoSGC/!svn/ver/47/branches/3.7.5/secure/prod/envios/classControlLis.php
+END
+paramListaImpresos.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/envios/paramListaImpresos.php
+END
+envio_mod.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/47/branches/3.7.5/secure/prod/envios/envio_mod.php
+END
+generaListaImpresos.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/envios/generaListaImpresos.php
+END
+listaMarca.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/envios/listaMarca.php
+END
+paListado.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/47/branches/3.7.5/secure/prod/envios/paListado.php
+END
+paOpciones2.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/envios/paOpciones2.php
+END
+marcaEnviar.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/envios/marcaEnviar.php
+END

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="4319"
+   name=""
+   committed-date="2007-05-08T09:27:03.898436Z"
+   url="http://172.16.0.147:8033/repos/orfeo/branches/orfeo_3.6.0/radsalida/masiva"
+   last-author="jgonzal"
+   kind="dir"
+   uuid="23dae7a9-31ea-0310-b43e-965f55760813"
+   revision="4337"/>
+<entry
+   committed-rev="4136"
+   name="adjuntar_masivaExcel.php"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2007-02-05T23:25:23.716227Z"
+   checksum="214c771f9e6d0e3a6ae8752c6855798f"
+   last-author="jgonzal"
+   kind="file"
+   prop-time="2007-04-19T18:49:24.000000Z"/>
+<entry
+   committed-rev="4137"
+   name="tipificar_masivaExcel.php"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2007-02-05T23:25:44.418271Z"
+   checksum="43b0ad81a0825f985bf7ad0350859bd0"
+   last-author="jgonzal"
+   kind="file"
+   prop-time="2007-04-19T18:49:24.000000Z"/>
+<entry
+   committed-rev="3809"
+   name="resultado_consulta_depmuni.php"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2006-10-27T19:01:48.109419Z"
+   checksum="48bb407e59d02583e15a6cc22cbaf5b6"
+   last-author="jgonzal"
+   kind="file"
+   prop-time="2007-04-19T18:49:24.000000Z"/>
+<entry
+   committed-rev="143"
+   name="upload.php.LCK"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2005-01-03T22:16:32.377848Z"
+   checksum="0e42e2b5388b3f9191e3f33ec37a14c9"
+   last-author="lfcarvaj"
+   kind="file"
+   prop-time="2007-04-19T18:49:24.000000Z"/>
+<entry
+   committed-rev="143"
+   name="genera_listado_def.php"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2005-01-03T22:16:32.377848Z"
+   checksum="8c36612694af1672cc00b82412cd05fe"
+   last-author="lfcarvaj"
+   kind="file"
+   prop-time="2007-04-19T18:49:25.000000Z"/>
+<entry
+   committed-rev="143"
+   name="pruebajh_rtf_m12f623db.png"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2005-01-03T22:16:32.377848Z"
+   checksum="5f75d0bd04108337bda291ff646c88bf"
+   last-author="lfcarvaj"
+   kind="file"
+   prop-time="2007-04-19T18:49:25.000000Z"/>
+<entry
+   committed-rev="3409"
+   name="resultConsultaESP.php"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2006-08-23T22:44:59.163066Z"
+   checksum="5b6a269e8db4ed7ee9dea425b0c294df"
+   last-author="hladino"
+   kind="file"
+   prop-time="2007-04-19T18:49:25.000000Z"/>
+<entry
+   committed-rev="4358"
+   name="OpenDocText.class.php"
+   text-time="2007-05-29T09:16:33.000000Z"
+   committed-date="2007-05-29T09:14:32.585281Z"
+   checksum="1b9545631de53b8f7bf1537c201ef51f"
+   last-author="jgonzal"
+   kind="file"
+   prop-time="2007-05-29T09:16:13.000000Z"
+   revision="4358"/>
+<entry
+   committed-rev="3407"
+   name="consultaESP.php"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2006-08-23T22:33:40.606838Z"
+   checksum="2f5025adcd924313b3b5a93981a8e122"
+   last-author="hladino"
+   kind="file"
+   prop-time="2007-04-19T18:49:25.000000Z"/>
+<entry
+   committed-rev="143"
+   name="djuntar_defint.php"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2005-01-03T22:16:32.377848Z"
+   checksum="9d1e489c6baed39bae75568e9161df28"
+   last-author="lfcarvaj"
+   kind="file"
+   prop-time="2007-04-19T18:49:25.000000Z"/>
+<entry
+   committed-rev="4319"
+   name="adjuntar_defint.php"
+   text-time="2007-05-23T12:17:07.000000Z"
+   committed-date="2007-05-08T09:27:03.898436Z"
+   checksum="0a4b4e298fc33d00d1d74ab453b2ecd6"
+   last-author="jgonzal"
+   kind="file"
+   prop-time="2007-05-09T12:17:19.000000Z"
+   revision="4340"/>
+<entry
+   committed-rev="4391"
+   name="administradorSecuencias.php"
+   text-time="2007-05-31T13:13:05.000000Z"
+   committed-date="2007-05-31T13:12:00.205719Z"
+   checksum="0fc6930fc47e959b8e58dac66364e083"
+   last-author="jgonzal"
+   kind="file"
+   prop-time="2007-05-31T13:13:05.000000Z"
+   revision="4391"/>
+<entry
+   committed-rev="1262"
+   name="error_archivo.php"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2005-08-10T19:08:14.936638Z"
+   checksum="101d37ff55c1adb591d6101a45e5fa08"
+   last-author="sapinzon"
+   kind="file"
+   prop-time="2007-04-19T18:49:25.000000Z"/>
+<entry
+   committed-rev="4390"
+   name="menu_masiva.php"
+   text-time="2007-05-31T13:13:05.000000Z"
+   committed-date="2007-05-31T13:11:18.110278Z"
+   checksum="fa898c9ba3f65a8de261dd372675b0ed"
+   last-author="jgonzal"
+   kind="file"
+   prop-time="2007-05-31T13:13:05.000000Z"
+   revision="4391"/>
+<entry
+   committed-rev="4173"
+   name="upload2.php"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2007-02-14T17:12:40.640998Z"
+   checksum="346ce613b1d6567a5db05b13f1cd064a"
+   last-author="hladino"
+   kind="file"
+   prop-time="2007-04-19T18:49:25.000000Z"/>
+<entry
+   committed-rev="4318"
+   name="adjuntar_masiva.php"
+   text-time="2007-05-23T12:17:14.000000Z"
+   committed-date="2007-05-08T09:05:46.652946Z"
+   checksum="3858ef60b78042e750b0d0c46d3413e6"
+   last-author="jgonzal"
+   kind="file"
+   prop-time="2007-05-09T12:17:14.000000Z"
+   revision="4340"/>
+<entry
+   committed-rev="4164"
+   name="upload2PorExcel.php"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2007-02-12T22:25:56.204095Z"
+   checksum="72df31c9eb2b7a7a12d800988b986386"
+   last-author="hladino"
+   kind="file"
+   prop-time="2007-04-19T18:49:25.000000Z"/>
+<entry
+   committed-rev="2652"
+   name="consulta_depmuni.php"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2006-04-18T16:46:11.308108Z"
+   checksum="4034f82292f8c8e5d66769892f4ace79"
+   last-author="hladino"
+   kind="file"
+   prop-time="2007-04-19T18:49:25.000000Z"/>
+<entry
+   committed-rev="3588"
+   name="tipificar_masiva.php"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2006-09-14T16:50:27.159307Z"
+   checksum="9208cd1fa7d02ad2e99372509e4beb74"
+   last-author="hladino"
+   kind="file"
+   prop-time="2007-04-19T18:49:25.000000Z"/>
+<entry
+   committed-rev="3407"
+   name="selecConsultaESP.php"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2006-08-23T22:33:40.606838Z"
+   checksum="1d4d8b87f9e6cd5095b60999ca436464"
+   last-author="hladino"
+   kind="file"
+   prop-time="2007-04-19T18:49:25.000000Z"/>
+<entry
+   committed-rev="3575"
+   name="printConsultaESP.php"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2006-09-14T01:00:33.837536Z"
+   checksum="5d53970e516d1ba391a5e240a390fb9d"
+   last-author="hladino"
+   kind="file"
+   prop-time="2007-04-19T18:49:25.000000Z"/>
+<entry
+   committed-rev="143"
+   name="upload2.php.LCK"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2005-01-03T22:16:32.377848Z"
+   checksum="0e42e2b5388b3f9191e3f33ec37a14c9"
+   last-author="lfcarvaj"
+   kind="file"
+   prop-time="2007-04-19T18:49:25.000000Z"/>
+<entry
+   committed-rev="143"
+   name="final2.rtf"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2005-01-03T22:16:32.377848Z"
+   checksum="a93e6fa0289de4a61f2fdc61533ce89a"
+   last-author="lfcarvaj"
+   kind="file"
+   prop-time="2007-04-19T18:49:25.000000Z"/>
+<entry
+   committed-rev="4140"
+   name="adjuntar_defintExcel.php"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2007-02-05T23:27:06.625421Z"
+   checksum="9c9d91bdef01aa486636153919311528"
+   last-author="jgonzal"
+   kind="file"
+   prop-time="2007-04-19T18:49:25.000000Z"/>
+<entry
+   committed-rev="143"
+   name="upload.php"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2005-01-03T22:16:32.377848Z"
+   checksum="7bd1e95b5cfeaf7b02923552732285c4"
+   last-author="lfcarvaj"
+   kind="file"
+   prop-time="2007-04-19T18:49:25.000000Z"/>
+<entry
+   committed-rev="4159"
+   name="generarSecuencias.php"
+   text-time="2007-04-19T18:49:25.000000Z"
+   committed-date="2007-02-12T21:21:54.552637Z"
+   checksum="f06826082fcb3f6e492ac7b30dfb411d"
+   last-author="hladino"
+   kind="file"
+   prop-time="2007-04-19T18:49:25.000000Z"/>
+</wc-entries>

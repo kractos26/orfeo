@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Documento sin t&iacute;tulo</title>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<p style="font-family: helvetica,arial,sans-serif;"><span
+ class="orfeot2"><span style="font-family: helvetica,arial,sans-serif;">&iquest;Qui&eacute;n
+asigna el N&uacute;mero
+de Radicado de Salida (NRS) a un
+documento?</span></span></p>
+<p align="right"><a href="content.htm" class="orfeolk1">Contenido</a><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar"
+ align="justify">La generaci&oacute;n y
+asignaci&oacute;n del NRS es un proceso que ORFEO realiza internamente
+despu&eacute;s de haber recibido la instrucci&oacute;n correspondiente
+y que para el usuario debe ser transparente. Es decir no es necesario
+que una persona est&eacute; pendiente del orden en que se asigna un NRS
+ni que se haga responsable de administrar el consecutivo de
+radicaci&oacute;n. <br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar"
+ align="justify">La entidad tiene por cada Direcci&oacute;n Territorial
+su propio c&oacute;digo y es
+due&ntilde;a de un consecutivo de hasta 999.999 oportunidades de
+radicaci&oacute;n que puede ejecutar de manera aut&oacute;noma. ORFEO
+ha sido configurado por defecto para que el jefe de &aacute;rea o de
+grupo, seg&uacute;n el caso, sea quien tenga la posibilidad de dar la
+instrucci&oacute;n con tan solo hacer un click sobre un v&iacute;nculo
+correspondiente como se mostrar&aacute; mas adelante. Sin embargo,
+cualquier usuario podr&iacute;a acceder a ese v&iacute;nculo siempre y
+cuando su superior lo autorice y previa configuraci&oacute;n de su
+perfil de usuario en el sistema. Para ello el jefe de la dependencia
+deber&aacute; informar dicha autorizaci&oacute;n y solicitar el ajuste
+necesario mediante el servicio de soporte (GTS)
+soporte@superservicios.gov.co, de acuerdo al procedimiento ya
+establecido.</p>
+<p class="orfeopar" align="justify"><a href="content.htm"
+ class="orfeolk1">Contenido</a></p>
+</body>
+</html>

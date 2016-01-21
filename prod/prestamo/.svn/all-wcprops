@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo
+END
+encabezado.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/encabezado.php
+END
+busquedas.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/busquedas.php
+END
+db_oracle.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/db_oracle.inc
+END
+historico.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/historico.php
+END
+inicializarForm.inc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/inicializarForm.inc
+END
+formEnvio.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/formEnvio.php
+END
+Site.css
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/Site.css
+END
+usuarioDevMasivo.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/usuarioDevMasivo.php
+END
+usuarioMasivo.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/usuarioMasivo.php
+END
+login.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/login.php
+END
+prestamoMasivo.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/prestamoMasivo.php
+END
+detalle.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/detalle.php
+END
+inicio.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/inicio.php
+END
+renovar.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/renovar.php
+END
+inicializarTabla.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/inicializarTabla.inc
+END
+devolucionMasivo.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/devolucionMasivo.php
+END
+common.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/common.php
+END
+getRtaSQL.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/getRtaSQL.inc
+END
+prestamo.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/prestamo.php
+END
+getRtaSQLAnt.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/getRtaSQLAnt.inc
+END
+dirinfo.cci
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/dirinfo.cci
+END
+builtSQL1.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/builtSQL1.inc
+END
+builtSQL2.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/builtSQL2.inc
+END
+builtSQL3.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/builtSQL3.inc
+END
+builtSQLHistorico.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/builtSQLHistorico.inc
+END
+devolucion.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/devolucion.php
+END
+1
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/1
+END
+menu_prestamo.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/menu_prestamo.php
+END
+prestar.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/prestar.php
+END
+cancelarAntiguos.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/cancelarAntiguos.php
+END
+getRtaSQLAntIn.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/getRtaSQLAntIn.inc
+END
+cuerpoTabla.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/cuerpoTabla.inc
+END
+devolver.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/devolver.php
+END
+inicializarRTA.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/inicializarRTA.inc
+END
+pedidos.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/prestamo/pedidos.php
+END

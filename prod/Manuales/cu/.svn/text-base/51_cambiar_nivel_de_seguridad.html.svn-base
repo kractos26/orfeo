@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>CU-ORFEO-51 Cambiar nivel de seguridad</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="Generator" content="Kate, the KDE Advanced Text Editor">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="Autor" content="NCASTRO">
+  <meta name="Creado" content="20051130;17410000"><style>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		P { margin-bottom: 0.21cm }
+	--</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="GENERATOR" content="OpenOffice.org 2.0-pre  (Linux)">
+  <meta name="AUTHOR" content="JMCORDOB">
+  <meta name="CREATED" content="19951121;17410000">
+  <meta name="CHANGED" content="20050825;12322300">
+  <meta content="Radicacion de documentos" name="description">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="GENERATOR" content="StarOffice 8 (Linux)">
+  <meta name="AUTHOR" content="JMCORDOB">
+  <meta name="CREATED" content="19951121;17410000">
+  <meta name="CHANGED" content="20050818;20230900"><style>
+<!--
+@page { size: 21cm 29.7cm; margin: 2cm }
+P { margin-bottom: 0.21cm }
+-->
+  </style>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="GENERATOR" content="StarOffice 8  (Linux)">
+  <meta name="CREATED" content="19951121;17410000">
+  <meta name="CHANGED" content="20060202;17511100"><style>7cm; margin: 2cm }
+		P { margin-bottom: 0.21cm }
+	--></style>
+</head>
+<body>
+<div style="text-align: right;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+<br>
+<h1
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 153);">CU-ORFEO-51&nbsp;
+Cambiar Nivel de Seguridad<br>
+</h1>
+<h2 style="font-family: helvetica,arial,sans-serif;">1.
+Descripci&oacute;n</h2>
+<p style="margin-left: 0.5cm; margin-bottom: 0cm;" align="justify"
+ lang="es-ES"><font style="font-size: 11pt;" size="2"><br>
+</font></p>
+Procedimiento
+que permite cambiar el nivel de seguridad de un radicado que se
+encuentra en un usuario determinado.<br>
+<h2 style="font-family: helvetica,arial,sans-serif;">2. Actores</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">2.1
+Usuario b&aacute;sico<br>
+</h3>
+<div style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">Usuario
+del sistema <span style="font-family: helvetica,arial,sans-serif;"></span><br>
+</div>
+<span style="font-family: helvetica,arial,sans-serif;"></span>
+<h2 style="font-family: helvetica,arial,sans-serif;">3. Flujo de Eventos</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.1.
+Flujo B&aacute;sico &oacute; Normal: Cambiar Nivel de seguridad<br>
+</h3>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.1
+Precondiciones</h4>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+3.1.1.1. El actor debe haber ingresado al sistema.<br>
+3.1.1.2. El actor debe tener radicados en sus carpetas.<br>
+<div style="text-align: center;"><br>
+</div>
+</div>
+<br>
+<div style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">1.
+<span style="font-weight: bold;">A:</span> <span
+ style="font-style: italic; font-weight: bold;">INICIO</span><span
+ style="font-weight: bold;"> -</span> Ingresa a la informaci&oacute;n
+general del radicado seleccionando la fecha de radicaci&oacute;n.<br>
+<br>
+</div>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;"><img
+ alt="39_vta_lista_carpetas.jpg" src="imgs/39_vta_lista_carpetas.jpg"
+ style="width: 1060px; height: 344px;"><br>
+<span style="font-weight: bold;"></span><br>
+2.<span style="font-weight: bold;"> S:</span> Despliega la
+informaci&oacute;n
+general del radicado
+seleccionado, con los datos grabados en el proceso de
+radicaci&oacute;n. En el item Nivel de seguridad muestra el tipo de
+seguridad que se le est&aacute; dando a dicho radicado.<br>
+</p>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: center;"><img
+ alt="51_cambiar_nivel_seguridad.jpg"
+ src="imgs/51_cambiar_nivel_seguridad.jpg"
+ style="width: 1002px; height: 304px;"><br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;"><br>
+3.<span style="font-weight: bold;"> A: </span>Selecciona el
+bot&oacute;n de cambio de datos, en la parte derecha del item<br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">4.
+<span style="font-weight: bold;">S:</span> Despliega un lista con las
+opciones que se pueden parametrizar y que determinar&aacute;n el nivel
+de consulta de dicho radicado.<br>
+<br>
+</p>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: center;"><img src="imgs/51_grabar_cambio.jpg" alt="51_grabar_cambio.jpg" width="301" height="149" border="0" style="width: 444px; height: 196px;"><br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">5.
+<span style="font-weight: bold;">A: </span>Selecciona el nivel de
+seguridad que le quiere dar al documento. Da click en el bot&oacute;n
+"Grabar Cambio"<br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">6.
+<span style="font-weight: bold;">S:</span> Realiza la
+confirmaci&oacute;n del cambio de nivel.<br>
+</p>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: center;"><img
+ alt="51_confirmar_cambio.jpg" src="imgs/51_confirmar_cambio.jpg"
+ style="width: 440px; height: 146px;"><br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">7.
+<span style="font-weight: bold;">A:</span>&nbsp; Selecciona nuevamente
+la pesta&ntilde;a Informaci&oacute;n General<br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">8.
+<span style="font-weight: bold;">S:</span> Muestra el Nivel de
+seguridad actualizado.<br>
+</p>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: center;"><img
+ alt="51_nivel_actualizado.jpg" src="imgs/51_nivel_actualizado.jpg"
+ style="width: 1002px; height: 304px;"><br>
+</p>
+<div style="text-align: center;"><br>
+</div>
+<br>
+<br>
+<br>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.2
+Post-condiciones</h4>
+<div style="margin-left: 80px;">1. Se guardar&aacute; el registro
+hist&oacute;rico de la transacci&oacute;n realizada.<br>
+2. Al realizar una consulta se tendr&aacute; en cuenta este nivel de
+seguridad para mostrarlo o no:<br>
+- "P&uacute;blico": El documento podr&aacute; ser consultado por
+cualquier usuario.<br>
+             - "Confidencial": El documento mantendrá un nivel de confidencialidad y solo podrá ser visto por el usuario actual.
+            <br>
+            3. Si el documento es enviado a Dependencia de salida (archivo), se perderá el nivel de confiabilidad y pasará a ser un documento público.
+            <br>
+<br>
+</div>
+<br style="font-family: helvetica,arial,sans-serif;">
+<a style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a><br
+ style="font-family: helvetica,arial,sans-serif;">
+<br>
+</body>
+</html>

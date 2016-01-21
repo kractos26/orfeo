@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/envios
+END
+crea_combos_universales.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/envios/crea_combos_universales.php
+END
+queryCuerpoMarcaEnviar.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/orfeoSGC/!svn/ver/49/branches/3.7.5/secure/prod/include/query/envios/queryCuerpoMarcaEnviar.php
+END
+queryCuerpoEnvioNormal.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/envios/queryCuerpoEnvioNormal.php
+END
+queryMarcaEnviar.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/envios/queryMarcaEnviar.php
+END
+queryPaencabeza.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/envios/queryPaencabeza.php
+END
+queryCuerpoModifEnvio.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/orfeoSGC/!svn/ver/49/branches/3.7.5/secure/prod/include/query/envios/queryCuerpoModifEnvio.php
+END
+queryListaImpresos.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/envios/queryListaImpresos.php
+END
+queryParamListaImpresos.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/envios/queryParamListaImpresos.php
+END
+queryEnvia.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/envios/queryEnvia.php
+END

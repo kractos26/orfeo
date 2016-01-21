@@ -1,0 +1,703 @@
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<title>Javascript Calendar Support Zapatec.com</title>
+ <meta name="description" content="Zapatec's Javascript Calendar is a cross browser calendar that includes a wizard for easy configuration">
+ <meta name="keywords" content="dhtml calendar, javascript, DHTML Calendar, Javascript, calendar control, simple javascript calendar">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <META Name="Robots" Content="index,follow">
+ <META Name="Googlebot" Content="index,follow">
+ <META http-equiv="Pragma" content="no-cache">
+<link href="./css/zpcal.css" rel="stylesheet" type="text/css">
+<link href="./css/template.css" rel="stylesheet" type="text/css">
+<link rel="SHORTCUT ICON" href="./favicon.ico">
+
+<link rel="stylesheet" type="text/css" href="./css/docs.css" title=default>
+
+
+<!-- Left - STart -->
+<div class="leftSide">
+	<div class="leftBGTab"><div class="leftTab"><strong>Zapatec Calendar</strong></div></div>
+
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Point arrow' src="./images/arrow-grey.gif" >&nbsp;&nbsp;&nbsp;<a href="coding.html" class="lnksubpage">Wizard</a></div></div>
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Point arrow'  src="./images/arrow-grey.gif" >&nbsp;&nbsp;&nbsp;<a href="demo.html" class="lnksubpage">Demos</a></div></div>
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Point arrow' src="./images/arrow-grey.gif" >&nbsp;&nbsp;&nbsp;<a href="docs.html" class="lnksubpage">Quick Guide</a></div></div>
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Point arrow' src="./images/arrow-grey.gif" >&nbsp;&nbsp;&nbsp;<a href="tutorial.html" class="lnksubpage">Reference Manual</a></div></div>
+
+</div>
+
+<!-- Left - End -->
+<!-- start - Page content -->
+	<div class="rightSide">
+		<div class="pageImage"></div>
+
+		<div class="frameContent">
+			<div class="pageContent">
+
+
+	
+
+
+
+<h1 class=title align=center><br><br>Zapatec DHTML Calendar Quick Guide</h1>
+<a name="node_sec_Temp_1"></a>
+<h1>Contents</h1>
+<p><a name="node_toc_start"></a></p>
+<p><b>
+&nbsp; &nbsp; <a name="node_toc_node_sec_1"></a><a href="#node_sec_1">1&nbsp;&nbsp;Get the Zapatec DHTML Calendar files</a></b><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_1.1"></a><a href="#node_sec_1.1">1.1&nbsp;&nbsp;Download the Zip file</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_1.2"></a><a href="#node_sec_1.2">1.2&nbsp;&nbsp;Unzip zpcal.zip</a><br>
+</p>
+<p><b>
+&nbsp; &nbsp; <a name="node_toc_node_sec_2"></a><a href="#node_sec_2">2&nbsp;&nbsp;Create a Calendar with the Wizard</a></b><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_2.1"></a><a href="#node_sec_2.1">2.1&nbsp;&nbsp;What does the Wizard do?</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_2.2"></a><a href="#node_sec_2.2">2.2&nbsp;&nbsp;How to Start the Wizard</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_2.3"></a><a href="#node_sec_2.3">2.3&nbsp;&nbsp;Using the Wizard</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_2.4"></a><a href="#node_sec_2.4">2.4&nbsp;&nbsp;Theme and Language</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_2.5"></a><a href="#node_sec_2.5">2.5&nbsp;&nbsp;Basic Setup</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_2.5.1"></a><a href="#node_sec_2.5.1">2.5.1&nbsp;&nbsp;First day of week</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_2.5.2"></a><a href="#node_sec_2.5.2">2.5.2&nbsp;&nbsp;Show week numbers</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_2.5.3"></a><a href="#node_sec_2.5.3">2.5.3&nbsp;&nbsp;Show other months</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_2.5.4"></a><a href="#node_sec_2.5.4">2.5.4&nbsp;&nbsp;Show Time</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_2.5.5"></a><a href="#node_sec_2.5.5">2.5.5&nbsp;&nbsp;Time Format</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_2.5.6"></a><a href="#node_sec_2.5.6">2.5.6&nbsp;&nbsp;Year Step</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_2.5.7"></a><a href="#node_sec_2.5.7">2.5.7&nbsp;&nbsp;Date and time formats</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_2.6"></a><a href="#node_sec_2.6">2.6&nbsp;&nbsp;Events</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_2.7"></a><a href="#node_sec_2.7">2.7&nbsp;&nbsp;Generate</a><br>
+</p>
+<p><b>
+&nbsp; &nbsp; <a name="node_toc_node_sec_3"></a><a href="#node_sec_3">3&nbsp;&nbsp;Quick Startup (Without Wizard)</a></b><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.1"></a><a href="#node_sec_3.1">3.1&nbsp;&nbsp;Project files</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.1.1"></a><a href="#node_sec_3.1.1">3.1.1&nbsp;&nbsp;The zpcal folder</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.1.2"></a><a href="#node_sec_3.1.2">3.1.2&nbsp;&nbsp;The src folder</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.1.3"></a><a href="#node_sec_3.1.3">3.1.3&nbsp;&nbsp; The demo folder</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.1.4"></a><a href="#node_sec_3.1.4">3.1.4&nbsp;&nbsp;The doc folder</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.1.5"></a><a href="#node_sec_3.1.5">3.1.5&nbsp;&nbsp;The lang folder</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.1.6"></a><a href="#node_sec_3.1.6">3.1.6&nbsp;&nbsp;The themes folder</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.2"></a><a href="#node_sec_3.2">3.2&nbsp;&nbsp;Set Up Your Calendar</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.2.1"></a><a href="#node_sec_3.2.1">3.2.1&nbsp;&nbsp;insert the headers</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.2.2"></a><a href="#node_sec_3.2.2">3.2.2&nbsp;&nbsp;Path Warning</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.3"></a><a href="#node_sec_3.3">3.3&nbsp;&nbsp;Create the Calendar Form</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.3.1"></a><a href="#node_sec_3.3.1">3.3.1&nbsp;&nbsp;Insert the form code</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.4"></a><a href="#node_sec_3.4">3.4&nbsp;&nbsp;Insert the Calendar configuration code</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.5"></a><a href="#node_sec_3.5">3.5&nbsp;&nbsp;Copy your files to your web server</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.6"></a><a href="#node_sec_3.6">3.6&nbsp;&nbsp;Test the calendar application</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.7"></a><a href="#node_sec_3.7">3.7&nbsp;&nbsp;Change Included Files</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.7.1"></a><a href="#node_sec_3.7.1">3.7.1&nbsp;&nbsp;Use a Different Themes</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.7.2"></a><a href="#node_sec_3.7.2">3.7.2&nbsp;&nbsp;Use a Different Language</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.8"></a><a href="#node_sec_3.8">3.8&nbsp;&nbsp;Customize Setup Options</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.8.1"></a><a href="#node_sec_3.8.1">3.8.1&nbsp;&nbsp;Change to Flat Calendar</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.8.2"></a><a href="#node_sec_3.8.2">3.8.2&nbsp;&nbsp;Change date and time format</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.8.3"></a><a href="#node_sec_3.8.3">3.8.3&nbsp;&nbsp;Show time</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_3.8.4"></a><a href="#node_sec_3.8.4">3.8.4&nbsp;&nbsp;Time Format</a><br>
+</p>
+<p><b>
+&nbsp; &nbsp; <a name="node_toc_node_sec_4"></a><a href="#node_sec_4">4&nbsp;&nbsp;Sample Calendar Configurations</a></b><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.1"></a><a href="#node_sec_4.1">4.1&nbsp;&nbsp;Basic Single click</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <a name="node_toc_node_sec_4.2"></a><a href="#node_sec_4.2">4.2&nbsp;&nbsp;Double click, with time</a><br>
+</p>
+<p><b>
+&nbsp; &nbsp; <a name="node_toc_node_sec_5"></a><a href="#node_sec_5">5&nbsp;&nbsp;Calendar Setup Detailed Parameters</a></b><br>
+</p>
+<p>
+</p>
+<a name="node_sec_1"></a>
+<h1><a href="#node_toc_node_sec_1">1&nbsp;&nbsp;Get the Zapatec DHTML Calendar files</a></h1>
+<p></p>
+<a name="node_sec_1.1"></a>
+<h2><a href="#node_toc_node_sec_1.1">1.1&nbsp;&nbsp;Download the Zip file</a></h2>
+<p>
+The DHTML Calendar files are bundled in a zip file. Click on the download link in
+the Calendar section of Zapatec's web site, and follow the instructions to
+download the file.</p>
+<p>
+Save the file (zpcal.zip) to your website's root folder on your computer or
+server.</p>
+<p>
+</p>
+<a name="node_sec_1.2"></a>
+<h2><a href="#node_toc_node_sec_1.2">1.2&nbsp;&nbsp;Unzip zpcal.zip</a></h2>
+<p></p>
+<ol> 
+<li><p>On your computer, go to the folder where you saved the file zpcal.zip.
+</p>
+<li><p>zpcal.zip contains a folder called zpcal that holds all of the files you will need to create your calendar.
+</p>
+<li><p>Open or double-click zpcal.zip to unzip or unpack it.
+</p>
+</ol><p></p>
+<p>
+</p>
+<p>
+</p>
+<a name="node_sec_2"></a>
+<h1><a href="#node_toc_node_sec_2">2&nbsp;&nbsp;Create a Calendar with the Wizard</a></h1>
+<p></p>
+<a name="node_sec_2.1"></a>
+<h2><a href="#node_toc_node_sec_2.1">2.1&nbsp;&nbsp;What does the Wizard do?</a></h2>
+<p>The Wizard generates the code for exactly the kind of calendar you want! It's a
+Graphic User Interface (GUI) that allows you to visually select the Language,
+Theme, Size, Style, and more.  Once you have made your selections, the Wizard
+will create the code you need to place in your HTML document, form, or
+application with the click of a button. </p>
+<p>
+</p>
+<a name="node_sec_2.2"></a>
+<h2><a href="#node_toc_node_sec_2.2">2.2&nbsp;&nbsp;How to Start the Wizard</a></h2>
+<p>If you haven't done so follow the instructions in section <a href="#node_sec_1.1">1.1</a>. 
+to download the Calendar files.
+</p>
+<ol> 
+<li><p>Navigate to your DHTML Calendar folder (zpcal)
+</p>
+<li><p>Open the Wizard directory (folder)
+</p>
+<li><p>Open index.html in your Web browser
+</p>
+</ol><p></p>
+<p>
+</p>
+<a name="node_sec_2.3"></a>
+<h2><a href="#node_toc_node_sec_2.3">2.3&nbsp;&nbsp;Using the Wizard</a></h2>
+<p>The Wizard page displays the calendar you are creating as you make your
+selections. It will update as you choose the features you want so that you can
+see what the end result will be. This is a case of &quot;What You See is What You
+Get&quot; (WYSIWYG).  
+Click on Next and Previous to move through the panes, or choose a specific
+pane from the menu on the left hand side.</p>
+<p>
+Click <b>Next</b> to move to the Theme and Language page and start creating your
+calendar.</p>
+<p>
+</p>
+<a name="node_sec_2.4"></a>
+<h2><a href="#node_toc_node_sec_2.4">2.4&nbsp;&nbsp;Theme and Language</a></h2>
+<p></p>
+<ol> 
+<li><p>Choose the language in which you want to present your calendar. 
+</p>
+<li><p>Select the theme you want for your calendar. 
+</p>
+<li><p>If you want your calendar to display smaller, check the box that says
+&quot;Use the small version.&quot; Keep in mind that later selections, such as <b>show
+other months</b>, will affect calendar size.</p>
+<p>
+</p>
+</ol><p></p>
+<p>
+<b>Watch the DHTML Calendar on the screen as it changes with your selections.</b> You can
+change your selections to view different themes and languages. 
+Keep in mind that later selections, such as show other months, will affect calendar size. </p>
+<p>
+</p>
+<a name="node_sec_2.5"></a>
+<h2><a href="#node_toc_node_sec_2.5">2.5&nbsp;&nbsp;Basic Setup</a></h2>
+<p></p>
+<a name="node_sec_2.5.1"></a>
+<h3><a href="#node_toc_node_sec_2.5.1">2.5.1&nbsp;&nbsp;First day of week</a></h3>
+<p>Select the first day of week by using the drop-down box. </p>
+<p>
+</p>
+<a name="node_sec_2.5.2"></a>
+<h3><a href="#node_toc_node_sec_2.5.2">2.5.2&nbsp;&nbsp;Show week numbers</a></h3>
+<p>Check if you want the Calendar to display week numbers.
+The Calendar can calculate and display week numbers using the ISO 8601
+standard.  This can be very handy for someone who needs to know which week of
+the year they are working with. </p>
+<p>
+</p>
+<a name="node_sec_2.5.3"></a>
+<h3><a href="#node_toc_node_sec_2.5.3">2.5.3&nbsp;&nbsp;Show other months</a></h3>
+<p>Check Show other months if you want the calendar to display days from
+adjacent months. Note that calendars that display days from other months are fixed size
+- they always display six weeks. Calendars that don't display days from other months
+will sometime display five weeks and other times six.</p>
+<p>
+</p>
+<a name="node_sec_2.5.4"></a>
+<h3><a href="#node_toc_node_sec_2.5.4">2.5.4&nbsp;&nbsp;Show Time</a></h3>
+<p>Check to have your users prompted to enter a time as well as a date.</p>
+<p>
+</p>
+<a name="node_sec_2.5.5"></a>
+<h3><a href="#node_toc_node_sec_2.5.5">2.5.5&nbsp;&nbsp;Time Format</a></h3>
+<p>If you checked &quot;Show Time&quot; you can choose from a 12-hour or 24-hour clock.</p>
+<p>
+</p>
+<a name="node_sec_2.5.6"></a>
+<h3><a href="#node_toc_node_sec_2.5.6">2.5.6&nbsp;&nbsp;Year Step</a></h3>
+<p>This is useful for drop-down year menus. The years can be displayed with a
+certain step after the next or previous year. The next or previous year is
+always the first one displayed, no matter how many steps you choose between
+years.  </p>
+<p>
+</p>
+<a name="node_sec_2.5.7"></a>
+<h3><a href="#node_toc_node_sec_2.5.7">2.5.7&nbsp;&nbsp;Date and time formats</a></h3>
+<p>To further customize your calendar, choose from a multitude of date and time formats. Some examples of date formats are:
+</p>
+<pre class=verbatim>January 1, 2007
+01-01-07
+1/1/2007
+01-Jan-07
+</pre><p></p>
+<p>
+</p>
+<a name="node_sec_2.6"></a>
+<h2><a href="#node_toc_node_sec_2.6">2.6&nbsp;&nbsp;Events</a></h2>
+<p>Events cause the calendar to do something specific based on the user's
+actions. For example, you can elect to have the calendar display a tip of the
+day tool tip when the user first clicks on it. In this case, the Event would
+be onClick</p>
+<p>
+</p>
+<a name="node_sec_2.7"></a>
+<h2><a href="#node_toc_node_sec_2.7">2.7&nbsp;&nbsp;Generate</a></h2>
+<p>When you click &quot;Generate&quot; the code for your calendar will display in a window
+on this screen. You can copy this code and paste it into your HTML document
+for a quick-and-easy calendar setup! </p>
+<p>
+</p>
+<a name="node_sec_3"></a>
+<h1><a href="#node_toc_node_sec_3">3&nbsp;&nbsp;Quick Startup (Without Wizard)</a></h1>
+<p>If you have not done so follow the instructions in section <a href="#node_sec_1.1">1.1</a>. 
+to download and unzip the Calendar files.</p>
+<p>
+</p>
+<a name="node_sec_3.1"></a>
+<h2><a href="#node_toc_node_sec_3.1">3.1&nbsp;&nbsp;Project files</a></h2>
+<p>Here's a description of the project files, excluding documentation and example
+files.</p>
+<p>
+</p>
+<a name="node_sec_3.1.1"></a>
+<h3><a href="#node_toc_node_sec_3.1.1">3.1.1&nbsp;&nbsp;The zpcal folder</a></h3>
+<p>The main directory containing all of the other directories and files</p>
+<p>
+</p>
+<a name="node_sec_3.1.2"></a>
+<h3><a href="#node_toc_node_sec_3.1.2">3.1.2&nbsp;&nbsp;The src folder</a></h3>
+<p>The src folder contains the JavaScript that makes the program work</p>
+<p>
+</p>
+<ul>
+<li><p>the main program file (<tt>calendar.js</tt>).  This defines all the logic
+behind the calendar widget.</p>
+<p>
+</p>
+<li><p>helper functions for quick setup of the calendar (<tt>calendar-setup.js</tt>).  
+</p>
+</ul><p></p>
+<p>
+</p>
+<a name="node_sec_3.1.3"></a>
+<h3><a href="#node_toc_node_sec_3.1.3">3.1.3&nbsp;&nbsp; The demo folder</a></h3>
+<p>The demo folder holds examples of many of the types of calendars you can use. It is a great resource for examples of usage and the HTML code needed to make it happen.
+</p>
+<ul>
+<li><p>Example1.html: 
+a basic, single-click version of the Calendar
+</p>
+<li><p>Example2.html: 
+requires the user to double-click and displays the time
+</p>
+<li><p>Example3.html: 
+an example of the single-click calendar with icon and disabled weekends
+</p>
+<li><p>Example4.html: 
+an example of the single-click calendar with a different alignment
+</p>
+<li><p>Example5.html: 
+a flat calendar with special days highlighted
+</p>
+<li><p>Example6.html: 
+a flat calendar with notes and dates with special names
+</p>
+<li><p>Example7.html:
+offers the end-user the opportunity to select multiple dates
+</p>
+<li><p>Example8.html: 
+simulates coordinated dates like check-in and check-out at a hotel
+</p>
+</ul><p></p>
+<p>
+</p>
+<a name="node_sec_3.1.4"></a>
+<h3><a href="#node_toc_node_sec_3.1.4">3.1.4&nbsp;&nbsp;The doc folder</a></h3>
+<p>The doc folder contains all of the help and support files to assist you with the Calendar. Help is provided in HTML, and PDF formats with and without screenshots for ease of use and display.</p>
+<p>
+</p>
+<a name="node_sec_3.1.5"></a>
+<h3><a href="#node_toc_node_sec_3.1.5">3.1.5&nbsp;&nbsp;The lang folder</a></h3>
+<p>The language folder contains up to twenty different languages - from English to French, Spanish, Italian and more - to provide you with the greatest possible versatility and ease of use for you and your end-users.
+Afrikaans, English, French, German, Spanish, Finnish, Croatian, Hungarian, Italian, Romanian, Slovenian, and Turkish are currently available.</p>
+<p>
+</p>
+<a name="node_sec_3.1.6"></a>
+<h3><a href="#node_toc_node_sec_3.1.6">3.1.6&nbsp;&nbsp;The themes folder</a></h3>
+<p>The themes folder contains the CSS files  that control the aesthetics of your calendar including special themes.</p>
+<p>
+</p>
+<p>
+</p>
+<a name="node_sec_3.2"></a>
+<h2><a href="#node_toc_node_sec_3.2">3.2&nbsp;&nbsp;Set Up Your Calendar</a></h2>
+<p></p>
+<a name="node_sec_3.2.1"></a>
+<h3><a href="#node_toc_node_sec_3.2.1">3.2.1&nbsp;&nbsp;insert the headers</a></h3>
+<p>
+In your web editor (Dreamweaver, UltraEdit, etc.), open the web page where you
+want the calendar placed.  Insert your cursor before the ending <tt>&lt;/head&gt;</tt> tag.
+Paste the following style path and script paths before the ending <tt>&lt;/head&gt;</tt> tag:</p>
+<p>
+</p>
+<pre class=verbatim>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;themes/winxp.css&quot;/&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;src/utils.js&quot;/&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;src/calendar.js&quot;/&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;lang/calendar-en.js&quot;/&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;src/calendar-setup.js&quot;/&gt;
+</pre><p></p>
+<p>
+The five lines point to five different files located in the calendar folder. The files are:</p>
+<p>
+</p>
+<ul>
+<li><p><tt>winxp.css</tt></p>
+<p>
+Located in the themes folder. </p>
+<p>
+Controls the theme (appearance) of the Calendar.</p>
+<p>
+</p>
+<li><p><tt>utils.js </tt></p>
+<p>
+Located in the src folder</p>
+<p>
+Contains utility functions used by the calendar.</p>
+<p>
+</p>
+<li><p><tt>calendar.js </tt></p>
+<p>
+Located in the src folder</p>
+<p>
+Contains the functions that control the functionality of the Calendar</p>
+<p>
+</p>
+<li><p><tt>calendar-en.js</tt></p>
+<p>
+Located in the lang folder</p>
+<p>
+Controls the language in which the Calendar is displayed</p>
+<p>
+</p>
+<li><p><tt>calendar-setup.js</tt></p>
+<p>
+Located in the src folder</p>
+<p>
+Allows for quick and easy set up and customization of the calendar.
+</p>
+</ul><p></p>
+<p>
+</p>
+<a name="node_sec_3.2.2"></a>
+<h3><a href="#node_toc_node_sec_3.2.2">3.2.2&nbsp;&nbsp;Path Warning</a></h3>
+<p>If your web page containing the Calendar is saved in the calendar folder, the above
+lines will work without any changes. If, however, you save your web page in
+another location (like directly under your website's root folder), you will
+need to add the folder information to the front of the file path so that your
+web page can read these files. For instance if you keep the files in the
+zpcal folder you should include the following lines:</p>
+<p>
+</p>
+<pre class=verbatim>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;zpcal/themes/winxp.css&quot;/&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;zpcal/src/utils.js&quot;/&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;zpcal/src/calendar.js&quot;/&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;zpcal/lang/calendar-en.js&quot;/&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;zpcal/src/calendar-setup.js&quot;/&gt;
+</pre><p></p>
+<p>
+</p>
+<a name="node_sec_3.3"></a>
+<h2><a href="#node_toc_node_sec_3.3">3.3&nbsp;&nbsp;Create the Calendar Form</a></h2>
+<p>Most web developers use the Zapatec HTML Calendar with forms.  The most basic
+form of setup is to create a small form with a text box and a button. </p>
+<p>
+</p>
+<a name="node_sec_3.3.1"></a>
+<h3><a href="#node_toc_node_sec_3.3.1">3.3.1&nbsp;&nbsp;Insert the form code</a></h3>
+<p>Name the text box &quot;data&quot; and give the button an id of &quot;trigger&quot;. </p>
+<p>
+</p>
+<pre class=verbatim>&lt;form action=&quot;#&quot; method=&quot;get&quot;&gt;
+&lt;input type=&quot;text&quot; name=&quot;date&quot; id=&quot;f_date_b&quot; /&gt;
+&lt;button type=&quot;reset&quot; id=&quot;f_trigger_b&quot;&gt;...&lt;/button&gt;
+&lt;/form&gt;
+</pre><p>
+<em>Quick Start: paste this code into the body of your document.</em></p>
+<p>
+</p>
+<a name="node_sec_3.4"></a>
+<h2><a href="#node_toc_node_sec_3.4">3.4&nbsp;&nbsp;Insert the Calendar configuration code</a></h2>
+<p>
+Now, insert the code that makes the calendar pop up when your form is used. The
+following code should be pasted directly after <tt>&lt;/form&gt;</tt> and before <tt>&lt;/body&gt;</tt> </p>
+<p>
+</p>
+<pre class=verbatim>&lt;script type=&quot;text/javascript&quot;&gt;
+Zapatec.Calendar.setup(
+inputField  : &quot;data&quot;,        // This is the ID of your form's text field
+ifFormat    : &quot;%m %d, %Y&quot;,   // Format in which you want the date returned
+button      : &quot;trigger&quot;     // &quot;trigger&quot; is the ID of the form's button
+}
+&lt;/script&gt;
+&lt;noscript&gt;
+&lt;br/&gt;
+	This page uses a &lt;a href='http://www.zapatec.com/products/prod1'&gt; Javascript Calendar &lt;/a&gt;, but
+	your browser does not support Javascript. 
+&lt;br/&gt;
+Either enable Javascript in your Browser or upgrade to a newer version.
+&lt;/noscript&gt;
+</pre><p>
+<em>Quick Start: paste this code into the body of your document AFTER the <tt>&lt;/form&gt;</tt> tag.</em></p>
+<p>
+</p>
+<a name="node_sec_3.5"></a>
+<h2><a href="#node_toc_node_sec_3.5">3.5&nbsp;&nbsp;Copy your files to your web server</a></h2>
+<p>Using your editing or FTP program, copy or &quot;put&quot; your web page and the entire
+calendar folder to the root of your website.</p>
+<p>
+</p>
+<a name="node_sec_3.6"></a>
+<h2><a href="#node_toc_node_sec_3.6">3.6&nbsp;&nbsp;Test the calendar application</a></h2>
+<p>Using your web browser, navigate to the web page that you created to include
+the Zapatec HTML Calendar. Click the &quot;trigger&quot; button  to see if the calendar
+pops up. Click a date to select it and make sure that the date displays in the
+empty box.  Congratulations! You have set up the most basic version of the
+Zapatec HTML Calendar! Now, on to the fun and exciting features you can change
+with this highly adaptable application!</p>
+<p>
+</p>
+<a name="node_sec_3.7"></a>
+<h2><a href="#node_toc_node_sec_3.7">3.7&nbsp;&nbsp;Change Included Files</a></h2>
+<p>You can change the theme or language of the calendar by choosing to include a different 
+file in your header.
+</p>
+<a name="node_sec_3.7.1"></a>
+<h3><a href="#node_toc_node_sec_3.7.1">3.7.1&nbsp;&nbsp;Use a Different Themes</a></h3>
+<p>One of the lines you inserted in Section <a href="#node_sec_3.2.1">3.2.1</a> includes the
+winxp.css file in the themes folder. Winxp is one of the themes that comes with
+the Zapatec DHTML Calendar. You can choose between several themes by changing
+the file called by the path. Look in the themes folder for more options.</p>
+<p>
+1. Theme 1 - Windows XP
+Use this line: 
+</p>
+<pre class=verbatim>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;themes/winxp.css&quot;/&gt;
+</pre><p>
+Get this result: Windows XP Theme:
+<p>
+<img src="images/calXp.gif" border="0" alt="Winxp Calendar" style='margin-left:3em'></p>
+<p>
+</p>
+<p>
+2. Theme 2 - Green
+Use this line:
+</p>
+<pre class=verbatim>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;themes/green.css&quot;/&gt;
+</pre><p>
+Get this result: Green Theme
+<p>
+<img src="images/calGreen.gif" border="0" alt="Green Calendar" style='margin-left:3em'></p>
+<p>
+</p>
+<p>
+</p>
+<a name="node_sec_3.7.2"></a>
+<h3><a href="#node_toc_node_sec_3.7.2">3.7.2&nbsp;&nbsp;Use a Different Language</a></h3>
+<p>One of the lines you inserted in Section <a href="#node_sec_3.2.1">3.2.1</a> was 
+</p>
+<pre class=verbatim>&lt;script type=&quot;text/javascript&quot; src=&quot;lang/calendar-en.js&quot;/&gt;
+</pre><p></p>
+<p>
+This line controls the language in which your calendar is displayed. The file
+called here is calendar-en.js, the English file, and it is being called from
+the lang folder. To change the language, change the file name to one of those
+in the lang directory. Examples are:</p>
+<p>
+</p>
+<pre class=verbatim>English: &lt;script type=&quot;text/javascript&quot; src=&quot;lang/calendar-en.js&quot;&gt;&lt;/script&gt;
+French: &lt;script type=&quot;text/javascript&quot; src=&quot;lang/calendar-fr.js&quot;&gt;&lt;/script&gt;
+Italian: &lt;script type=&quot;text/javascript&quot; src=&quot;lang/calendar-it.js&quot;&gt;&lt;/script&gt;
+</pre><p></p>
+<p>
+</p>
+<a name="node_sec_3.8"></a>
+<h2><a href="#node_toc_node_sec_3.8">3.8&nbsp;&nbsp;Customize Setup Options</a></h2>
+<p>In section <a href="#node_sec_3.4">3.4</a> you saw how to create a calendar by inserting 
+the Calendar.setup javascript code. You can customize the calendar by setting
+various options in the setup section. For readability the options are displayed
+one on a line. Javascript syntax requires that there be a comma after each option 
+except for the last one.</p>
+<p>
+</p>
+<a name="node_sec_3.8.1"></a>
+<h3><a href="#node_toc_node_sec_3.8.1">3.8.1&nbsp;&nbsp;Change to Flat Calendar</a></h3>
+<p>The flat version of the Zapatec DHTML Calendar is simply one that displays on
+the page all the time instead of popping up when clicked. To make the Zapatec
+DHTML Calendar flat, you need to put it in a placeholder like a table or a div
+on your web page. Here is an example using a div to hold the calendar:</p>
+<p>
+Paste this code into the body of your html file:</p>
+<p>
+</p>
+<pre class=verbatim>&lt;div id=&quot;calendar-container&quot;&gt;&lt;/div&gt;
+</pre><p></p>
+<p>
+The div is the container that holds your calendar. </p>
+<p>
+Now, we will use JavaScript to put the calendar inside the DIV. 
+Important: the JavaScript code must be placed after the div code.
+Paste the following code after your div container code:</p>
+<p>
+</p>
+<pre class=verbatim>&lt;script type=&quot;text/javascript&quot;&gt;
+Zapatec.Calendar.setup( {
+flat         : &quot;calendar-container&quot; // ID of the parent element
+});
+</pre><p></p>
+<p>
+</p>
+<a name="node_sec_3.8.2"></a>
+<h3><a href="#node_toc_node_sec_3.8.2">3.8.2&nbsp;&nbsp;Change date and time format</a></h3>
+<p></p>
+<pre class=verbatim>ifFormat&quot;:       &quot;%Y/%m/%d&quot;;
+</pre><p></p>
+<p>
+The <tt>&quot;%Y/%m/%d&quot;</tt> tells the calendar to display the date as
+year/month/day. You can change this in many ways.  For example, &quot;%B %d,  %Y &quot;
+tells the calendar to display the date as month day, year (capital B is for
+month, lower-case d for day, and capital Y for a four-digit year. </p>
+<p>
+Some common abbreviations you can use are as follows. In the case of capital
+letters, you can often set an abbreviated version by using lower-case. For
+example, if you want January spelled out, use capital B. If you want January
+displayed as Jan, use lower-case b. </p>
+<p>
+%A  full weekday name  (user lower-case for abbreviated)</p>
+<p>
+%B  full month name  (user lower-case for abbreviated)</p>
+<p>
+%d  the day of the month ( 00 .. 31 )  </p>
+<p>
+%Y  year including the century ( ex. 1979 ) (user lower-case for a two-digit year)</p>
+<p>
+For a full list of the formatting abbreviations, see the Date Parameters section of the programmer's manual.</p>
+<p>
+</p>
+<a name="node_sec_3.8.3"></a>
+<h3><a href="#node_toc_node_sec_3.8.3">3.8.3&nbsp;&nbsp;Show time</a></h3>
+<p></p>
+<pre class=verbatim>showsTime:true,
+</pre><p></p>
+<p>
+When true will prompt for time as well as date.</p>
+<p>
+</p>
+<a name="node_sec_3.8.4"></a>
+<h3><a href="#node_toc_node_sec_3.8.4">3.8.4&nbsp;&nbsp;Time Format</a></h3>
+<p></p>
+<pre class=verbatim>timeFormat: &quot;24&quot;,
+</pre><p></p>
+<p>
+Changing the &quot;24&quot; to &quot;12&quot; will change the time display on your calendar from a 24-hour to a 12-hour clock.</p>
+<p>
+</p>
+<a name="node_sec_4"></a>
+<h1><a href="#node_toc_node_sec_4">4&nbsp;&nbsp;Sample Calendar Configurations</a></h1>
+<p>The following are a few of the many different ways in which you can use and
+present the Calendar. </p>
+<p>
+</p>
+<a name="node_sec_4.1"></a>
+<h2><a href="#node_toc_node_sec_4.1">4.1&nbsp;&nbsp;Basic Single click</a></h2>
+<p>(example: 2004-11-02 [45] 15:11)</p>
+<p>
+</p>
+<pre class=verbatim>Zapatec.Calendar.setup({
+inputField     :    &quot;sel1&quot;,     // id of the input field
+ifFormat       :    &quot;%Y-%m-%d [%W] %H:%M&quot;,     // format of the input field
+button         :    &quot;button1&quot;,  // What will trigger popup of the calendar
+showsTime      :     false      //don't show time, only date
+});
+</pre><p></p>
+<p>
+Form elements: label, text box, and button</p>
+<p>
+Display the calendar by clicking on the &quot;...&quot; button
+You can select the Year, Month, and Date using your mouse button or keyboard
+commands (listed above). Click the date you want with your mouse button or
+press the &lt;Enter&gt; key to select.</p>
+<p>
+</p>
+<a name="node_sec_4.2"></a>
+<h2><a href="#node_toc_node_sec_4.2">4.2&nbsp;&nbsp;Double click, with time</a></h2>
+<p>(example: Tue, Nov 2, 2004 [03:12 PM])</p>
+<p>
+</p>
+<pre class=verbatim>Zapatec.Calendar.setup({
+inputField     :    &quot;sel2&quot;,     // id of the input field
+singleClick    :     false,     // require two clicks to submit
+ifFormat       :    '%a, %b %e, %Y [%I:%M %p]', // format of input field
+showsTime      :     true,     // show time as well as date
+button         :    &quot;button2&quot;  // trigger button 
+});
+</pre><p></p>
+<p>
+Form elements: text box and button
+Set the showsTime parameter to true and singleClick to false.</p>
+<p>
+<p>
+<img src="images/image010.gif" border="0" alt="Green Calendar" style='margin-left:3em'></p>
+<p>
+</p>
+<p>
+</p>
+<a name="node_sec_5"></a>
+<h1><a href="#node_toc_node_sec_5">5&nbsp;&nbsp;DHTML Calendar Setup Detailed Parameters</a></h1>
+<p>Here is the complete list or properties that can be interpreted by
+calendar.setup. All of them have default values, so you can pass only those
+which you would like to customize. </p>
+<p>
+You must pass at least one of the following: inputField, displayArea or button
+to set up a popup or flat DHTML calendar. If you do not, you will get a error message
+indicating that there's nothing to set up.</p>
+<p>
+</p>
+<p>
+</p>
+<div align=right class=colophon>
+<i>Last modified: Thursday, December 30th, 2004<br>
+</i>
+</div>
+
+
+		</div>
+	</div>
+</div>
+
+<div class="footer" align=center> 
+<a href="./contact.jsp" class="lnkblue">Contact Us</a> | <a href="./employment.jsp" class="lnkblue">Employment</a> 
+            <br>
+<br>
+&copy; 2004 <strong>Zapatec, Inc.</strong>
+</div>
+
+</body>
+</html>
+

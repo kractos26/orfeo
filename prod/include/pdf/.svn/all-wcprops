@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/pdf
+END
+class.pdf.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/pdf/class.pdf.php
+END
+class.ezpdf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/pdf/class.ezpdf.inc
+END
+class.pdf.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/pdf/class.pdf.inc
+END

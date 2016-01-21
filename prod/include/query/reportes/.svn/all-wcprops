@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/reportes
+END
+querygenerar_estadisticas.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/reportes/querygenerar_estadisticas.php
+END
+querygenerar_estadisticas_envio.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/orfeoSGC/!svn/ver/50/branches/3.7.5/secure/prod/include/query/reportes/querygenerar_estadisticas_envio.php
+END
+querydepe_selecc.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/reportes/querydepe_selecc.php
+END
+querytipo_envio.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/reportes/querytipo_envio.php
+END

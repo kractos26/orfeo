@@ -1,0 +1,434 @@
+<?php
+session_start();
+$verrad = "";
+$ruta_raiz = "..";
+define('ADODB_ASSOC_CASE',1);
+include_once "$ruta_raiz/include/db/ConnectionHandler.php";
+$db = new ConnectionHandler("$ruta_raiz");	
+$db->conn->SetFetchMode(ADODB_FETCH_ASSOC);
+
+//===================================Series - Subseries==============================
+$seriesSubseries=1;
+if($seriesSubseries == 1){
+$a=$slc_srd;
+$b = $slc_sbrd;
+$id_srdDefa = ($_POST['slc_srd']) ? $_POST['slc_srd'] : ($slc_srd !="" ? $slc_srd :0);
+$id_sbrdDefa = $_POST['slc_sbrd'] ? $_POST['slc_sbrd'] : ($slc_sbrd !="" ? $slc_sbrd : 0);
+	$id_tdocDefa = $_POST['slc_tdoc'];
+
+}else {
+	$id_srdDefa = 0;
+	$id_sbrdDefa = 0;
+	$id_tdocDefa = '';
+	$srdCheck = "";
+	$tdoCheck = "";
+	$deshab_tdoc = "";
+}
+
+$sql = "SELECT SGD_SRD_DESCRIP as DESCRIP, SGD_SRD_CODIGO as CODI FROM SGD_SRD_SERIESRD ORDER BY SGD_SRD_DESCRIP";
+$rs = $db->conn->Execute($sql);
+$slc_srd = $rs->GetMenu2('slc_srd', $id_srdDefa, "0:&gt; Todos los tipos &lt;", false, 0, "class='select' id='slc_srd' onchange='this.form.submit()'");
+
+$sqlSubserie = "SELECT SGD_SBRD_DESCRIP, SGD_SBRD_CODIGO FROM SGD_SBRD_SUBSERIERD WHERE SGD_SRD_CODIGO = $id_srdDefa ORDER BY SGD_SBRD_DESCRIP";
+$rss = $db->conn->Execute($sqlSubserie);
+$slc_sbrd = $rss->GetMenu2('slc_sbrd', $id_sbrdDefa, ":", false, 0, "class='select' id='slc_sbrd' onchange='this.form.submit()'");
+
+//================================================================================================
+
+if (!$_SESSION['dependencia'])   include "$ruta_raiz/rec_session.php"; 
+
+if($orden_cambio==1)
+	(!$orderTipo) ? $orderTipo="desc" : $orderTipo="";
+
+if(!$orderNo)  
+{
+	$orderNo="0";
+	$order = 1;
+}else
+{
+	$order = $orderNo +1;
+}
+
+if(!isset($fecha_ini)) $fecha_ini = date("Y/m/d");	 
+if(!isset($fecha_fin)) $fecha_fin = date("Y/m/d");	
+
+$encabezado1 = "$PHP_SELF?".session_name()."=".session_id()."&krd=$krd";
+$linkPagina = "$encabezado1&n_nume_radi=$n_nume_radi&s_RADI_NOM=$s_RADI_NOM&s_solo_nomb=$s_solo_nomb&s_entrada=$s_entrada&s_salida=$s_salida&fecha_ini=$fecha_ini&fecha_fin=$fecha_fin&fecha1=$fecha1&tipoDocumento=$tipoDocumento&dependenciaSel=$dependenciaSel&orderTipo=$orderTipo&nume_expe=$nume_expe&txtExpe=$txtExpe&txtMetadato=$txtMetadato&insertaExp=$insertaExp&slc_srd=$id_srdDefa&slc_sbrd=$id_sbrdDefa&orderNo=$orderNo";
+$encabezado = "".session_name()."=".session_id()."&krd=$krd&n_nume_radi=$n_nume_radi&s_RADI_NOM=$s_RADI_NOM&s_solo_nomb=$s_solo_nomb&insertaExp=$insertaExp&s_entrada=$s_entrada&s_salida=$s_salida&fecha_ini=$fecha_ini&fecha_fin=$fecha_fin&fecha1=$fecha1&tipoDocumento=$tipoDocumento&dependenciaSel=$dependenciaSel&nume_expe=$nume_expe&txtExpe=$txtExpe&txtMetadato=$txtMetadato&insertaExp=$insertaExp&orderTipo=$orderTipo&orderNo=";
+$nombreSesion = "".session_name()."=".session_id();
+  
+/* Se recibe el numero del Expediente a Buscar */
+if($nume_expe or $adodb_next_page or $orderNo or $orderTipo or $orden_cambio or $dependenciaSel )
+{
+	//Se valida rango de fechas
+	$sqlFecha = $db->conn->SQLDate('Y/m/d',"F.SGD_SEXP_FECH"); 
+	$where_general = " WHERE ".$sqlFecha . " BETWEEN '$fecha_ini' AND '$fecha_fin'" ;
+	
+	/* Se recibe la dependencia actual para bsqueda */
+	if ($dependenciaSel == "99999")
+		$where_general .= " AND F.DEPE_CODI IS NOT NULL ";
+	else
+		$where_general .= " AND F.DEPE_CODI = ".$dependenciaSel;	
+	
+	// Se valida el expediente
+	if ($nume_expe)
+	{
+		$where_general.= " AND F.SGD_EXP_NUMERO LIKE '%".trim($nume_expe)."%' ";
+	}
+	if($txtExpe)
+	{
+            $where_general.= " AND ( F.SGD_SEXP_NOMBRE LIKE UPPER( '%".str_replace( '\'', '',  trim( $txtExpe ) )."%' )";
+            $where_general.= " OR F.SGD_SEXP_ASUNTO LIKE UPPER( '%".str_replace( '\'', '',trim( $txtExpe ) )."%' )";
+            $where_general.= " ) ";
+	}
+       
+       
+	/* Busqueda por nivel y usuario
+	$where_general .= " AND R.CODI_NIVEL <= ".$nivelus; 
+	*/
+	include($ruta_raiz."/include/query/busqueda/busquedaPiloto1.php");
+	
+	//Creamos la columna por el cual ORDENAR los resutados
+	switch ($orderNo)
+	{
+		case 0:	
+			$c_order = " ORDER BY 1 ";
+			break;
+		case 1:	
+			$c_order = " ORDER BY 2 ";
+			break;	
+		case 2:	
+			$c_order = " ORDER BY 3 ";
+			break;
+		case 3:	
+			$c_order = " ORDER BY 4 ";
+			break;	
+		case 4:	
+			$c_order = " ORDER BY 5 ";
+			break;
+		case 5:	
+			$c_order = " ORDER BY 6 ";
+			break;
+		case 6:	
+			$c_order = " ORDER BY 7 ";
+			break;
+		case 7:	
+			$c_order = " ORDER BY 8 ";
+			break;
+		case 8:	
+			$c_order = " ORDER BY 9 ";
+			break;
+		case 9:	
+			$c_order = " ORDER BY 10 ";
+			break;
+		case 10:	
+			$c_order = " ORDER BY 11 ";
+			break;
+		case 11:	
+			$c_order = " ORDER BY 12 ";
+			break;
+	}
+	$c_order .= (!$orderTipo) ? "asc" : "desc";
+        
+        
+        $from_normal = "FROM SGD_SEXP_SECEXPEDIENTES F";
+        
+        /*************************************************
+         * Busqueda de Expediente por Serie, Subserie o Metadato
+         * Para: OPAIN S.A.
+         * Por: Grupo Iyunxi Ltda.
+         */
+        //Por Metadato
+        if($txtMetadato)
+        {
+            $where_metadato= " AND (sgd_mmr_dato LIKE '%$txtMetadato%')";
+            $from_metadato = " left join sgd_mmr_matrimetaexpe me on f.sgd_exp_numero = me.sgd_exp_numero";
+            $where_general.=$where_metadato;
+            $from_normal.= $from_metadato;
+        }
+        
+        //Por serie
+        if($id_srdDefa)
+        {
+            $where_serie  = " AND (sgd_srd_codigo = $id_srdDefa)";
+            $where_general .= $where_serie;
+        }
+        
+        //Por Subserie
+        if($id_sbrdDefa)
+        {
+            $where_subSerie = " AND (sgd_sbrd_codigo = $id_sbrdDefa)";
+            $where_general .= $where_subSerie;
+        }
+        /*************************************************/
+        
+	$sql = 
+	'SELECT	F.SGD_EXP_NUMERO AS "No_expediente",
+		
+		F.SGD_SEXP_FECH AS "DEX_Fecha creacion",
+		
+		F.sgd_sexp_nombre AS "Nombre",
+		
+		F.sgd_sexp_asunto AS "Asunto",	
+ 		
+		u.usua_nomb AS "Usuario responsable"
+		'.$from_normal.'
+	JOIN USUARIO u on u.usua_doc=F.usua_doc_responsable'.
+	$where_general.$c_order;
+        
+        echo "<!-- $sql -->";
+	//echo ($sql);
+	$ADODB_COUNTRECS = true;
+	$rs = $db->conn->Execute($sql);
+	$rscsv = $db->conn->Execute($sql);
+	if ($rs)
+	{
+		$nregis = $rs->recordcount();
+		$fldTotal = $nregis;
+	}
+	else
+		$fldTotal = 0;
+	$ADODB_COUNTRECS = false;
+     
+    $pager = new ADODB_Pager(@$db,$sql,'adodb', true,$orderNo,$orderTipo);
+	$pager->checkAll    = false;
+	$pager->checkTitulo = true; 	
+	$pager->toRefLinks  = $linkPagina;
+	$pager->toRefVars   = $encabezado;
+	$pager->txtBusqueda = trim($txtExpe);
+	if($insertaExp)$pager->pasarDatos = true;
+}
+$sql = "SELECT dep_sigla ".$db->conn->concat_operator."'-'".$db->conn->concat_operator." DEPE_NOMB, DEPE_CODI FROM DEPENDENCIA where depe_estado=1 ORDER BY 1";
+$rs = $db->conn->execute($sql);
+$cmb_dep = $rs->GetMenu2('dependenciaSel', $dependenciaSel, $blank1stItem = "99999:Todas las dependencias",false,0,'class=select');
+
+?>
+<html>
+<head>
+<title>Consultas</title>
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="cache-control" content="no-cache">
+<link rel="stylesheet" href="Site.css" type="text/css">
+ <link rel="stylesheet" href="<?=$ruta_raiz."/estilos/".$_SESSION["ESTILOS_PATH"]?>/orfeo.css">
+          <link rel="stylesheet" href="<?=$ruta_raiz."/estilos/tabber.css"?>" type="text/css" media="screen">
+<script>
+function limpiar()
+{
+	document.Search.elements['nume_expe'].value = "";
+	document.Search.elements['dependenciaSel'].value = "99999";
+}
+
+function pasarDatos(numExp)
+{
+	opener.document.getElementById('numeroExpediente').value=numExp;
+	window.close();
+}
+
+</script>
+</head>
+<body class="PageBODY" onload="document.getElementById('nume_expe').focus();">
+<div id="spiffycalendar" class="text"></div>
+<link rel="stylesheet" type="text/css" href="../js/spiffyCal/spiffyCal_v2_1.css">
+<script language="JavaScript" src="../js/spiffyCal/spiffyCal_v2_1.js"></script>
+<script language="javascript"><!--
+var dateAvailable = new ctlSpiffyCalendarBox("dateAvailable", "Search", "fecha_ini","btnDate1","<?=$fecha_ini?>",scBTNMODE_CUSTOMBLUE);
+var dateAvailable1 = new ctlSpiffyCalendarBox("dateAvailable1", "Search", "fecha_fin","btnDate2","<?=$fecha_fin?>",scBTNMODE_CUSTOMBLUE);
+//-->
+</script>
+<form  name="Search"  action='<?=$_SERVER['PHP_SELF']?>?<?=$encabezado?>' method=post>
+    <table  border=0 cellpadding=0 cellspacing=2 width="60%" class='borde_tab'>
+<tbody>
+<?if(!$insertaExp){?>
+<tr>
+     <td  class="titulos4" colspan="13">B&Uacute;SQUEDAS POR:</td>
+</tr>
+<tr>
+   <td colspan="3" class="titulos5">
+         <table border=0 width=69% cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>		
+                                    <div id="tab1" class="tabberlive" border="1">
+                                            <ul class="tabbernav">
+                                            <li >
+                                            <a class="vinculos" href="../busqueda/busquedaPiloto.php?<?= $phpsession ?>&krd=<?= $krd ?>&<? echo "&fechah=$fechah&primera=1&ent=2&s_Listado=VerListado"; ?>">
+                                                    GENERAL
+                                                    </a>
+                                            </li>
+                                            </ul>
+                                    </div>
+                                </td>
+                                 <td>		
+                                    <div id="tab1" class="tabberlive" border="1">
+                                            <ul class="tabbernav">
+                                            <li >
+                                                <a class="vinculos" href="../busqueda/busquedaHist.php?<?= session_name() . "=" . session_id() . "&fechah=$fechah&krd=$krd" ?>">
+                                                HISTORICO
+                                                    </a>
+                                            </li>
+                                            </ul>
+                                    </div>
+                                </td>
+                                <td>		
+                                    <div id="tab1" class="tabberlive" border="1">
+                                            <ul class="tabbernav">
+                                            <li >
+                                           <a class="vinculos" href="../busqueda/busquedaExp.php?<?= $phpsession ?>&krd=<?= $krd ?>&<? ECHO "&fechah=$fechah&primera=1&ent=2"; ?>">
+
+                                                Expedientes
+                                               </a>
+                                            </li>
+                                            </ul>
+                                    </div>
+                                </td>
+                                <td>		
+                                    <div id="tab1" class="tabberlive" border="1">
+                                            <ul class="tabbernav">
+                                            <li >
+                                                <a class="vinculos" href="../expediente/consultaTransferenciaExp.php?<?= $phpsession ?>&krd=<?= $krd ?>&<? ECHO "&fechah=$fechah&primera=1&ent=2"; ?>">
+                                                TRANSFERENCIA
+                                               </a>
+                                            </li>
+                                            </ul>
+                                    </div>
+                                </td>
+                                <td>		
+                                    <div id="tab1" class="tabberlive" border="1">
+                                            <ul class="tabbernav">
+                                            <li >
+                                                <a class="vinculos" href="../busqueda/busquedaMetaDato.php?<?= $phpsession ?>&krd=<?= $krd ?>&<? ECHO "&fechah=$fechah&primera=1&ent=2"; ?>"> 
+
+                                                METADATO
+                                               </a>
+                                            </li>
+                                            </ul>
+                                    </div>
+                                </td>
+                                <!--<td width="13%" valign="bottom" class="" ><a class="vinculos" href="../busqueda/busquedaUsuActu.php?<?= session_name() . "=" . session_id() . "&fechah=$fechah&krd=$krd" ?>"><img src='../imagenes/usuarios.gif' alt='' border=0 width="110" height="25" ></a></td>-->
+                                <td width="35%" valign="bottom" class="" >&nbsp;</td>
+                            </tr>
+                        </table>
+   </td>
+</tr>
+<?}else{?>
+<tr>
+     <td  class="titulos4" colspan="13">B&Uacute;SQUEDAS INCLUIR EXPEDIENTE</td>
+</tr>
+<?}?>
+<tr>
+    <td colspan="3" >
+		<input type="hidden" name="FormName" value="Search"><input type="hidden" name="FormAction" value="search">
+        <table width="100%" class='borde_tab' align='center' cellpadding='0' cellspacing='2'>
+		<tbody>
+		<tr>
+			<td class="titulos5">No. expediente:</td>
+			<td class="listado5">
+				<input class="tex_area" type="text" name="nume_expe" id="nume_expe" maxlength="" value="<?=$nume_expe?>" size="" >
+			</td>
+		</tr>
+		<tr>
+			<td class="titulos5">Buscar por:</td>
+			<td class="listado5">
+				<input class="tex_area" type="text" name="txtExpe" id="txtExpe" maxlength="" value="<?=$txtExpe?>" size="" >
+			</td>
+		</tr>
+                
+                <tr>
+                    <td class="titulos5">Serie</td>
+                    <td class="listado5"> <?php echo $slc_srd; ?>  </td>
+                        
+                </tr>
+                
+                <tr>
+                    <td class="titulos5">SubSerie</td>
+                    <td class="listado5"> <?php echo $slc_sbrd; ?> 
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="titulos5">Metadato</td>
+                    <td class="listado5">
+                        <input class="tex_area" type="text" name="txtMetadato" id="txtMetadato" maxlength="" value="<?=$txtMetadato?>" size="" >
+                    </td>
+                </tr>
+                
+		<tr>
+			<td class="titulos5">Desde fecha (yyyy/mm/dd)</td>
+			<td class="listado5">
+				<script language="javascript">
+					dateAvailable.writeControl();
+					dateAvailable.dateFormat="yyyy/MM/dd";
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td class="titulos5">Hasta fecha (yyyy/mm/dd)</td>
+			<td class="listado5">
+				<script language="javascript">
+					dateAvailable1.writeControl();
+					dateAvailable1.dateFormat="yyyy/MM/dd";
+				</script>
+			</td>
+		</tr>
+		<tr> 
+		<td class="titulos5">Dependencia creadora</td>
+			<td class="listado5"> <?php  echo $cmb_dep; ?> </td>
+		</tr>
+		<tr> 
+			<td colspan="3" class="listado5">
+				<center><input class="botones" value="Limpiar" onclick="limpiar();" type="button">
+				<input class="botones" value="B&uacute;squeda" type="submit"></center>
+			</td>
+		</tr>
+		</tbody> 
+		</table>
+	</td>
+</tr>
+</tbody>
+</table>
+<?php
+if($nume_expe or $adodb_next_page or $orderNo or $orderTipo or $orden_cambio or $dependenciaSel )
+{
+?>
+<table  border=0 cellpadding=0 cellspacing=2 width="90%" class='borde_tab'>
+<tbody>
+<tr>
+	<td valign="top">
+		<table width="100%" class="FormTABLE">
+		<tbody>
+		<tr>
+			<td colspan="5" class="info"><b>Total registros encontrados: <?=$fldTotal?></b></td>
+		</tr>
+		</tbody>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td>
+<?php
+	$pager->Render($rows_per_page=20,$linkPagina,$checkbox=chkAnulados);
+	if($rscsv->EOF || !$rscsv) {
+ 	}else{
+ 		if (!isset($carpetaBodega)) {
+			include "$ruta_raiz/config.php";
+		}
+		include_once("$ruta_raiz/adodb/toexport.inc.php");
+						
+		$ruta = "$ruta_raiz/".$carpetaBodega."tmp/BusqExp".date('Y_m_d_H_i_s').".csv";
+	    $f = fopen($ruta, 'w');
+		if ($f) {
+			rs2csvfile($rscsv, $f);
+			echo "<a href='$ruta' target='_blank'><img style='border:0px' width='20' height='20' src='".$ruta_raiz."/imagenes/csv.png' alt='Archivo CSV'/>Archivo CSV</a>";
+		}
+ 	}
+?>
+	</td>
+</tr>
+</tbody>
+</table>
+<?php
+}
+?>
+</form>
+</body>
+</html>

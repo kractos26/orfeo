@@ -1,0 +1,409 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+
+	
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+
+	
+	
+  <title>61_Generar_reportes_sobre_expedientes_virtuales</title>
+  <meta name="GENERATOR" content="OpenOffice.org 1.9.129  (Linux)">
+
+	
+  <meta name="AUTHOR" content="Nicol&aacute;s Castro Valencia">
+
+	
+  <meta name="CREATED" content="20060430;15310000">
+
+	
+  <meta name="CHANGED" content="20060524;19180500">
+
+	
+  <meta name="DESCRIPTION" content="Permite la generaci&oacute;n de reportes sobre expdientes virtuales.">
+
+	
+  <style>
+	<!--
+		@page { size: 21cm 29.7cm }
+		H2.western { font-family: "Albany", sans-serif; font-size: 14pt; font-style: italic }
+		H2.cjk { font-family: "HG Mincho Light J"; font-size: 14pt; font-style: italic }
+		H2.ctl { font-family: "Arial Unicode MS"; font-size: 14pt; font-style: italic }
+		H3.western { font-family: "Albany", sans-serif }
+		H3.cjk { font-family: "HG Mincho Light J" }
+		H3.ctl { font-family: "Arial Unicode MS" }
+		H4.western { font-family: "Albany", sans-serif; font-size: 11pt; font-style: italic }
+		H4.cjk { font-family: "HG Mincho Light J"; font-size: 11pt; font-style: italic }
+		H4.ctl { font-family: "Arial Unicode MS"; font-size: 11pt; font-style: italic }
+	-->
+	</style>
+</head>
+
+
+<body dir="ltr" lang="en-US">
+
+<p style="text-align: justify;"><a href="index.html"><i><font face="helvetica, arial, sans-serif">Volver
+al indice</font></i></a></p>
+<div style="text-align: justify;">
+</div>
+<h1 style="text-align: justify;"><font color="#000099"><font face="helvetica, arial, sans-serif">CU-ORFEO-61
+- Generar reportes sobre expedientes virtuales</font></font></h1>
+<div style="text-align: justify;">
+</div>
+<h2 style="text-align: justify;" class="western"><font face="helvetica, arial, sans-serif"><b>Historia
+de revisi&oacute;n</b></font></h2>
+<div style="text-align: justify;">
+</div>
+<table style="text-align: left; margin-left: 0px; margin-right: 0px;" border="1" cellpadding="2" cellspacing="2">
+
+	<tbody>
+    <tr>
+
+		<td>
+			
+      <p align="center"><font face="helvetica, arial, sans-serif"><b>FECHA</b></font></p>
+
+		</td>
+
+		<td>
+			
+      <p align="center"><font face="helvetica, arial, sans-serif"><b>VERSION</b></font></p>
+
+		</td>
+
+		<td>
+			
+      <p align="center"><font face="helvetica, arial, sans-serif"><b>DESCRIPCION</b></font></p>
+
+		</td>
+
+		<td>
+			
+      <p align="center"><font face="helvetica, arial, sans-serif"><b>AUTOR</b></font></p>
+
+		</td>
+
+	</tr>
+
+	<tr>
+
+		<td>
+			
+      <p><font face="helvetica, arial, sans-serif">Abril 28 de 2006</font></p>
+
+		</td>
+
+		<td>
+			
+      <p align="center"><font face="helvetica, arial, sans-serif">1.0</font></p>
+
+		</td>
+
+		<td>
+			
+      <p><font face="helvetica, arial, sans-serif">Requerimientos
+			iniciales para la implementaci&oacute;n de un generador de
+			reportes sobre informaci&oacute;n de expedientes virtuales.</font></p>
+
+		</td>
+
+		<td>
+			
+      <p><font face="helvetica, arial, sans-serif">Nicol&aacute;s
+			Castro.</font></p>
+
+		</td>
+
+	</tr>
+
+  </tbody>
+</table>
+<div style="text-align: justify;">
+</div>
+<p style="text-align: justify;"><br>
+<br>
+
+</p>
+<div style="text-align: justify;">
+</div>
+<h2 style="text-align: justify;" class="western"><font face="helvetica, arial, sans-serif">1.
+Descripci&oacute;n</font></h2>
+<div style="text-align: justify;">
+</div>
+<p style="text-align: justify;"><font face="helvetica, arial, sans-serif">Permite la generaci&oacute;n
+de reportes sobre expedientes virtuales.</font></p>
+<div style="text-align: justify;">
+</div>
+<h2 style="text-align: justify;" class="western"><font face="helvetica, arial, sans-serif">2.
+Actores</font></h2>
+<div style="text-align: justify;">
+</div>
+<h3 class="western" style="margin-left: 1.06cm; text-align: justify;"><font face="helvetica, arial, sans-serif">2.1
+Usuario normal </font>
+</h3>
+<div style="text-align: justify;">
+</div>
+<p style="margin-left: 1.06cm; text-align: justify;"><font face="helvetica, arial, sans-serif">Usuario
+normal </font>
+</p>
+<div style="text-align: justify;">
+</div>
+<h2 style="text-align: justify;" class="western"><font face="helvetica, arial, sans-serif">3.
+Flujo de Eventos</font></h2>
+<div style="text-align: justify;">
+</div>
+<h3 class="western" style="margin-left: 1.06cm; text-align: justify;"><font face="helvetica, arial, sans-serif">3.1.
+Flujo B&aacute;sico &oacute; Normal : Generar reporte</font></h3>
+<div style="text-align: justify;">
+</div>
+<h4 class="western" style="margin-left: 2.12cm; text-align: justify;"><font face="helvetica, arial, sans-serif">3.1.1
+Precondiciones</font></h4>
+<div style="text-align: justify;">
+</div>
+<ol style="text-align: justify;" start="3">
+
+	
+  <ol>
+
+		
+    <ol>
+
+			
+      <ol>
+
+				<li>
+          <p style="margin-bottom: 0cm;"><font face="helvetica, arial, sans-serif">El
+				actor debe haber ingresado al sistema</font></p>
+
+				</li>
+        <li>
+          <p style="margin-bottom: 0cm;"><font face="helvetica, arial, sans-serif">El
+				usuario tiene permiso para la generaci&oacute;n del reporte
+				requerido..</font></p>
+
+			</li>
+      </ol>
+
+		
+    </ol>
+
+	
+  </ol>
+
+</ol>
+<div style="text-align: justify;">
+</div>
+<p style="margin-bottom: 0cm; text-align: justify;"><br>
+
+</p>
+<div style="text-align: justify;">
+<font face="helvetica, arial, sans-serif">1. A:
+	<b><i>INICIO </i></b>- Selecciona el bot&oacute;n "ESTADISTICAS"
+	de la barra de t&iacute;tulo.</font><br>
+<br>
+<font face="helvetica, arial, sans-serif"><img style="width: 643px; height: 80px;" alt="imgs/61_botones_barra_titulo.jpg" src="imgs/61_botones_barra_titulo.jpg"></font><br>
+<br>
+<font face="helvetica, arial, sans-serif">2. S:
+	El sistema presenta la vista de generaci&oacute;n de estad&iacute;sticas
+	en el formulario de selecci&oacute;n de criterios de consulta
+	predefinido.</font><br>
+<br>
+<font face="helvetica, arial, sans-serif"><img style="width: 1099px; height: 365px;" alt="imgs/61_vista_generar_estadisticas.jpg" src="imgs/61_vista_generar_estadisticas.jpg"></font><br>
+<br>
+<font face="helvetica, arial, sans-serif">3. A:
+	Selecciona la opci&oacute;n "EXPEDIENTES &ndash; CONTROL DE ESTADOS
+	Y TERMINOS POR PROCESO" de la lista desplegable &ldquo;Tipo de
+	Consulta / Estad&iacute;stica&rdquo;.</font><br>
+<br>
+<font face="helvetica, arial, sans-serif"><img style="width: 857px; height: 66px;" alt="imgs/61_lista_tipo_de_estadistica.jpg" src="imgs/61_lista_tipo_de_estadistica.jpg"></font><br>
+<br>
+<font face="helvetica, arial, sans-serif">4. S:
+	Presenta una vista que muestra los siguientes campos (ver validaciones):</font><br>
+<br>
+<img style="width: 1098px; height: 366px;" alt="imgs/61_vista_generar_expediente.jpg" src="imgs/61_vista_generar_expediente.jpg"><br>
+<br>
+<div style="margin-left: 40px;"><font face="helvetica, arial, sans-serif">4.1. Una
+		lista desplegable rotulada como &ldquo;<b>Tipo de Consulta /
+		Estad&iacute;stica</b><span style="">&rdquo;</span>
+		con la opci&oacute;n "<b>EXPEDIENTES &ndash; CONTROL DE ESTADOS Y
+		TERMINOS POR PROCESO</b>" seleccionada y que al desplegarse
+		muestra las opciones de tipos de reportes que el sistema puede
+		generar mediante este m&oacute;dulo.<br>
+<br>
+</font><font face="helvetica, arial, sans-serif">4.2. Una
+		lista desplegable rotulada como &ldquo;<b>Dependencia</b>&rdquo; que por
+		defecto muestra la dependencia a la cual pertenece el usuario
+		actual y que al desplegarse muestra la lista de las dependencias
+		parametrizadas en el sistema.<br>
+<br>
+</font><font face="helvetica, arial, sans-serif">4.3. Una
+		lista desplegable rotulada como &ldquo;<b>Sede</b>&rdquo; que por defecto
+		muestra la sede de la dependencia a la cual pertenece el usuarios
+		actual y que al desplegarse muestra la lista de las sedes
+		parametrizadas en el sistema.<br>
+<br>
+</font><font face="helvetica, arial, sans-serif">4.4. Una
+		lista desplegable rotulada como &ldquo;<b>Proceso</b>&rdquo; que por
+		defecto <span style="">muestra la opci&oacute;n
+		&ldquo;<b>-Seleccione-</b>&rdquo; </span> y que al desplegarse muestra la
+		lista de los procesos parametrizados para la dependencia actual.<br>
+<br>
+</font><font face="helvetica, arial, sans-serif">4.5. Una
+		lista desplegable rotulada como &ldquo;<b>Terminado</b>&rdquo; que por
+		defecto muestra la opci&oacute;n <span style="">&ldquo;</span><b>NO</b><span style="">&rdquo;</span>
+		y que al desplegarse muestra adicionalmente la opci&oacute;n <b>&ldquo;SI&rdquo;</b><span style="">.<br>
+<br>
+</span></font><font face="helvetica, arial, sans-serif">4.6. Una lista desplegable
+		rotulada como &ldquo;<b>Estado</b>&rdquo; que debe mostrarse <u>śolo si</u>
+		la opci&oacute;n seleccionada por el usuario, de la lista
+		desplegable rotulada como &ldquo;<b>Terminado</b>&rdquo; es igual a &ldquo;<b>NO</b>&rdquo;.
+		Si se cumple este caso, esta vista muestra por defecto la opci&oacute;n
+		&ldquo;<b>- Seleccione -</b>&rdquo; y al desplegarse muestra las opciones
+		de .estado parametrizadas para el proceso seleccionado en la lista
+		desplegable rotulada como &ldquo;<b>Proceso</b>&rdquo;.<br>
+<br>
+</font><font face="helvetica, arial, sans-serif">4.7. Una lista desplegable
+		rotulada como &ldquo;<b>T&eacute;rminos</b>&rdquo; que muestra que por
+		defecto  la opci&oacute;n &ldquo;<b>-Seleccione-</b>&rdquo;  y que al<br>
+&nbsp;desplegarse muestra las opciones:<br>
+<br>
+</font></div>
+<div style="margin-left: 80px;">4.7.1. &ldquo;<font face="helvetica, arial, sans-serif"><b>En t&eacute;rminos</b>&rdquo;
+			y &ldquo;<b>Fuera de t&eacute;rminos</b>&rdquo; si la opci&oacute;n
+			seleccionada en la lista desplegable rotulada como &ldquo;<b>Terminado</b>&rdquo;
+			es igual a <b>&ldquo;SI&rdquo;</b>.<br>
+<br>
+</font>
+			4.7.2. &ldquo;<font face="helvetica, arial, sans-serif"><b>Atrasado</b>&rdquo; y
+			&ldquo;<b>Al d&iacute;a</b><span style="">&rdquo; </span>si
+			la opci&oacute;n seleccionada en la lista desplegable rotulada
+			como &ldquo;<b>Terminado</b>&rdquo; es igual a &ldquo;<b>NO</b>&rdquo;.<br>
+<br>
+</font></div>
+<div style="margin-left: 40px;"><font face="helvetica, arial, sans-serif">4.8. Un combo calendario que
+		muestra la fecha de un mes anterior a la fecha de hoy.<br>
+<br>
+</font><font face="helvetica, arial, sans-serif">4.9. Un combo calendario que
+		muestra la fecha de hoy.<br>
+<br>
+</font><font face="helvetica, arial, sans-serif">4.10. Un bot&oacute;n rotulado
+		como &ldquo;<b>Limpiar</b>&rdquo;.<br>
+<br>
+</font><font face="helvetica, arial, sans-serif"><span style="">4.11. Un
+		bot&oacute;n rotulado como &ldquo;<b>Generar</b>&rdquo;.<br>
+<br>
+</span></font></div>
+<div style="margin-left: 40px;"><font face="helvetica, arial, sans-serif">5. A:
+	Selecciona los criterios deseados de acuerdo al reporte que quiera
+	obtener.<br>
+<br>
+</font><font face="helvetica, arial, sans-serif">6. S:
+	Presenta una vista con el resultados de la consulta solicitada por
+	el usuario en forma de reporte con las siguientes caracter&iacute;sticas<br>
+<br>
+</font>
+<div style="margin-left: 40px;"><font face="helvetica, arial, sans-serif">6.1. El
+		 t&iacute;tulo &ldquo;<b>Reporte de Expedientes</b><span style="">&rdquo;.</span></font><br>
+<font face="helvetica, arial, sans-serif"><span style=""></span></font><br>
+<font face="helvetica, arial, sans-serif"><span style=""></span></font><font face="helvetica, arial, sans-serif"><span style="">6.2. Un
+		mensaje de confirmaci&oacute;n de la b&uacute;squeda que puede ser
+		seg&uacute;n el resultado:</span></font><br>
+<font face="helvetica, arial, sans-serif"><span style=""></span></font></div>
+<font face="helvetica, arial, sans-serif"><span style=""><br>
+</span></font>
+<div style="margin-left: 40px;">
+<div style="margin-left: 40px;">6.2.1. &ldquo;<font face="helvetica, arial, sans-serif"><span style=""><b>No
+			hay resultados para los criterios de b&uacute;squeda indicados por
+			usted.</b>&rdquo; en caso de no encontrar registros asociados a los
+			criterios seleccionados por el usuario</span></font><br>
+<font face="helvetica, arial, sans-serif"><span style=""></span></font><br>
+<font face="helvetica, arial, sans-serif"><span style=""></span></font>6.2.2. &ldquo;<font face="helvetica, arial, sans-serif"><span style=""><span style=""><b>Expedientes
+			del proceso XXX</b>&rdquo;</span> reemplazando &ldquo;XXX&rdquo; por el nombre
+			del proceso seleccionado en <span style="">la
+			lista desplegable rotulada como &ldquo;<b>Proceso</b>&rdquo;.</span></span></font><br>
+</div>
+<font face="helvetica, arial, sans-serif"><span style=""><span style=""></span></span></font></div>
+<font face="helvetica, arial, sans-serif"><span style=""><span style=""><br>
+</span></span></font><font face="helvetica, arial, sans-serif"><span style="">6.3. Los
+		registros correspondientes al resultados de la b&uacute;suqeda (si
+		los hay) mostrado en </span>filas que corresponden al registro del
+		expediente encontrado de acuerdo a los criterios seleccionados y
+		columnas que en su respectivo orden corresponden a los siguientes
+		campos:<br>
+<br>
+</font>
+<div style="margin-left: 40px;"><font face="helvetica, arial, sans-serif">6.3.1. N&uacute;mero
+			de expediente.</font><br>
+<br>
+<font face="helvetica, arial, sans-serif">6.3.2. Creado
+			por</font><br>
+<br>
+<font face="helvetica, arial, sans-serif">6.3.3. </font><font face="helvetica, arial, sans-serif">Dependencia</font><br>
+<br>
+<font face="helvetica, arial, sans-serif">6.3.4. </font><font face="helvetica, arial, sans-serif">Estado
+			(si los procesos que se muestran no han terminado).</font><br>
+<br>
+<font face="helvetica, arial, sans-serif">6.3.5. </font><font face="helvetica, arial, sans-serif">T&eacute;rminos</font><br>
+<br>
+<font face="helvetica, arial, sans-serif">6.3.6. </font><font face="helvetica, arial, sans-serif">Fecha
+			de creaci&oacute;n - <b><i>FIN</i></b></font><br>
+</div>
+<font face="helvetica, arial, sans-serif"><b><i></i></b></font></div>
+
+		
+		
+			
+		
+		
+		
+		
+		
+			
+		
+
+
+	
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+
+	
+		
+		
+		
+			
+			
+			
+			
+			 
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<p style="margin-bottom: 0cm; text-align: justify;"><a href="index.html"><i><font face="helvetica, arial, sans-serif">Volver
+al indice</font></i></a></p>
+
+</body>
+</html>

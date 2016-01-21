@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs for page server.php</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="file-name"><img src="../media/images/Page_logo.png" alt="File" style="vertical-align: middle">/server.php</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+									<a href="#sec-includes">Includes</a>
+			|											<a href="#sec-functions">Functions</a>
+			</div>
+	<div class="info-box-body">	
+		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">WebService que realiza diferentes funciones a nivel interno en Colciencias.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Grupo Iyunxi Ltda &lt;<a href="mailto:info@iyu.com.co">info@iyu.com.co</a>&gt;</li>
+				<li><span class="field">version:</span> 1.0</li>
+			</ul>
+		
+			</div>
+</div>
+		
+
+	<a name="sec-includes"></a>	
+	<div class="info-box">
+		<div class="info-box-title">Includes</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Includes</span>
+			|													<a href="#sec-functions">Functions</a>
+					</div>
+		<div class="info-box-body">	
+			<a name="_nusoap_php"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../media/images/Page.png" alt=" " />
+		<span class="include-title">
+			<span class="include-type">require_once</span>
+			(<span class="include-name">"nusoap.php"</span>)
+			(line <span class="line-number">35</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ruta física donde se encuentra la estructura de carpetas de la bodega de Orfeo.</p>
+	
+</div>
+		</div>
+	</div>
+	
+	
+	
+	<a name="sec-functions"></a>	
+	<div class="info-box">
+		<div class="info-box-title">Functions</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-includes">Includes</a>
+				|												<span class="disabled">Functions</span>
+		</div>
+		<div class="info-box-body">	
+			<a name="functionanexarArchivo" id="functionanexarArchivo"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../media/images/Function.png" />
+		<span class="method-title">anexarArchivo</span> (line <span class="line-number">615</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Método que anexa un documento a un radicado.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Indica si se llevó a cabo exitosamente la carga y actualización del documento en el radicado.</li>
+			</ul>
+	<div class="method-signature">
+		<span class="method-result"><boolean></span>
+		<span class="method-name">
+			anexarArchivo
+		</span>
+					(<span class="var-type"><base64binary></span>&nbsp;<span class="var-name">$archivo</span>, <span class="var-type"><string></span>&nbsp;<span class="var-name">$nombreArchivo</span>, <span class="var-type"><long></span>&nbsp;<span class="var-name">$radicado</span>, <span class="var-type"><string></span>&nbsp;<span class="var-name">$usrRadicador</span>, [<span class="var-type"><boolean></span>&nbsp;<span class="var-name">$principal</span> = <span class="var-default">false</span>])
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><base64binary></span>
+				<span class="var-name">$archivo</span><span class="var-description">: Archivo encodado a base64. Obligatorio.</span>			</li>
+					<li>
+				<span class="var-type"><string></span>
+				<span class="var-name">$nombreArchivo</span><span class="var-description">: Nombre del archivo que se está anexando. Obligatorio.</span>			</li>
+					<li>
+				<span class="var-type"><long></span>
+				<span class="var-name">$radicado</span><span class="var-description">: Codigo Orfeo al cual se anexará el documento. Obligatorio.</span>			</li>
+					<li>
+				<span class="var-type"><string></span>
+				<span class="var-name">$usrRadicador</span><span class="var-description">: Login del usuario preestablecido para realizar la radicación a través del webservice. Obligatorio.</span>			</li>
+					<li>
+				<span class="var-type"><boolean></span>
+				<span class="var-name">$principal</span><span class="var-description">: True se anexa como imagen principal al $radicado, False creará un documento anexo.</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionCrearRadicado" id="functionCrearRadicado"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../media/images/Function.png" />
+		<span class="method-title">CrearRadicado</span> (line <span class="line-number">163</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Método que dados unos parámetros de entrada genera un adicado de entrada en Orfeo.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Numero de radicado.   Código de radicado Orfeo.</li>
+			</ul>
+	<div class="method-signature">
+		<span class="method-result"><long></span>
+		<span class="method-name">
+			CrearRadicado
+		</span>
+					(<span class="var-type"><integer></span>&nbsp;<span class="var-name">$cod_app</span>, <span class="var-type"><string></span>&nbsp;<span class="var-name">$referencia</span>, <span class="var-type"><string></span>&nbsp;<span class="var-name">$usrRadicador</span>, <span class="var-type"><integer></span>&nbsp;<span class="var-name">$TipoTercero</span>, <span class="var-type"><string></span>&nbsp;<span class="var-name">$NombreTercero</span>, <span class="var-type"><string></span>&nbsp;<span class="var-name">$PrimerApellidoTercero</span>, <span class="var-type"><string></span>&nbsp;<span class="var-name">$SegundoApellidoTercero</span>, <span class="var-type"><integer></span>&nbsp;<span class="var-name">$TipoIDTercero</span>, <span class="var-type"><string></span>&nbsp;<span class="var-name">$NumeroIDTercero</span>, <span class="var-type"><string></span>&nbsp;<span class="var-name">$CorreoElectronicoTercero</span>, <span class="var-type"><string></span>&nbsp;<span class="var-name">$DireccionTercero</span>, <span class="var-type"><string></span>&nbsp;<span class="var-name">$AsuntoRadicado</span>, <span class="var-type"><date></span>&nbsp;<span class="var-name">$FechaOficioRadicado</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><integer></span>
+				<span class="var-name">$cod_app</span><span class="var-description">: Codigo del aplicativo interfaz parametrizado en Orfeo. Obligatorio.</span>			</li>
+					<li>
+				<span class="var-type"><string></span>
+				<span class="var-name">$referencia</span><span class="var-description">: Referencia de enlace con la aplicacion previa parametrizada.</span>			</li>
+					<li>
+				<span class="var-type"><string></span>
+				<span class="var-name">$usrRadicador</span><span class="var-description">: Login del usuario preestablecido para realizar la radicación a través del webservice. Obligatorio.</span>			</li>
+					<li>
+				<span class="var-type"><integer></span>
+				<span class="var-name">$TipoTercero</span><span class="var-description">: Código de tipo de usuario que genera el radicado. 1=Ciudadano 2=Entidad 3=Empresa 4=Funcionario. Solo está habilitada la lógica para los valores 1 y 3. Obligatorio.</span>			</li>
+					<li>
+				<span class="var-type"><string></span>
+				<span class="var-name">$NombreTercero</span><span class="var-description">: Si TipoTercero es 1 se envia nombre del ciudadano. Si TipoTercero es 3 se envia nombre de la empresa. Obligatorio.</span>			</li>
+					<li>
+				<span class="var-type"><string></span>
+				<span class="var-name">$PrimerApellidoTercero</span><span class="var-description">: Si TipoTercero es 1 se envia 1er apellido del ciudadano. Si TipoTercero es 3 se envia sigla de la empresa.</span>			</li>
+					<li>
+				<span class="var-type"><string></span>
+				<span class="var-name">$SegundoApellidoTercero</span><span class="var-description">: Si TipoTercero es 1 se envia 2o apellido del ciudadano. Si TipoTercero es 3 se envia representante legal de la empresa.</span>			</li>
+					<li>
+				<span class="var-type"><integer></span>
+				<span class="var-name">$TipoIDTercero</span><span class="var-description">: Código de tipo de identificación. 0=Cédula de Ciudadanía 1=Tarjeta de Identidad 2=Cédula de Extranjería 3=Pasaporte 4=Nit 5=NUIR.</span>			</li>
+					<li>
+				<span class="var-type"><string></span>
+				<span class="var-name">$NumeroIDTercero</span><span class="var-description">: Referencia según el tipo de identificación (TipoIDTercero).</span>			</li>
+					<li>
+				<span class="var-type"><string></span>
+				<span class="var-name">$CorreoElectronicoTercero</span><span class="var-description">: Correo Electronico a través del cual se responderá al radicado.</span>			</li>
+					<li>
+				<span class="var-type"><string></span>
+				<span class="var-name">$DireccionTercero</span><span class="var-description">: Dirección correspondencia del ciudadano/empresa. Obligatorio.</span>			</li>
+					<li>
+				<span class="var-type"><string></span>
+				<span class="var-name">$AsuntoRadicado</span><span class="var-description">: Asunto o descripcion del radicado a crear. Obligatorio.</span>			</li>
+					<li>
+				<span class="var-type"><date></span>
+				<span class="var-name">$FechaOficioRadicado</span><span class="var-description">: Fecha del documento con que se crea el radicado. Formato AAAA-MM-DD. Sino se envia toma la fecha del sistema.</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionGetRadicadoInterfazApp" id="functionGetRadicadoInterfazApp"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../media/images/Function.png" />
+		<span class="method-title">GetRadicadoInterfazApp</span> (line <span class="line-number">112</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Método que dado un codigo y referencia de un sistema de información  retorna una cadena (separada por comas) de radicados asociados con los parámetros brindados.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Cadena de radicados separada por comas.</li>
+				<li><span class="field">global:</span> rutaConfig 0: </li>
+			</ul>
+	<div class="method-signature">
+		<span class="method-result"><string></span>
+		<span class="method-name">
+			GetRadicadoInterfazApp
+		</span>
+					(<span class="var-type"><smallint></span>&nbsp;<span class="var-name">$codApp</span>, <span class="var-type"><string></span>&nbsp;<span class="var-name">$referencia</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><smallint></span>
+				<span class="var-name">$codApp</span><span class="var-description">: Codigo del aplicativo interfaz parametrizado en Orfeo. Obligatorio.</span>			</li>
+					<li>
+				<span class="var-type"><string></span>
+				<span class="var-name">$referencia</span><span class="var-description">: Referencia de enlace con la aplicacion previa parametrizada. Obligatorio.</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionHolaMundo" id="functionHolaMundo"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../media/images/Function.png" />
+		<span class="method-title">HolaMundo</span> (line <span class="line-number">96</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Metodo de comprobacion de conexion a WebService</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Concatenacion &quot;Hola&quot; + $nombre.</li>
+			</ul>
+	<div class="method-signature">
+		<span class="method-result"><string></span>
+		<span class="method-name">
+			HolaMundo
+		</span>
+					(<span class="var-type"><string></span>&nbsp;<span class="var-name">$nombre</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><string></span>
+				<span class="var-name">$nombre</span><span class="var-description">: Nombre de la persona. Obligatorio.</span>			</li>
+				</ul>
+		
+	
+</div>
+		</div>
+	</div>
+	
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 30 Jun 2009 11:51:12 -0400 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.2</a>
+	</p>
+	</div></body>
+</html>

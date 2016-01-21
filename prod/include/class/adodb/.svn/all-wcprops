@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb
+END
+adodb-php4.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-php4.inc.php
+END
+toexport.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/toexport.inc.php
+END
+adodb-datadict.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-datadict.inc.php
+END
+adodb-xmlschema.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-xmlschema.inc.php
+END
+adodb-exceptions.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-exceptions.inc.php
+END
+adodb-csvlib.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-csvlib.inc.php
+END
+rsfilter.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/rsfilter.inc.php
+END
+adodb-xmlschema03.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-xmlschema03.inc.php
+END
+xmlschema.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/xmlschema.dtd
+END
+server.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/server.php
+END
+adodb-active-record.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-active-record.inc.php
+END
+adodb-pear.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-pear.inc.php
+END
+adodb-errorhandler.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-errorhandler.inc.php
+END
+adodb-error.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-error.inc.php
+END
+adodb-iterator.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-iterator.inc.php
+END
+xmlschema03.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/xmlschema03.dtd
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/license.txt
+END
+adodb-perf.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-perf.inc.php
+END
+adodb-time.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-time.inc.php
+END
+adodb-pager.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-pager.inc.php
+END
+tohtml.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tohtml.inc.php
+END
+adodb-time.zip
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-time.zip
+END
+adodb-errorpear.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-errorpear.inc.php
+END
+adodb.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb.inc.php
+END
+pivottable.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/pivottable.inc.php
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/readme.txt
+END
+adodb-lib.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-lib.inc.php
+END
+adodb-memcache.lib.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/adodb-memcache.lib.inc.php
+END

@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Documento sin t&iacute;tulo</title>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#ffffff">
+<h1 align="center"><font face="Arial Narrow" size="5"> <span
+ class="orfeot1">Radicar un documento de salida como anexo a un
+documento de Entrada (padre).</span></font></h1>
+<p align="right"><a href="content.htm" class="orfeolk1">Contenido</a></p>
+<p class="orfeopar" align="justify"><font face="Arial Narrow" size="+1">Si
+tiene en su poder un documento cuyo tr&aacute;mite requiere la
+generaci&oacute;n de otro (<em>una respuesta a oficio</em>, <em>un
+requerimiento de informaci&oacute;n</em>, <em>una remisi&oacute;n de
+informaci&oacute;n</em> &oacute; cualquier otro tipo de documento) que
+deba ser radicado como de salida, deber&aacute; seguir las indicaciones
+relacionadas a continuaci&oacute;n:</font></p>
+<ol>
+  <li><font class="orfeolistnum" align="justify"> Elabore y guarde el
+documento que va a radicar</font><font class="orfeolistnum"
+ align="justify">. </font>
+    <p class="orfeolk3"><font class="orfeolistnum" align="justify"><a
+ href="make_doc_whit_template.htm" class="orfeolk3">&iquest;C&oacute;mo
+elaboro un documento que va a ser radicado como de salida?</a><a
+ name="exp_make_doc_template"></a></font></p>
+  </li>
+  <li><font class="orfeolistnum" align="justify">Ub&iacute;quese en la
+carpeta (predeterminada &oacute; personal) en la cual se encuentra el
+documento a tramitar.</font></li>
+</ol>
+<p class="orfeolistnum" align="center"><img alt="folder.jpg"
+ src="images/folder.jpg" style="width: 153px; height: 363px;"
+ align="middle"></p>
+<p class="orfeolistnum" align="center">&nbsp;</p>
+<ol start="3">
+  <li><font class="orfeolistnum" align="center">Haga click sobre el
+v&iacute;nculo de "Fecha de radicado" del documento que desea gestionar
+para ingresar a la vista de informaci&oacute;n general del documento.</font></li>
+</ol>
+<div style="text-align: center;"><img alt="link_f_rad.jpg"
+ src="images/link_f_rad.jpg" style="width: 1036px; height: 302px;"></div>
+<blockquote>
+  <p class="orfeolistnum" align="justify"><br>
+Adicionalmente al an&aacute;lisis que haga al documento para determinar
+la gesti&oacute;n que se debe realizar, es necesario verificar que la
+informaci&oacute;n m&iacute;nima necesaria para poder registrar un
+env&iacute;o de correspondencia como Nombres y Apellidos de un
+remitente o el nombre de la ESP y sus respectivas direcciones,
+Departamentos y Municipios se encuentren correctamente registrados. De
+no encontrarse correcta la informaci&oacute;n deber&aacute; modificar
+el registro.</p>
+  <p class="orfeolk3" align="justify"><a name="exp_mod_info_doc"></a><a
+ href="modify_doc_info.htm">&iquest;C&oacute;mo modifico un registro
+incompleto o con errores?</a></p>
+  <p class="orfeolistnum" align="justify">&nbsp;</p>
+</blockquote>
+<ol start="4">
+  <li><font class="orfeolistnum" align="center">Haga click sobre la
+pesta&ntilde;a "Documentos".</font></li>
+</ol>
+<p align="center"><br>
+</p>
+<p align="center"><img alt="pesta_docs.jpg" src="images/pesta_docs.jpg"
+ style="width: 982px; height: 346px;"><br>
+&nbsp;</p>
+<ol start="5">
+  <li><font class="orfeolistnum" align="center">En la vista
+"Documentos" encontrar&aacute; un v&iacute;nculo llamado "Anexar
+Archivo" el cual lo lleva a una ventana en la cual deber&aacute;: </font>
+  </li>
+</ol>
+<p align="center"><img alt="win_vinculo_anx.jpg"
+ src="images/win_vinculo_anx.jpg" style="width: 1016px; height: 184px;"><br>
+</p>
+<p>&nbsp;</p>
+<ol start="4">
+  <blockquote>
+    <ol type="a">
+      <li><font class="orfeolistnum" align="center">Seleccionar el
+destinatario al cual va dirigido el comunicado.</font></li>
+      <li><font class="orfeolistnum" align="center">Seleccionar de una
+lista desplegable la opci&oacute;n "word".</font></li>
+      <li><font class="orfeolistnum" align="center">Marcar la caja de
+chequeo que indica que el documento que va a anexar requiere ser
+radicado como de salida.</font></li>
+      <li><font class="orfeolistnum" align="center">Escribir una breve
+referencia que describa el documento que va a anexar.</font></li>
+      <li><a href="att_doc.htm"><font class="orfeolk3" align="center">Adjuntar
+el documento que ya ha preparado y que va a anexar para su respectiva
+radicaci&oacute;n.</font></a> </li>
+    </ol>
+    <p class="orfeolk3"><font class="orfeolistnum" align="justify"></font></p>
+    <ol type="a">
+      <blockquote>
+        <p class="orfeolk3" align="center">&nbsp;</p>
+      </blockquote>
+    </ol>
+  </blockquote>
+</ol>
+<ol start="6">
+  <li><font class="orfeolistnum" align="center">Al hacer click sobre el
+bot&oacute;n "ACTUALIZAR" el archivo ser&aacute; anexado y la ventana
+mostrar&aacute; un aviso que indica que se llev&oacute; a cabo la
+operaci&oacute;n con &eacute;xito. Haga click sobre el bot&oacute;n
+"cerrar" y saldr&aacute; de esta ventana.</font></li>
+</ol>
+<div style="text-align: center;"><img alt="close_win_anx.jpg"
+ src="images/close_win_anx.jpg" style="width: 278px; height: 45px;"></div>
+<p align="center">&nbsp;</p>
+<ol start="7">
+  <li><span class="orfeolistnum">La vista &#8220;Documentos&#8221; mostrar&aacute;
+entonces el registro correspondiente al documento que ha anexado.</span>
+    <p align="center"><img alt="view_file_anx.jpg"
+ src="images/view_file_anx.jpg" style="width: 1049px; height: 240px;"><br>
+    </p>
+    <p> <span class="orfeolk3"><a name="exp_view_out_rad"></a><a
+ href="exp_view_file_anx.htm">&iquest;Qu&eacute; significa la
+informaci&oacute;n que aparece en esta vista?</a></span></p>
+    <p class="orfeopar">Desde esta vista, adem&aacute;s de anexar otros
+documentos usted puede:</p>
+    <blockquote>
+      <p class="orfeolk3" align="justify"><a href="preeliminar_view.htm">Revisar
+el documento anexado mediante una vista preliminar.</a></p>
+      <p class="orfeolk3" align="justify"><br>
+      <a href="modify_doc_info.htm">Modificar el documento.</a></p>
+      <p class="orfeolk3" align="justify"><br>
+      <a name="exp_rad_copies"></a><a href="copies_rad.htm">Generar
+copias del documento que se va a radicar como de salida.</a></p>
+      <p class="orfeolk3" align="justify"><br>
+      <a href="att_doc.htm">Anexar otros documentos.</a> </p>
+      <p class="orfeolk3" align="justify"><br>
+      <a href="del_doc.htm">Borrar el documento.</a></p>
+      <p class="orfeolk3" align="justify"><a
+ href="structur_funtionality.htm">.<br>
+Enviar documento al Jefe para su Vo.Bo.</a></p>
+      <p class="orfeolk3" align="justify">.<br>
+      <a href="structur_funtionality.htm">Mover documento a otra
+carpeta.</a></p>
+      <p class="orfeolk3" align="justify"><a
+ href="structur_funtionality.htm">.<br>
+Reasignar documento a otro funcionario de su grupo.</a></p>
+      <p class="orfeolk3" align="justify"><br>
+      <a href="structur_funtionality.htm">Reasignar documento a un Jefe
+de Grupo &oacute; de &Aacute;rea. (opci&oacute;n s&oacute;lo para Jefes
+de Grupo / &Aacute;rea)</a></p>
+      <p class="orfeolk3" align="justify">&nbsp;</p>
+      <p class="orfeolk3" align="center">&nbsp;</p>
+    </blockquote>
+  </li>
+  <li>
+    <div align="justify"><span class="orfeopar">Si ya ha revisado el
+documento y est&aacute; satisfecho con el contenido haga click sobre el
+v&iacute;nculo "Radicar" (este v&iacute;nculo s&oacute;lo
+aparecer&aacute; a aquellos usuarios que tengan este permiso). El
+sistema le preguntar&aacute; si desea utilizar uno de los
+n&uacute;meros del consecutivo asignado a su dependencia para radicar
+de salida. Si est&aacute; seguro de hacerlo haga click sobre el
+bot&oacute;n "Aceptar" de lo contrario haga click sobre el bot&oacute;n
+"Cancelar" para volver a la forma anterior.</span></div>
+  </li>
+</ol>
+<div align="center"><br>
+<div style="text-align: center;"><img alt="valida_rad_or_no.jpg"
+ src="images/valida_rad_or_no.jpg" style="width: 1049px; height: 265px;"><br>
+</div>
+</div>
+<p align="center">&nbsp;</p>
+<ol start="9">
+  <li><span class="orfeopar">Si seleccion&oacute; la opci&oacute;n
+&#8220;Aceptar&#8221;, el sistema mostrar&aacute; una pantalla en la cual aparece
+el n&uacute;mero de radicado que le ha sido asignado al documento.
+Adem&aacute;s por medio del v&iacute;nculo &#8220;Ver Archivo&#8221; usted
+podr&aacute; ver el documento final que ser&aacute; impreso.</span></li>
+</ol>
+<p align="center"><br>
+<img alt="view_preeliminar_view_when_rad.jpg"
+ src="images/view_preeliminar_view_when_rad.jpg"
+ style="width: 368px; height: 154px;"><br>
+</p>
+<p align="center">&nbsp;</p>
+<ol start="10">
+  <li>
+    <div class="orfeopar" align="justify">Haga click en el bot&oacute;n
+&#8220;Atr&aacute;s&#8221; del explorador para regresar a la vista de &#8220;Documentos&#8221;.
+Ahora ya puede imprimir el documento, marcarlo como impreso y remitirlo
+a correspondencia para su correspondiente env&iacute;o. Recuerde que si
+no lo marca como impreso, en la Oficina de Correspondencia no
+podr&aacute;n realizar el proceso de env&iacute;o.</div>
+    <p align="justify"><span class="orfeolk3"><a
+ href="print_rad_doc.htm">&iquest;C&oacute;mo se imprime el documento
+que ya fue radicado de salida?</a></span></p>
+    <p align="justify"><span class="orfeolk3"><a
+ href="mark_like_printed.htm">&iquest;C&oacute;mo se marca como impreso
+un documento radicado como de salida?</a></span></p>
+  </li>
+</ol>
+<p align="justify"><a href="content.htm" class="orfeolk1">Contenido</a><br>
+</p>
+<p align="center">&nbsp; </p>
+</body>
+</html>

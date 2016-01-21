@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/examples
+END
+test_smtp_gmail_basic.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/examples/test_smtp_gmail_basic.php
+END
+test_sendmail_basic.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/examples/test_sendmail_basic.php
+END
+test_smtp_basic_no_auth.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/examples/test_smtp_basic_no_auth.php
+END
+test_mail_advanced.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/examples/test_mail_advanced.php
+END
+test_smtp_advanced.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/examples/test_smtp_advanced.php
+END
+test_pop_before_smtp_advanced.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/examples/test_pop_before_smtp_advanced.php
+END
+contents.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/examples/contents.html
+END
+test_smtp_gmail_advanced.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/examples/test_smtp_gmail_advanced.php
+END
+test_sendmail_advanced.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/examples/test_sendmail_advanced.php
+END
+test_mail_basic.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/examples/test_mail_basic.php
+END
+test_smtp_basic.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/examples/test_smtp_basic.php
+END
+test_pop_before_smtp_basic.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/examples/test_pop_before_smtp_basic.php
+END
+test_smtp_advanced_no_auth.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/examples/test_smtp_advanced_no_auth.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/examples/index.html
+END
+test_db_smtp_basic.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/examples/test_db_smtp_basic.php
+END

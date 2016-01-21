@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/firma/certificados
+END
+ca.pem
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/firma/certificados/ca.pem
+END
+ca.cer
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/firma/certificados/ca.cer
+END

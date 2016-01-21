@@ -1,0 +1,15 @@
+php_flag register_globals on
+php_flag short_open_tag on
+php_value memory_limit 256M
+php_flag display_errors Off
+php_flag register_long_arrays On
+php_value session.gc_maxlifetime 1440
+php_value session.cache_expire 180
+php_value session.use_trans_sid 1
+php_value max_execution_time 300
+php_flag xdebug.remote_enable 1
+php_value xdebug.remote_handler dbgp
+php_value xdebug.remote_host localhost
+php_value xdebug.remote_connect_back 1
+php_value xdebug.remote_port 9001
+php_value upload_max_filesize 200M

@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>53_editar_dependencia</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="Generator" content="Kate, the KDE Advanced Text Editor">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="AUTHOR" content="MMERA">
+  <meta name="CREATED" content="20051201;17410000">
+  <meta content="Martha Yaneth Mera Velasco" name="author">
+  <meta
+ content="Permite editar una dependencia y asignar los permisos y atributos en el sistema"
+ name="description">
+</head>
+<body>
+<div style="text-align: right;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+<h1
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 153);">CU-ORFEO-53&nbsp;
+- Editar Dependencia<br>
+</h1>
+<h2 style="font-family: helvetica,arial,sans-serif;"><span
+ style="font-weight: bold;">Historia de revisi&oacute;n</span><br>
+</h2>
+<table style="text-align: left; width: 965px; height: 118px;" border="1"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">FECHA<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">VERSION<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">DESCRIPCION<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">AUTOR<br>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Abril
+21 de 2006<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; font-family: helvetica,arial,sans-serif;">1.0<br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Requerimientos
+iniciales para la implementaci&oacute;n del m&oacute;dulo de
+Administraci&oacute;n y la parametrizaci&oacute;n de las dependencias<br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Martha
+Mera</td>
+    </tr>
+  </tbody>
+</table>
+<h2 style="font-family: helvetica,arial,sans-serif;">1.
+Descripci&oacute;n</h2>
+<span style="font-family: helvetica,arial,sans-serif;">Permite realizar
+los registros de edici&oacute;n y modificaci&oacute;n de las
+dependencias que integran el sistema de gesti&oacute;n documental&nbsp;
+desde una interfaz de usuario asociado al M&oacute;dulo de
+Administraci&oacute;n. </span><span
+ style="font-family: helvetica,arial,sans-serif;"></span>
+<h2 style="font-family: helvetica,arial,sans-serif;">2. Actores</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">2.1
+Usuario normal <br>
+</h3>
+<div style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">Usuario
+administrador del sistema<br>
+</div>
+<h2 style="font-family: helvetica,arial,sans-serif;">3. Flujo de Eventos</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.1.
+Flujo B&aacute;sico &oacute; Normal : Crear dependencia<br>
+</h3>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.1
+Precondiciones</h4>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+3.1.1.1.
+El actor debe haber ingresado al sistema<br>
+3.1.1.2. El usuario tiene permiso de administrador del sistema<br>
+3.1.1.3. El usuario ha seleccionado el link "Administracion"&nbsp; en
+la lista de permisos especiales<br>
+<br>
+<br>
+1. A:<span style="font-weight: bold; font-style: italic;"> INICIO </span>-
+Selecciona el link "Administracion"&nbsp; en la lista de permisos
+especiales <br>
+<br>
+&nbsp;<br>
+<div style="text-align: center;"><img alt="31_menu_ppal.jpg"
+ src="imgs/31_menu_ppal.jpg" style="width: 551px; height: 326px;"><br>
+</div>
+<br>
+<br>
+2. S: Ingresa al menu principal del m&oacute;dulo de Administracion. <br>
+<br>
+3. A: Selecciona la opcion "2. DEPENDENCIAS"<br>
+<br>
+4. S: Despliega el men&uacute; con la lista de las dependencias que
+existen actualmente. <br>
+<br>
+<br>
+<img alt="31_lista_dependencias.jpg"
+ src="imgs/31_lista_dependencias.jpg"
+ style="width: 967px; height: 476px;"><br>
+<br>
+En la parte superior una caja de texto rotulada "Buscar dependencia
+(separados por coma) y un bot&oacute;n buscar.<br>
+Un bot&oacute;n rotulado "Crear"<br>
+Un bot&oacute;n rotulado "Editar"<br>
+En la parte central, la lista de las dependencias con las columnas de:<br>
+<div style="margin-left: 40px;">C&oacute;digo de la dependencia<br>
+Nombre de la dependencia<br>
+Municipio en el cual se encuenta ubicado dicha dependencia<br>
+Departamento en el cual se encuenta ubicado dicha dependencia<br>
+Pais en el cual se encuentra ubicada la dependencia<br>
+Estado de la dependencia (A - Activo, I- Inactivo)<br>
+Radio Button de selecci&oacute;n<br>
+</div>
+<br>
+5. A: Selecciona el bot&oacute;n "Editar"<br>
+<br>
+6. S: Despliega el formulario para la edici&oacute;n de las
+dependencias asi:<br>
+<br>
+<div style="text-align: center;"><img alt="53_editar_dependencia.jpg"
+ src="imgs/53_editar_dependencia.jpg"
+ style="width: 700px; height: 536px;"><br>
+</div>
+<br>
+<div style="margin-left: 40px;">6.1. Caja de texto rotulada
+"C&oacute;digo" para indicar el c&oacute;digo de la dependencia que se
+crear&aacute;. Esta se encuentra inhabilitada<br>
+6.2. Caja de texto rotulada "Nombre Dependencia". Esta caja se
+encuentra deshabilitada, al desplegarla mostrar&aacute; la
+informaci&oacute;n cargada de la dependencia seleccionada.<br>
+6.3 Lista de selecci&oacute;n rotulada "Continente" al seleccionar se
+desplegar&aacute;n las opciones de "Am&eacute;rica" y "Resto del mundo".<br>
+6.4. Lista de selecci&oacute;n rotulada "Pa&iacute;s", al seleccionar
+se desplegar&aacute;n los nombres de pa&iacute;ses cargados en la base
+de datos.<br>
+6.5. Lista de selecci&oacute;n rotulada "Departamento", al seleccionar
+se desplegar&aacute;n la lista de departamentos o estados del
+pa&iacute;s seleccionado.<br>
+6.6. Lista de selecci&oacute;n rotulada "Municipio", al seleccionar se
+desplegar&aacute;n la lista de los municipios de acuerdo al
+departamento seleccionado.<br>
+6.7. Caja de texto rotulada "Direcci&oacute;n".<br>
+6.8. Lista de selecci&oacute;n rotulada "Dependencia Padre", se
+indicar&aacute;n todas las dependencias existentes en el sistema.<br>
+6.9. Lista de selecci&oacute;n rotulada "Dependencia Territorial", se
+indicar&aacute;n todas las dependencias existentes en el sistema.<br>
+6.10. Secci&oacute;n de permisos de radicaci&oacute;n de acuerdo a la
+numeraci&oacute;n de secuencia. Lista de selecci&oacute;n por cada uno
+de los tipos de radicaci&oacute;n existentes, al desplegar se
+visualizan la lista de secuencias existentes de acuerdo al tipo de
+radicaci&oacute;n. <br>
+6.11. Dos Radio button donde se indica el "Estado de la dependencia",
+Al momento de su creaci&oacute;n estar&aacute; marcando en estado
+"Activo"<br>
+6.12. Un bot&oacute;n&nbsp; habilitado "Guardar"<br>
+6.13. Un bot&oacute;n habilitado "Cancelar"<br>
+</div>
+&nbsp;<br>
+<br>
+7. A: Diligencia o cambia los datos solicitados en el formulario y da
+click en
+el bot&oacute;n "Guardar"<br>
+<br>
+8. S: Realiza los cambios en la base de datos afectando la
+informaci&oacute;n que ha sido modificada. <br>
+<br>
+9. S: Realiza la confirmaci&oacute;n de modificaci&oacute;n de la
+dependencia.<br>
+<br>
+</div>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.2
+Post-condiciones</h4>
+<p style="font-family: helvetica,arial,sans-serif; margin-left: 120px;"
+ class="orfeopar">Se debe guardar un registro
+hist&oacute;rico de las modificaciones
+realizadas.<br>
+</p>
+<br>
+<h3 style="font-family: helvetica,arial,sans-serif;">3.2.
+Flujo Alterno : <br>
+</h3>
+<div style="margin-left: 40px;"><span
+ style="font-family: arial narrow,sans-serif;"><br>
+</span></div>
+<br>
+<a style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a><br
+ style="font-family: helvetica,arial,sans-serif;">
+<font style="font-size: 11pt;" size="2">
+</font><br>
+</body>
+</html>

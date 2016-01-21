@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <title>Indice Manual Orfeo</title>
+  <meta name="GENERATOR" content="OpenOffice.org 2.0  (Linux)">
+  <meta name="AUTHOR" content="Martha Yaneth Mera">
+  <meta name="CREATED" content="20051011;14084300">
+  <meta name="CHANGED" content="20060828;12481100">
+  <style>
+	<!--
+		@page { size: 3.5cm 2.5cm }
+		P.orfeot1-western { color: #000066; font-size: 18pt; font-style: italic; font-weight: bold }
+		P.orfeot1-cjk { color: #000066; font-family: "Arial Narrow"; font-size: 18pt; font-style: italic; font-weight: bold }
+		P.orfeot1-ctl { color: #000066; font-family: "Arial Narrow"; font-size: 18pt; font-style: italic; font-weight: bold }
+		P.style4-western { color: #0000cc; font-size: 14pt; font-style: italic; line-height: 0.25cm }
+		P.style4-cjk { color: #0000cc; font-family: "Arial Narrow"; font-size: 14pt; font-style: italic; line-height: 0.25cm }
+		P.style4-ctl { color: #0000cc; font-family: "Arial Narrow"; font-size: 14pt; font-style: italic; line-height: 0.25cm }
+		P.orfeolk3-western { font-size: 14pt; font-style: italic; line-height: 0.25cm }
+		P.orfeolk3-cjk { font-family: "Arial Narrow"; font-size: 14pt; font-style: italic; line-height: 0.25cm }
+		P.orfeolk3-ctl { font-family: "Arial Narrow"; font-size: 14pt; font-style: italic; line-height: 0.25cm }
+		P.orfeopar-western { font-size: 14pt }
+		P.orfeopar-cjk { font-family: "Arial Narrow"; font-size: 14pt }
+		P.orfeopar-ctl { font-family: "Arial Narrow"; font-size: 14pt }
+		P.style5-western { font-size: 14pt; font-weight: bold; line-height: 0.25cm }
+		P.style5-cjk { font-family: "Arial Narrow"; font-size: 14pt; font-weight: bold; line-height: 0.25cm }
+		P.style5-ctl { font-family: "Arial Narrow"; font-size: 14pt; font-weight: bold; line-height: 0.25cm }
+		P.orfeolk2-western { font-size: 14pt; font-weight: bold; line-height: 0.25cm }
+		P.orfeolk2-cjk { font-family: "Arial Narrow"; font-size: 14pt; font-weight: bold; line-height: 0.25cm }
+		P.orfeolk2-ctl { font-family: "Arial Narrow"; font-size: 14pt; font-weight: bold; line-height: 0.25cm }
+		P.orfeot1-c { margin-bottom: 0cm; line-height: 150% }
+	-->
+	</style>
+</head>
+<body dir="ltr" lang="es-ES">
+<p class="orfeot1-western"
+ style="margin-bottom: 0cm; line-height: 100%;" align="center">
+<font color="#000066"><font face="Arial Narrow">Contenido</font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%;"><strong><a
+ href="introduction.htm"><b><font size="4"><font color="#000066">Introducción</font></font></b></a></strong></p>
+<p style="margin-bottom: 0cm; line-height: 100%;"><a
+ href="ej_wf_tele.htm"><i>Ejemplo
+flujo de trabajo implementado por la Delegada de Telecomunicaciones</i></a></p>
+<p class="orfeot1-c" style="margin-bottom: 0.5cm; line-height: 100%;"><br>
+<strong><b><font size="4"><font color="#000066">1.
+Módulo General</font></font></b></strong><font color="#000080">
+</font></p>
+<p style="margin-left: 2cm; margin-bottom: 0cm; line-height: 100%;"><a
+ href="Enter_to_login.htm"><i>Cómo
+ingresar a Orfeo?</i></a> </p>
+<p style="margin-left: 2cm; margin-bottom: 0cm; line-height: 100%;"><a
+ href="structur_funtionality.htm"><i>Estructura
+y funcionalidad de ORFEO</i></a> </p>
+<p style="margin-left: 2cm; margin-bottom: 0cm; line-height: 100%;"><a
+ href="agend_docs.htm"><i>¿Cómo
+agendar un documento?</i></a></p>
+<p style="margin-left: 2cm; margin-bottom: 0cm; line-height: 100%;"><a
+ href="Filter_in_carp.htm"><i>¿Cómo
+realizo un filtro en carpetas?</i></a></p>
+<p style="margin-left: 2cm; margin-bottom: 0cm; line-height: 100%;"><a
+ href="mark_like_printed.htm"><i>Marcar
+documento como impreso</i></a></p>
+<p style="margin-left: 2cm; margin-bottom: 0cm; line-height: 100%;"><a
+ href="solicitar_fisico.html"><i>Solicitar
+un documento físico a Archivo</i></a></p>
+<p style="margin-left: 2cm; margin-bottom: 0cm; line-height: 100%;"><br>
+</p>
+<p class="orfeot1-c" style="margin-bottom: 0.5cm; line-height: 100%;"><strong><b><font
+ size="4"><font color="#000066">2.
+Radicación de Documentos</font></font></b></strong></p>
+<p class="orfeot1-c"
+ style="margin-left: 1.06cm; margin-bottom: 0.5cm; line-height: 100%;">
+<strong><b><font size="4"><font color="#000066">2.1 <a
+ href="rad_doc_intro.htm">Radicación
+de Entrada (-2)</a></font></font></b></strong></p>
+<p class="style4-western" style="margin-bottom: 0cm; line-height: 100%;">
+<br>
+</p>
+<blockquote
+ style="margin-left: 0cm; margin-right: 0cm; margin-bottom: 0cm; line-height: 100%;">
+  <strong><font color="#000066">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <b><font
+ size="4">2.2 Radicación de Salida (-1)</font></b></font></strong><b><font
+ size="4"> </font></b></blockquote>
+<p style="margin-bottom: 0cm;"><br>
+</p>
+<p style="margin-left: 2.12cm;"><a href="rad_att_in_doc.htm"><i>Radicar
+un documento de salida como anexo a un documento de entrada</i></a>
+<br>
+<br>
+<a href="exp_who_give_num_rad.htm"><i>Radicar un documento
+para un destino sin antecedentes de entrada</i></a></p>
+<blockquote
+ style="margin-left: 6cm; margin-bottom: 0cm; line-height: 100%;"> <br>
+  <a href="exp_who_give_num_rad.htm"><i>¿Quién asigna
+el Número de Radicado de Salida (NRS) a un documento?</i></a></blockquote>
+<blockquote
+ style="margin-left: 6cm; margin-bottom: 0cm; line-height: 100%;"> <a
+ href="make_doc_whit_template.htm"><i>¿Cómo elaboro
+un documento que va a ser radicado como de salida?</i></a></blockquote>
+<blockquote
+ style="margin-left: 6cm; margin-bottom: 0cm; line-height: 100%;"> <a
+ href="modify_doc_info.htm"><i>¿Cómo modifico un
+registro incompleto o con errores?</i></a></blockquote>
+<blockquote
+ style="margin-left: 6cm; margin-bottom: 0cm; line-height: 100%;"> <a
+ href="exp_view_file_anx.htm"><i>¿Qué significa la
+información que aparece en la vista "Documentos"?</i></a></blockquote>
+<p class="orfeolk3-western"
+ style="margin-left: 2cm; margin-bottom: 0cm; line-height: 100%;">
+<a href="modify_doc_anex.htm"><font size="3">¿Cómo
+modifico el documento que anexé?</font></a></p>
+<p class="orfeolk3-western"
+ style="margin-left: 2cm; margin-bottom: 0cm; line-height: 100%;">
+<a href="copies_rad.htm"><font size="3">¿Cómo genero
+copias del documento que se va a radicar como de salida?</font></a></p>
+<p class="orfeolk3-western"
+ style="margin-left: 2cm; margin-bottom: 0cm; line-height: 100%;">
+<a href="historicos_rad.htm"><font size="3">¿Como consulto la
+información de envío de un Radicado de salida?</font></a></p>
+<p class="orfeolk3-western"
+ style="margin-left: 2cm; margin-bottom: 0cm; line-height: 100%;">
+<a href="rad_cod_bar.htm"><font size="3">Documentos de salida con
+código de barras </font></a>
+</p>
+<p style="margin-bottom: 0cm;">&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p style="margin-left: 2.12cm;"><strong><font color="#000066">&nbsp;<b><font
+ size="4">2.2.1
+<a href="rad_masiva_new_doc.htm">Radicación Masiva de
+documentos</a></font></b></font></strong></p>
+<p style="margin-left: 3.18cm;"><a href="combination_field.htm"><i>Campos
+de combinación para utilizar en radicación de salida</i></a></p>
+<p class="orfeolk2-western"
+ style="margin-left: 1.06cm; margin-bottom: 0cm; line-height: 100%;">
+2<strong><font color="#000066">.3 <a href="rad_memo_int.htm">Radicación
+de Memorandos Internos (-3)</a>&nbsp; &nbsp;&nbsp; </font></strong>
+</p>
+<p class="orfeolk2-western"
+ style="margin-bottom: 0cm; line-height: 100%;">
+<br>
+</p>
+<p style="margin-left: 1.06cm; margin-bottom: 0cm;"><strong><b><font
+ size="4"><font color="#000066">2.4
+<a href="rad_resol_num_y_fech.htm">Radicación de Resoluciones
+(-5)</a></font></font></b></strong></p>
+<p style="margin-left: 2.12cm;"><br>
+<a href="Manual%20usuario%20sancionados.pdf"><i>Radicación
+Resoluciones Sancionados</i></a><br>
+<br>
+<a href="reportes_sancionados.html"><i>Reportes
+Sancionados</i></a></p>
+<p style="margin-left: 1.06cm;"><b><i><br>
+<br>
+<a href="mark_like_printed.htm">Marcar
+documentos como impresos</a><br>
+<br>
+</i></b><a href="clasif_trd.html"><b><i>Clasificación
+de los documentos en su Tabla de Retención Documental (TRD)</i></b></a></p>
+<p class="orfeopar-western"
+ style="margin-left: 2cm; margin-bottom: 0cm; line-height: 100%;">
+<br>
+</p>
+<p class="style5-western" style="margin-bottom: 0cm; line-height: 100%;">
+<strong><strong><font color="#000066">3. Digitalización de
+documentos</font></strong> </strong>
+</p>
+<p class="orfeolk3-western"
+ style="margin-left: 2cm; margin-bottom: 0cm; line-height: 100%;">
+<a href="digit_softw.htm"><font size="3">Aplicativo de digitalización
+</font></a></p>
+<p class="orfeolk3-western"
+ style="margin-left: 2cm; margin-bottom: 0cm; line-height: 100%;">
+<a href="config_scanner_i60.htm"><font size="3">Configuración
+escaner Kodak I60</font></a></p>
+<p class="orfeolk3-western"
+ style="margin-left: 2cm; margin-bottom: 0cm; line-height: 100%;">
+<a href="config_scanner_i260.htm"><font size="3">Configuración
+escaner Kodak I260</font></a></p>
+<p class="orfeolk3-western"
+ style="margin-left: 2cm; margin-bottom: 0cm; line-height: 100%;">
+<a href="digitalizacion_rec.htm"><font size="3">Recomendaciones
+generales en la digitalización</font></a></p>
+<p class="style5-western" style="margin-bottom: 0cm; line-height: 100%;">
+<strong><strong><font color="#000066"><br>
+4. Consultas</font></strong></strong></p>
+<p style="margin-left: 2.12cm;"><br>
+<br>
+</p>
+<p style="margin-left: 4.12cm; margin-bottom: 0cm; line-height: 100%;">
+<a href="search_rad.htm"><i>Consulta de documentos</i></a></p>
+<p style="margin-left: 4.12cm; margin-bottom: 0cm; line-height: 100%;">
+<a href="consulta_web.htm"><i>Consulta Web de documentos</i></a></p>
+<p class="orfeolk3-western"
+ style="margin-bottom: 0cm; line-height: 100%;">
+<strong><br>
+<a href="send_docs_cor.htm">5. Envío de documentos
+por parte de la Oficina de Correspondencia</a></strong> </p>
+<p class="orfeolk3-western"
+ style="margin-bottom: 0cm; line-height: 100%;">
+<strong><em><a href="anulacion_rad.htm">6. Anulación de
+Radicados</a></em></strong></p>
+<p class="style5-western" style="margin-bottom: 0cm; line-height: 100%;">
+<em><a href="devolucion_rad.htm">7. Devolución de Radicados</a></em>
+</p>
+<p><br>
+<br>
+</p>
+<p><strong><strong><font style="font-size: 15pt;" size="4"><font
+ color="#000066">8.
+Conformación de expedientes virtuales</font></font></strong></strong></p>
+<p style="margin-left: 1.06cm;"><a
+ href="Create_exped.html"><i><font color="#000066">Crear un
+Expediente</font></i></a></p>
+<p style="margin-left: 1.06cm;"><i><font color="#000066"><a
+ href="Create_exped_exist.html"><font color="#000066">Crear otro
+Expediente en un Radicado con Expediente</font></a><br>
+<br>
+<a href="Include_exped.html">Incluir
+Radicados en un Expediente</a></font></i></p>
+<p style="margin-left: 1.06cm;"><a
+ href="Excluir_exped_exist.html"><i>Excluir Radicado de un
+Expediente</i></a></p>
+<p style="margin-left: 1.06cm;"><i><a
+ href="History_Trash_Exp.html">Registro Histórico del
+Expediente</a><br></i>
+</p>
+<p style="margin-left: 1.06cm;"><a href="Inclu_Docu_Exp.html"><i>Incluir Documentos Anexos en un Expediente</a></i><br>
+</p>
+<a href="Seguridad_a_Radicados.html"><strong><strong><font
+ style="font-size: 15pt;" size="4"><font color="#000066">9. Seguridad
+en Radicados</font></font></strong></strong></a>
+<p style="margin-left: 1.06cm;"></p>
+<p style="margin-bottom: 0cm; line-height: 100%;"><strong><b><font
+ size="4"><font color="#000066"><a href="def_terms_obj.htm">Definición
+de Términos y Objetos</a> </font></font></b></strong>
+</p>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>CU-ORFEO-54 Incluir Anexos y Asociados a un Expediente</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="Generator" content="Kate, the KDE Advanced Text Editor">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="Autor" content="NCASTRO">
+  <meta name="Creado" content="20051130;17410000">
+  <style>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		P { margin-bottom: 0.21cm }
+	--</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<div style="text-align: right;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+<h1
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 153);">CU-ORFEO-54&nbsp;
+Incluir Anexos y Asociados a un Expediente.</h1>
+<br>
+<h2 style="font-family: helvetica,arial,sans-serif;"><span
+ style="font-weight: bold;">Historia de revisi&oacute;n</span><br>
+</h2>
+<table style="text-align: left; width: 965px; height: 124px;" border="1"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">FECHA<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">VERSION<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">DESCRIPCION<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">AUTOR<br>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Noviembre
+30 de 2005<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; font-family: helvetica,arial,sans-serif;">1.0<br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Versi&oacute;n
+inicial de acuerdo a los requerimientos entregados<span
+ style="font-weight: bold;"><br>
+      </span></td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Nicol&aacute;s
+Castro<br>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Marzo
+21 de 2005<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; font-family: helvetica,arial,sans-serif;">1.1<br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Ajustes
+realizados teniendo en cuenta las necesidades en el m&oacute;dulo de
+flujos autom&aacute;tico <br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Martha
+Mera</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<h2 style="font-family: helvetica,arial,sans-serif;">1.
+Descripci&oacute;n</h2>
+<span style="font-family: helvetica,arial,sans-serif;">Permite la
+inclusi&oacute;n de documentos que han sido vinculados a otro en el
+momento de su radicaci&oacute;n bien sea como Anexos o como Asociados.</span><br
+ style="font-family: helvetica,arial,sans-serif;">
+<h2 style="font-family: helvetica,arial,sans-serif;">2. Actores</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">2.1
+Creador Expediente</h3>
+<div style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">Usuario
+con permisos para la creaci&oacute;n de expedientes.<span
+ style="font-family: helvetica,arial,sans-serif;"></span><br>
+</div>
+<span style="font-family: helvetica,arial,sans-serif;"></span>
+<h2 style="font-family: helvetica,arial,sans-serif;">3. Flujo de Eventos</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.1.
+Flujo B&aacute;sico &oacute; Normal : Incluir anexos a Expediente.</h3>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.1
+Precondiciones</h4>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+3.1.1.1. El actor debe haber ingresado al sistema.<br>
+3.1.1.2. El actor debe haber invocado la vista <span
+ style="font-weight: bold;">&#8220;EXPEDIENTES&#8221;</span> por alguno
+de los v&iacute;nculos establecidos.<br>
+3.1.1.3. El documento actual debe tener como m&iacute;nimo un documento
+vinculado como Anexo &oacute; como Asociado(hijos) o haber sido
+radicado asociado a uno ya existente (padre).<br>
+<br>
+</div>
+<div style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">1.
+<span style="font-weight: bold;">A:</span> <span
+ style="font-style: italic; font-weight: bold;">INICIO</span><span
+ style="font-weight: bold;"> -</span>
+Verifica encontrarse en la vista <span style="font-weight: bold;">"EXPEDIENTES"</span>
+(pesta&ntilde;a) del
+&aacute;rea de datos del radicado &oacute; hace click en la
+pesta&ntilde;a del
+mismo nombre.<br>
+</div>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: center;"><img
+ alt="imgs/40_vta_crear_expediente0.jpg"
+ src="imgs/40_vta_crear_expediente0.jpg"
+ style="width: 611px; height: 121px;"><br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">2.
+<span style="font-weight: bold;">S:</span> Muestra la vista
+<span style="font-weight: bold;">"EXPEDIENTES"</span> la cual
+est&aacute; compuesta por: <br>
+</p>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+<div style="margin-left: 40px;">Secci&oacute;n uno: Informaci&oacute;n
+general del expediente:<br>
+2.1.
+Un mensaje con el texto <span style="font-weight: bold;">"ESTE
+DOCUMENTO SE ENCUENTRA INCLUIDO EN EL(LOS) SIGUIENTE(S) EXPEDIENTE:<br>
+</span>2.2 Una lista desplegable con los n&uacute;mero de expediente a
+los cuales pertenece<br>
+2.2. Un v&iacute;nculo rotulado como <span style="font-weight: bold;">"Incluir
+en"</span>.<br>
+2.3. Un v&iacute;nculo rotulado como <span style="font-weight: bold;">"Excluir
+de"</span><br>
+2.3. Un v&iacute;nculo rotulado como <span style="font-weight: bold;">"Crear"</span>.<br>
+2.4 R&oacute;tulo llamado <span style="font-weight: bold;">"TRD" </span>indicando
+la serie y subserie del expediente<br>
+2.5 R&oacute;tulo llamado <span style="font-weight: bold;">"Proceso" </span>al
+cual se
+encuentra asociado dicho expediente, en caso de tenerlo.<br>
+2.6 R&oacute;tulo llamado <span style="font-weight: bold;">"Fecha de
+inicio"</span>, indicando la fecha inicial del proceso.<br>
+2.7 Bot&oacute;n Rotulado con <span style="font-weight: bold;">"Estado"</span><br>
+2.8 Bot&oacute;n Rotulado con <span style="font-weight: bold;">"Historia
+del Expediente"</span><br>
+2.9 R&oacute;tulos de acuerdo a los campos parametrizados<br>
+2.10 Mensaje que indica que el Documento no se ha ubicado
+f&iacute;sicamente en el archivo.<br>
+<br>
+Secci&oacute;n dos: Lista con los radicados que pertenecen a dicho
+expediente :<br>
+2.11 N&uacute;mero de radicado<br>
+2.12 Fecha de Radicaci&oacute;n<br>
+2.13 Tipo documental del radicado<br>
+2.14 Asunto del radicado<br>
+2.15 Link con el n&uacute;mero del subexpediente en el cual se
+encuentra
+archivado el radicado (proceso realizado en archivo, con posibilidad de
+ser cambiado desde el expediente.<br>
+2.16 Anexos del radicado con los datos de Tipo de Documento.<br>
+<br>
+Secci&oacute;n tres: Lista de los documentos que tienen relaci&oacute;n
+con el radicado actual.<br>
+2.17 Cuadro de selecci&oacute;n <br>
+2.18<span style="font-weight: bold;"> "Radicado" </span>con acceso
+para ingresar a la imagen del radicado<span style="font-weight: bold;"><br>
+</span>2.19 <span style="font-weight: bold;">"Fecha de
+radicaci&oacute;n</span>" con acceso para ingresar a los datos del
+radicado<br>
+2.20 <span style="font-weight: bold;">"Tipo de documento"</span><br>
+2.21 <span style="font-weight: bold;">"Asunto"</span><br>
+2.22 <span style="font-weight: bold;">"Tipo de Relaci&oacute;n"</span><br>
+2.23 Link rotulado <span style="font-weight: bold;">"INCLUIR
+DOCUMENTOS EN EXPEDIENTE"</span><br>
+<br>
+<div style="text-align: center;"><img
+ alt="54_vta_incluir_asociados1.jpg"
+ src="imgs/54_vta_incluir_asociados1.jpg"
+ style="width: 962px; height: 639px;"><br>
+</div>
+<br>
+</div>
+<br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.<span
+ style="font-weight: bold;"> A: </span>Selecciona el(los) radicado(s)
+que desea incluir en un expediente y da click en el link&nbsp; <span
+ style="font-weight: bold;">"INCLUIR DOCUMENTOS EN EXPEDIENTE".</span><br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif;">
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;"></p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">
+4. <span style="font-weight: bold;">S</span>: Despliega una ventana
+donde se encuentra la informaci&oacute;n de los expedientes asociados
+al radicado actual y para indicar el n&uacute;mero
+de expediente en el cual se desea incluir los documentos relacionados
+como anexos o asociados:<br>
+<br>
+</p>
+<div style="margin-left: 120px;">4.1 Nombre del Expediente<br>
+4.2 Proceso del Expediente <br>
+4.3 Estado<br>
+4.4 Cuadro de selecci&oacute;n<br>
+4.5 Bot&oacute;n habilitado "Incluir en expediente"<br>
+4.6 Bot&oacute;n habilitado "Cancelar"<br>
+</div>
+<div style="margin-left: 40px;"><br>
+</div>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">
+<div style="text-align: center;"><img
+ alt="54_vta_incluir_asociados2.jpg"
+ src="imgs/54_vta_incluir_asociados2.jpg"
+ style="width: 512px; height: 239px;"><br>
+</div>
+<br>
+<br>
+<br>
+5. <span style="font-weight: bold;">A: </span>Hace click sobre la
+caja de chequeo del(os) expediente(s) al cual desea incluir los
+radicados seleccionados en la pesta&ntilde;a de Expedientes (punto 3).<span
+ style="font-weight: bold;">&nbsp; </span>Se
+pueden seleccionar varias a la vez &oacute; si es necesario todas
+haciendo click sobre la caja de chequeo del encabezado de la columna.<br>
+<br>
+6. <span style="font-weight: bold;">A: </span>Hace click&nbsp; en el
+bot&oacute;n <span style="font-weight: bold;">"INCLUIR EN EXPEDIENTE"</span>
+.<br>
+<br>
+<br>
+7. <span style="font-weight: bold;">S</span>:<span
+ style="font-weight: bold;"></span> Solicita la
+confirmaci&oacute;n de la inclusi&oacute;n de los documentos en el
+expediente:<br>
+<br>
+&nbsp;<br>
+<div style="text-align: center;"><img
+ alt="41_vta_incluir_expediente2.jpg"
+ src="imgs/41_vta_incluir_expediente2.jpg"
+ style="width: 574px; height: 189px;"><br>
+</div>
+<br>
+<br>
+8. <span style="font-weight: bold;">S:</span>&nbsp; Incluye los
+documentos seleccionados en el expediente indicado por el usuario y
+muestra la vista <span style="font-weight: bold;">"EXPEDIENTES" </span>reflejando
+el resultado de la transacci&oacute;n.<span style="font-weight: bold;">-</span><span
+ style="font-weight: bold; font-style: italic;">FIN</span><span
+ style="font-weight: bold;">.<br>
+<br>
+</span></div>
+<div style="font-family: helvetica,arial,sans-serif;">
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.2
+Post-condiciones</h4>
+<div style="margin-left: 120px;">3.1.2.1.<span
+ style="font-family: helvetica,arial,sans-serif;"> Todas la
+transacciones que realicen mediante este caso de uso deben dejar
+registro en el
+hist&oacute;rico.<br>
+</span><span style="font-family: helvetica,arial,sans-serif;">3.1.2.2
+En la lista de carpetas donde se encuentra un radicado debe existir un
+icono que indique que el radicado est&aacute; incluido en un expediente.</span><span
+ style="font-family: helvetica,arial,sans-serif;"></span><br>
+<br>
+</div>
+</div>
+<div style="font-family: helvetica,arial,sans-serif;">
+<div style="margin-left: 40px;">
+<div style="font-family: helvetica,arial,sans-serif;">
+<h3>3.2.
+Flujo Alterno :&nbsp; El Usuario hace click sobre el v&iacute;nculo
+"Incluir en"&nbsp; sin haber seleccionado documentos a incluir.</h3>
+</div>
+</div>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">
+<div style="margin-left: 40px;">
+<div style="font-family: helvetica,arial,sans-serif;"><br>
+</div>
+3.<span style="font-weight: bold;"> S: </span><span
+ style="font-style: italic; font-weight: bold;">INICIO </span>Presenta
+un
+cuadro de
+di&aacute;logo en el que avisa al usuario que no ha seleccionado
+documentos para incluir en el Expediente con el texto&nbsp; <span
+ style="font-weight: bold;">"Error. Debe seleccionar por lo menos un
+documento a incluir en el expediente."</span> y un bot&oacute;n con el
+texto<span style="font-weight: bold;"> "Aceptar".</span><span
+ style="font-weight: bold;">-</span><span
+ style="font-weight: bold; font-style: italic;">FIN</span><span
+ style="font-weight: bold;">.</span><br>
+<br>
+<div style="text-align: center;"><img
+ alt="imgs/41_dia_no_seleccion_docs.jpg"
+ src="imgs/41_dia_no_seleccion_docs.jpg"
+ style="width: 623px; height: 143px;"><br>
+</div>
+<br>
+3.1. <span style="font-weight: bold;">A:</span> Hace click
+en el&nbsp;<span style="font-weight: bold;"> </span>bot&oacute;n <span
+ style="font-weight: bold;">"Aceptar" -</span><span
+ style="font-weight: bold; font-style: italic;">FIN</span><span
+ style="font-weight: bold;">.<br>
+</span><span style="font-family: helvetica,arial,sans-serif;"></span><br>
+</div>
+<span style="font-weight: bold;"></span><br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif;">
+<div style="font-family: helvetica,arial,sans-serif;">
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.3.
+Flujo Alterno :&nbsp; El Usuario hace click sobre el v&iacute;nculo
+"Incluir en Exp" sin haber especificado Expediente.</h3>
+<br>
+</div>
+<div style="margin-left: 80px;">4.<span style="font-weight: bold;"> S: </span><span
+ style="font-style: italic; font-weight: bold;">INICIO </span>Presenta
+un
+cuadro de
+di&aacute;logo en el que avisa al usuario que no ha especificado un
+expediente al cual incluir el documento actual con el texto&nbsp; <span
+ style="font-weight: bold;">"Error. Debe especificar el nombre de un
+Expediente "</span> y un bot&oacute;n con el texto<span
+ style="font-weight: bold;"> "Aceptar".</span><span
+ style="font-weight: bold;"></span><span style="font-weight: bold;"></span><br>
+</div>
+<span style="font-weight: bold;"><br>
+</span>
+<div style="text-align: center;"><span style="font-weight: bold;"><img
+ alt="41_dia_no_especif_expediente.jpg"
+ src="imgs/41_dia_no_especif_expediente.jpg"
+ style="width: 623px; height: 143px;"></span><br>
+<span style="font-weight: bold;"></span></div>
+<span style="font-weight: bold;"></span>
+<br>
+<div style="margin-left: 80px;">4.1 <span style="font-weight: bold;">A:</span>
+Hace click
+en el&nbsp;<span style="font-weight: bold;"> </span>bot&oacute;n <span
+ style="font-weight: bold;">"Aceptar" -</span><span
+ style="font-weight: bold; font-style: italic;">FIN</span><span
+ style="font-weight: bold;">.<br>
+</span>4.2 <span style="font-weight: bold;">S:</span> se ubica
+nuevamente en la ventana de selecci&oacute;n del expediente<br>
+<br>
+</div>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;"></div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 40px;">
+</div>
+<div style="font-family: helvetica,arial,sans-serif;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+</body>
+</html>

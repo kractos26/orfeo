@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/tx
+END
+Expediente.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/tx/Expediente.php
+END
+Proceso.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/tx/Proceso.php
+END
+Tx.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/tx/Tx.php
+END
+ComentarioTx.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/tx/ComentarioTx.php
+END
+Radicacion.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/tx/Radicacion.php
+END
+ConsultaRad.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/tx/ConsultaRad.php
+END
+Flujo.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/tx/Flujo.php
+END
+Historico.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/tx/Historico.php
+END
+ExpedienteSES.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/tx/ExpedienteSES.php
+END
+untitled.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/tx/untitled.php
+END

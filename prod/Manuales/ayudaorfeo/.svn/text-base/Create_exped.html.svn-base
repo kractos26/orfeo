@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <title>Creacion de expedientes</title>
+  <meta name="GENERATOR" content="OpenOffice.org 2.0  (Linux)">
+  <meta name="AUTHOR" content="Martha Yaneth Mera Velasco">
+  <meta name="CREATED" content="20060828;9492500">
+  <meta name="CHANGED" content="20060828;12355700">
+  <meta name="DESCRIPTION" content="Orfeo 3.5">
+  <style>
+	<!--
+		P.orfeot2 { font-family: "Arial Narrow"; font-size: 18pt; font-weight: bold }
+		P.orfeopar { font-family: "Arial Narrow"; font-size: 14pt }
+	-->
+	</style>
+</head>
+<body dir="ltr" lang="es-CO">
+<p class="orfeot2" align="center"><font color="#000066"><font
+ face="Arial Narrow"><font size="5"><i><b><span
+ style="background: rgb(204, 204, 204) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">Creación
+de expedientes</span></b></i></font></font></font></p>
+<p class="orfeopar" align="right"><span style=""><br>
+<strong><a href="content.htm"><i><font size="3">Contenido</font></i></a></strong></span></p>
+<p class="orfeopar" style="font-style: normal; font-weight: bold;"
+ align="justify">
+<font face="helvetica, arial, sans-serif">Esta
+funcionalidad permite al usuario agrupar varios radicados que se
+encuentren registrados en el sistema y asociarlos en una sola carpeta
+denominada EXPEDIENTE. Estos expedientes virtuales se van conformando
+a medida que el usuario o usuarios incluyen radicados en determinado
+nombre de expediente, logrando en una sola ventana mostrar todos los
+documentos involucrados en el mismo proceso y los cuales se
+encuentran físicamente archivados.</font></p>
+<p class="orfeopar" style="font-style: normal; font-weight: bold;"
+ align="justify">
+<font face="helvetica, arial, sans-serif">Los
+expedientes se conforman teniendo en cuenta el año y la
+dependencia. Cada expediente refleja como se encuentran organizados
+físicamente los archivos de cada una de las áreas
+productoras.</font></p>
+<p class="orfeopar" style="font-style: normal; font-weight: bold;"
+ align="justify">
+<font face="helvetica, arial, sans-serif"><br>
+Para la
+conformación de los expedientes virtuales se debe:</font></p>
+<p style="font-weight: bold;" class="orfeopar"><font
+ face="helvetica, arial, sans-serif">1.
+Seleccionar la carpeta donde se encuentra el radicado que será
+incluido en el expediente:</font></p>
+<p style="font-weight: bold;"><br>
+<br>
+</p>
+<p style="font-weight: bold;" class="orfeopar" align="center"><img
+ src="images/select_carp.jpg" name="gráficos1" alt="select_carp.jpg"
+ align="bottom" border="0" height="391" width="168"></p>
+<p style="font-weight: bold;" class="orfeopar"><font
+ face="helvetica, arial, sans-serif">2.
+Ingresar al radicado dando click en la fecha de radicación:</font></p>
+<p style="font-weight: bold;" class="orfeopar" align="center"><img
+ src="images/link_f_rad.jpg" name="gráficos2" alt="/link_f_rad.jpg"
+ align="bottom" border="0" height="302" width="1036"></p>
+<p style="font-weight: bold;" class="orfeopar"><br>
+<br>
+</p>
+<p style="font-weight: bold;" class="orfeopar"><font
+ face="helvetica, arial, sans-serif">3. Dar
+click en la pestaña Expedientes:</font></p>
+<p style="font-weight: bold;" class="orfeopar" align="center"><img
+ alt="images/pest_exped.jpeg" src="images/pest_exped.jpeg"
+ style="width: 1020px; height: 527px;"><br>
+</p>
+<p style="font-weight: bold;" class="orfeopar"><br>
+<br>
+</p>
+<p style="font-weight: bold;" class="orfeopar"><font
+ face="helvetica, arial, sans-serif">4. El
+sistema se ubica en la vista de "Expedientes"&nbsp; la cual
+está compuesta por:</font></p>
+<p style="font-weight: bold;" class="orfeopar" align="center"><img
+ alt="images/view_expediente.jpg" src="images/view_expediente.jpg"
+ style="width: 1056px; height: 624px;"><br>
+</p>
+<p class="orfeopar" style="margin-left: 2.12cm; font-weight: bold;"
+ align="justify"><font face="helvetica, arial, sans-serif">a. Datos
+Radicado: Indica el número del radicado con el cual se está trabajando.</font></p>
+<p class="orfeopar" style="margin-left: 2.12cm; font-weight: bold;"
+ align="justify"><font face="helvetica, arial, sans-serif">b. El link “<a
+ href="Include_exped.html">INCLUIR EN</a>” para incluir el radicado
+actual en un expediente que ya se encuentra creado en el sistema y el
+link “<a href="Create_exped.html">CREAR</a>” el cual permite realizar
+la creación de un nuevo expediente. (</font><font
+ face="helvetica, arial, sans-serif"><font size="3">Se debe tener en
+cuenta que la opción "Crear" solamente será vista para los usuarios que
+cuenten con este permiso especial.</font></font><font
+ face="helvetica, arial, sans-serif">)<br>
+</font></p>
+<p class="orfeopar" style="margin-left: 2.12cm; font-weight: bold;"
+ align="justify"><font face="helvetica, arial, sans-serif">c.
+Enlace a la pantalla del <a href="History_Trash_Exp.html">Historial</a>
+del expediente.</font></p>
+<p class="orfeopar" style="margin-left: 2.12cm; font-weight: bold;"
+ align="justify"><font face="helvetica, arial, sans-serif">d.
+Enlace a la pantalla que indica que documentos han sido <a
+ href="History_Trash_Exp.html">Borrados</a> del
+expediente.</font></p>
+<p class="orfeopar" style="margin-left: 2.12cm; font-weight: bold;"
+ align="justify"><font face="helvetica, arial, sans-serif">e.
+Enlace “<a href="Inclu_Docu_Exp.html">INCLUIR DOCUMENTOS EN EXPEDIENTE</a>”
+muestra la pantalla de
+permite anexar los documentos necesarios en el mismo expediente donde
+se encuentra el radicado.</font></p>
+<p class="orfeopar" style="margin-left: 2.12cm; font-weight: bold;"
+ align="justify"><br>
+<br>
+</p>
+<ol style="color: rgb(0, 0, 0); font-weight: bold;" start="5">
+  <li>
+    <p class="orfeopar"><font face="helvetica, arial, sans-serif"><font
+ size="4">Crear Nuevo Expediente:</font></font></p>
+    <p class="orfeopar"><font face="helvetica, arial, sans-serif"><font
+ size="4">Para crear un nuevo expediente se da clic en el enlace CREAR
+donde aparecerá el siguiente cuadro el cual debe ser llenado con la TRD
+correspondiente a la dependencia del radicado. <br>
+    </font></font></p>
+  </li>
+</ol>
+<div style="text-align: center; font-weight: bold;"><img
+ alt="images/crear_exp.jpg" src="images/crear_exp.jpg"
+ style="width: 876px; height: 372px;"><br>
+</div>
+<p style="font-weight: bold;" class="orfeopar"><br clear="left">
+<br>
+<br>
+</p>
+<p style="font-weight: bold;" class="orfeopar"><font
+ face="helvetica, arial, sans-serif">Nota:
+Un usuario solamente puede crear expedientes correspondientes a la
+dependencia en la cual pertenece.</font><font
+ face="helvetica, arial, sans-serif"><font size="4"> <br>
+</font></font></p>
+<p style="font-weight: bold;" class="orfeopar"><font
+ face="helvetica, arial, sans-serif">Si el
+expediente que se desea crear pertenece a otro año este puede
+ser modificado al dar clic en la selección del año, los
+demás números del expediente van a ser anexados
+automáticamente debido a un consecutivo que se tiene en la
+base de datos, a menos que se desee colocar este numero manualmente
+en cuyo caso se debe seguir la siguiente estructura.</font></p>
+<p style="font-weight: bold;" class="orfeopar"><br>
+<br>
+</p>
+<table style="width: 729px; height: 172px; font-weight: bold;"
+ border="0" cellpadding="2" cellspacing="0">
+  <col width="99"> <col width="100"> <col width="149"> <col
+ width="149"> <col width="153"> <tbody>
+    <tr>
+      <td width="99">
+      <p align="center"><font color="#3333ff"><font size="7">2006</font></font></p>
+      </td>
+      <td width="100">
+      <p align="center"><font color="#3333ff">&nbsp;<font size="7">900 </font></font>
+      </p>
+      </td>
+      <td width="149">
+      <p align="center"><font color="#3333ff"><font size="7">10 01 </font></font>
+      </p>
+      </td>
+      <td width="149">
+      <p align="center"><font color="#3333ff"><font size="7">00006</font></font></p>
+      </td>
+      <td width="153">
+      <p align="center"><font color="#3333ff"><font size="7">E</font></font></p>
+      </td>
+    </tr>
+    <tr>
+      <td width="99">
+      <p align="center"><font size="4">Año</font></p>
+      </td>
+      <td width="100">
+      <p align="center"><font size="4">Dependencia</font></p>
+      </td>
+      <td width="149">
+      <p align="center"><font size="4">Serie SubSerie</font></p>
+      </td>
+      <td width="149">
+      <p align="center"><font size="4">Consecutivo</font></p>
+      </td>
+      <td width="153">
+      <p><font size="4">Indica que es un Expediente</font></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p style="font-weight: bold;" class="orfeopar"><br>
+<br>
+</p>
+<p style="font-weight: bold;" class="orfeopar"><font
+ face="helvetica, arial, sans-serif">Y
+bastara con cambiar los datos en sus respectivos campos. Ademas si se
+desea se puede marcar la casilla de Consecutivo de Expediente Manual,
+cuando este exista. <br>
+</font></p>
+<p style="font-weight: bold;" class="orfeopar"><font
+ face="helvetica, arial, sans-serif">6. Paso
+seguido bastara con colocar la fecha de la
+creación del expediente ( La cual es la misma que se encuentra en el
+radicado) y seleccionar el Usuario Responsable
+del Proceso, para que aparezca el botón de "Crear Nuevo
+Expediente", y el sistema solicita la confirmación de la
+creación del expediente.</font></p>
+<p style="font-weight: bold;" align="center"><img
+ alt="images/exp_confirmar_crear.jpg"
+ src="images/exp_confirmar_crear.jpg"
+ style="width: 499px; height: 152px;"><br>
+</p>
+<p style="font-weight: bold;" class="orfeopar"><br>
+<br>
+<font face="helvetica, arial, sans-serif">Por
+ultimo se la da clic en el botón CONFIRMACION CREACION
+EXPEDIENTE. </font>
+</p>
+<div style="text-align: center; font-weight: bold;"><img
+ alt="images/check_expediente.jpg" src="images/check_expediente.jpg"
+ style="width: 515px; height: 141px;"><br>
+</div>
+<p style="font-weight: bold;" class="orfeopar"><br>
+</p>
+<p style="font-weight: bold;" class="orfeopar"><font
+ face="helvetica, arial, sans-serif">7. El
+sistema graba los datos del radicado en el cual se encuentra ubicado
+y al dar clic en CERRAR aparecera esta información en la vista
+del expediente, indicando el número creado&nbsp; (el numero
+indicado en el punto a, más una letra E, que indica
+Expediente) y los documentos anexos que tiene dicho radicado y que
+pertenecen a este expediente.</font></p>
+<p style="font-weight: bold;" class="orfeopar"><br>
+<br>
+</p>
+<p style="font-weight: bold;" class="orfeopar" align="center"><img
+ alt="images/view_expediente1.jpg" src="images/view_expediente1.jpg"
+ style="width: 1002px; height: 554px;"><br>
+</p>
+<p style="font-weight: bold;" class="orfeopar"><font
+ face="helvetica, arial, sans-serif">Para
+todos los radicados que son grabados en un expediente,
+automáticamente se envia una notificación a las
+personas de Archivo para que realicen el procedimiento de Archivado
+físico del documento a cada expediente.</font><font
+ face="helvetica, arial, sans-serif"> Cuando el radicado ya ha sido
+creado en un expediente se pueden
+realizar las siguientes acciones: <a href="Include_exped.html">Incluir</a>
+en otro expediente el mismo
+radicado, <a href="Excluir_exped_exist.html">Excluirlo</a> de alguno y
+ademas la <a href="Create_exped_exist.html">Creación</a> de un nuevo
+expediente para el mismo radicado con los enlaces ubicados en la parte
+superior.<br>
+</font></p>
+<p style="font-weight: bold;" class="orfeopar"><font
+ face="helvetica, arial, sans-serif">El
+expediente virtual debe reflejar una fiel copia del expediente
+físico, por lo anterior, recuerde entregar todos los
+documentos físicos que se requieran al grupo de archivo
+correspondiente.</font></p>
+<p class="orfeopar" align="justify"><strong><a href="content.htm"><i><font
+ size="2"><font face="helvetica, arial, sans-serif">Contenido</font></font></i></a></strong></p>
+</body>
+</html>

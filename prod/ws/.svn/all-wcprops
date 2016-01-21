@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/ws
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/ws/.htaccess
+END
+server.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/ws/server.php
+END
+server.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/ws/server.wsdl
+END

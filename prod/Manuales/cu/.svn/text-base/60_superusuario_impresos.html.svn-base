@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>60_superusuario_impresos</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="Generator" content="Kate, the KDE Advanced Text Editor">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="AUTHOR" content="MMERA">
+  <meta name="CREATED" content="20051201;17410000">
+  <meta content="Martha Yaneth Mera Velasco" name="author">
+  <meta
+ content="permite marcar un documento como impreso de cualquier dependencia"
+ name="description">
+</head>
+<body>
+<div style="text-align: right;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+<h1
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 153);">CU-ORFEO-60&nbsp;
+- SuperUsuario para marcar documentos como impresos<br>
+</h1>
+<h2 style="font-family: helvetica,arial,sans-serif;"><span
+ style="font-weight: bold;">Historia de revisi&oacute;n</span><br>
+</h2>
+<table style="text-align: left; width: 965px; height: 118px;" border="1"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">FECHA<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">VERSION<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">DESCRIPCION<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">AUTOR<br>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Mayo
+8 de 2006<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; font-family: helvetica,arial,sans-serif;">1.0<br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Requerimientos
+iniciales para ajuste en la carpeta de impresi&oacute;n.<br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Martha
+Mera</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<h2 style="font-family: helvetica,arial,sans-serif;">1.
+Descripci&oacute;n</h2>
+<span style="font-family: helvetica,arial,sans-serif;">Permite que un
+usuario con permisos especiales pueda marcar un documento como impreso
+de cualquier dependencia</span><br
+ style="font-family: helvetica,arial,sans-serif;">
+<span style="font-family: helvetica,arial,sans-serif;"><span
+ style="font-weight: bold;"></span></span>
+<h2 style="font-family: helvetica,arial,sans-serif;">2. Actores</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">2.1
+Usuario normal <br>
+</h3>
+<div style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">Usuario
+b&aacute;sico del sistema con permisos especiales<br>
+</div>
+<h2 style="font-family: helvetica,arial,sans-serif;">3. Flujo de Eventos</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.1.
+Flujo B&aacute;sico &oacute; Normal : Marcar documento como impreso<br>
+</h3>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.1
+Precondiciones</h4>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+3.1.1.1.
+El actor debe haber ingresado al sistema<br>
+3.1.1.2. El usuario tiene permiso de para marcar como impreso cualquier
+documento generado en otras dependencias (validar en el campo creado
+USUA_PERM_IMPRESION)<br>
+3.1.1.3. El usuario ha seleccionado la carpeta de impresi&oacute;n <br>
+<br>
+1. S:<span style="font-weight: bold; font-style: italic;"> INICIO </span>-&nbsp;
+Despliega la carpeta de impresi&oacute;n&nbsp; con :<br>
+<br>
+&nbsp;<br>
+<div style="text-align: center;"><img alt="/60_carpeta_impresion.jpg"
+ src="imgs/60_carpeta_impresion.jpg"
+ style="width: 1018px; height: 384px;"><br>
+</div>
+<br>
+<br>
+1.1 Primera parte, Encabezado:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Listado de: "Marcar documentos como
+impresos"<br>
+&nbsp;&nbsp;&nbsp; &nbsp; Usuario:&nbsp; Usuario actual del sistema<br>
+&nbsp;&nbsp;&nbsp; &nbsp; Dependencia: Lista desplegable con todas las
+dependencias que se encuentren habilitadas en el sistema.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Caja de texto: "Buscar radicado(s)
+(separados por coma) con el bot&oacute;n habilitado "Buscar"<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <br>
+1.2 Segunda parte: Opciones generales<br>
+&nbsp;&nbsp;&nbsp; Link de selecci&oacute;n rotulado "Listar por" con
+las opciones de "Impresos", "Por imprimir"<br>
+&nbsp;&nbsp;&nbsp; Bot&oacute;n habilitado "Marcar Documentos como
+Impresos"<br>
+&nbsp;&nbsp;&nbsp; Convenciones de estado del documento: indicando
+"RECIBIDO", "RADICADO", "IMPRESO", "ENVIADO" <br>
+&nbsp;&nbsp;&nbsp; Bot&oacute;n habilitado "Generar Listado de Entrega"<br>
+<br>
+1.3 Tercera parte: Lista de radicados<br>
+&nbsp;&nbsp;&nbsp; Estado del documento, indicando con un
+gr&aacute;fico de Vo.Bo. en cual de ellos se encuentra <br>
+&nbsp;&nbsp;&nbsp; Radicado Generado: N&uacute;mero de radicado generado<br>
+&nbsp;&nbsp;&nbsp; Copia: Si el documento es una copia o no.<br>
+&nbsp;&nbsp;&nbsp; Radicado padre: Si el radicado generado dependende
+de uno que ya existe en el sistema<br>
+&nbsp;&nbsp;&nbsp; Fecha de Radicado: Fecha de radicaci&oacute;n del
+documento<br>
+&nbsp;&nbsp;&nbsp; Descripci&oacute;n: o asunto del documento<br>
+&nbsp;&nbsp;&nbsp; Fecha de impresi&oacute;n: Fecha en que se marca
+como impreso un documento<br>
+&nbsp;&nbsp;&nbsp; Generado por: Usuario que genera el documento<br>
+&nbsp;&nbsp;&nbsp; Cuadro de selecci&oacute;n: con la opci&oacute;n de
+seleccionar uno o todos los radicados de la hoja<br>
+<br>
+2.<span style="font-weight: bold;"> A:</span> Despliega la lista de
+dependencias y selecciona el nombre de la cual desea marcar documentos
+como impresos.<br>
+<br>
+3. <span style="font-weight: bold;">S</span>: Presenta en la
+lista,&nbsp; los n&uacute;meros de radicados que no se han
+enviado&nbsp; (4 Vo.Bo.) de la dependencia seleccionada.<br>
+<br>
+4. <span style="font-weight: bold;">A</span>: Selecciona el(los)
+radicado(s) que desea marcar como impreso y&nbsp; selecciona el
+bot&oacute;n "Marcar documentos como impresos" <br>
+<br>
+5.<span style="font-weight: bold;"> S</span>: Realiza la
+validaci&oacute;n de los datos de los radicados seleccionados y envia
+la confirmaci&oacute;n de los documentos. <span
+ style="font-weight: bold; font-style: italic;">- FIN-</span><br>
+<br>
+<br>
+<img alt="60_confirmacion_marcados.jpg"
+ src="imgs/60_confirmacion_marcados.jpg"
+ style="width: 1037px; height: 339px;"><br>
+<br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif;">
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.2
+Postcondiciones</h4>
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; 3.1.2.1 En la carpeta de impresi&oacute;n se visualiza el
+radicado con el Tercer Vo.Bo. indicando que el documento se ha marcado
+como impreso.<br>
+<br>
+</div>
+<h3 style="font-family: helvetica,arial,sans-serif;">3.2.
+Flujo Alterno : Actor no selecciona ning&uacute;n documento<br>
+</h3>
+<div style="margin-left: 40px;"><font face="Arial Narrow, sans-serif">3.2.1&nbsp;
+A: <span style="font-weight: bold; font-style: italic;">-INICIO-</span>
+No marca ning&uacute;n documento y presiona el bot&oacute;n "Marcar
+documentos como impresos" <br>
+3.2.2&nbsp; S: Envia el mensaje "Debe seleccionar un radicado"<br>
+<br>
+<br>
+</font>
+<div style="text-align: center;"><font face="Arial Narrow, sans-serif"><img
+ alt="/60_error_seleccionar.jpg" src="imgs/60_error_seleccionar.jpg"
+ style="width: 396px; height: 138px;"></font><br>
+</div>
+<font face="Arial Narrow, sans-serif"><br>
+3.2.3 A: da click en el bot&oacute;n "OK"<br>
+3.2.4 S: Se ubica nuevamente en la carpeta de impresi&oacute;n. <span
+ style="font-weight: bold; font-style: italic;">- FIN- </span><br>
+<br>
+</font></div>
+<h3 style="font-family: helvetica,arial,sans-serif;">3.3.
+Flujo Alterno : Documentos con datos errados<br>
+</h3>
+<div style="margin-left: 40px;">
+<div style="margin-left: 40px;"><font face="Arial Narrow, sans-serif">5.1&nbsp;
+A: Selecciona documentos que no tienen datos obligatorios como Nombre,
+Direcci&oacute;n, Dpto, Municipio<br>
+5.2&nbsp; S: Envia el mensaje "Los radicados no pueden ser marcados
+como impresos, verifique los datos"<br>
+<br>
+</font><font face="Arial Narrow, sans-serif"><img
+ alt="60_error_confirmacion_marcados.jpg"
+ src="imgs/60_error_confirmacion_marcados.jpg"
+ style="width: 1037px; height: 339px;"></font><br>
+<font face="Arial Narrow, sans-serif"><br>
+5.3 A: Se regresa nuevamente a la carpeta de impresi&oacute;n <span
+ style="font-weight: bold; font-style: italic;">- FIN-</span></font><br>
+<span style="font-family: arial narrow,sans-serif;"></span></div>
+</div>
+<br>
+<a style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a><br
+ style="font-family: helvetica,arial,sans-serif;">
+<font style="font-size: 11pt;" size="2">
+</font>
+</body>
+</html>

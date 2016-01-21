@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Filtro en carpetas</title>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link
+ href="file://///Apolo/OFICINA_INFORMATICA/ORFEO/AyudaOrfeo/styles.css"
+ rel="stylesheet" type="text/css">
+  <style type="text/css">
+<!--
+.style7 {	font-family: "Arial Narrow";
+	font-size: 14pt;
+}
+.style12 {
+	font-family: "Arial Narrow";
+	font-size: 14pt;
+	font-style: italic;
+	font-weight: bold;
+}
+-->
+  </style>
+  <meta content="Martha Yaneth Mera Velasco" name="author">
+  <meta content="Orfeo 3.5" name="description">
+</head>
+<body>
+<p class="orfeot2" align="center"><span class="orfeot1">C</span><span
+ class="orfeot1">omo realizar filtros en carpetas?</span><span
+ class="orfeot1"></span></p>
+<p class="orfeot2" align="right"><span class="orfeopar"><br>
+<strong><a href="content.htm"><span class="orfeolk1"><font
+ face="Arial Narrow">Contenido</font></span></a></strong></span></p>
+<p class="orfeot2" align="justify"><span class="orfeopar"> Esta
+funcionalidad permite al usuario realizar la b&uacute;squeda de un
+radicado
+que se encuentra actualmente en cualquiera de sus carpetas y el sistema
+al encontrarla le permitir&aacute; ubicarla f&aacute;cilmente.</span></p>
+<p class="orfeopar" align="justify">El filtro de radicados se puede
+realizar en cualquier carpeta sin importar que sea predeterminada
+(Entrada, Salida, Vo.Bo., Devueltos) o Carpeta personal.</p>
+<p class="orfeopar" align="justify">Para realizar la b&uacute;squeda de
+un radicado, se debe: </p>
+<p class="orfeopar">a) Seleccionar una carpeta desde donde desea
+realizar la b&uacute;squeda.</p>
+<br>
+<p style="text-align: center;" class="orfeopar"><img
+ alt="select_carp.jpg" src="images/select_carp.jpg"
+ style="width: 168px; height: 391px;"><br>
+</p>
+<p class="orfeopar">b) Escribir el n&uacute;mero de radicado o
+radicados que se desea buscar,
+separados por comas(,). No es necesario digitar el n&uacute;mero
+completo.<br>
+</p>
+<p class="orfeopar"><br>
+</p>
+<div style="text-align: center;">&nbsp;<img alt="filter_carp1.jpg"
+ src="images/filter_carp1.jpg" style="width: 1042px; height: 140px;"><br>
+</div>
+<p class="orfeopar"><br>
+</p>
+<p class="orfeopar">c) Marcar en el campo "Todas las Carpetas" si desea
+que el sistema realice la b&uacute;squeda en todas las carpetas que
+tiene el
+usuario, o dejarla en blanco para que la b&uacute;squeda sea realizada
+solo en
+la carpeta actual.</p>
+<p class="orfeopar">d) Dar Click en el bot&oacute;n "Buscar" </p>
+<p class="orfeopar">e) El sistema realiza la b&uacute;squeda solicitada
+y
+todos los documentos que contengan los datos requeridos en el
+n&uacute;mero de
+radicado, ser&aacute;n visualizados en una lista. </p>
+<p class="orfeopar"></p>
+<div style="text-align: center;"><img alt="filter_carp2.jpg"
+ src="images/filter_carp2.jpg" style="width: 1043px; height: 369px;"><br>
+<br>
+</div>
+<br>
+<p class="orfeopar" align="justify">&nbsp;f. Para saber en cual carpeta
+se encuentra el radicado se debe ubicar
+el puntero del mouse sobre el primer icono que se encuentra al lado
+izquierdo del n&uacute;mero del radicado, en este momento se despliega
+una
+nota indicando en qu&eacute; carpeta se encuentra.<br>
+</p>
+<p style="text-align: center;" class="orfeopar"><img
+ alt="filter_carp3.jpg" src="images/filter_carp3.jpg"
+ style="width: 449px; height: 126px;"><br>
+</p>
+<p style="font-style: italic;" class="orfeopar" align="justify"><small><strong><br>
+<a href="content.htm"><font face="Arial Narrow">Contenido</font></a></strong></small></p>
+</body>
+</html>

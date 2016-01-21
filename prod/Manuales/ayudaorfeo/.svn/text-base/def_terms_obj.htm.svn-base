@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Documento sin t&iacute;tulo</title>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <style type="text/css">
+<!--
+@import url("styles.css");
+.style2 {color: #FF0000}
+-->
+  </style>
+</head>
+<body bgcolor="#ffffff">
+<h1 align="center" class="orfeot1"><font color="#000066" size="+2"
+ face="Arial Narrow"><strong>Definici&oacute;n de T&eacute;rminos y
+Objetos</strong></font></h1>
+<p align="right" class="orfeopar"><a href="content.htm"><span
+ class="orfeolk1"><font face="Arial Narrow">Contenido</font></span></a></p>
+<p align="justify" class="orfeopar"><span class="orfeogl"><font
+ size="+1" face="Arial Narrow"><strong>Dependencia:</strong></font></span><font
+ size="+1" face="Arial Narrow"> Parte de la <a href="#est_sspd">estructura
+organizacional de la SSPD</a> que cumple una o varias funciones
+espec&iacute;ficas dentro la gesti&oacute;n de la entidad. En ORFEO se
+identifican como &Aacute;reas y Grupos dependiendo de su nivel
+jer&aacute;rquico dentro de la estructura organizacional. Ej.:
+&Aacute;rea = Direcci&oacute;n Financiera; Grupo = Contabilidad.</font></p>
+<p align="justify" class="orfeopar"><span class="orfeogl"><font
+ size="+1" face="Arial Narrow"><strong>Expediente L&oacute;gico:</strong></font></span><font
+ size="+1" face="Arial Narrow"> Conjunto de documentos que est&aacute;n
+relacionados entre si, que forman parte de un mismo proceso de
+gesti&oacute;n y que ORFEO agrupa de acuerdo a la instrucci&oacute;n
+dada por los usuarios que identifican o definen dicha relaci&oacute;n.
+Ej. Una solicitud de informaci&oacute;n por parte de un ciudadano, su
+respectiva respuesta y un memorando interno informando sobre su
+tr&aacute;mite son documentos que conforman un expediente l&oacute;gico.</font></p>
+<p align="justify" class="orfeopar"><span class="orfeogl"><font
+ size="+1" face="Arial Narrow"><strong><a name="est_sspd"></a>Estructura
+Organizacional de la SSPD:</strong></font></span><font size="+1"
+ face="Arial Narrow"> Esquema jer&aacute;rquico de la relaci&oacute;n
+entre las dependencias (&Aacute;reas y Grupos) de la entidad. Para
+ORFEO, cada grupo se identifica por medio del c&oacute;digo
+&uacute;nico que le fue asignado de la misma forma como se muestra en
+la siguiente imagen.</font></p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p align="center" class="orfeopar"><span class="orfeonotat"><strong>Nota:</strong></span>
+      <strong><em><span class="orfeolk1"><span class="style2">Organigrama
+actualizado a Abril 28 de 2004. </span></span></em></strong></p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p align="center" class="orfeopar"><font size="+1" face="Arial Narrow"><img
+ src="images/organigrama.jpg" width="995" height="789" align="middle"></font></p>
+<p align="justify">&nbsp;</p>
+<p align="justify" class="orfeopar"><span class="orfeonotat"><font
+ size="+1" face="Arial Narrow"><strong><a name="num_rad"></a>N&uacute;mero
+de Radicado:</strong></font></span><font size="+1" face="Arial Narrow">
+N&uacute;mero &uacute;nico, con el que se identifica un documento
+dentro de ORFEO. Su estructura depende variables como: el a&ntilde;o en
+que se radica el documento, el actor que lo genera (Dependencia) y su
+naturaleza (correspondencia de entrada, de salida &oacute; interna).
+Ver imagen abajo.</font></p>
+<p align="justify" class="orfeopar"><img src="images/estruc_Nrad.jpg"
+ width="625" height="468"></p>
+<p align="left" class="orfeopar"><a href="../cu/index.html">cu</a><br>
+<a href="content.htm"><span class="orfeolk1"><font face="Arial Narrow">Contenido</font></span></a></p>
+</body>
+</html>

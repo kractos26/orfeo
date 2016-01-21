@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo
+END
+solicitudesTranferencias.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/solicitudesTranferencias.php
+END
+ediEdificio.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/ediEdificio.php
+END
+cambiar.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/cambiar.php
+END
+listado.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/listado.php
+END
+queryCuerpo_exp.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/queryCuerpo_exp.php
+END
+editTiposAlmac.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/editTiposAlmac.php
+END
+transferencias.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/transferencias.php
+END
+datos_expediente3.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/datos_expediente3.php
+END
+busqueda_archivo3.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/busqueda_archivo3.php
+END
+tablaHtml.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/tablaHtml.php
+END
+cuerpo_exp.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/cuerpo_exp.php
+END
+ingEdificio.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/ingEdificio.php
+END
+anexosarchivo.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/anexosarchivo.php
+END
+cargarcsv.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/cargarcsv.php
+END
+archivo2.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/archivo2.php
+END
+inventario.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/inventario.php
+END
+bortipo.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/bortipo.php
+END
+transferirCarpeta.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/transferirCarpeta.php
+END
+class_archivo.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/class_archivo.php
+END
+cCombos.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/cCombos.php
+END
+adminDepe.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/adminDepe.php
+END
+tablaHtml2.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/tablaHtml2.php
+END
+archivo.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/archivo.php
+END
+relacionTiposAlmac2.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/relacionTiposAlmac2.php
+END
+reporte_archivo.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/reporte_archivo.php
+END
+oracle_pdf.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/oracle_pdf.php
+END
+generarcsv.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/generarcsv.php
+END
+insertar_central.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/insertar_central.php
+END
+inDepe.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/inDepe.php
+END
+funReporteArchivo.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/funReporteArchivo.php
+END
+sinexp.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/sinexp.php
+END
+alerta.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/alerta.php
+END
+relacionTiposAlmac.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/relacionTiposAlmac.php
+END
+verHistoricoArch.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/verHistoricoArch.php
+END
+oracle_pdf1.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/oracle_pdf1.php
+END
+reporte.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/reporte.php
+END
+busqueda_central.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/busqueda_central.php
+END
+generar.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/generar.php
+END
+busqueda_archivo.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/busqueda_archivo.php
+END
+ReporteFUI.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/ReporteFUI.php
+END
+datos_expediente.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/datos_expediente.php
+END
+adminEdificio.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/adminEdificio.php
+END
+Combos.Class.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/archivo/Combos.Class.php
+END

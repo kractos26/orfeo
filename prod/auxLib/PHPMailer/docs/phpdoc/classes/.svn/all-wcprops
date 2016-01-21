@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/docs/phpdoc/classes
+END
+phpmailerException.html
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/docs/phpdoc/classes/phpmailerException.html
+END
+PHPMailer.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/docs/phpdoc/classes/PHPMailer.html
+END
+POP3.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/docs/phpdoc/classes/POP3.html
+END
+SMTP.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/docs/phpdoc/classes/SMTP.html
+END

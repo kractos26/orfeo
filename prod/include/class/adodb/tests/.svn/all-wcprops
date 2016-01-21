@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests
+END
+test-php5.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/test-php5.php
+END
+xmlschema.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/xmlschema.xml
+END
+benchmark.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/benchmark.php
+END
+test-datadict.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/test-datadict.php
+END
+test-xmlschema.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/test-xmlschema.php
+END
+time.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/time.php
+END
+testmssql.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/testmssql.php
+END
+testdatabases.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/testdatabases.inc.php
+END
+testoci8cursor.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/testoci8cursor.php
+END
+test2.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/test2.php
+END
+testoci8.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/testoci8.php
+END
+test3.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/test3.php
+END
+testcache.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/testcache.php
+END
+test4.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/test4.php
+END
+test-active-record.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/test-active-record.php
+END
+test-active-recs2.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/test-active-recs2.php
+END
+test5.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/test5.php
+END
+testpaging.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/testpaging.php
+END
+testsessions.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/testsessions.php
+END
+test-perf.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/test-perf.php
+END
+client.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/client.php
+END
+test.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/test.php
+END
+test_rs_array.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/test_rs_array.php
+END
+pdo.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/pdo.php
+END
+test-pgblob.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/test-pgblob.php
+END
+tmssql.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/tmssql.php
+END
+testgenid.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/testgenid.php
+END
+xmlschema-mssql.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/xmlschema-mssql.xml
+END
+testpear.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/tests/testpear.php
+END

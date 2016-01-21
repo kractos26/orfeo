@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+
+		<title>Zapatec DHTML Calendar</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link rel="stylesheet" type="text/css" media="all" href="../themes/winxp.css" title="winxp" />
+		<link href="../doc/css/zpcal.css" rel="stylesheet" type="text/css">
+		<link href="../doc/css/template.css" rel="stylesheet" type="text/css">
+		<link rel="SHORTCUT ICON" href="./favicon.ico">
+
+
+
+		<style type="text/css">
+			/*
+			Define navigation elements for use in examples
+			*/
+			.navigation {
+				text-align:left;
+				vertical-align:top;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 140%;
+				line-height: 16px;
+				font-weight: bold;
+				background-color: #DAE5EF;
+				color: #003066;
+				text-decoration:none;
+				margin-top: .5em;
+				padding:.5em;
+				border:solid 1px;
+			}
+		</style>
+
+				<!-- import the calendar script -->
+				<script type="text/javascript" src="../src/utils.js"></script>
+				<script type="text/javascript" src="../src/calendar.js"></script>
+
+				<!-- import the language module -->
+				<script type="text/javascript" src="../lang/calendar-en.js"></script>
+
+				<!-- other languages might be available in the lang directory; please check
+				your distribution archive. -->
+
+				<!-- import the calendar setup script -->
+				<script type="text/javascript" src="../src/calendar-setup.js"></script>
+			</head>
+			<body>
+				<div class="topMenuHeader">
+					<div class="logo">
+						<a href='http://www.zapatec.com'><img src='../doc/images/logoNew.gif' alt='Zapatec logo' border='0'></a>
+					</div>
+				</div>
+
+			<a href='example2.html' style='float:left; margin-left:2em'> <img border='0' src='previous.gif' alt='previous Javascript Calendar Example'></a>
+			<a href='example4.html' style='float:right; margin-right:2em'><img border='0' src='next.gif' alt='previous Javascript Calendar Example'></a>
+<div class='zpCalSubheader' style='text-align:center'> Single click, Use An Icon, Disable Weekend Days</div>
+<div class='zpCalDemoText'>
+	<ol>
+		<li> Click the icon to display the calendar. We offer the following icons 
+		in the icons folder located in the themes folder.<br/> 
+		<table>
+			<tr>
+				<td cellpadding='2'>
+					<img alt=' Zapatec Calendar' src='http://www.zapatec.com/website/main/zpcal/themes/icons/calendar1.gif'>
+				</td>
+				<td cellpadding='2'>
+					<img alt=' Zapatec Calendar' src='http://www.zapatec.com/website/main/zpcal/themes/icons/calendar2.gif'>
+				</td>
+				<td cellpadding='2'>
+					<img alt=' Zapatec Calendar' src='http://www.zapatec.com/website/main/zpcal/themes/icons/calendar3.gif'>
+				</td>
+				<td>
+					<img alt=' Zapatec Calendar' src='http://www.zapatec.com/website/main/zpcal/themes/icons/calendar4.gif'>
+				</td>
+				<td>
+					<img alt=' Zapatec Calendar' src='http://www.zapatec.com/website/main/zpcal/themes/icons/calendar5.gif'>
+				</td>
+				<td>
+					<img alt=' Zapatec Calendar' src='http://www.zapatec.com/website/main/zpcal/themes/icons/calendar6.gif'>
+				</td>
+			</tr>
+		</table>
+		</li>
+		<li> The weekend days (Saturday and Sunday) have been disabled </Li>
+		<li> In the calendar, select the date by <strong> clicking twice.</strong> on the same date</li>
+		<li> The results are inserted in the following format: <br/>
+		Abbreviated day of the week, Abbreviated month, Day, Year [Hour:Minute AM/PM] (i.e.: 'Monday, January 1, 2007')</li>
+		<li> The list will hide when the calendar is above it.  </li>
+	</ol>
+</div>
+
+<b>Date #3:</b> <input type="text" name="date3" id="sel3" size="30" >
+<img alt=' Zapatec Calendar' src='http://www.zapatec.com/website/main/zpcal/themes/icons/calendar2.gif' id='icon3' class='zpCalCalIcon' >
+<br/>
+
+
+
+<script type="text/javascript">
+	<!--  to hide script contents from old browsers
+	Zapatec.Calendar.setup({
+		inputField     :    "sel3",     // id of the input field
+		ifFormat       :    "'%A, %B %e, %Y'",     // format of the input field
+		button         :    "icon3",  // trigger button (well, IMG in our case)
+		showsTime      :     false,
+		dateStatusFunc :    function (date) { // disable weekend days (Saturdays == 6 and Sundays == 0)
+			return (date.getDay() == 6 || date.getDay() == 0) ? true : false;
+		}
+	});
+	// end hiding contents from old browsers  -->
+</script>
+<noscript>
+	<br/>
+	This page uses a <a href='http://www.zapatec.com/website/main/products/prod1/'> Javascript Calendar </a>, but
+	your browser does not support Javascript. 
+	<br/>
+	Either enable Javascript in your Browser or upgrade to
+	a newer version.
+</noscript>
+
+	<div class="footer" style='text-align:center; margin-top:2em'>
+		<br/>
+		&copy; 2004 <strong> <a href='http://www.zapatec.com/'>Zapatec, Inc.</a> </strong>
+	</div>
+
+</body>
+</html>

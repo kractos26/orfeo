@@ -1,0 +1,225 @@
+/*
+* The Zapatec DHTML Calendar
+*
+* Copyright (c) 2004 by Zapatec, Inc.
+* http://www.zapatec.com
+* 1700 MLK Way, Berkeley, California,
+* 94709, U.S.A.
+* All rights reserved.
+*
+*
+* CSS for pages other than the home page
+*/
+
+body, .zpStandard{
+	font-family:arial, times,sans-serif;
+	font-size:11px;
+	color:#000000;
+	background-color:white;
+	margin-left:10px;
+	margin-right:auto;
+	margin-top:0px;
+}
+
+body{
+	width:778px;
+}
+
+.topMenuHeader
+{
+	border-top: 20px solid #003066;
+	border-bottom: 3px solid #AFAFB8;
+	width:778px;
+	height:71px;
+}
+
+.logo
+{
+
+	float:left;
+	margin-top:0px;
+	margin-left:10px;
+	margin-bottom:-3px;
+	/*
+	BACKGROUND: url(../images/logo.gif) no-repeat left top; HEIGHT: 71; POSITION: absolute; left: 0px; TOP: 20px; WIDTH: 240px
+	*/
+}
+
+.pageMain
+{
+	margin-top:0px;
+	width:778px;
+	margin-bottom:1px;
+
+}
+
+
+
+.btn1
+{
+
+	float:right;
+	margin-top:42px;
+	margin-bottom:-3px;
+	margin-right:0px;
+	margin-left: auto;
+
+}
+
+.btn2
+{
+
+	float:right;
+	margin-top:42px;
+	margin-bottom:-3px;
+	margin-right:0px;
+
+}
+
+
+
+
+.leftSide
+
+{
+
+
+	float:left;
+	width:170px;
+	height:auto;
+}
+.leftBGMenu
+{
+	border-top:1px solid #EBEBEB;
+	float:left;
+	width:170px;
+	height:29px;
+
+}
+.leftMenu
+{
+	float:left;
+	margin-top:7px;
+	margin-left:10px;
+
+}
+
+.leftBGTab
+{
+	height:47px;
+	background: #EBEBEB;
+	margin-top:53px ;
+	margin-bottom:13px ;	
+	float:left;
+	width:170px;
+	font-family:arial, times,sans-serif;
+	font-size:14px;
+	color:#003066;
+
+}
+.leftTab
+{
+
+	margin-top:15px;
+	margin-left:15px;
+	font-family:arial, times,sans-serif;
+	font-size:14px;
+
+
+}
+
+.rightSide
+{
+	margin-left:1px;
+	float:left;
+	width:577px;
+	height:auto;
+}
+
+.pageImage
+{
+
+	float:right;
+	margin-top:0px;
+	margin-right:0px;
+
+	BACKGROUND: url(../images/img_about.jpg) no-repeat left top; HEIGHT: 89px;   left: 0px; TOP: 0px; WIDTH: 443px;
+
+}
+.frameContent
+{
+
+	float:left;
+	border-top:10px solid #6F8DB9;
+	border-left:1px solid #6F8DB9;
+	margin-bottom:10px;
+	width:100%;
+}
+.pageContent
+{
+	float:left;
+	margin-bottom:10px;
+	padding:10px 10px 10px 20px;
+	width:100%;
+}
+
+.footer
+{
+	margin-top:-11px;
+	border-top: 1px solid #6F8DB9;
+	width:778px;
+	border-bottom:10px;
+	padding:5px 5px 5px 5px;
+	float:left;
+}
+
+/* ----------------- --------------------------------*/
+.content {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	line-height: 16px;
+}
+.lnkblue {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #003066;
+	text-decoration: none;
+}
+.lnkblue:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #003066;
+	text-decoration: underline;
+}
+
+.lnksubpage {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+
+.lnksubpage:hover {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+.lnksubpage:active {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+

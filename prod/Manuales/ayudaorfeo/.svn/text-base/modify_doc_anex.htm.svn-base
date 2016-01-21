@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Documento sin t&iacute;tulo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p align="justify" class="orfeot2">Modificaci&oacute;n de un documento anexo</p>
+<p align="right" class="orfeolk1"> <a href="content.htm">Contenido</a></p>
+<p align="justify" class="orfeopar">Si necesita modificar un documento que ya se encuentra anexo a un radicado y por alguna raz&oacute;n el texto debe ser cambiado, siga las siguientes indicaciones: </p>
+<div align="justify">
+  <ol>
+    <li class="orfeopar">Estando en la vista &quot;Documentos&quot; se debe guardar el archivo que se encuentra anexo al radicado en ORFEO, en un directorio local (Escritorio, Mis documentos, etc.) para realizar las modificaciones correspondientes en el archivo y luego incluirlo corregido al sistema. (a) </li> 
+  </ol>
+  <p>&nbsp;</p>
+  <p><img src="images/modify_archiv_anex.jpg" width="830" height="525"> </p>
+  <p>2. <span class="orfeopar">Cuando haya realizado las modificaciones correspondientes en el documento, ub&iacute;quese nuevamente en ORFEO en &quot;Documentos&quot; y haga click
+    en el v&iacute;nculo identificado con &quot;Modificar&quot; que se encuentra en las acciones en la parte derecha del radicado generado, al final del registro. (b) </span></p>
+  <p>&nbsp;</p>
+  <p>    <img src="images/modify_anex.jpg" width="796" height="197"></p>
+  <p><span class="orfeopar">3. Este v&iacute;nculo despliega la ventana de &quot;Descripci&oacute;n del documento&quot; y en ella se encuentran todos los par&aacute;metros que se seleccionaron inicialmente al anexar el documento. Haga click en el bot&oacute;n &quot;Examinar&quot; y seleccione nuevamente el archivo que acab&oacute; de modificar (c).</span></p>
+  <p><img src="images/modify_archiv_anex2.jpg" width="703" height="571"></p>
+  <p class="orfeopar">4. Luego de seleccionar el nuevo archivo, dele click sobre el bot&oacute;n &quot;Actualizar&quot; para que el sistema realice los cambios seleccionados. (d)</p>
+  <p class="orfeopar">5. Haga click en el boton &quot;Cerrar&quot;.(e)</p>
+  <p class="orfeopar">El documento queda modificado en el sistema. Ahora se puede consultar el nuevo archivo. </p>
+  <a href="content.htm" class="orfeopar">Contenido</a></div>
+</body>
+</html>

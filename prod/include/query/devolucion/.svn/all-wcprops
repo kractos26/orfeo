@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/devolucion
+END
+querydev_corresp_otras.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/devolucion/querydev_corresp_otras.php
+END
+querycuerpoDevOtras.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/orfeoSGC/!svn/ver/48/branches/3.7.5/secure/prod/include/query/devolucion/querycuerpoDevOtras.php
+END
+querytipo_dev_corresp.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/devolucion/querytipo_dev_corresp.php
+END
+querycuerpoDevCorreo.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/orfeoSGC/!svn/ver/48/branches/3.7.5/secure/prod/include/query/devolucion/querycuerpoDevCorreo.php
+END
+querydev_corresp.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/devolucion/querydev_corresp.php
+END
+queryListado_planillas.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/devolucion/queryListado_planillas.php
+END
+querydependencia.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/devolucion/querydependencia.php
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query
+END
+queryGenarchivo.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/queryGenarchivo.php
+END
+queryUpload2.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/queryUpload2.php
+END
+queryTipo_documento_selecc.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/queryTipo_documento_selecc.php
+END
+queryNuevo_archivo.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/queryNuevo_archivo.php
+END
+querylista_anexos.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/querylista_anexos.php
+END
+queryCuerpoinf.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/queryCuerpoinf.php
+END
+queryCuerpo.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/queryCuerpo.php
+END
+queryCuerpoAgenda.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/queryCuerpoAgenda.php
+END
+queryver_datosrad.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/queryver_datosrad.php
+END
+queryChequear.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/orfeoSGC/!svn/ver/27/branches/3.7.5/secure/prod/include/query/queryChequear.php
+END
+queryListado_sql.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/queryListado_sql.php
+END
+queryver_historico.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/queryver_historico.php
+END

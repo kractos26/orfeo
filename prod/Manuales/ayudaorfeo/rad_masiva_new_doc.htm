@@ -1,0 +1,220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Documento sin t&iacute;tulo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="styles.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style1 {font-size: 10pt}
+.style2 {font-size: 10}
+.style3 {font-size: 12px}
+.style4 {font-size: 24px}
+.style5 {font-size: 14px}
+.style6 {font-size: 16px}
+.style8 {font-size: 16px; font-family: "Arial Narrow"; }
+.style9 {font-family: "Arial Narrow"}
+.style10 {font-style: normal; font-weight: normal; font-family: "Arial Narrow";}
+.style11 {color: #000000}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF">
+<h1 align="center"><font size="5" face="Arial Narrow">  <span class="orfeot1">Radicaci&oacute;n Masiva de documentos de salida </span></font></h1>
+<p align="right"><a href="content.htm" class="orfeolk1">Contenido</a></p>
+<p class="orfeopar">Por medio de esta herramienta se puede generar varias cartas de salida(-1) con una plantilla creada previamente por el usuario, que contiene el mismo texto y ser&aacute;n remitidas a diferente destinatario. </p>
+<p class="orfeopar">Para realizar este proceso siga las indicaciones relacionadas a continuaci&oacute;n:</p>
+<p class="orfeopar">1. Se debe tener los permisos para la radicaci&oacute;n masiva </p>
+<p class="orfeopar">2. Creaci&oacute;n previa de archivos teniendo en cuenta los campos de combinaci&oacute;n. </p>
+<blockquote>
+  <p class="orfeopar"><strong>3.1 Archivo CSV (Base de datos): </strong></p>
+  <p class="orfeopar">Este archivo corresponde a un archivo plano que se debe generar con ciertas especificaciones para poder generar los n&uacute;meros de radicado y donde la combinaci&oacute;n de correspondencia depende b&aacute;sicamente de la estructura del archivo. </p>
+  <p class="orfeopar">Se debe tener en cuenta el nombre de los campos asignados a cada columna como se muestra a continuaci&oacute;n: </p>
+</blockquote>
+<table border="1" align="center" cellpadding="1" cellspacing="0">
+  <tr bordercolor="1">
+    <td width="141" valign="bottom"><p align="center" class="orfeopar style6"><strong>NOMBRE DE CAMPO </strong></p></td>
+    <td width="110" valign="bottom"><p align="center" class="orfeopar style6"><strong>CAMPO OBLIGATORIO </strong></p></td>
+    <td width="80" valign="bottom"><p align="center" class="orfeopar style6"><strong>TIPO DE DATO </strong></p></td>
+    <td width="86" valign="bottom"><p align="center" class="orfeopar style6"><strong>LONGITUD </strong></p></td>
+    <td width="266" valign="bottom"><p align="center" class="orfeopar style6"><strong>DESCRIPCION</strong></p></td>
+  </tr>
+  <tr bordercolor="0">
+    <td width="141"><p class="orfeopar style6">*TIPO* </p></td>
+    <td width="110"><p align="center" class="orfeopar style6"><strong>X </strong></p></td>
+    <td width="80"><p class="orfeopar style6">Entero </p></td>
+    <td width="86"><p align="center" class="orfeopar style6">1 </p></td>
+    <td width="266" valign="bottom"><p class="orfeopar style6">0 - ESP <br>
+        1 - OTRA EMPRESA <br>
+    2 - PERSONA NATURAL </p></td>
+  </tr>
+  <tr bordercolor="0">
+    <td width="141" valign="bottom"><p class="orfeopar style6">*DOCUMENTO* </p></td>
+    <td width="110" valign="bottom"><p align="center" class="orfeopar style6"><strong>&nbsp; </strong></p></td>
+    <td width="80" valign="bottom"><p class="orfeopar style6">Car&aacute;cter </p></td>
+    <td width="86" valign="bottom"><p align="center" class="orfeopar style6">14 </p></td>
+    <td width="266" valign="bottom" bordercolor="0"><p><span class="style1"><span class="style2"><span class="style3"><span class="style4"><span class="style3"><span class="style3"><span class="style5"><span class="style5"><span class="style8">No. de c&eacute;dula - No. Nit </span></span></span></span></span></span></span></span></span> </p></td>
+  </tr>
+  <tr bordercolor="0">
+    <td width="141"><p class="orfeopar style6">*NOMBRE* </p></td>
+    <td width="110"><p align="center" class="orfeopar style6"><strong>X </strong></p></td>
+    <td width="80"><p class="orfeopar style6">Car&aacute;cter </p></td>
+    <td width="86"><p align="center" class="orfeopar style6">100</p></td>
+    <td width="266" valign="bottom"><p class="orfeopar style6">Si es empresa nombre de la Empresa, para el caso de persona natural se puede grabar todo el nombre completo en este campo o separar los apellidos en los campos siguientes </p></td>
+  </tr>
+  <tr bordercolor="0">
+    <td width="141" valign="bottom"><p class="orfeopar style6">*PRIM_APEL* </p></td>
+    <td width="110" valign="bottom"><p align="center" class="orfeopar style6"><strong>&nbsp; </strong></p></td>
+    <td width="80" valign="bottom"><p class="orfeopar style6">Car&aacute;cter </p></td>
+    <td width="86" valign="bottom"><p align="center" class="orfeopar style6">20 </p></td>
+    <td width="266" valign="bottom" bordercolor="0"><p class="style9"><span class="style1"><span class="style2"><span class="style3"><span class="style4"><span class="style3"><span class="style3"><span class="style5"><span class="style5"><span class="style6"><span class="style6">Primer apellido destinatario </span></span></span></span></span></span></span></span></span></span> </p></td>
+  </tr>
+  <tr bordercolor="0">
+    <td width="141" valign="bottom"><p class="orfeopar style6">*SEG_APEL* </p></td>
+    <td width="110" valign="bottom"><p align="center" class="orfeopar style6"><strong>&nbsp; </strong></p></td>
+    <td width="80" valign="bottom"><p class="orfeopar style6">Car&aacute;cter </p></td>
+    <td width="86" valign="bottom"><p align="center" class="orfeopar style6">20 </p></td>
+    <td width="266" valign="bottom" bordercolor="0"><p class="style9"><span class="style1"><span class="style2"><span class="style3"><span class="style4"><span class="style3"><span class="style3"><span class="style5"><span class="style5"><span class="style6">Segundo apellido destinario </span></span></span></span></span></span></span></span></span> </p></td>
+  </tr>
+  <tr bordercolor="0">
+    <td width="141" valign="bottom"><p class="orfeopar style6">*DIGNATARIO* </p></td>
+    <td width="110" valign="bottom"><p align="center" class="orfeopar style6"><strong>&nbsp; </strong></p></td>
+    <td width="80" valign="bottom"><p class="orfeopar style6">Car&aacute;cter </p></td>
+    <td width="86" valign="bottom"><p align="center" class="orfeopar style6">50 </p></td>
+    <td width="266" valign="bottom" bordercolor="0"><p class="style9"><span class="style1"><span class="style2"><span class="style3"><span class="style4"><span class="style3"><span class="style3"><span class="style5"><span class="style5"><span class="style6"><span class="style6">Nombre de la persona a la que va dirigida una comunicaci&oacute;n (para el caso de empresas) </span></span></span></span></span></span></span></span></span></span> </p></td>
+  </tr>
+  <tr bordercolor="0">
+    <td width="141" valign="bottom"><p class="orfeopar style6">*DIR* </p></td>
+    <td width="110" valign="bottom"><p align="center" class="orfeopar style6"><strong>X </strong></p></td>
+    <td width="80" valign="bottom"><p class="orfeopar style6">Car&aacute;cter </p></td>
+    <td width="86" valign="bottom"><p align="center" class="orfeopar style6">30 </p></td>
+    <td width="266" valign="bottom" bordercolor="0"><p class="style9"><span class="style1"><span class="style2"><span class="style3"><span class="style4"><span class="style3"><span class="style3"><span class="style5"><span class="style5"><span class="style6"><span class="style6">Direcci&oacute;n del destinatario</span></span></span></span></span></span></span></span></span></span> </p></td>
+  </tr>
+  <tr bordercolor="0">
+    <td width="141" valign="bottom"><p class="orfeopar style6">*MUNI_NOMBRE* </p></td>
+    <td width="110" valign="bottom"><p align="center" class="orfeopar style6"><strong>X</strong></p></td>
+    <td width="80" valign="bottom"><p class="orfeopar style6">Car&aacute;cter </p></td>
+    <td width="86" valign="bottom"><p align="center" class="orfeopar style6">20 </p></td>
+    <td width="266" valign="bottom"><p class="orfeopar style6">Nombre exacto a la base de datos (May&uacute;sculas) </p></td>
+  </tr>
+  <tr bordercolor="0">
+    <td width="141" valign="bottom"><p class="orfeopar style6">*DEPTO_NOMBRE* </p></td>
+    <td width="110" valign="bottom"><p align="center" class="orfeopar style6"><strong>X </strong></p></td>
+    <td width="80" valign="bottom"><p class="orfeopar style6">Car&aacute;cter </p></td>
+    <td width="86" valign="bottom"><p align="center" class="orfeopar style6">20 </p></td>
+    <td width="266" valign="bottom"><p class="orfeopar style6">Nombre exacto a la base (May&uacute;sculas) </p></td>
+  </tr>
+  <tr bordercolor="0">
+    <td width="141" valign="bottom"><p class="orfeopar style6">*ASUNTO* </p></td>
+    <td width="110" valign="bottom"><p align="center" class="orfeopar style6"><strong>&nbsp; </strong></p></td>
+    <td width="80" valign="bottom"><p class="orfeopar style6">Car&aacute;cter </p></td>
+    <td width="86" valign="bottom"><p align="center" class="orfeopar style6">40 </p></td>
+    <td width="266" valign="bottom"><p>&nbsp; </p></td>
+  </tr>
+  <tr bordercolor="0">
+    <td width="141" valign="bottom"><p class="orfeopar style6">*DESC_ANEXOS* </p></td>
+    <td width="110" valign="bottom"><p align="center" class="orfeopar style6"><strong>&nbsp; </strong></p></td>
+    <td width="80" valign="bottom"><p class="orfeopar style6">Car&aacute;cter </p></td>
+    <td width="86" valign="bottom"><p align="center" class="orfeopar style6">20 </p></td>
+    <td width="266" valign="bottom"><p><span class="style1"><span class="style2"><span class="style3"><span class="style4"><span class="style3"><span class="style3"><span class="style5"><span class="style5"><span class="style6"><span class="style6"></span></span></span></span></span></span></span></span></span></span> </p></td>
+  </tr>
+  <tr bordercolor="0">
+    <td width="141"><p class="orfeopar style6">*ID* </p></td>
+    <td width="110"><p align="center" class="orfeopar style6"><strong>&nbsp; </strong></p></td>
+    <td width="80"><p class="orfeopar style6">Num&eacute;rico </p></td>
+    <td width="86"><p align="center" class="orfeopar style6">4 </p></td>
+    <td width="266" valign="bottom"><p class="orfeopar style6">Es el campo “IDENTIFICADOR_EMPRESA “ de la tabla de Bodega de empresas. </p></td>
+  </tr>
+  <tr bordercolor="0">
+    <td width="141"><p class="orfeopar style6">*NUIR* </p></td>
+    <td width="110"><p align="center" class="orfeopar style6"><strong>&nbsp; </strong></p></td>
+    <td width="80"><p class="orfeopar style6">Car&aacute;cter </p></td>
+    <td width="86"><p align="center" class="orfeopar style6">15 </p></td>
+    <td width="266" valign="bottom"><p class="orfeopar style6">&nbsp;</p></td>
+  </tr>
+  <tr bordercolor="0">
+    <td width="141" valign="bottom"><p class="orfeopar style6">*TIPO_DOC* </p>
+    <td width="110" valign="bottom"><p class="orfeopar style6"><strong>&nbsp; </strong></p></td>
+    <td width="80" valign="bottom"><p class="orfeopar style6">Num&eacute;rico </p></td>
+    <td width="86" valign="bottom"><p align="center" class="orfeopar style6">2 </p></td>
+    <td width="266" valign="bottom" bordercolor="0"><p class="orfeopar style2">0 - C&eacute;dula de ciudadan&iacute;a</p>
+      <p class="style2"><span class="style10">1- Tarjeta de identidad
+      </span>
+      <p class="style2"><span class="style10">2- C&eacute;dula de extranjer&iacute;a </span>
+      <p class="style2"><span class="style10">3- Pasaporte
+      </span>
+      <p class="style2"><span class="style10">4- Nit
+      </span>
+    <p><span class="orfeopar style2">5- Nuir </span>   </td>
+  </tr>
+  <tr bordercolor="0">
+    <td width="141" valign="bottom"><p class="orfeopar style6">*TEL* </p></td>
+    <td width="110" valign="bottom"><p align="center" class="orfeopar style6"><strong>&nbsp; </strong></p></td>
+    <td width="80" valign="bottom" bordercolor="0"><p><span class="style1"><span class="style2"><span class="style3"><span class="style4"><span class="style3"><span class="style3"><span class="style5"><span class="style5"><span class="style6"><span class="style8">Num&eacute;rico</span></span></span></span></span></span></span></span></span></span> </p></td>
+    <td width="86" valign="bottom"><p><span class="style1"><span class="style2"><span class="style3"><span class="style4"><span class="style3"><span class="style3"><span class="style5"><span class="style5"><span class="style6"><span class="style6"></span></span></span></span></span></span></span></span></span></span> </p></td>
+    <td width="266" valign="bottom"><p><span class="style1"><span class="style2"><span class="style3"><span class="style4"><span class="style3"><span class="style3"><span class="style5"><span class="style5"><span class="style6"><span class="style6"></span></span></span></span></span></span></span></span></span></span> </p></td>
+  </tr>
+  <tr>
+    <td width="141" valign="bottom" bordercolor="2"><p class="orfeopar style6">*MAIL* </p></td>
+    <td width="110" valign="bottom" bordercolor="1"><p class="orfeopar style6"><strong>&nbsp; </strong></p></td>
+    <td width="80" valign="bottom"><p><span class="style1"><span class="style2"><span class="style3"><span class="style4"><span class="style3"><span class="style3"><span class="style5"><span class="style5"><span class="style6"><span class="style8">Car&aacute;cter</span></span></span></span></span></span></span></span></span></span> </p></td>
+    <td width="86" valign="bottom"><p><span class="style1"><span class="style2"><span class="style3"><span class="style4"><span class="style3"><span class="style3"><span class="style5"><span class="style5"><span class="style6"><span class="style6"></span></span></span></span></span></span></span></span></span></span> </p></td>
+    <td width="266" valign="bottom" bordercolor="1"><p><span class="style1"><span class="style2"><span class="style3"><span class="style4"><span class="style3"><span class="style3"><span class="style5"><span class="style5"><span class="style6"><span class="style6"></span></span></span></span></span></span></span></span></span></span> </p></td>
+  </tr>
+</table>
+<blockquote>
+  <p class="orfeopar">El archivo debe ser guardado en formato (CSV, delimitado por comas), y en la primer fila debe ir el nombre del campo como se muestra en la tabla encerrado entre asteriscos (*NOMBRE*), y la palabra en may&uacute;scula. </p>
+  <p align="center"><img src="images/rad_masiva_1.jpg" width="915" height="240" border="1" align="middle"></p>
+  <p class="orfeopar"><strong>3.2 Plantilla (Carta modelo): </strong></p>
+  <p class="orfeopar">Se debe crear el modelo de la carta teniendo en cuenta las plantillas creadas para este fin ( formato Word, conservando el escudo y membrete de la Superintendencia de Servicios P&uacute;blicos Domiciliarios)estas plantillas las podr&aacute; encontrar en: \\apolo\ORFEO\Papeleria\Plantilla Basica Masiva.doc </p>
+  <p class="orfeopar">Para la plantilla se debe tener en cuenta que en el texto se deben incluir los campos de combinaci&oacute;n, con el mismo nombre de los campos que est&aacute;n en el archivo CSV (3.1) y que al radicarlos ser&aacute;n combinados para cada uno de los registros que aparecen en el. </p>
+  <p align="center" class="orfeopar"><img src="images/rad_masiva_2.jpg" width="698" height="375" align="middle" >
+  </p>
+  <p class="orfeopar">&nbsp;</p>
+  <p class="orfeopar">Estos archivos se deben guardar en un directorio de f&aacute;cil ubicaci&oacute;n. </p>
+</blockquote>
+<p><span class="orfeopar">4. Ingrese a ORFEO y seleccione el v&iacute;nculo Radicaci&oacute;n Masiva que se encuentra al final de la lista de carpetas.</span> </p>
+<p align="center" class="orfeolistnum"><img src="images/rad_masiva_carp.jpg" width="150" height="364"></p>
+<p align="justify" class="orfeopar">El sistema despliega un men&uacute; principal donde se encuentra:</p>
+<p align="center" class="orfeopar"><img src="images/rad_masiva_menu.jpg" width="407" height="101"></p>
+<p align="justify" class="orfeopar style11">&nbsp;</p>
+<p align="justify" class="orfeopar style11"><strong>Generar Radicaci&oacute;n Masiva</strong>:</p>
+<p align="justify" class="orfeopar">El sistema despliega una ventana para seleccionar la Plantilla a trabajar y el Archivo CSV con la base de datos de los destinatarios (Archivos previamente preparados en el numeral (3.1 y 3.2)) </p>
+<p class="orfeopar">5. Se debe dar click sobre el primer bot&oacute;n “Examinar…” al frente de “PLANTILLA” y abrir el archivo de la Plantilla desde la ubicaci&oacute;n que se encuentre. </p>
+<p align="center" class="orfeolistnum"><img src="images/rad_masiva_3.jpg" width="295" height="165"></p>
+<p align="justify" class="orfeopar">6. Luego de seleccionarlo la plantilla, se realiza el mismo procedimiento para seleccionar el archivo CSV. Se debe dar click sobre el bot&oacute;n “Examinar…” al frente de “CSV” y abrir el archivo CSV desde la ubicaci&oacute;n que se encuentre. </p>
+<p class="orfeopar">7. Se selecciona el tipo de documento con el que se ir&aacute;n todas las cartas. Este tipo de documento se despliega de acuerdo a los que la dependencia pueda manejar.</p>
+<p class="orfeopar">8. Cuando se han seleccionado los datos anteriores se da click en el bot&oacute;n &quot;Enviar Prueba&quot;.</p>
+<p class="orfeopar"> El sistema realiza una prueba de los datos realizando la combinaci&oacute;n de correspondencia de acuerdo a la plantilla y a la base de datos. El sistema muestra en la pantalla los registros que se han generado como prueba, para realizar una verificaci&oacute;n tanto del n&uacute;mero de registros como del archivo .doc, correctamente combinado. Para guardar el archivo se da click sobre el link &quot;Guardar Archivo&quot; (a) </p>
+<p align="center" class="orfeopar"><img src="images/rad_masiva_4.jpg" width="687" height="546"></p>
+<p class="orfeopar">Para verificar que la combinaci&oacute;n de correspondencia se realiz&oacute; correctamente se debe abrir el archivo guardado y verificar que los campos incluidos en la plantilla fueron combinados correctamente.</p>
+<p class="orfeopar">Forma correcta: </p>
+<blockquote><img src="images/rad_masiva_6.jpg" width="689" height="353" border="1"></blockquote>
+<blockquote>
+  <p align="justify" class="orfeolistnum">Forma incorrecta: </p>
+</blockquote>
+<p align="center" class="orfeolistnum"><img src="images/rad_masiva_7.jpg" width="697" height="357" border="1"> </p>
+<p align="justify" class="orfeolistnum">&nbsp;</p>
+<p align="justify" class="orfeolistnum">Si al realizar la combinaci&oacute;n, el sistema envia una pantalla indicando que existen errores, se debe verificar el archivo CSV con los datos que se solicitan.: </p>
+<blockquote><img src="images/rad_masiva_5.jpg" width="671" height="193"></blockquote>
+<p align="justify" class="orfeolistnum">9. Luego de haber verificado que la combinaci&oacute;n de correspondencia se est&aacute; haciendo correctamente, se genera la combinaci&oacute;n defintiva, seleccionando el bot&oacute;n “Generar Definitivo” </p>
+<p align="justify" class="orfeolistnum">10. El Sistema pide una confirmaci&oacute;n para realizar este procedimiento ya que se tomar&aacute;n los consecutivos de la dependencia para generar los radicados; este proceso es irreversible. </p>
+<p align="center"><img src="images/rad_masiva_9.jpg" width="425" height="118"> </p>
+<p align="justify" class="orfeopar">11. El sistema genera los registros definitivos y despliega la vista con los n&uacute;meros de radicados generados, con la opci&oacute;n de guardar el archivo definitivo y abrir el listado para entregar a Correspondencia. </p>
+<p align="center"><img src="images/rad_masiva_10.jpg" width="695" height="540"></p>
+<p align="justify" class="orfeopar">12. Se deben enviar al grupo de correspondencia dos (2) copias de las cartas generadas (1 para enviar al destinatario y 1 para guardar el consecutivo en el archivo de la Entidad) </p>
+<p class="orfeopar">13. Los documentos f&iacute;sicos son entregados a correspondencia en el mismo orden en que sale el listado. </p>
+<p align="justify" class="orfeolistnum">&nbsp;</p>
+<p align="justify" class="orfeolistnum"><strong>Recuperar Listado:</strong></p>
+<p align="justify" class="orfeolistnum">Con esta opci&oacute;n 
+
+
+el sistema permite recuperar un listado generado por radicaci&oacute;n masiva, para ser entregado con el grupo de cartas a enviar.</p>
+<p align="justify" class="orfeolistnum"> 1. El sistema despliega la ventana donde presenta las radicaciones masivas que la dependencia ha generado</p>
+<p align="justify" class="orfeolistnum"><img src="images/rad_masiva_8.jpg" width="874" height="410"></p>
+<p align="justify" class="orfeopar">Para recuperar el listado se busca el grupo al cual pertenece la radicaci&oacute;n masiva y se selecciona al final del registro (a), se marcar  en el radio boton que aparece y se da click en el bot&oacute;n recuperar listado.</p>
+<p align="justify" class="orfeolistnum"><a href="content.htm" class="orfeolk1">Contenido</a><br>
+</p>
+<p align="center">&nbsp; </p>
+</body>
+</html>

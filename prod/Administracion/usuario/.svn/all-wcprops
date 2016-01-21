@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario
+END
+mnuUsuarios.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/mnuUsuarios.php
+END
+FunctionsValidarSec.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/FunctionsValidarSec.js
+END
+crear.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/56/branches/3.7.5/secure/prod/Administracion/usuario/crear.php
+END
+ImpUsrAux.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/ImpUsrAux.php
+END
+grabar.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/grabar.php
+END
+listado.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/listado.php
+END
+FunctionsValidar.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/FunctionsValidar.js
+END
+permisos.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/permisos.php
+END
+historico.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/historico.php
+END
+validar1.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/54/branches/3.7.5/secure/prod/Administracion/usuario/validar1.php
+END
+ImpUsrClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/ImpUsrClass.php
+END
+FunctionsValidarImp.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/FunctionsValidarImp.js
+END
+aceptacion.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/aceptacion.php
+END
+cuerpoConsulta.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/cuerpoConsulta.php
+END
+acepPermisosNuevo.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/orfeoSGC/!svn/ver/39/branches/3.7.5/secure/prod/Administracion/usuario/acepPermisosNuevo.php
+END
+perfiles.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/perfiles.php
+END
+acepPermisosModif.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/orfeoSGC/!svn/ver/38/branches/3.7.5/secure/prod/Administracion/usuario/acepPermisosModif.php
+END
+consultaPermisos.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/orfeoSGC/!svn/ver/40/branches/3.7.5/secure/prod/Administracion/usuario/consultaPermisos.php
+END
+consultaHistorico.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/consultaHistorico.php
+END
+traePermisos1..php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/orfeoSGC/!svn/ver/55/branches/3.7.5/secure/prod/Administracion/usuario/traePermisos1..php
+END
+crear1.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/orfeoSGC/!svn/ver/55/branches/3.7.5/secure/prod/Administracion/usuario/crear1.php
+END
+traePermisos.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/orfeoSGC/!svn/ver/42/branches/3.7.5/secure/prod/Administracion/usuario/traePermisos.php
+END
+crear2.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/orfeoSGC/!svn/ver/63/branches/3.7.5/secure/prod/Administracion/usuario/crear2.php
+END
+SecSuperClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/SecSuperClass.php
+END
+cuerpoHistorico.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/cuerpoHistorico.php
+END
+consultaDatosGrales.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/consultaDatosGrales.php
+END
+validar.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/43/branches/3.7.5/secure/prod/Administracion/usuario/validar.php
+END
+cuerpoEdicion.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/cuerpoEdicion.php
+END
+SecSpcUsrAux.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/usuario/SecSpcUsrAux.php
+END
+traepermi.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/orfeoSGC/!svn/ver/64/branches/3.7.5/secure/prod/Administracion/usuario/traepermi.php
+END

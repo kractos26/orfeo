@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers
+END
+adodb-odbtp_unicode.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-odbtp_unicode.inc.php
+END
+adodb-postgres64.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-postgres64.inc.php
+END
+adodb-ldap.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-ldap.inc.php
+END
+adodb-ado_mssql.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-ado_mssql.inc.php
+END
+adodb-ibase.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-ibase.inc.php
+END
+adodb-borland_ibase.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-borland_ibase.inc.php
+END
+adodb-firebird.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-firebird.inc.php
+END
+adodb-sybase.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-sybase.inc.php
+END
+adodb-sapdb.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-sapdb.inc.php
+END
+adodb-csv.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-csv.inc.php
+END
+adodb-postgres7.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-postgres7.inc.php
+END
+adodb-mssql.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-mssql.inc.php
+END
+adodb-sqlitepo.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-sqlitepo.inc.php
+END
+adodb-oci8po.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-oci8po.inc.php
+END
+adodb-access.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-access.inc.php
+END
+adodb-ado.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-ado.inc.php
+END
+adodb-mysql.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-mysql.inc.php
+END
+adodb-postgres.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-postgres.inc.php
+END
+adodb-oci805.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-oci805.inc.php
+END
+adodb-db2.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-db2.inc.php
+END
+adodb-fbsql.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-fbsql.inc.php
+END
+adodb-mysqli.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-mysqli.inc.php
+END
+adodb-oci8.inc.old.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-oci8.inc.old.php
+END
+adodb-netezza.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-netezza.inc.php
+END
+adodb-proxy.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-proxy.inc.php
+END
+adodb-pdo.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-pdo.inc.php
+END
+adodb-ado_access.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-ado_access.inc.php
+END
+adodb-odbc_mssql.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-odbc_mssql.inc.php
+END
+adodb-ado5.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-ado5.inc.php
+END
+adodb-mysqlt.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-mysqlt.inc.php
+END
+adodb-informix.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-informix.inc.php
+END
+adodb-vfp.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-vfp.inc.php
+END
+adodb-odbc_oracle.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-odbc_oracle.inc.php
+END
+adodb-sqlite.inc.php.bak
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-sqlite.inc.php.bak
+END
+adodb-mssqlpo.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-mssqlpo.inc.php
+END
+adodb-sqlite.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-sqlite.inc.php
+END
+adodb-sqlanywhere.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-sqlanywhere.inc.php
+END
+adodb-oci8.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-oci8.inc.php
+END
+adodb-informix72.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-informix72.inc.php
+END
+adodb-oracle.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-oracle.inc.php
+END
+adodb-odbc.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-odbc.inc.php
+END
+adodb-odbtp.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/adodb/drivers/adodb-odbtp.inc.php
+END

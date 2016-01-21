@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/devolucion
+END
+paRealizar.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/devolucion/paRealizar.php
+END
+dev_corresp.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/devolucion/dev_corresp.php
+END
+devolucion_otras.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/devolucion/devolucion_otras.php
+END
+generar_estadisticas.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/devolucion/generar_estadisticas.php
+END
+generar_estadisticas_envio.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/devolucion/generar_estadisticas_envio.php
+END
+dev_corresp_otras.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/46/branches/3.7.5/secure/prod/devolucion/dev_corresp_otras.php
+END
+cuerpoDevOtras.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/orfeoSGC/!svn/ver/46/branches/3.7.5/secure/prod/devolucion/cuerpoDevOtras.php
+END
+cuerpoDevCorreo.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/orfeoSGC/!svn/ver/46/branches/3.7.5/secure/prod/devolucion/cuerpoDevCorreo.php
+END

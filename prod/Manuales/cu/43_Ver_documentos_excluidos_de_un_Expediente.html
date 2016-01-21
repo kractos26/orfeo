@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>CU-ORFEO-43 Ver documentos excluidos de un Expediente</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="Generator" content="Kate, the KDE Advanced Text Editor">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="Autor" content="NCASTRO">
+  <meta name="Creado" content="20051130;17410000">
+  <style>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		P { margin-bottom: 0.21cm }
+	--</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<div style="text-align: right;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+<h1
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 153);">CU-ORFEO-43&nbsp;
+Ver documentos exclu&iacute;dos de un Expediente.<br>
+</h1>
+<h2 style="font-family: helvetica,arial,sans-serif;">1.
+Descripci&oacute;n</h2>
+<span style="font-family: helvetica,arial,sans-serif;">Permite a un
+usuario autorizado visualizar los documentos que en alg&uacute;n
+momento pertenecieron a un expediente pero que por alguna causa
+justificada fueron excluidos del mismo.</span><br
+ style="font-family: helvetica,arial,sans-serif;">
+<h2 style="font-family: helvetica,arial,sans-serif;">2. Actores</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">2.1
+Revisor Expediente <br>
+</h3>
+<div style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">Usuario
+con permisos para la verificaci&oacute;n del contenido y movimieto
+hist&oacute;rico de un expediente.<span
+ style="font-family: helvetica,arial,sans-serif;"></span><br>
+</div>
+<span style="font-family: helvetica,arial,sans-serif;"></span>
+<h2 style="font-family: helvetica,arial,sans-serif;">3. Flujo de Eventos</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.1.
+Flujo B&aacute;sico &oacute; Normal : Creaci&oacute;n de Expediente.</h3>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.1
+Precondiciones</h4>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+3.1.1.1. El actor debe haber ingresado al sistema.<br>
+3.1.1.2. El actor debe haber invocado la vista <span
+ style="font-weight: bold;">&#8220;EXPEDIENTES&#8221;</span> por alguno
+de los v&iacute;nculos establecidos.<br>
+<br>
+</div>
+<div style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">1.
+<span style="font-weight: bold;">A:</span> <span
+ style="font-style: italic; font-weight: bold;">INICIO</span><span
+ style="font-weight: bold;"> -</span>
+Verifica encontrarse en la vista <span style="font-weight: bold;">"EXPEDIENTES"</span>
+(pesta&ntilde;a) del
+&aacute;rea de datos del radicado &oacute; hace click en la
+pesta&ntilde;a del
+mismo nombre.<br>
+</div>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: center;"><img
+ alt="imgs/40_vta_crear_expediente0.jpg"
+ src="imgs/40_vta_crear_expediente0.jpg"
+ style="width: 611px; height: 121px;"><br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">2.
+<span style="font-weight: bold;">S:</span> Muestra la vista
+<span style="font-weight: bold;">"EXPEDIENTES"</span> la cual
+est&aacute; compuesta por: <br>
+</p>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+<div style="margin-left: 40px;">2.1. Una
+caja de texto editable rotulada como <span style="font-weight: bold;">"Nombre
+del Expediente"</span>. <br>
+2.2. Un v&iacute;nculo rotulado como <span style="font-weight: bold;">"Incluir
+en"</span>.<br>
+2.3. Un v&iacute;nculo rotulado como <span style="font-weight: bold;">"Excluir
+de"</span>.<br>
+2.4. Un v&iacute;nculo rotulado como <span style="font-weight: bold;">"Crear"</span>.<br>
+2.5. Un mensaje con el texto <span style="font-weight: bold;">"ESTE
+DOCUMENTO&nbsp; HA SIDO INCLUIDO EN EL(LOS) SIGUIENTE(S)
+EXPEDIENTE(S):"</span>.<br>
+2.6. Un v&iacute;nculo rotulado como <span style="font-weight: bold;">"Ver
+documentos excluidos de este Expediente"</span><br>
+<span style="font-weight: bold;"></span>2.7. Una secci&oacute;n que
+contiene los
+datos del radicado actual en forma de columnas con informaci&oacute;n
+del <span style="font-weight: bold;">N&uacute;mero de Radicado, Fecha
+de Radicado, Asunto, Empresa y Tipo de Documento</span>. Esta
+secci&oacute;n estar&aacute; rotulada con una pesta&ntilde;a que
+muestra el nombre del expediente creado. En caso de generarse varios
+expedientes se debe mostrar tantas pesta&ntilde;as como cantidad de
+estos se
+hayan creado.<br>
+2.8. Un mensaje con el texto <span style="font-weight: bold;">"Y ESTA
+RELACIONADO CON LOS SIGUIENTES DOCUMENTOS:"</span>.<br>
+2.9. Una secci&oacute;n que muestra informaci&oacute;n de los
+documentos
+vinculados en forma de columnas nombradas como <span
+ style="font-weight: bold;">N&uacute;mero de Radicado, Fecha
+de Radicado, Asunto, Empresa,&nbsp; Tipo de Documento y Tipo de
+Relaci&oacute;n. </span>Esta &uacute;ltima columna debe mostrar si el
+documento vinculado es un Anexo o un Asociado. Cada registro (fila de
+informaci&oacute;n de cada documento vinculado), estar&aacute;
+precedido por una caja de selecci&oacute;n m&uacute;ltiple (checklist).
+Debe existir tambi&eacute;n una caja en el encabezado de las columnas
+el cual debe permitir la selecci&oacute;n de todos los registros al
+mismo tiempo al ser marcado mediante un click.
+<br>
+</div>
+<br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; text-align: left;">
+<div style="margin-left: 40px; text-align: center;"><img
+ alt="imgs/41_vta_incluir_expediente.jpg"
+ src="imgs/43_vta_excluir_expediente.jpg"
+ style="width: 1064px; height: 478px;"><br>
+</div>
+</div>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;"><br>
+<br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.<span
+ style="font-weight: bold;"> A: </span>Hace click sobre la
+pesta&ntilde;a correspondiente al expediente que desea revisar.<span
+ style="font-weight: bold;"><br>
+<br>
+</span>4.<span style="font-weight: bold;"> S:</span>&nbsp; Presenta el
+nombre del expediente seleccionado en la caja de texto rotulada como <span
+ style="font-weight: bold;">"Nombre
+del Expediente"</span>.<br>
+<br>
+5. <span style="font-weight: bold;">A: </span>Hace click sobre el
+v&iacute;nculo rotulado como <span style="font-weight: bold;">"Ver
+documentos excluidos de este Expediente"</span>.<br>
+<br>
+6. <span style="font-weight: bold;">S: </span>El sistema muestra de
+manera resaltada los documentos que han sido exclu&iacute;dos
+permitiendo al usuario visuslizar su hist&oacute;rico si as&iacute; es
+requerido.<span style="font-weight: bold;">-</span><span
+ style="font-weight: bold; font-style: italic;">FIN</span><span
+ style="font-weight: bold;">.</span><br>
+<br>
+<img alt="imgs/41_vta_incluir_docs1.jpg"
+ src="imgs/43_vta_excluir_expediente1.jpg"
+ style="width: 1064px; height: 600px;"><br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;"><span
+ style="font-family: helvetica,arial,sans-serif;"></span></div>
+<div style="font-family: helvetica,arial,sans-serif;">
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;"><br>
+<span style="font-weight: bold;"></span></div>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 40px;">
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;"><span
+ style="font-weight: bold;"></span></div>
+</div>
+<div style="font-family: helvetica,arial,sans-serif;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+</body>
+</html>

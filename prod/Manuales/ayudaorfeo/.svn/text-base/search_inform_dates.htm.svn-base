@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div align="justify">
+  <p class="orfeot2">Buscar datos para incluir en la radicaci&oacute;n </p>
+  <p align="right" class="orfeopar"><a href="content.htm" class="orfeolk1">Contenido</a></p>
+  <p class="orfeopar">Al seleccionar el bot&oacute;n &quot;b&uacute;scar&quot; el sistema presenta una pantalla para realizar el cargue de la informaci&oacute;n que ser&aacute; incluida en la radicaci&oacute;n de entrada o de salida. Esta informaci&oacute;n debe ser previamente buscada en una base de datos con el fin de garantizar que la informaci&oacute;n est&eacute; completa y sea la correcta.</p>
+  <p class="orfeopar">Para realizar esta b&uacute;squeda usted debe: </p>
+  <p class="orfeopar"><img src="images/view_look_for2.jpg" width="720" height="41"></p>
+</div>
+<div align="justify">
+  <p class="orfeopar">1. Seleccionar: </p>
+  <blockquote>
+    <p class="orfeopar">a) Tipo de remitente o destinatario teniendo en cuenta Usuario, ESP u Otro tipo de empresa.<br>
+      b) Si se tiene el n&uacute;mero de documento o de identificaci&oacute;n se puede buscar por este campo.<br>
+      c) Si se tiene el nombre del destinatario.<br>
+      d) Dar click en  el bot&oacute;n &#8220;BUSCAR&#8221;, para realizar la b&uacute;squeda.</p>
+  </blockquote>
+</div>
+<p class="orfeopar">2. Cuando la b&uacute;squeda ha sido efectiva, se selecciona en la parte derecha al final del registro (COLOCAR COMO) el link, dependiendo el papel que va a desempe&ntilde;ar durante el tr&aacute;mite del documento. </p>
+<p class="orfeopar">Para la radicaci&oacute;n de entrada se tiene en cuenta: </p>
+<blockquote>
+  <p class="orfeopar">Rem: Remitente</p>
+  <p class="orfeopar">Pred: Predio</p>
+  <p class="orfeopar">Esp: Empresa de Servicios P&uacute;blicos </p>
+</blockquote>
+<p class="orfeopar">Para la Radicaci&oacute;n de Salida:</p>
+<blockquote>
+  <p class="orfeopar">Destinatario: A quien va dirigida la comunicaci&oacute;n</p>
+  <p class="orfeopar"><img src="images/view_rad_intro5.jpg" width="748" height="168"> </p>
+</blockquote>
+<div align="justify">
+  <p align="justify">3. <span class="orfeopar">Los datos seleccionados aparecer&aacute; ubic&aacute;ndose en el m&oacute;dulo DATOS A COLOCAR EN LA RADICACION, y si la informaci&oacute;n es correcta se debe dar clic en el v&iacute;nculo PASAR DATOS AL FORMULARIO DE RADICACION.</span></p>
+</div>
+<div align="justify">
+  <p align="center"><img src="images/view_rad_intro6.jpg" width="980" height="173"><span class="orfeopar"> </span></p>
+  <div align="justify">
+    <p class="orfeopar">4. En este momento se cierra esta ventana y los datos escogidos son ubicados en el m&oacute;dulo de trabajo (Radicaci&oacute;n de entrada o Salida) para continuar con el tr&aacute;mite.</p>
+    <p class="orfeopar">&nbsp;</p>
+    <p class="orfeopar"><a href="content.htm" class="orfeolk1">Contenido</a> </p>
+  </div>
+</div>
+<div align="center"><span class="orfeopar"></span></div>
+
+</body>
+</html>

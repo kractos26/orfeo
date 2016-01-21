@@ -1,0 +1,51 @@
+.tex_area {
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;
+	text-indent: 2pt;
+}
+.select {
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: bolder;
+	background-color: #FFFFFF;
+	color: #000000;
+	border: thin solid #999999;
+}
+.titulos2 {
+	font-family: Verdana;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bolder;
+	color: #000000;
+	background-color: #e5e5e5;
+	text-indent: 5pt;
+	vertical-align: middle;
+	height: 20px;
+}
+.titulos4 {
+	font-family: Verdana;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 10px;
+	font-weight: bolder;
+	color: #FFFFFF;
+	background-color: #006699;
+	text-indent: 5pt;
+	text-transform: uppercase;
+	height: 20px;
+}
+.listado2 {
+
+	font-family: Verdana;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bolder;
+	text-transform: none;
+	color: #000000;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	text-align: left;
+	vertical-align: middle;
+	height: 20px;
+}

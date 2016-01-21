@@ -1,0 +1,41 @@
+
+h1, h2, h3, h4, h5, h6 { font-family: Arial, tahoma,verdana; text-decoration:none;}
+
+h2, h3 { font-weight: normal; }
+
+
+h1 { font-size: 130%; border: 2px ridge #048; letter-spacing: 0px; color: #000; margin-left: -1em; margin-right: 2em; 
+background-color: #fff; padding: 2px 1em; background-color: #def; }
+h2 { font-size: 110%; color: #222; font-weight:bold}
+h3 { font-size: 110%; color: #444; }
+
+h1.title { font-size: 200%; font-family: Arial, georgia,serif; font-weight: normal; color: #000000; letter-spacing: -1px;
+border: none;
+padding: 0;
+background-color: #fff;
+padding-bottom: 2px; margin-left: 8%; margin-right: 8%; }
+
+a:link, a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #003066;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+p>a:link, p>a:visited, p>a:hover{
+	text-decoration: underline;
+}
+
+p {
+ font-size: 12px;
+}
+
+.footnote { font-size: 90%; font-style: italic; font-family: arial, georgia,"times new roman"; margin: 0px 3em; }
+.footnote sup { font-size: 120%; padding: 0px 0.3em; position: relative; top: -0.2em; }
+
+.small { font-size: 90%; }
+
+.verbatim { background-color: #eee; padding: 0.2em 1em; border: 1px solid #aaa; }

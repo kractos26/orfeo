@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>CU-ORFEO-18 Verificar documento existente</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="Generator" content="Kate, the KDE Advanced Text Editor">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="Autor" content="NCASTRO">
+  <meta name="Creado" content="20051130;17410000"><style>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		P { margin-bottom: 0.21cm }
+	--</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="GENERATOR" content="OpenOffice.org 2.0-pre  (Linux)">
+  <meta name="AUTHOR" content="JMCORDOB">
+  <meta name="CREATED" content="19951121;17410000">
+  <meta name="CHANGED" content="20050825;12322300">
+  <meta content="Verificacion previa al radicar" name="description">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="GENERATOR" content="StarOffice 8 (Linux)">
+  <meta name="AUTHOR" content="JMCORDOB">
+  <meta name="CREATED" content="19951121;17410000">
+  <meta name="CHANGED" content="20050818;20230900"><style>
+<!--
+@page { size: 21cm 29.7cm; margin: 2cm }
+P { margin-bottom: 0.21cm }
+-->
+  </style>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="GENERATOR" content="StarOffice 8  (Linux)">
+  <meta name="CREATED" content="19951121;17410000">
+  <meta name="CHANGED" content="20060202;17511100"><style>7cm; margin: 2cm }
+		P { margin-bottom: 0.21cm }
+	--> </style>
+  <meta content="Martha Yaneth Mera Velasco" name="author">
+</head>
+<body>
+<div style="text-align: right;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+<br>
+<h1
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 153);">CU-ORFEO-18&nbsp;
+Verificar documento existente<br>
+</h1>
+<h2 style="font-family: helvetica,arial,sans-serif;">1.
+Descripci&oacute;n</h2>
+<p style="margin-left: 0.5cm; margin-bottom: 0cm;" align="justify"
+ lang="es-ES"><font style="font-size: 11pt;" size="2"><br>
+</font></p>
+Procedimiento
+que permite verificar si un documento ya se encuentra registrado en el
+sistema y realizar las relaciones de anexo y asociado para la nueva
+radicaci&oacute;n.<span style="font-family: helvetica,arial,sans-serif;"></span><br
+ style="font-family: helvetica,arial,sans-serif;">
+<h2 style="font-family: helvetica,arial,sans-serif;">2. Actores</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">2.1
+Usuario Radicador</h3>
+<div style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">Usuario
+con permisos para radicaci&oacute;n de documentos.<span
+ style="font-family: helvetica,arial,sans-serif;"></span><br>
+</div>
+<span style="font-family: helvetica,arial,sans-serif;"></span>
+<h2 style="font-family: helvetica,arial,sans-serif;">3. Flujo de Eventos</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.1.
+Flujo B&aacute;sico &oacute; Normal: Verificar documento existente<br>
+</h3>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.1
+Precondiciones</h4>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+3.1.1.1.
+El usuario debe tener el permiso asignado en la tabla de usuario
+para realizar cualquier tipo de radicaci&oacute;n.<br>
+3.1.1.2. El actor debe haber ingresado al sistema.<br>
+<div style="text-align: center;"><br>
+</div>
+</div>
+<br>
+<div style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">1.
+<span style="font-weight: bold;">A:</span> <span
+ style="font-style: italic; font-weight: bold;">INICIO</span><span
+ style="font-weight: bold;"> -</span>
+Ingresa al m&oacute;dulo de radicaci&oacute;n y selecciona cualquier
+tipo de radicaci&oacute;n<br>
+<br>
+</div>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: center;"><img
+ alt="17_carpeta_radicar_entrada.jpg"
+ src="imgs/17_carpeta_radicar_entrada.jpg"
+ style="width: 163px; height: 161px;">
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">2.
+<span style="font-weight: bold;">S: </span>Muestra la vista de
+"VERIFICAR RADICACION PREVIA"&nbsp; indicando el tipo de
+radicaci&oacute;n que se est&aacute; realizando la cual est&aacute;
+compuesta por:<br>
+</p>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: center;"><img
+ alt="view_rad_intro2.jpg"
+ src="../ayudaorfeo/images/view_rad_intro2.jpg"
+ style="width: 815px; height: 337px;"><br>
+<br>
+</p>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: justify;"><br>
+</p>
+<p
+ style="font-family: helvetica,arial,sans-serif; text-align: justify; margin-left: 120px;"><span>2.1
+Una caja de texto habilitada rotulada: "Referencia (Cuenta interna, No.
+de Oficio)" tipo alfanum&eacute;rico<br>
+2.2 Una caja de texto habilitada rotulada: "No. de Radicado" tipo
+num&eacute;rico<br>
+2.3 </span><span>Una caja de texto habilitada rotulada: "</span><span>Expediente"
+tipo alfanum&eacute;rico<br>
+2.4</span><span> Una caja de texto habilitada rotulada: </span><span>
+"Identificacion (T.I.,C.C.,Nit)" tipo alfanum&eacute;rico<br>
+2.5 </span><span>Una caja de texto habilitada rotulada: "</span><span>Nombres"
+tipo alfanum&eacute;rico<br>
+2.6 Unos botones de opci&oacute;n habilitados rotulados como "Buscar
+por" donde se puede buscar informaci&oacute;n que se encuentra en las
+bases de datos de Ciudadano, Otras Empresas, Esp's, Funcionarios.<br>
+</span>2.7 Dos objetos de Calendario rotulados como: "Rango de Fechas
+de Radicaci&oacute;n: Por defecto se muestra el rango del
+&uacute;ltimo mes. El rango de fecha se puede
+ampliar si se desea.<br>
+2.8 Un bot&oacute;n habilitado "BUSCAR"<br>
+</p>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: justify;">3.
+<span style="font-weight: bold;">A:</span> Selecciona los parametros de
+b&uacute;squeda y da click en el bot&oacute;n "Buscar"<br>
+</p>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: justify;">4.<span
+ style="font-weight: bold;">
+S:</span> Despliega la lista de los radicados que cumplan con los
+par&aacute;metros de b&uacute;squeda con tres botones:&nbsp;
+"Nuevo (Copia datos)", "Anexo", "Asociado".<br>
+</p>
+<p
+ style="margin-bottom: 0cm; page-break-inside: avoid; widows: 0; orphans: 0; margin-left: 80px;"
+ align="justify" lang="es-CO"><br>
+</p>
+<p
+ style="margin-bottom: 0cm; page-break-inside: avoid; widows: 0; orphans: 0; margin-left: 80px;"
+ align="justify" lang="es-CO"><img alt="18_resultado_verificacion.jpg"
+ src="imgs/18_resultado_verificacion.jpg"
+ style="width: 1041px; height: 230px;"><br>
+</p>
+<p
+ style="margin-bottom: 0cm; page-break-inside: avoid; widows: 0; orphans: 0; margin-left: 120px;"
+ align="justify" lang="es-CO">En los datos de resultado de cada
+radicado se muestran los datos de datos de:<br>
+</p>
+<p
+ style="margin-bottom: 0cm; page-break-inside: avoid; widows: 0; orphans: 0; margin-left: 120px;"
+ align="justify" lang="es-CO">4.1 Radicado: N&uacute;mero de radicado<br>
+4.2 Expediente: Si el documento encontrado ya se encuentra archivado en
+un expediente<br>
+4.3 Remitente: Datos del remitente<br>
+4.4 Predio: Datos del Predio<br>
+4.5 ESP: Datos de la Empresa de Servicios P&uacute;blicos con el link
+"Ver imagen"** si ya se encuentra digitalizado el documento
+f&iacute;sico<br>
+4.6 Fecha de radicaci&oacute;n **: Con la opci&oacute;n de ingresar a
+los datos de dicho radicado desde este m&oacute;dulo sin ingresar por
+consultas.<br>
+4.7 Cuenta Interna: o referencia del documento.<br>
+4.8 Documento Asociado/anexo: Si existe alguna relaci&oacute;n de este
+radicado encontrado con otro del sistema.<br>
+4.9 Asunto: <br>
+</p>
+<p
+ style="margin-bottom: 0cm; page-break-inside: avoid; widows: 0; orphans: 0; margin-left: 120px;"
+ align="justify" lang="es-CO">** Para los campos 4.6 (A) y 4.5 (B) se
+debe tener en cuenta el nivel de seguridad de dicho radicado, para
+permitir o no la consulta de los datos generales o de la imagen por
+parte del usuario que realiza la consulta. Para esto el sistema se debe
+basar en los par&aacute;metros establecidos en los niveles de
+seguridad, asi:<br>
+</p>
+<p
+ style="margin-bottom: 0cm; page-break-inside: avoid; widows: 0; orphans: 0; margin-left: 120px;"
+ align="justify" lang="es-CO">- "P&uacute;blico": El documento
+podr&aacute; ser consultado por cualquier usuario.<br>
+- "Confidencial": El documento mantendr&aacute; un nivel de
+confidencialidad y solo podr&aacute; ser visto por el usuario actual.
+            <br>
+            
+            <br>
+<br></p>
+<br>
+        <strong>3.1.2
+Post-condiciones</strong>
+        <br>
+         
+        
+        <br>
+        El nivel de seguridad en la verificación se aplicará a todos los tipos de radicación exceptuando Radicación de entrada
+        <br>
+       <br style="font-family: helvetica,arial,sans-serif;"><a style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html"><br><br>Volver al indice</a><br
+ style="font-family: helvetica,arial,sans-serif;">
+
+
+<br>
+
+       <br>
+        
+       <br>
+    </body>
+</html>

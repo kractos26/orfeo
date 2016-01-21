@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<definitions xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://localhost/orfeo/ws"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://localhost/orfeo/ws">
+	<types>
+		<xsd:schema targetNamespace="http://localhost/orfeo/ws">
+			<xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+			<xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+		</xsd:schema>
+	</types>
+	<message name="HolaMundoRequest">
+		<part name="nombre" type="xsd:string">
+			<documentation>Nombre de la persona.</documentation>
+		</part>
+	</message>
+	<message name="HolaMundoResponse">
+		<part name="return" type="xsd:string">
+			<documentation>Cadena &quot;Hola&quot; + nombre brindado.
+			</documentation>
+		</part>
+	</message>
+	<message name="GetRadicadoInterfazAppRequest">
+		<part name="cod_app" type="xsd:integer">
+			<documentation>Código del aplicativo interfaz parametrizado en
+				Orfeo.</documentation>
+		</part>
+		<part name="referencia" type="xsd:string">
+			<documentation>Cadena de enlace entre el radicado Orfeo y la
+				referencia en el aplicativo externo. Longitud max. 15 caracteres.
+			</documentation>
+		</part>
+	</message>
+	<message name="GetRadicadoInterfazAppResponse">
+		<part name="return" type="xsd:string">
+			<documentation>Cadena de radicados relacionados concatenados por comas.
+			</documentation>
+		</part>
+	</message>
+	<message name="CrearRadicadoRequest">
+		<part name="cod_app" type="xsd:int">
+			<documentation>Código del aplicativo interfaz parametrizado en
+				Orfeo. </documentation>
+		</part>
+		<part name="referencia" type="xsd:string">
+			<documentation>Referencia enlace al sistema de información
+				parametrizado en cod_app. Longitud max 15 caracteres.
+			</documentation>
+		</part>
+		<part name="usrRadicador" type="xsd:string">
+			<documentation>Login de Orfeo preestablecido por la entidad para
+				realizar la radicación de entrada. Longitud max. 15 caracteres.
+			</documentation>
+		</part>
+		<part name="TipoTercero" type="xsd:int">
+			<documentation>Código de tipo de usuario que genera el
+				radicado. 1=Ciudadano 2=Entidad 3=Empresa 4=Funcionario. Solo está
+				habilitada la lógica para los valores 1 y 3.</documentation>
+		</part>
+		<part name="NombreTercero" type="xsd:string">
+			<documentation>Si TipoTercero es 1 se envia nombre del ciudadano.
+				Si TipoTercero es 3 se envia nombre de la empresa. Longitud max. 140
+				caracteres.</documentation>
+		</part>
+		<part name="PrimerApellidoTercero" type="xsd:string">
+			<documentation>Si TipoTercero es 1 se envia 1er apellido del
+				ciudadano. Si TipoTercero es 3 se envia sigla de la empresa.
+				Longitud max. 50 caracteres.
+			</documentation>
+		</part>
+		<part name="SegundoApellidoTercero" type="xsd:string">
+			<documentation>Si TipoTercero es 1 se envia 2o apellido del
+				ciudadano. Si TipoTercero es 3 se envia representante legal de la
+				empresa. Longitud max. 50 caracteres.</documentation>
+		</part>
+		<part name="TipoIDTercero" type="xsd:long">
+			<documentation>Código de tipo de identificación. 0=Cédula de
+				Ciudadanía 1=Tarjeta de Identidad 2=Cédula de Extranjería
+				3=Pasaporte 4=Nit 5=NUIR.</documentation>
+		</part>
+		<part name="NumeroIDTercero" type="xsd:string">
+			<documentation>Referencia según el tipo de identificación
+				(TipoIDTercero). Longitud max. 13 carcteres.</documentation>
+		</part>
+		<part name="CorreoElectronicoTercero" type="xsd:string">
+			<documentation>Correo Electronico a través del cual se responderá el radicado. 
+			Longitud max. 50 carcteres.</documentation>
+		</part>
+		<part name="DireccionTercero" type="xsd:string">
+			<documentation>Dirección correspondencia
+				del ciudadano/empresa. Longitud max. 150 carcteres.</documentation>
+		</part>
+		<part name="AsuntoRadicado" type="xsd:string">
+			<documentation>Asunto o descripcion del radicado a crear.
+				Longitud max. 340 carcteres.</documentation>
+		</part>
+		<part name="FechaOficioRadicado" type="xsd:date">
+			<documentation>Fecha del documento con que se crea
+				el radicado. Formato AAAA-MM-DD. No obligatorio.</documentation>
+		</part>
+	</message>
+	<message name="CrearRadicadoResponse">
+		<part name="return" type="xsd:long">
+			<documentation>Código de radicado Orfeo. </documentation>
+		</part>
+	</message>
+	<message name="anexarArchivoRequest">
+		<part name="archivo" type="xsd:base64Binary">
+			<documentation>Contenido de archivo encodado</documentation>
+		</part>
+		<part name="nombreArchivo" type="xsd:string">
+			<documentation>Nombre original del archivo (con extension.
+			</documentation>
+		</part>
+		<part name="radicado" type="xsd:long">
+			<documentation>Código de radicado Orfeo al cual se relacionará
+				el archivo.</documentation>
+		</part>
+		<part name="usrRadicador" type="xsd:string">
+			<documentation>Login de Orfeo preestablecido por la entidad para
+				realizar la radicación de entrada. Longitud max. 15 caracteres.
+			</documentation>
+		</part>
+		<part name="principal" type="xsd:boolean">
+			<documentation>Indica si el archivo enviado se creará como
+				documento principal del radicado (true) o como archivo anexo
+				(false).</documentation>
+		</part>
+	</message>
+	<message name="anexarArchivoResponse">
+		<part name="return" type="xsd:boolean">
+			<documentation>True = lleva a cabo exitosamente la transacción
+			</documentation>
+		</part>
+	</message>
+	<portType name="OrfeoWebServicePortType">
+		<operation name="HolaMundo">
+			<documentation>Metodo de prueba. Para probar conexion rapida a
+				OrfeoWebService</documentation>
+			<input message="tns:HolaMundoRequest" />
+			<output message="tns:HolaMundoResponse" />
+		</operation>
+		<operation name="GetRadicadoInterfazApp">
+			<documentation>Metodo que brindado un codigo y referencia de un
+				S.I. retorna un vector con los radicados asociados a dicho
+				parametros.</documentation>
+			<input message="tns:GetRadicadoInterfazAppRequest" />
+			<output message="tns:GetRadicadoInterfazAppResponse" />
+		</operation>
+		<operation name="CrearRadicado">
+			<documentation>Metodo que genera un radicado de entrada en
+				Orfeo.</documentation>
+			<input message="tns:CrearRadicadoRequest" />
+			<output message="tns:CrearRadicadoResponse" />
+		</operation>
+		<operation name="anexarArchivo">
+			<documentation>Metodo cuya finalidad es anexar un documento a
+				un radicado.</documentation>
+			<input message="tns:anexarArchivoRequest" />
+			<output message="tns:anexarArchivoResponse" />
+		</operation>
+	</portType>
+	<binding name="OrfeoWebServiceBinding" type="tns:OrfeoWebServicePortType">
+		<soap:binding style="rpc"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<operation name="HolaMundo">
+			<soap:operation soapAction="http://localhost/orfeo/ws/server.php/HolaMundo"
+				style="rpc" />
+			<input>
+				<soap:body use="encoded" namespace="http://localhost/orfeo/ws"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="http://localhost/orfeo/ws"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		<operation name="GetRadicadoInterfazApp">
+			<soap:operation
+				soapAction="http://localhost/orfeo/ws/server.php/GetRadicadoInterfazApp"
+				style="rpc" />
+			<input>
+				<soap:body use="encoded" namespace="http://localhost/orfeo/ws"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="http://localhost/orfeo/ws"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		<operation name="CrearRadicado">
+			<soap:operation soapAction="http://localhost/orfeo/ws/server.php/CrearRadicado"
+				style="rpc" />
+			<input>
+				<soap:body use="encoded" namespace="http://localhost/orfeo/ws"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="http://localhost/orfeo/ws"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+		<operation name="anexarArchivo">
+			<soap:operation soapAction="http://localhost/orfeo/ws/server.php/anexarArchivo"
+				style="rpc" />
+			<input>
+				<soap:body use="encoded" namespace="http://localhost/orfeo/ws"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="http://localhost/orfeo/ws"
+					encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+			</output>
+		</operation>
+	</binding>
+	<service name="OrfeoWebService">
+		<port name="OrfeoWebServicePort" binding="tns:OrfeoWebServiceBinding">
+			<soap:address location="http://localhost/orfeo/ws/server.php" />
+		</port>
+	</service>
+</definitions>

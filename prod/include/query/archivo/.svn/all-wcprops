@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/archivo
+END
+querySinExpediente.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/archivo/querySinExpediente.php
+END
+queryBusqueda_exp.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/archivo/queryBusqueda_exp.php
+END
+queryAlerta.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/archivo/queryAlerta.php
+END
+queryReportePorRadicados.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/archivo/queryReportePorRadicados.php
+END
+queryInventario.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/archivo/queryInventario.php
+END
+queryinsertar_central.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/archivo/queryinsertar_central.php
+END
+queryBusqueda_central.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/archivo/queryBusqueda_central.php
+END
+queryinsertar_central3.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/archivo/queryinsertar_central3.php
+END

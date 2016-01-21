@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class
+END
+ean8.barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/ean8.barcode.php
+END
+codabar.barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/codabar.barcode.php
+END
+postnet.barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/postnet.barcode.php
+END
+upce.barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/upce.barcode.php
+END
+upcext5.barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/upcext5.barcode.php
+END
+i25.barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/i25.barcode.php
+END
+BarCode.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/BarCode.php
+END
+FDrawing.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/FDrawing.php
+END
+code128.barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/code128.barcode.php
+END
+ean13.barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/ean13.barcode.php
+END
+s25.barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/s25.barcode.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/index.php
+END
+code11.barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/code11.barcode.php
+END
+othercode.barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/othercode.barcode.php
+END
+Table_template.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/Table_template.php
+END
+code93.barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/code93.barcode.php
+END
+code39.barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/code39.barcode.php
+END
+FColor.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/FColor.php
+END
+msi.barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/msi.barcode.php
+END
+LSTable.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/LSTable.php
+END
+upca.barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/upca.barcode.php
+END
+upcext2.barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/codebar/class/upcext2.barcode.php
+END

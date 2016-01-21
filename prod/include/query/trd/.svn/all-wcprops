@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/trd
+END
+querylista_tiposAsignados.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/trd/querylista_tiposAsignados.php
+END
+querytipodocu.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/trd/querytipodocu.php
+END
+queryserie.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/trd/queryserie.php
+END
+queryinforme_trd.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/trd/queryinforme_trd.php
+END
+queryCodiDetalle.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/trd/queryCodiDetalle.php
+END
+querysubserie.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/trd/querysubserie.php
+END

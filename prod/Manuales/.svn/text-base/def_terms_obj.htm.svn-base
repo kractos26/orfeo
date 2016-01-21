@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Documento sin t&iacute;tulo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body bgcolor="#FFFFFF">
+<h1 align="center"><font color="#000066" size="+2" face="Arial Narrow"><strong>Definici&oacute;n
+      de T&eacute;rminos y Objetos</strong></font></h1>
+<p align="justify"><font size="+1" face="Arial Narrow"><strong>Dependencia:</strong> Parte de
+    la estructura organizacional de la SSPD que cumple una o varias funciones
+    espec&iacute;ficas dentro la gesti&oacute;n de la entidad. En ORFEO se identifican
+    como &Aacute;reas y Grupos dependiendo de su nivel jer&aacute;rquico dentro
+    de la estructura organizacional. Ej.: &Aacute;rea = Direcci&oacute;n Financiera;
+    Grupo = Contabilidad.</font></p>
+<p align="justify"><font size="+1" face="Arial Narrow"><strong>Expediente L&oacute;gico:</strong>  Conjunto de documentos que est&aacute;n relacionados entre s&iacute; ya que
+    forman parte de un mismo proceso de gesti&oacute;n y que ORFEO agrupa de
+    acuerdo a la instrucci&oacute;n dada por los usuarios que identifican o definen
+    dicha relaci&oacute;n. Ej. Una solicitud de informaci&oacute;n por parte
+    de un ciudadano, su respectiva respuesta y un memorando interno informando
+    sobre su tr&aacute;mite son documentos que conforman un expediente l&oacute;gico.</font></p>
+<p align="justify"><font size="+1" face="Arial Narrow"><strong>Estructura Organizacional
+    de la SSPD:</strong> Est&aacute; compuesta por las dependencias mostradas en la gr&aacute;fica
+    que puede observar haciendo click aqu&iacute;.</font></p>
+<p align="justify"><font size="+1" face="Arial Narrow"><strong>N&uacute;mero de Radicado:</strong>  N&uacute;mero &uacute;nico, con el que se identifica un documento dentro
+    de ORFEO. Su estructura depende variables como: el a&ntilde;o en que se radica
+    el documento, el actor que lo genera (Dependencia) y su naturaleza (correspondencia
+    de entrada, de salida &oacute; interna). Ver figura abajo.</font></p>
+<p align="justify"><font size="+1" face="Arial Narrow"><img src="images/estruc_#rad.jpg" width="625" height="468"></font></p>
+</body>
+</html>

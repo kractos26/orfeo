@@ -1,0 +1,745 @@
+/*Editado por Julian Andres Ortiz Moreno 
+ julecci@gmail.com
+ 3213006681
+*/
+
+body{font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 10px;
+	font-weight: bolder;
+	color: #FFFFFF;
+	
+	text-indent: 5pt;
+}
+.info {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	color: #000000;
+	text-indent: 5pt;
+}
+.tex_area {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	text-indent: 2pt;
+}
+.botones {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	background-color: #FF9900;
+	color: #FFFFFF;
+	text-align: center;
+	height: 20px;
+	width: 90px;
+	border: thin solid #FFFFFF;
+}
+.botones_2 {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	background-color: #e3ad02;
+	color: #FFFFFF;
+	text-align: center;
+	height: 20px;
+	width: 30px;
+	border: thin solid #999999;
+}
+.botones_3 {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	background-color: #e3ad02;
+	color: #FFFFFF;
+	text-align: center;
+	height: 20px;
+	width: 70px;
+	border: thin solid #999999;
+}
+.botones_mediano {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	background-color: #FF9900;
+	color: #FFFFFF;
+	text-align: center;
+	height: 20px;
+	width: 130px;
+	border: thin solid #FFFFFF;
+}
+.botones_mediano2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	background-color: #e3ad02;
+	color: #FFFFFF;
+	text-align: center;
+	height: 20px;
+	width: 130px;
+	border: thin solid #FFFFFF;
+}
+.botones_largo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	background-color: #FF9900;
+	color: #FFFFFF;
+	text-align: center;
+	height: 20px;
+	width: 230px;
+	border: thin solid #FFFFFF;
+}
+.select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	background-color: #E3E8EC;
+	color: #000000;
+	border: thin solid #999999;
+}
+
+.select100{
+    width: 100%;
+}
+
+.titulos2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bolder;
+	color:#000000;
+	background-color: #e4e9ef;
+	text-indent: 5pt;
+	vertical-align: middle;
+}
+.titulosenca2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bolder;
+	color:#000000;
+	background-color: #A6BB3F;
+	text-indent: 5pt;
+	vertical-align: middle;
+}
+.titulos5 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bolder;
+	color: #000000;
+	background-color: #e0e6e7;
+	text-indent: 5pt;
+	vertical-align: middle;
+}
+.tablas {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bolder;
+	color: #FFFFFF;
+	background-color: #898b8d;
+	text-indent: 5pt;
+	vertical-align: middle;
+}
+.titulos3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	color: #000000;
+	background-color: #e4e9ef;
+	text-indent: 5pt;
+	vertical-align: middle;
+	text-align: center;
+}
+.borde_tab {
+	border: 1px solid #377584;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+.borde_tab2 {
+	border: 1px solid #377584;
+	border-radius:5px;
+	border-collapse:collapse;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+.leidos {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	color: #006699;
+	text-decoration: none;
+}
+.leidos2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	color: #006690;
+	text-decoration: none;
+}
+.no_leidos {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	color: #488F03;
+	text-decoration: none;
+}
+.listado1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bolder;
+	text-transform: none;
+	color: #000000;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	text-align: left;
+	vertical-align: middle;
+	height: 30px;
+}
+.listado1_0 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-style: normal;
+	font-weight: bolder;
+	text-transform: none;
+	color: #000000;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	vertical-align: middle;
+	height: 3px;
+}
+.listado2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bolder;
+	text-transform: none;
+	color: #000000;
+	text-decoration: none;
+	background-color: #e4e9ee;
+	vertical-align: middle;
+	height: 30px;
+}
+.listado2_0 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-style: normal;
+	font-weight: bolder;
+	text-transform: none;
+	color: #000000;
+	text-decoration: none;
+	background-color: #e4e9ee;
+	text-align: center;
+	vertical-align: middle;
+	height: 5px;
+}
+.listado2_center {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bolder;
+	text-transform: none;
+	color: #000000;
+	text-decoration: none;
+	background-color: #e3e8ec;
+	text-align: center;
+	text-indent: 5pt;
+	vertical-align: middle;
+	height: 30px;
+}
+.listado2_no_identa {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bolder;
+	text-transform: none;
+	color: #000000;
+	text-decoration: none;
+	background-color: #e3e8ec;
+	text-align: left;
+	text-indent: 0pt;
+	vertical-align: middle;
+	height: 30px;
+}
+.listado5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bolder;
+	text-transform: none;
+	color: #000000;
+	text-decoration: none;
+	background-color: #e3e8ec;
+	text-align: left;
+	text-indent: 5pt;
+	vertical-align: middle;
+}
+.paginacion {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #377584;
+	text-decoration: none;
+	text-align: center;
+}
+.vinculos {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bolder;
+	color: #006699;
+	text-align: left;
+	text-indent: 5pt;
+	vertical-align: middle;
+}
+.botones_funcion {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	background-color: #377584;
+	color: #FFFFFF;
+	text-align: center;
+	border: thin solid #FFFFFF;
+	text-indent: 5pt;
+	vertical-align: middle;
+}
+.titulos4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 10px;
+	font-weight: bolder;
+	color: #FFFFFF;
+	background-color: #A6BB3F;
+	text-indent: 5pt;
+	text-transform: uppercase;
+	height: 30px;
+}
+.alarmas {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #990000;
+	text-align: center;
+}
+.menu_princ {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	color: #086478;
+	cursor: pointer;
+	text-decoration: none;
+	text-indent: 3pt;
+}
+.titulosError {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bolder;
+	color: #FF0000;
+	background-color: #e3e8ec;
+	text-indent: 5pt;
+	vertical-align: middle;
+	height: 30px;
+}
+.titulosError2 {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bolder;
+	color: #FF0000;
+	text-indent: 5pt;
+	vertical-align: middle;
+	height: 30px;
+}
+.tSel {
+ background-color: #00FF22;
+ font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #223399;}
+.porExcluir {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	color: #FF0000;
+	text-decoration: none;
+}
+.vinculoTipifAnex {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bolder;
+	color: #009060;
+	text-align: left;
+	text-indent: 5pt;
+	vertical-align: middle;
+}
+.eMenu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #FFFFFF;
+	height: 30px;
+}
+.eFrameTop {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	/*background-color: #00a9cc;*/
+        background-color: #a6bb3f;
+	height: 15px;
+}
+.impresos {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+ 	font-style: normal;
+	font-weight: bolder;
+	color: #FF6600;
+	text-decoration: none;
+	text-align: left;
+	text-indent: 5pt;
+	vertical-align: middle;
+}
+
+.impresosvinc {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bolder;
+	color: #FF6600;
+	text-align: left;
+	text-indent: 5pt;
+	vertical-align: middle;
+}
+
+/***********************************************************
+ * INICIO estilos para CARRO DE RADICADOS 
+ * *************************************************************/
+
+#carrito{
+    position:relative;
+    width:41px;
+    height:76px;
+}
+
+#activar{
+    height:16px;
+    position:absolute;
+    right:5px;
+    top:5px;
+    width:6px;
+}
+
+#inactivar{
+    height:16px;
+    position:absolute;
+    right:5px;
+    top:22px;
+    width:6px;
+}
+
+#carroRadi {
+    height:80%;
+    position:absolute;
+    top:0;
+    width:70%;
+}
+
+
+#numeroCarrito {
+    color:white;
+    font-size:small;
+    font-weight:bold;
+    height:19px;
+    position:absolute;
+    right:20px;
+    text-align:center;
+    top:22px;
+    width:90%;
+}
+
+/***********************************************************
+ * FIN estilos para CARRO DE RADICADOS 
+ * *************************************************************/
+
+/***********************************************************
+ * INICIO estilos para la pagina de cerrar sesion 
+ * *************************************************************/
+
+#cerrarPag{
+    margin-top: 5%;
+    width: 250px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:justify;
+    position: relative;
+}
+
+.enlace:link,
+.enlace:active,
+.enlace:hover,
+.enlace:visited{
+    text-decoration:none;
+    font-size:large;
+    color: #8cacc1;    
+}
+
+
+
+#textoCerrar{
+    position:absolute;    
+    right: 10px;
+    bottom:5px;
+    text-align:right;
+}
+
+#reingreso{
+    color: #009060;
+    font-weight:bold;
+    font-size:small;
+    text-align:right;
+    text-decoration:none;
+}
+    
+
+/***********************************************************
+ * FIN estilos para la pagina de cerrar sesion 
+ * *************************************************************/
+
+
+
+
+
+
+
+/***********************************************************
+ * INICIO Graficas de alertas pagina principal al iniciar orfeo 
+ * *************************************************************/
+
+/*Tamaño y estilo de la grafica de barras*/
+
+/*rules for the plot target div.  These will be cascaded 
+ * down to all plot elements according to css rules*/
+.jqplot-target {
+    position: relative;
+    font-size: 1em;
+    height: 300px;
+    width: 400px;
+}
+
+/*rules applied to all axes*/
+.jqplot-axis {
+    font-size: 0.75em;
+}
+
+.jqplot-xaxis {
+    margin-top: 10px;
+}
+
+.jqplot-x2axis {
+    margin-bottom: 10px;
+}
+
+.jqplot-yaxis {
+    margin-right: 10px;
+}
+
+.jqplot-y2axis, .jqplot-y3axis, .jqplot-y4axis, .jqplot-y5axis, .jqplot-y6axis, .jqplot-y7axis, .jqplot-y8axis, .jqplot-y9axis {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*rules applied to all axis tick divs*/
+.jqplot-axis-tick, .jqplot-xaxis-tick, .jqplot-yaxis-tick, .jqplot-x2axis-tick, .jqplot-y2axis-tick, .jqplot-y3axis-tick, .jqplot-y4axis-tick, .jqplot-y5axis-tick, .jqplot-y6axis-tick, .jqplot-y7axis-tick, .jqplot-y8axis-tick, .jqplot-y9axis-tick {
+    position: absolute;
+}
+
+
+.jqplot-xaxis-tick {
+    top: 0px;
+    /* initial position untill tick is drawn in proper place */
+    left: 15px;
+/*    padding-top: 10px;*/
+    vertical-align: top;
+    font-size:0.8em;
+}
+
+.jqplot-x2axis-tick {
+    bottom: 0px;
+    /* initial position untill tick is drawn in proper place */
+    left: 15px;
+/*    padding-bottom: 10px;*/
+    vertical-align: bottom;
+}
+
+.jqplot-yaxis-tick {
+    right: 0px;
+    /* initial position untill tick is drawn in proper place */
+    top: 15px;
+/*    padding-right: 10px;*/
+    text-align: right;
+}
+
+.jqplot-y2axis-tick, .jqplot-y3axis-tick, .jqplot-y4axis-tick, .jqplot-y5axis-tick, .jqplot-y6axis-tick, .jqplot-y7axis-tick, .jqplot-y8axis-tick, .jqplot-y9axis-tick {
+    left: 0px;
+    /* initial position untill tick is drawn in proper place */
+    top: 15px;
+/*    padding-left: 10px;*/
+/*    padding-right: 15px;*/
+    text-align: left;
+}
+
+.jqplot-meterGauge-tick {
+    font-size: 0.75em;
+    color: #999999;
+}
+
+.jqplot-meterGauge-label {
+    font-size: 1em;
+}
+.jqplot-xaxis-label {
+    margin-top: 10px;
+    font-size: 11pt;
+    position: absolute;
+}
+
+.jqplot-x2axis-label {
+    margin-bottom: 10px;
+    font-size: 11pt;
+    position: absolute;
+}
+
+.jqplot-yaxis-label {
+    margin-right: 10px;
+/*    text-align: center;*/
+    font-size: 11pt;
+    position: absolute;
+}
+
+.jqplot-y2axis-label, .jqplot-y3axis-label, .jqplot-y4axis-label, .jqplot-y5axis-label, .jqplot-y6axis-label, .jqplot-y7axis-label, .jqplot-y8axis-label, .jqplot-y9axis-label {
+/*    text-align: center;*/
+    font-size: 11pt;
+    position: absolute;
+}
+
+table.jqplot-table-legend {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+table.jqplot-table-legend, table.jqplot-cursor-legend {
+    background-color: rgba(255,255,255,0.6);
+    border: 1px solid #cccccc;
+    position: absolute;
+    font-size: 0.75em;
+}
+
+td.jqplot-table-legend {
+    vertical-align:middle;
+}
+
+td.jqplot-seriesToggle:hover, td.jqplot-seriesToggle:active {
+    cursor: pointer;
+}
+
+td.jqplot-table-legend > div {
+    border: 1px solid rgba(137, 139, 141, 0.31) ;
+    padding:1px;
+}
+
+div.jqplot-table-legend-swatch {
+    width:0px;
+    height:0px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 6px;
+    border-right-width: 6px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+
+.jqplot-title {
+    top: 0px;
+    left: 0px;
+    padding-bottom: 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+table.jqplot-cursor-tooltip {
+    border: 1px solid #cccccc;
+    font-size: 0.75em;
+}
+
+
+.jqplot-cursor-tooltip {
+    border: 1px solid #cccccc;
+    font-size: 0.75em;
+    white-space: nowrap;
+    background: rgba(208,208,208,0.5);
+    padding: 1px;
+}
+
+.jqplot-highlighter-tooltip {
+    border: 1px solid #cccccc;
+    font-size: 0.75em;
+    white-space: nowrap;
+    background: rgba(208,208,208,0.5);
+    padding: 1px;
+}
+
+.jqplot-point-label {
+    font-size: 0.6em;
+    z-index: 2;
+}
+      
+td.jqplot-cursor-legend-swatch {
+    vertical-align: middle;
+    text-align: center;
+}
+
+div.jqplot-cursor-legend-swatch {
+    width: 1.2em;
+    height: 0.7em;
+}
+
+.jqplot-error {
+/*  Styles added to the plot target container when there is an error go here.*/
+    text-align: center;
+}
+
+.jqplot-error-message {
+/*  Styling of the custom error message div goes here.*/
+    position: relative;
+    top: 46%;
+    display: inline-block;
+}
+
+div.jqplot-bubble-label {
+    font-size: 0.8em;
+    padding-left: 2px;
+    padding-right: 2px;
+    
+}
+
+div.jqplot-bubble-label.jqplot-bubble-label-highlight {
+    background: rgba(90%, 90%, 90%, 0.7);
+}
+
+/***********************************************************
+ * FIN Graficas de alertas pagina principal al iniciar orfeo 
+ * *************************************************************/

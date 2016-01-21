@@ -1,0 +1,876 @@
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<title>Javascript Date Picker Wizard</title>
+ <meta name="description" content="Zapatec's Javascript Calendar is a cross browser calendar that includes a wizard for easy configuration">
+ <meta name="keywords" content="dhtml calendar, javascript, DHTML Calendar, Javascript, calendar control, simple javascript calendar">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <META Name="Robots" Content="index,follow">
+ <META Name="Googlebot" Content="index,follow">
+ <META http-equiv="Pragma" content="no-cache">
+<link href="./css/zpcal.css" rel="stylesheet" type="text/css">
+<link href="./css/template.css" rel="stylesheet" type="text/css">
+<link rel="SHORTCUT ICON" href="./favicon.ico">
+
+
+
+<style type="text/css">
+/*
+override the definition in template.css
+*/
+body { width:100%;}
+</style>
+
+
+<!--
+Header with javascript and CSS specific  to the calendar
+-->
+<link rel="alternate stylesheet" type="text/css" media="all" href="../themes/wood.css" title="wood" id='theme-wood' >
+<link rel="alternate stylesheet" type="text/css" media="all" href="../themes/fancyblue.css" title="fancyblue" id='theme-fancyblue' >
+<link rel="alternate stylesheet" type="text/css" media="all" href="../themes/forest.css" title="forest"  id='theme-forest'>
+<link rel="alternate stylesheet" type="text/css" media="all" href="../themes/winxp.css" title="winxp"  id='theme-winxp'>
+<link rel="alternate stylesheet" type="text/css" media="all" href="../themes/green.css" title="green" id='theme-green'>
+<link rel="alternate stylesheet" type="text/css" media="all" href="../themes/maroon.css" title="maroon" id='theme-maroon'>
+<link rel="alternate stylesheet" type="text/css" media="all" href="../themes/yellow.css" title="yellow" id='theme-yellow'>
+<link rel="alternate stylesheet" type="text/css" media="all" href="../themes/greengrass.css" title="greengrass" id='theme-greengrass'>
+<link rel="alternate stylesheet" type="text/css" media="all" href="../themes/win2k.css" title="win2k" id='theme-win2k'>
+<link rel="alternate stylesheet" type="text/css" media="all" href="../themes/bluexp.css" title="bluexp" id='theme-bluexp'>
+<link rel="stylesheet" type="text/css" media="all" href="../themes/winter.css" title="winter" id='theme-winter'>
+<link rel="alternate stylesheet" type="text/css" media="all" href="../themes/system.css" title="system" id='theme-system'>
+
+<!-- Import the different sizes -->
+<link id="theme-size-1" rel="stylesheet" type="text/css" media="all" href="../themes/layouts/tiny.css" >
+<link id="theme-size-2" rel="stylesheet" type="text/css" media="all" href="../themes/layouts/small.css" >
+<link id="theme-size-3" rel="stylesheet" type="text/css" media="all" href="../themes/layouts/big.css" >
+<link id="theme-size-4" rel="stylesheet" type="text/css" media="all" href="../themes/layouts/huge.css" >
+
+<!-- import the calendar script -->
+<script type="text/javascript" src="../src/utils.js"></script>
+<script type="text/javascript" src="../src/calendar.js"></script>
+
+
+<!-- import the language module -->
+<script type="text/javascript" src="../lang/calendar-en.js"></script>
+
+<!-- import the language module -->
+<script type="text/javascript" src="../lang/calendar-ro.js"></script>
+<script type="text/javascript" src="../lang/calendar-it.js"></script>
+<script type="text/javascript" src="../lang/calendar-de.js"></script>
+<script type="text/javascript" src="../lang/calendar-fr.js"></script>
+<script type="text/javascript" src="../lang/calendar-da.js"></script>
+<script type="text/javascript" src="../lang/calendar-no.js"></script>
+<script type="text/javascript" src="../lang/calendar-ru.js"></script>
+<script type="text/javascript" src="../lang/calendar-sp.js"></script>
+<script type="text/javascript" src="../lang/calendar-el.js"></script>
+<script type="text/javascript" src="../lang/calendar-cs.js"></script>
+<script type="text/javascript" src="../lang/calendar-hr.js"></script>
+<script type="text/javascript" src="../lang/calendar-big5.js"></script>
+<script type="text/javascript" src="../lang/calendar-jp.js"></script>
+<script type="text/javascript" src="../lang/calendar-ko.js"></script>
+<script type="text/javascript" src="../lang/calendar-tr.js"></script>
+<script type="text/javascript" src="../lang/calendar-he.js"></script>
+
+	<!-- initial lang. is EN -->
+	<script type="text/javascript" src="../lang/calendar-en.js"></script>
+
+
+<!-- import the calendar setup script -->
+<script type="text/javascript" src="../src/calendar-setup.js"></script>
+
+
+
+
+
+<!-- other languages might be available in the lang directory; please check
+your distribution archive. -->
+<script type="text/javascript">
+<!--
+
+var oldLink = null;
+// code to change the active stylesheet
+function setActiveStyleSheet(link, title) {
+	var i, a, main;
+	for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
+		if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
+			a.disabled = true;
+			if(a.getAttribute("title") == title) a.disabled = false;
+		}
+	}
+	if (oldLink) oldLink.style.fontWeight = 'normal';
+	oldLink = link;
+	link.style.fontWeight = 'bold';
+	return false;
+}
+
+
+-->
+</script>
+
+
+
+<!--
+end of header with javascript and CSS specific  to the calendar
+-->
+
+
+<script type="text/javascript" src="./../wizard/wizard.js"></script>
+<script type="text/javascript" src="./../src/tooltips.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="./../wizard/wizard.css">
+
+
+
+
+<table style="height: 90%; width: 85%; border-collapse: collapse;" align="center" cellspacing="0" cellpadding="0">
+	<tr style="height: 1em">
+		<td>
+		</td>
+	</tr>
+	<tr style="height: 100%">
+		<td id="tab-bar"></td>
+		<td rowspan="2" id="customize">
+			<div id="tabs">
+				<div class="tab"><span class="tab-title type-advanced-1">Calendar type</span>
+					<h2>Date Picker/calendar type, event handling</h2>
+					<blockquote>
+						<p>
+						The Zapatec Calendar acts as a <strong> date picker </strong>, letting your
+						users easily choose dates on your web site. Using this wizard you
+						can easily configure the different calendar options. Click on next
+						and Back to move forward and backwards in the panes. Notice that
+						some panes have a button to show advanced options.
+							<span id="tooltip-18">
+								<span class='helpIcon'>
+									?
+								</span>
+								<span id="tooltip-18-text" title="What is a javascript date picker">
+									A javascript date picker lets your users choose a date using
+									a calendar that is displayed on the web site. This date
+									picker lets the users croll back and forth between months and
+									even years, and doesn't require popping a new window which modern
+									browsers block. The date picker is writen in javascript which means
+									that it will work for the vast majority of users on the Internet.
+								</span>
+							</span>
+
+						<hr/>
+						Choose between a popup and a flat calendar.  A popup calendar
+						usually applies to an input field and pops up whenever needed.
+						A flat calendar is always visible in the page. 
+						
+						</p>
+					</blockquote>
+					<table align="center" class="form" style="margin: auto">
+						<tr>
+							<td>
+								<b>Choose calendar type:</b>
+							</td>
+							<td>
+								<input type="radio" name="type"
+								value="popup" checked="checked" id="r_popup" onclick="radioTabChange(this)" />
+							</td>
+							<td>
+								<label id="label-r_popup" for="r_popup" accesskey="p"><u>P</u>opup</label>
+							</td>
+							<td>
+								<input type="radio" name="type"
+								value="flat" id="r_flat" onclick="radioTabChange(this)" />
+							</td>
+							<td>
+								<label id="label-r_flat" for="r_flat" accesskey="f"><u>F</u>lat</label>
+							</td>
+							<td id="tooltip-1">
+								<span class='helpIcon'>
+									?
+								</span>
+								<div id="tooltip-1-text" title="Input field ID">
+									To see an example of either calendar, choose the
+									type, click on the <strong> Test your Calendar</strong> tab on the
+									left, and click on the <strong>Test</strong> button
+									in the tab.
+								</div>
+							</td>
+						</tr>
+					</table>
+					<div id="type-advanced-1" class="advanced"><div id="tab-type" class="tabs">
+							<div id="type-popup" style="display: block">
+								<table class="form" style="margin: auto" align="center">
+									<tr>
+										<td class="label">
+											<label id="label-f_prop_inputField" for="f_prop_inputField">Input field ID:</label>
+										</td>
+										<td class="field" style="padding-right: 5px">
+											<input id="f_prop_inputField" type="text" value="calendar" onfocus="this.select()" />
+										</td>
+										<td id="tooltip-2">
+											<span class='helpIcon'>
+												?
+											</span>
+											<div id="tooltip-2-text" title="Input field ID">
+												Enter the ID of the input field that you
+												want to link the calendar to.  
+											</div>
+										</td>
+										<td class="label">
+											<label id="label-f_prop_button" for="f_prop_button">Button ID:</label>
+										</td>
+										<td class="field">
+											<input id="f_prop_button" type="text" value="trigger" onfocus="this.select()" />
+										</td>
+										<td id="tooltip-3">
+											<span class='helpIcon'>
+												?
+											</span>
+											<div id="tooltip-3-text" title="Input field ID">
+												Clicking on the element with this ID often a button
+												containing "..." opens the calendar.  
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="label">
+											<label id="label-f_prop_displayArea" for="f_prop_displayArea">Display area ID:</label>
+										</td>
+										<td class="field">
+											<input id="f_prop_displayArea" type="text" onfocus="this.select()" />
+										</td>
+										<td id="tooltip-4">
+											<span class='helpIcon'>
+												?
+											</span>
+											<div id="tooltip-4-text" title="Input field ID">
+												The "display area" is an element where the
+												calendar displays the date.  
+											</div>
+										</td>
+										<td class="label">
+											<label id="label-f_prop_eventName" for="f_prop_eventName">Event:</label>
+										</td>
+										<td class="field">
+											<select id="f_prop_eventName">
+												<option value="onclick">onclick</option>
+												<option value="onmousedown">onmousedown</option>
+												<option value="onmouseup">onmouseup</option>
+												<option value="onfocus">onfocus</option>
+											</select>
+										</td>
+										<td id="tooltip-5">
+											<span class='helpIcon'>
+												?
+											</span>
+											<div id="tooltip-5-text" title="Input field ID">
+												Select the event that triggers the display of the
+												calendar.  The display is triggered by this action on the following items
+												"button", "display area" or "field" in this
+												order.
+											</div>
+										</td>
+									</tr>
+								</table>
+								<div class="separator">&nbsp;</div>
+								<table class="form" style="margin: auto" align="center">
+									<tr>
+										<td class="label">
+											<label id="label-f_prop_valign" for="f_prop_valign">Vertical align:</label>
+										</td>
+										<td style="padding-right: 5px">
+											<select id="f_prop_valign">
+												<option value="T">Above (bottom to top)</option>
+												<option value="t">Above (bottom to bottom)</option>
+												<option value="C">Center</option>
+												<option value="b">Below (top to top)</option>
+												<option selected="selected" value="B">Below (top to bottom)</option>
+											</select>
+										</td>
+										<td class="label">
+											<label id="label-f_prop_halign" for="f_prop_halign">Horizontal align:</label>
+										</td>
+										<td>
+											<select id="f_prop_halign">
+												<option value="L">Left (right to left)</option>
+												<option value="l">Left (right to right)</option>
+												<option value="C">Center</option>
+												<option selected="selected" value="r">Right (left to left)</option>
+												<option value="R">Right (left to right)</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="4" style="text-align: center">
+											<button onclick="testAlign(this)">Test align</button>
+										</td>
+									</tr>
+								</table>
+								<div class="separator">Â </div>
+								<table class="form">
+									<tr>
+										<td class="label">
+											<input type="checkbox" id="f_prop_dblclick" />
+										</td>
+										<td class="field">
+											<label id="label-f_prop_dblclick" for="f_prop_dblclick">Double-click mode</label>
+										</td>
+										<td id="tooltip-6">
+											<span class='helpIcon'>
+												?
+											</span>
+											<div id="tooltip-6-text" title="Input field ID">
+												In "double click mode", a popup calendar will
+												close when an end-user clicks on a date that is
+												already selected.
+											</div>
+										</td>
+										<td class="label">
+											<input type="checkbox" id="f_prop_electric" />
+										</td>
+										<td class="field">
+											<label id="label-f_prop_electric" for="f_prop_electric">Electric mode</label>
+										</td>
+										<td id="tooltip-7">
+											<span class='helpIcon'>
+												?
+											</span>
+											<div id="tooltip-7-text" title="Input field ID">
+												In electric mode, the calendar will call the "date
+												selected handler" for each month/year change.
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div id="type-flat" style="display: none">
+								<table class="form" style="margin: auto" align="center">
+									<tr>
+										<td class="label">
+											<label id="label-f_prop_flat" for="f_prop_flat">Container element ID:</label>
+										</td>
+										<td class="field">
+											<input type="text" id="f_prop_flat" value="calendar" onfocus="this.select()" />
+										</td>
+										<td class="help" style="width: 99%">
+											The ID of an element that the calendar will appear into.
+										</td>
+									</tr>
+									<tr>
+										<td class="label">
+											<label id="label-f_prop_flatCallback" for="f_prop_flatCallback">Callback function name:</label>
+										</td>
+										<td class="field">
+											<input type="text" id="f_prop_flatCallback" value="flatCalendarCallback" onfocus="this.select()" />
+										</td>
+										<td class="help" style="width: 99%">
+											The name of the callback function.
+										</td>
+									</tr>
+									<tr><td colspan="3"><div class="separator">Â </div></td></tr>
+									<tr>
+										<td colspan="3">
+											A flat calendar is useless without a
+											"callback"  A callback is a function supplied
+											by you that can do anything you want.  This
+											function executes when an end user clicks on a
+											date in the flat calendar.  The most common
+											need is to redirect the browser to a new
+											location, based on the clicked date.  Our
+											default callback (generated when you reach the
+											"Generate" tab) will show you how to do this.
+										</td>
+									</tr>
+								</table>
+							</div>
+					</div></div>
+				</div>
+				<div class="tab hide"><span class="tab-title">Lang. and theme</span>
+					<h2>Language and theme</h2>
+					<p>
+					Chose the language that you wish to present your
+					calendar in, as well as your favorite theme, below.
+					</p>
+					<table class="form">
+						<tr>
+							<td class="label">
+								<label id="label-f_language" for="f_language">Language:</label>
+							</td>
+							<td class="field">
+								<select id="f_language" onchange="selectChange(this)">
+									<option selected="selected" value="en">English</option>
+									<option value="ro">Romanian</option>
+									<option value="it">Italian</option>
+									<option value="fr">French</option>
+									<option value="de">German</option>
+									<option value="da">Danish</option>
+									<option value="no">Norwegian</option>
+									<option value="ru">Russian</option>
+									<option value="sp">Spanish</option>
+									<option value="el">Greek</option>
+									<option value="he">Helene</option>
+									<option value="cs">Czech</option>
+									<option value="tr">Turkish</option>
+									<option value="hr">Croatian</option>
+									<option value="big5">Taiwanese</option>
+									<option value="jp">Japanese</option>
+									<option value="ko">Korean</option>
+								</select>
+							</td>
+						</tr>
+						<tr><td colspan="4"><div class="separator">Â </div></td></tr>
+						<tr>
+							<td class="label">
+								<label id="label-f_theme" for="f_theme">Theme:</label>
+							</td>
+							<td class="field">
+								<select id="f_theme" onchange="selectChange(this)">
+									<option value="winter" selected='selected'>Winter</option>
+									<option value="green">Green</option>
+									<option value="fancyblue">Blue</option>
+									<option value="yellow">Yellow</option>
+									<option value="greengrass">green Grass</option>
+									<option value="winxp">Windows XP</option>
+									<option value="win2k" >Windows 2000</option>
+									<option value="system">System</option>
+									<option value="bluexp">Blue XP</option>
+									<option value="maroon">Maroon</option>
+									<option value="wood">Wood</option>
+									<option value="forest">Forest</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="label">
+								<label id="label-f_size" for="f_size">Calendar size:</label>
+							</td>
+							<td class="field">
+								<select id="f_size" onchange="setSize(this.value)">
+									<option value="tiny">Tiny</option>
+									<option value="small">Small</option>
+									<option value="" selected="selected">Normal</option>
+									<option value="big">Big</option>
+									<option value="huge">Huge</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="tab hide"><span class="tab-title">Basic setup</span>
+					<h2>Basic javascript date picker/calendar setup.</h2>
+					<table class="form">
+						<tr>
+							<td class="label">
+								<label id="label-f_prop_firstDayOfWeek" for="f_prop_firstDayOfWeek">First day of week:</label>
+							</td>
+							<td class="field">
+								<select id="f_prop_firstDayOfWeek" onchange="propChange(this)">
+									<option value="0">Sunday</option>
+									<option value="1">Monday</option>
+									<option value="2">Tuesday</option>
+									<option value="3">Wednesday</option>
+									<option value="4">Thursday</option>
+									<option value="5">Friday</option>
+									<option value="6">Saturday</option>
+								</select>
+							</td>
+							<td id="tooltip-8">
+								<span class='helpIcon'>
+									?
+								</span>
+								<div id="tooltip-8-text" title="First day of the week">
+									Select the first day of the week in the calendar/date picker.
+									Note that your users can also customize this for their own
+									use by clicking the day name in the actual date picker/calendar.
+
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="label">
+								<input type="checkbox" id="f_prop_weekNumbers" checked="checked" onclick="propChange(this)" />
+							</td>
+							<td>
+								<label id="label-f_prop_weekNumbers" for="f_prop_weekNumbers">Show week numbers</label>
+							</td>
+							<td id="tooltip-9">
+								<span class='helpIcon'>
+									?
+								</span>
+								<div id="tooltip-9-text" title="Display week numbers">
+									The calendar can display week numbers
+									according to the algorithm defined by ISO 8601.  Uncheck
+									this if you do not want week numbers in your calendar.
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="label">
+								<input type="checkbox" id="f_prop_showOthers" onclick="propChange(this)" />
+							</td>
+							<td>
+								<label id="label-f_prop_showOthers" for="f_prop_showOthers">Show adjacent months</label>
+							</td>
+							<td id="tooltip-10">
+								<span class='helpIcon'>
+									?
+								</span>
+								<div id="tooltip-10-text" title="Show adjacent months">
+									Check "Show adjacent months" if you want the calendar to display
+									days from adjacent months. Note that calendars that display
+									days from other months are fixed size - they always display
+									six weeks. Calendars that do not display days from other
+									months will sometimes display five weeks and other times
+									six.
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="label">
+								<input type="checkbox" id="f_prop_showsTime" onclick="propChange(this)" />
+							</td>
+							<td>
+								<label id="label-f_prop_showsTime" for="f_prop_showsTime">Show time</label>
+							</td>
+							<td id="tooltip-11">
+								<span class='helpIcon'>
+									?
+								</span>
+								<div id="tooltip-11-text" title="Show Time">
+									Check this box if you want the calendar to<br />display
+									and allow selection of time.
+								</div>
+							</td>
+						</tr>
+						<tr id="timeprops" style="visibility: hidden">
+							<td class="label">
+								<label id="label-f_prop_timeFormat" for="f_prop_timeFormat">
+									Time format:
+								</label>
+							</td>
+							<td class="field">
+								<select id="f_prop_timeFormat" onchange="propChange(this)">
+									<option value="12">12 hours</option>
+									<option value="24" selected="selected">24 hours</option>
+								</select>
+							</td>
+							<td id="tooltip-12">
+								<span class='helpIcon'>
+									?
+								</span>
+								<div id="tooltip-12-text" title="12/24 hours">
+									Select time format.  Chosing 12h format 
+									also allows the selection of am/pm.
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="label">
+								<label id="label-f_prop_yearStep" for="f_prop_yearStep">Years step:</label>
+							</td>
+							<td class="field">
+								<input type="text" id="f_prop_yearStep" size="4" value="2" onchange="propChange(this)" onfocus="this.select()" />
+							</td>
+							<td id="tooltip-13">
+								<span class='helpIcon'>
+									?
+								</span>
+								<div id="tooltip-13-text" title="Years Step">
+									In the drop-down year menus, the years can be displayed with
+									a certain step after the next or previous year. The next or
+									previous year is always the first one displayed, no matter
+									how many steps you choose between years.
+								</div>
+							</td>
+						</tr>
+						<tr><td colspan="3"><div class="separator">Â </div></td></tr>
+						<tr>
+							<td class="label">
+								<label id="label-f_prop_rangeLeft" for="f_prop_rangeLeft">Limit range:</label>
+							</td>
+							<td class="field" colspan="2">
+								<input type="text" id="f_prop_rangeLeft" size="4" value="1900" /> /
+								<select id="f_prop_rangeLeft_Month">
+									<option value="01" selected="selected">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+									<option value="06">06</option>
+									<option value="07">07</option>
+									<option value="08">08</option>
+									<option value="09">09</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+								</select>
+								&rarr;
+								<input type="text" id="f_prop_rangeRight" size="4" value="2999" /> /
+								<select id="f_prop_rangeRight_Month">
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+									<option value="06">06</option>
+									<option value="07">07</option>
+									<option value="08">08</option>
+									<option value="09">09</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12" selected="selected">12</option>
+								</select>
+							</td>
+							<td id="tooltip-14">
+								<span class='helpIcon'>
+									?
+								</span>
+								<div id="tooltip-14-text" title="Limit Range">
+									Limit the range of dates your users can select in the date picker/Calendar.
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="tab hide"><span class="tab-title formats-advanced-1-2-3-4" onclick="format_updateTests()">Formats</span>
+					<h2>Date and time formats</h2>
+					<table class="form" style="clear: both">
+						<tr>
+							<td colspan="2">
+								Use the form below to define how the calendar should
+								display or submit date/time. 
+							</td>
+							<td id="tooltip-17">
+								<span class='helpIcon'>
+									?
+								</span>
+								<div id="tooltip-17-text" title="Date and Time Formats">
+									Here you define the date and time formats as they are sent to your
+									server and displayed to the user. Start by choosing from the sample 
+									format drop down menu.
+								  <br/>	You can then customize by clicking on the buttons with the
+									different dates and time format. Finally, you can edit and add 
+									spaces or brackets by typing directly into the input field.
+									<br/>
+									As you make these changes you can see today's date formatted with your
+									choices in the <strong> Sample Output</strong> in the 
+									<A HREF="http://www.zapatec.com/website/main/coding.jsp">date picker</A> wizard.
+
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<fieldset>
+									<legend>Click a token to include it in the active field</legend>
+									<table align="center" class="tokens">
+										<tr>
+											<td valign="top">
+												<a onclick="tokenClicked(this, '%a')" title="Abbreviated weekday name"
+													href="#"><span>%a</span> - Abbreviated weekday name</a>
+												<a onclick="tokenClicked(this, '%A')" title="Full weekday name"
+													href="#"><span>%A</span> - Full weekday name</a>
+												<a onclick="tokenClicked(this, '%b')" title="Abbreviated month name"
+													href="#"><span>%b</span> - Abbreviated month name</a>
+												<a onclick="tokenClicked(this, '%B')" title="Full month name"
+													href="#"><span>%B</span> - Full month name</a>
+												<a onclick="tokenClicked(this, '%C')" title="Century number"
+													href="#"><span>%C</span> - Century number</a>
+												<a onclick="tokenClicked(this, '%d')" title="The day of the month (00 .. 31)"
+													href="#"><span>%d</span> - The day of the month (00 .. 31)</a>
+												<a onclick="tokenClicked(this, '%e')" title="The day of the month (0 .. 31)"
+													href="#"><span>%e</span> - The day of the month (0 .. 31)</a>
+												<a onclick="tokenClicked(this, '%H')" title="Hour (00 .. 23)"
+													href="#"><span>%H</span> - Hour (00 .. 23)</a>
+												<a onclick="tokenClicked(this, '%I')" title="Hour (01 .. 12)"
+													href="#"><span>%I</span> - Hour (01 .. 12)</a>
+											</td>
+											<td>
+												<a onclick="tokenClicked(this, '%j')" title="The day of the year (000 .. 366)"
+													href="#"><span>%j</span> - The day of the year (000 .. 366)</a>
+												<a onclick="tokenClicked(this, '%k')" title="Hour (0 .. 23)"
+													href="#"><span>%k</span> - Hour (0 .. 23)</a>
+												<a onclick="tokenClicked(this, '%l')" title="Hour (1 .. 12)"
+													href="#"><span>%l</span> - Hour (1 .. 12)</a>
+												<a onclick="tokenClicked(this, '%m')" title="Month (01 .. 12)"
+													href="#"><span>%m</span> - Month (01 .. 12)</a>
+												<a onclick="tokenClicked(this, '%M')" title="Minute (00 .. 59)"
+													href="#"><span>%M</span> - Minute (00 .. 59)</a>
+												<a onclick="tokenClicked(this, '%n')" title="A newline character"
+													href="#"><span>%n</span> - A newline character</a>
+												<a onclick="tokenClicked(this, '%p')" title='PM or AM'
+													href="#"><span>%p</span> - PM or AM</a>
+												<a onclick="tokenClicked(this, '%P')" title='pm or am'
+													href="#"><span>%P</span> - pm or am</a>
+												<a onclick="tokenClicked(this, '%S')" title="Second (00 .. 59)"
+													href="#"><span>%S</span> - Second (00 .. 59)</a>
+											</td>
+											<td>
+												<a onclick="tokenClicked(this, '%s')" title="Number of seconds since Epoch (since Jan 01 1970 00:00:00 UTC)"
+													href="#"><span>%s</span> - Number of seconds since Epoch</a>
+												<a onclick="tokenClicked(this, '%t')" title="A tab character"
+													href="#"><span>%t</span> - A tab character</a>
+												<a onclick="tokenClicked(this, '%W')" title="The week number (as per ISO 8601)"
+													href="#"><span>%W</span> - The week number (as per ISO 8601)</a>
+												<a onclick="tokenClicked(this, '%u')" title="The day of week (1 .. 7, 1 = Monday)"
+													href="#"><span>%u</span> - The day of week (1 .. 7, 1 = Monday)</a>
+												<a onclick="tokenClicked(this, '%w')" title="The day of week (0 .. 6, 0 = Sunday)"
+													href="#"><span>%w</span> - The day of week (0 .. 6, 0 = Sunday)</a>
+												<a onclick="tokenClicked(this, '%y')" title="Year without the century (00 .. 99)"
+													href="#"><span>%y</span> - Year without the century (00 .. 99)</a>
+												<a onclick="tokenClicked(this, '%Y')" title="Year including the century (ex. 1979)"
+													href="#"><span>%Y</span> - Year including the century (ex. 1979)</a>
+												<a onclick="tokenClicked(this, '%%')" title="A literal % character"
+													href="#"><span>%%</span> - A literal % character</a>
+											</td>
+										</tr>
+									</table>
+								</fieldset>
+							</td>
+						</tr>
+						<tr><td colspan="3"><div class="separator">Â </div></td></tr>
+						<tr class="format-test">
+							<td class="label">
+								Sample Output:
+							</td>
+							<td>
+								<div id="f_prop_ifFormat-test">Â </div>
+							<td id="tooltip-15">
+								<span class='helpIcon'>
+									?
+								</span>
+								<div id="tooltip-15-text" title="Display Sample Output">
+									You can see the date picker format that is inserted in the input field.
+									This is usually what the server gets from your calendar.
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="label">
+								<label id="label-f_prop_ifFormat" for="f_prop_ifFormat">Input field format:</label>
+							</td>
+							<td class="field" style="white-space: nowrap">
+								<input type="text" id="f_prop_ifFormat" onfocus="format_setActiveField(this)" value="%Y/%m/%d"
+								onkeypress="format_keyPress(this)" size="30"
+								/><button onclick="clear_field('f_prop_ifFormat'); format_updateTests();">Clear</button>
+							</td>
+							<td>
+								<select id="f_prop_ifFormat-factory" onchange="factoryFormat(this)">
+									<option selected="selected" value="">&mdash; sample formats &mdash;</option>
+								</select>
+							</td>
+						</tr>
+						<tr class="advanced" id="formats-advanced-3"><td colspan="3"><div class="separator">Â </div>
+								<span class="advanced" id="formats-advanced-2"> </span>
+						</td></tr>
+						<tr class="format-test advanced" id="formats-advanced-4">
+							<td class="label">
+								Sample Output:
+							</td>
+							<td>
+								<div id="f_prop_daFormat-test">Â </div>
+							</td>
+							<td id="tooltip-16">
+								<span class='helpIcon'>
+									?
+								</span>
+								<div id="tooltip-16-text" title="Date Format">
+									The "display area" date format.  You may wish to
+									use a display area if your input field is hidden.
+								</div>
+							</td>
+						</tr>
+						<tr class="advanced" id="formats-advanced-1">
+							<td class="label">
+								<label id="label-f_prop_daFormat" for="f_prop_daFormat">Display area format:</label>
+							</td>
+							<td class="field" style="white-space: nowrap">
+								<input type="text" id="f_prop_daFormat" onfocus="format_setActiveField(this)" value="%Y/%m/%d"
+								onkeypress="format_keyPress(this)" size="30"
+								/><button onclick="clear_field('f_prop_daFormat'); format_updateTests();">Clear</button>
+							</td>
+							<td>
+								<select id="f_prop_daFormat-factory" onchange="factoryFormat(this)">
+									<option selected="selected" value="">&mdash; sample formats &mdash;</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="tab hide"><span class="tab-title">Test your javascript calendar</span>
+					<h2>Test your code</h2>
+					<blockquote>
+						<p>
+						Click on the "Test" button to test your<strong> Javascript Calendar.</strong>
+						This opens a new window so please make sure popups are for this
+						web site are allowed in your browser.
+
+						</p>
+						<p style="text-align: center">
+						<button onclick="testCode()"><b>Test</b></button>
+						</p>
+						<br/>
+						<br/>
+						<p>
+						If you are happy with the results, click on next to got to the
+						last step and have the code generated.  The following is the
+						path that will be used for the calendar files. This will
+						usually be correct if you are running the wizard on your web
+						server. Otherwise, edit the path to point to the correct location.
+
+						</p>
+						<p style="text-align: center">
+						<label for="f_path">Path to calendar:</label> <input type="text" id="f_path" size="32" />
+						</p>
+					</blockquote>
+				</div>
+				<div class="tab hide"><span class="tab-title" onclick="onGenerate()">Get your code</span>
+					<h2>Copy/paste your code</h2>
+					<button style="float: right; margin: 0 0 1em 1em;" onclick="selectCode()">Select code</button>
+					<blockquote>
+						Your code is below.  Select it all, copy and paste it
+						into your favorite editor to save it locally.
+					</blockquote>
+					<textarea readonly="readonly" id="code" rows="19" cols="66" style="width: 99%;"></textarea>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td id="calendar-anchor" style="height: 1em"><div></div></td>
+	</tr>
+	<tr class="nav">
+		<td id="copyright"></td>
+		<td class="nav-buttons">
+			<button id="b_advanced" class="advanced-button" onclick="advanced(this)">Advanced mode</button>
+			<button id="b_prev" style="width: 7em" onclick="prevTab()" accesskey="b">&lt;&lt; <u>B</u>ack</button>
+			<button id="b_next" style="width: 7em" onclick="nextTab()" accesskey="n"><u>N</u>ext &gt;&gt;</button>
+		</td>
+	</tr>
+	<tr style="height: 1em">
+		<td colspan="2"></td>
+	</tr>
+</table>
+
+
+<script type="text/javascript">
+	//init the wizard object
+  initWizard();
+  setWizardPath('./..');
+	//the divs are fictitious divs to match the closing ones in the footer
+</script>
+<div>
+<div>
+<div>
+		</div>
+	</div>
+</div>
+
+<div class="footer" align=center> 
+<a href="./contact.jsp" class="lnkblue">Contact Us</a> | <a href="./employment.jsp" class="lnkblue">Employment</a> 
+            <br>
+<br>
+&copy; 2004 <strong>Zapatec, Inc.</strong>
+</div>
+
+</body>
+</html>
+

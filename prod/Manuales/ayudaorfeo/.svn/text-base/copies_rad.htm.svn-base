@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Documento sin t&iacute;tulo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="orfeot2">Radicaci&oacute;n de copias</p>
+<p align="right" class="orfeolk1"><a href="rad_att_in_doc.htm#exp_rad_copies">Continuar
+    en Radicaci&oacute;n
+de Salida</a> <a href="content.htm">Contenido</a></p>
+<p align="justify" class="orfeopar">Si se requiere enviar una copia del
+    mismo documento a alg&uacute;n destinatario
+  diferente de los que aparecen en los datos del radicado (Remitente, Predio, Empresa),
+  al momento de seleccionar el archivo para radicar y actualizar se visualiza un
+  m&oacute;dulo correspondiente a las &#8220;Copias&#8221; donde se debe ingresar
+  por el bot&oacute;n &#8220;BUSCAR&#8221;, para seleccionar los datos a escoger
+para el nuevo destinatario.</p>
+<p align="center" class="orfeopar"><img src="images/view_anx_copies.jpg" width="720" height="540"></p>
+<p align="justify" class="orfeopar"><a href="search_inform_dates.htm"><em>&iquest;C&oacute;mo se realiza la b&uacute;squeda de los datos de un destinatario?</em></a></p>
+<p class="orfeopar">Los datos escogidos pasan al registro de copias, donde se debe:</p>
+<blockquote>
+  <blockquote>
+    <p align="center"><img src="images/view_anx_copies2.jpg" width="720" height="540"></p>
+  </blockquote>
+</blockquote>
+<ol type="a">
+  <li><span class="orfeopar">Si el destinatario es una Empresa y va dirigido
+      a alguna persona en especial de la misma, diligenciar el campo &#8220;Dirigido
+      a&#8221;.</span></li>
+  <li class="orfeopar"> Seleccionar el bot&oacute;n &#8220;Grabar Destinatario&#8221;</li>
+  <li class="orfeopar"> El sistema
+    confirma que ha sido agregado el destinatario.</li>
+  <li class="orfeopar"> Se debe actualizar el registro.</li>
+  <li class="orfeopar"> Al recibir la confirmaci&oacute;n se debe dar click en
+    el bot&oacute;n &#8220;Cerrar&#8221;</li>
+</ol>
+<p align="justify"></p>
+<p align="justify" class="orfeopar">Al momento de radicar el documento,
+    el sistema despliega una nueva ventana donde se puede confirmar la generaci&oacute;n
+    del documento radicado, y la cantidad de copias que se generaron.<br>
+</p>
+<p align="center" class="orfeopar"><img src="images/view_anx_copies3.jpg" width="720" height="540"></p>
+<p align="justify"></p>
+<p align="justify" class="orfeopar">Al devolverse con el bot&oacute;n Atr&aacute;s del explorador, se puede apreciar
+  el radicado original (con v&iacute;nculo) y la copia (sin v&iacute;nculo) la
+  cual es determinada en la columna TIPO. <br>
+  <img src="images/view_anx_copies4.jpg" width="720" height="540"></p>
+<p align="justify"></p>
+<p align="justify" class="orfeopar">Si se ha olvidado grabar una copia
+    a un documento y este ya est&aacute; radicado,
+  se debe:<br>
+  a. Ingresar por el v&iacute;nculo de &#8220;Modificar&#8221; <br>
+  b. Buscar los datos del destinatario, en el mismo m&oacute;dulo de las copias.<br>
+  c. Grabar destinatario.<br>
+  d. Actualizar registro.<br>
+  e. Cerrar.<br>
+  f. Con el v&iacute;nculo &#8220;Re-Generar&#8221; , se genera nuevamente el
+  radicado y guarda en el sistema las copias nuevas que se incluyeron.<br>
+</p>
+<p align="center" class="orfeopar"><img src="images/view_anx_copies5.jpg" width="720" height="540"> </p>
+<p align="justify">&nbsp; </p>
+</body>
+</html>

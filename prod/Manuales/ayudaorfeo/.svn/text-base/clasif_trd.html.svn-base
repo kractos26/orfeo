@@ -1,0 +1,306 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Clasificacion de radicados en TRD</title>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link
+ href="file://///Apolo/OFICINA_INFORMATICA/ORFEO/AyudaOrfeo/styles.css"
+ rel="stylesheet" type="text/css">
+  <style type="text/css">
+<!--
+.style7 {	font-family: "Arial Narrow";
+	font-size: 14pt;
+}
+.style12 {
+	font-family: "Arial Narrow";
+	font-size: 14pt;
+	font-style: italic;
+	font-weight: bold;
+}
+-->
+  </style>
+  <meta content="Martha Yaneth Mera Velasco" name="author">
+  <meta content="Orfeo 3.5" name="description">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="GENERATOR" content="OpenOffice.org 2.0  (Linux)">
+  <meta name="AUTHOR" content="JMCORDOB">
+  <meta name="CREATED" content="19951121;17410000">
+  <meta name="CHANGEDBY" content="PCORREA">
+  <meta name="CHANGED" content="20041020;12120000">
+  <style>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		P { margin-bottom: 0.21cm }
+	-->
+	</style>
+</head>
+<body>
+<p class="orfeot2" align="center"><span class="orfeot1">Clasificaci&oacute;n
+de los radicados seg&uacute;n la Tabla de Retenci&oacute;n Documental</span><span
+ style="font-family: helvetica,arial,sans-serif;" class="orfeot1"></span></p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeot2"
+ align="right"><span class="orfeopar"><br>
+<strong><a href="content.htm"><span class="orfeolk1">Contenido</span></a></strong></span></p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeot2"
+ align="justify"><span class="orfeopar"><span
+ style="font-family: helvetica,arial,sans-serif;"><br>
+</span></span><br>
+</p>
+<big><span style="font-family: helvetica,arial,sans-serif;">De acuerdo
+a la ley 524 de 2000 establecido por el Archivo General de la
+Naci&oacute;n, indica que: "Las entidades p&uacute;blicas
+deber&aacute;n elaborar programas de gesti&oacute;n de documentos,
+pudiendo
+contemplar el uso de nuevas tecnolog&iacute;as y soportes, en cuya
+aplicaci&oacute;n
+deber&aacute;n observarse los principios y procesos
+archiv&iacute;sticos."</span></big><br>
+<br>
+<big><span style="font-family: helvetica,arial,sans-serif;">La
+elaboraci&oacute;n y aplicaci&oacute;n de las Tablas de
+Retenci&oacute;n
+Documental es una labor que como la norma lo indica, todas las
+entidades p&uacute;blicas y privadas que cumplen funciones
+p&uacute;blicas
+deben llevar a cabo y que se recomienda implementar tambi&eacute;n en
+cualquier otra organizaci&oacute;n sin importar su naturaleza
+org&aacute;nica-funcional. </span><br
+ style="font-family: helvetica,arial,sans-serif;">
+<br>
+</big><span style="font-family: helvetica,arial,sans-serif;"><big>En
+nuestro Sistema de Gesti&oacute;n Documental - ORFEO, se realiza la
+aplicaci&oacute;n de las tablas de retenci&oacute;n documental
+asignando la respectiva identificaci&oacute;n a cada radicado generado
+en el sistema, teniendo en cuenta la Serie, Subserie y Tipo documental
+al que pertenece y de esta manera poder ser clasificado en el
+&aacute;rea de archivo.</big><br>
+</span><small><span class="orfeopar"></span></small>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeot2"
+ align="justify"><span style="font-family: helvetica,arial,sans-serif;"
+ class="orfeopar"><small><span style="font-weight: bold;"></span></small>El
+&aacute;rea de archivo es el encargado de asignar las series, subseries
+y tipos documentales a cada dependencia en el sistema ORFEO, de acuerdo
+con la funci&oacute;n que realiza cada una de ellas, para que los
+usuarios del sistema pueda clasificar sus documentos.<br>
+</span></p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeot2"
+ align="justify"><span style="font-family: helvetica,arial,sans-serif;"
+ class="orfeopar">Todos los radicados que se generen dentro del
+sistema, sin importar el tipo de radicaci&oacute;n, deber&aacute;n ser
+clasificados en su Tabla de Retenci&oacute;n&nbsp; Documental
+respectiva, si esta operaci&oacute;n no es realizada, no se
+podr&aacute; dar como finalizado un documento, es decir no se
+podr&aacute; Archivar.<br>
+</span></p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeot2"
+ align="justify"><span style="font-family: helvetica,arial,sans-serif;"
+ class="orfeopar">Para la clasificaci&oacute;n de un documento se debe:</span><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar">1.
+Seleccionar la carpeta donde se encuentra el radicado que ser&aacute;
+clasificado:</p>
+<br style="font-family: helvetica,arial,sans-serif;">
+<p style="text-align: center; font-family: helvetica,arial,sans-serif;"
+ class="orfeopar"><img alt="select_carp.jpg"
+ src="images/select_carp.jpg" style="width: 168px; height: 391px;"><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar">2.
+Ingresar al radicado por la fecha de radicaci&oacute;n:<br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif; text-align: center;"
+ class="orfeopar"><img alt="/link_f_rad.jpg" src="images/link_f_rad.jpg"
+ style="width: 1036px; height: 302px;"><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar"><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar">3.
+El sistema se ubica en la pesta&ntilde;a de Informaci&oacute;n General,
+que es donde se encuentra el link para ingresar a TRD:<br>
+<br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif; text-align: center;"
+ class="orfeopar"><img alt="pest_info.jpg" src="images/pest_info.jpg"
+ style="width: 999px; height: 597px;"><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar"><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar">4.
+Dar click en el bot&oacute;n TRD (...) :<br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif; text-align: center;"
+ class="orfeopar"><img alt="trd1.jpg" src="images/trd1.jpg"
+ style="width: 690px; height: 276px;"><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif; text-align: center;"
+ class="orfeopar"><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif; text-align: left;"
+ class="orfeopar">5. El sistema despliega una nueva ventana donde se
+visualizara la serie, subserie y tipo documental que puede utilizar
+dicha dependencia.<br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif; text-align: left;"
+ class="orfeopar">6. Seleccionar de acuerdo al documento en que
+est&aacute; trabajando los datos correspondientes a la TRD. A medida
+que se va seleccionando la serie, se despliegan las subseries que se
+encuentran asignadas y los tipos documentales con los que se pueden
+identificar&nbsp; el documento.<br>
+&nbsp;<br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif; text-align: center;"
+ class="orfeopar"><big><span
+ style="color: rgb(0, 0, 102); font-style: italic;"><img alt="/trd2.jpg"
+ src="images/trd2.jpg" style="width: 504px; height: 274px;"><br>
+</span></big></p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar">Se
+debe tener en cuenta que el tipo de documento se encuentra ligado al
+tipo de radicaci&oacute;n, es decir, existen tipos documentales que se
+restringen &uacute;nicamente a un tipo de radicaci&oacute;n como por
+ejemplo, el tipo documental&nbsp; "Derecho de Petici&oacute;n de
+consulta", es un documento que ingresa a la entidad, por lo tanto
+solamente se podr&aacute; clasificar en los radicados que sean de
+entrada (-2)<br>
+<big><span style="color: rgb(0, 0, 102); font-style: italic;"></span></big></p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar">7.
+Dar click en el bot&oacute;n "Insertar"<br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar">8.
+El sistema realiza la actualizaci&oacute;n del documento, indicando su
+respectiva clasificaci&oacute;n, c&oacute;digo (dependencia + cod.
+serie + cod. subserie), nombre de la serie, nombre de la subserie, tipo
+de documento, dependencia, acci&oacute;n. <br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif; text-align: center;"
+ class="orfeopar"><img alt="trd3.jpg" src="images/trd3.jpg"
+ style="width: 523px; height: 302px;"><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar"><br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar">Nota:
+Si se cre&oacute; una clasificaci&oacute;n que no era, se puede dar
+click en el link "Borrar", que se encuentra debajo de la acci&oacute;n
+y se vuelve a crear.<br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar">Un
+documento solamente puede ser clasificado una vez por la dependencia,
+pero se puede clasificar varias veces en dependencias diferentes de
+acuerdo a la funci&oacute;n que realice cada una, respecto al
+tr&aacute;mite dado.<br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar">9.
+Dar click en el bot&oacute;n "Cerrar"<br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif;" class="orfeopar">10.
+El sistema realiza la actualizaci&oacute;n indicando la
+tipificaci&oacute;n realizada por el usuario. Esta se puede observar en
+la pesta&ntilde;a de Informaci&oacute;n general, y se guarda el
+registro hist&oacute;rico indicando el nombre del usuario que
+realiz&oacute; la tipificaci&oacute;n.<br>
+<br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif; text-align: center;"
+ class="orfeopar"><img alt="trd4.jpg" src="images/trd4.jpg"
+ style="width: 649px; height: 98px;"><br>
+<br>
+</p>
+<p style="font-family: helvetica,arial,sans-serif; text-align: center;"
+ class="orfeopar"><img alt="/trd5.jpg" src="images/trd5.jpg"
+ style="width: 979px; height: 246px;"><br>
+</p>
+<br>
+<br>
+<big
+ style="font-family: helvetica,arial,sans-serif; font-weight: bold; color: rgb(0, 0, 102);">Clasificaci&oacute;n
+de los radicados anexos en la respectiva tabla de retenci&oacute;n
+documental</big><br>
+<br>
+<big><span style="font-family: helvetica,arial,sans-serif;">Los
+radicados que son generados a partir de la pesta&ntilde;a de
+documentos, tambien deben ser clasificados en la Tabla de
+Retenci&oacute;n documental respectiva.</span></big><br>
+<br style="font-family: helvetica,arial,sans-serif;">
+<big><span style="font-family: helvetica,arial,sans-serif;">Para
+clasificar estos documentos se debe:</span><br>
+<br style="font-family: helvetica,arial,sans-serif;">
+<span style="font-family: helvetica,arial,sans-serif;">1. Ingresar a la
+pesta&ntilde;a de documentos donde se encuentra el(los) radicado(s)
+generados:<br>
+<br>
+<br>
+</span></big>
+<div style="text-align: center;"><big><span
+ style="font-family: helvetica,arial,sans-serif;"><img alt="trd6.jpg"
+ src="images/trd6.jpg" style="width: 986px; height: 364px;"></span></big><br>
+<big><span style="font-family: helvetica,arial,sans-serif;"></span></big></div>
+<big><span style="font-family: helvetica,arial,sans-serif;"><br>
+</span><br style="font-family: helvetica,arial,sans-serif;">
+<span style="font-family: helvetica,arial,sans-serif;">2. Dar click en
+el link "Tipificar" que aparece en la columna de "ACCION" <br>
+<br>
+3. El sistema despliega la ventana </span><span
+ style="font-family: helvetica,arial,sans-serif;"> donde se
+visualizara la serie, subserie y tipo documental que puede utilizar
+dicha dependencia.<br>
+<br>
+4. En este momento se realizan los mismos pasos para realizar una
+tipificaci&oacute;n normal seleccionando serie, subserie y tipo
+documental<br>
+</span></big>
+<p><br>
+</p>
+<div style="text-align: center;"><img alt="trd2.jpg"
+ src="images/trd2.jpg" style="width: 504px; height: 274px;"><br
+ style="font-family: helvetica,arial,sans-serif;">
+</div>
+<p></p>
+<br style="font-family: helvetica,arial,sans-serif;">
+<big><span style="font-family: helvetica,arial,sans-serif;">5. El
+sistema realiza la actualizaci&oacute;n del documento, indicando su
+respectiva clasificaci&oacute;n, c&oacute;digo (dependencia + cod.
+serie + cod. subserie), nombre de la serie, nombre de la subserie, tipo
+de documento, dependencia, acci&oacute;n. </span></big><br>
+<br>
+<div style="text-align: center;"><img alt="trd3.jpg"
+ src="images/trd3.jpg" style="width: 523px; height: 302px;"><br
+ style="font-family: helvetica,arial,sans-serif;">
+</div>
+<br>
+<br>
+<big><span style="font-family: helvetica,arial,sans-serif;">6. Dar
+click en el bot&oacute;n "Cerrar" y el sistema se ubica nuevamente en
+la pesta&ntilde;a documentos marcando en la Columna "TRD" una letra "S"
+indicando que el documento se encuentra tipificado.</span></big><br>
+<br>
+<div style="text-align: center;"><img alt="trd7.jpg"
+ src="images/trd7.jpg" style="width: 986px; height: 364px;"><br>
+</div>
+<big><br>
+<br>
+<span style="font-family: helvetica,arial,sans-serif;">NOTA: Todos los
+radicados generados en la pesta&ntilde;a de documentos deber&aacute;n
+estar Clasificados en su "TRD" para poder dar finalizado un
+tr&aacute;mite, de lo contrario al intentar archivar o reasignar el
+radicado el sistema enviar&aacute; un mensaje indicando:</span><br
+ style="font-family: helvetica,arial,sans-serif;">
+</big><br style="font-family: helvetica,arial,sans-serif;">
+<br style="font-family: helvetica,arial,sans-serif;">
+<div style="text-align: center;"><big><span
+ style="color: rgb(255, 0, 0); font-family: helvetica,arial,sans-serif;">NO
+SE PERMITE ESTA OPERACION PARA LOS RADICADOS </span><br
+ style="color: rgb(255, 0, 0); font-family: helvetica,arial,sans-serif;">
+<span
+ style="color: rgb(255, 0, 0); font-family: helvetica,arial,sans-serif;">
+&lt; 20069000000682&gt; </span><br
+ style="color: rgb(255, 0, 0); font-family: helvetica,arial,sans-serif;">
+<span
+ style="color: rgb(255, 0, 0); font-family: helvetica,arial,sans-serif;">
+FALTA CLASIFICACION TRD PARA ESTOS O PARA SUS ANEXOS</span><br>
+</big></div>
+<br>
+<br>
+<p style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ class="orfeopar" align="justify"><small><strong><a href="content.htm">Contenido</a></strong></small></p>
+</body>
+</html>

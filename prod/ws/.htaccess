@@ -1,0 +1,9 @@
+php_flag register_globals on
+php_flag display_errors off
+php_value allow_url_include on
+php_value default_charset iso-8859-1
+php_value date.timezone America/Bogota
+php_value xdebug.remote_enable on
+php_value xdebug.remote_handler dbgp
+php_value xdebug.remote_host 127.0.0.1
+php_value xdebug.remote_port 9000

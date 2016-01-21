@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/scripts
+END
+peardev.sh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/scripts/peardev.sh
+END
+pear.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/scripts/pear.sh
+END
+pearcmd.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/scripts/pearcmd.php
+END
+pecl.bat
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/scripts/pecl.bat
+END
+peardev.bat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/scripts/peardev.bat
+END
+pear.bat
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/scripts/pear.bat
+END
+pecl.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/scripts/pecl.sh
+END
+peclcmd.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/scripts/peclcmd.php
+END

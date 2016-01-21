@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>CU-ORFEO-56 Ver Ubicaci&oacute;n F&iacute;sica</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="Generator" content="Kate, the KDE Advanced Text Editor">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="Autor" content="NCASTRO">
+  <meta name="Creado" content="20051130;17410000">
+  <style>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		P { margin-bottom: 0.21cm }
+	--</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta content="Martha Yaneth Mera" name="author">
+</head>
+<body>
+<div style="text-align: right;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+<h1
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 153);">CU-ORFEO-56&nbsp;
+Incluir en Subexpediente.</h1>
+<br>
+<h2 style="font-family: helvetica,arial,sans-serif;"><span
+ style="font-weight: bold;">Historia de revisi&oacute;n</span><br>
+</h2>
+<table style="text-align: left; width: 965px; height: 124px;" border="1"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">FECHA<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">VERSION<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">DESCRIPCION<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">AUTOR<br>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Marzo
+31 de 2005<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; font-family: helvetica,arial,sans-serif;">1.0<br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Permite
+visualizar si un documento ya ha sido ubicado f&iacute;sicamente en el
+&aacute;rea de archivo y/o asignarle Subexpediente<br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Martha
+Mera</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<h2 style="font-family: helvetica,arial,sans-serif;">1.
+Descripci&oacute;n</h2>
+<span style="font-family: helvetica,arial,sans-serif;">Permite
+visualizar desde el m&oacute;dulo de expedientes en qu&eacute; lugar
+del archivo central se encuentra ubicado un documento o si a&uacute;n
+no se ha realizado este proceso por parte de los funcionarios de
+archivo. Se puede clasificar el radicado en un subexpediente.</span><br
+ style="font-family: helvetica,arial,sans-serif;">
+<h2 style="font-family: helvetica,arial,sans-serif;">2. Actores</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">2.1
+Usuario <br>
+</h3>
+<div style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">Usuario
+b&aacute;sico del sistema.<span
+ style="font-family: helvetica,arial,sans-serif;"></span><br>
+</div>
+<span style="font-family: helvetica,arial,sans-serif;"></span>
+<h2 style="font-family: helvetica,arial,sans-serif;">3. Flujo de Eventos</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.1.
+Flujo B&aacute;sico &oacute; Normal : Incluir en Subexpediente.</h3>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.1
+Precondiciones</h4>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+3.1.1.1. El actor debe haber ingresado al sistema.<br>
+3.1.1.2. El actor debe haber invocado la secci&oacute;n de <span
+ style="font-weight: bold;">"EXPEDIENTES" </span>de un radicado.<br>
+3.1.1.3. Debe haber sido ubicado f&iacute;sicamente al menos un
+radicado que pertenece al expediente por los funcionarios de archivo.<br>
+<br>
+</div>
+<div style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">1.
+<span style="font-weight: bold;">A:</span> <span
+ style="font-style: italic; font-weight: bold;">INICIO</span><span
+ style="font-weight: bold;"> -</span>
+Verifica encontrarse en la vista <span style="font-weight: bold;">"EXPEDIENTES"</span>
+(pesta&ntilde;a) del
+&aacute;rea de datos del radicado &oacute; hace click en la
+pesta&ntilde;a del
+mismo nombre.<br>
+</div>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: center;"><img
+ alt="imgs/40_vta_crear_expediente0.jpg"
+ src="imgs/40_vta_crear_expediente0.jpg"
+ style="width: 611px; height: 121px;"><br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">2.
+<span style="font-weight: bold;">S:</span> Muestra la vista
+<span style="font-weight: bold;">"EXPEDIENTES"</span> la cual
+est&aacute; compuesta por: <br>
+</p>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+<div style="margin-left: 40px;">Secci&oacute;n uno: Informaci&oacute;n
+general del expediente:<br>
+2.1.
+Un mensaje con el texto <span style="font-weight: bold;">"ESTE
+DOCUMENTO SE ENCUENTRA INCLUIDO EN EL(LOS) SIGUIENTE(S) EXPEDIENTE:<br>
+</span>2.2 Una lista desplegable con los n&uacute;mero de expediente a
+los cuales pertenece<br>
+2.2. Un v&iacute;nculo rotulado como <span style="font-weight: bold;">"Incluir
+en"</span>.<br>
+2.3. Un v&iacute;nculo rotulado como <span style="font-weight: bold;">"Excluir
+de"</span><br>
+2.3. Un v&iacute;nculo rotulado como <span style="font-weight: bold;">"Crear"</span>.<br>
+2.4 <span style="font-weight: bold;">"Proceso" </span>al cual se
+encuentra asociado dicho expediente, en caso de tenerlo.<br>
+2.5 Bot&oacute;n Rotulado con <span style="font-weight: bold;">"Estado"</span><br>
+2.6 Bot&oacute;n Rotulado con <span style="font-weight: bold;">"Historia
+del Expediente"</span><br>
+2.7 Mensaje que indica que el Documento no se ha ubicado
+f&iacute;sicamente en el archivo.<br>
+<br>
+Secci&oacute;n dos: Lista con los radicados que pertenecen a dicho
+expediente :<br>
+2.8 N&uacute;mero de radicado<br>
+2.9 Fecha de Radicaci&oacute;n<br>
+2.10 Tipo documental del radicado<br>
+2.11 Asunto del radicado<br>
+2.12 Link con el n&uacute;mero del subexpediente en el cual se
+encuentra
+archivado el radicado (proceso realizado en archivo).<br>
+2.13 Anexos del radicado con los datos de Tipo de Documento.<br>
+<span style="font-weight: bold;"></span><br>
+Secci&oacute;n tres: Lista de los documentos que tienen relaci&oacute;n
+con el radicado actual.<br>
+2.14 Cuadro de selecci&oacute;n <br>
+2.15<span style="font-weight: bold;"> "Radicado" </span>con acceso
+para ingresar a la imagen del radicado<span style="font-weight: bold;"><br>
+</span>2.16 <span style="font-weight: bold;">"Fecha de
+radicaci&oacute;n</span>" con acceso para ingresar a los datos del
+radicado<br>
+2.17 <span style="font-weight: bold;">"Tipo de documento"</span><br>
+2.18 <span style="font-weight: bold;">"Asunto"</span><br>
+2.19 <span style="font-weight: bold;">"Tipo de Relaci&oacute;n"</span><br>
+2.20 Link rotulado <span style="font-weight: bold;">"INCLUIR
+DOCUMENTOS EN EXPEDIENTE"</span><br>
+<br>
+<br>
+<div style="text-align: center;"><img
+ alt="56_vta_ver_ubicacion_fisica.jpg"
+ src="imgs/56_vta_ver_ubicacion_fisica.jpg"
+ style="width: 961px; height: 467px;"><br>
+</div>
+<br>
+</div>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.<span
+ style="font-weight: bold;"> A: </span>Da clik en el link que indica
+el n&uacute;mero del subexpediente<span style="font-weight: bold;"></span><br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif;">
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;"></p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">
+4. <span style="font-weight: bold;">S</span>: Despliega una vista
+donde se encuentra la informaci&oacute;n de clasificaci&oacute;n en el
+archivo centralizado de dicho radicado.<br>
+</p>
+<br>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;"></p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;"></p>
+<div style="text-align: center;"><img
+ alt="56_vta_ver_ubicacion_fisica2.jpg"
+ src="imgs/56_vta_ver_ubicacion_fisica2.jpg"
+ style="width: 611px; height: 369px;"><br>
+</div>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">5.
+<span style="font-weight: bold;">A</span>: Da click en el bot&oacute;n
+(...) al lado del subexpediente.<br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">6.
+<span style="font-weight: bold;">S</span>: Despliega una ventana para
+incluir el radicado en un subexpediente deseado indicando:<br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">6.1
+N&uacute;mero de radicado y expediente al cual pertenece<br>
+6.2. Caja para digitar el Subexpediente a donde ser&aacute; incluido<br>
+6.3 Dos botones donde se indica "Aceptar" o "Cancelar"<br>
+</p>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: center;"><img
+ alt="56_vta_ver_ubicacion_fisica3.jpg"
+ src="imgs/56_vta_ver_ubicacion_fisica3.jpg"
+ style="width: 611px; height: 204px;"><br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">7.
+<span style="font-weight: bold;">A</span>: Digita el n&uacute;mero del
+subexpediente y presiona el bot&oacute;n "Aceptar"<br>
+8.
+<span style="font-weight: bold;">S</span>: Vuelve a la vista de los
+datos de archivo (punto 4), indicando el n&uacute;mero de Subexpediente
+que se ha grabado.<br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">9.
+<span style="font-weight: bold;">A</span>: Da click en el boton cerrar<br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">10.
+<span style="font-weight: bold;">S</span>: Se ubica nuevamente en la
+vista general de expediente del radicado. -
+<span style="font-weight: bold; font-style: italic;">FIN</span><br>
+</p>
+<br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif;">
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.2
+Post-condiciones</h4>
+<div style="margin-left: 120px;">3.1.2.1.<span
+ style="font-family: helvetica,arial,sans-serif;"> Todas la
+transacciones que realicen mediante este caso de uso deben dejar
+registro en el
+hist&oacute;rico.<br>
+</span><span style="font-family: helvetica,arial,sans-serif;"></span><br>
+</div>
+</div>
+<div style="font-family: helvetica,arial,sans-serif;">
+<div style="font-family: helvetica,arial,sans-serif;">
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.3.
+Flujo Alterno : <br>
+</h3>
+</div>
+<div style="margin-left: 80px;"><br>
+<br>
+</div>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;"></div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 40px;">
+</div>
+<div style="font-family: helvetica,arial,sans-serif;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+</body>
+</html>

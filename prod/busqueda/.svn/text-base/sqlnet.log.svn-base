@@ -1,0 +1,19 @@
+
+
+***********************************************************************
+Fatal NI connect error 12547, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.100.51)(PORT=1522))(CONNECT_DATA=(SERVICE_NAME=orfeprue)(CID=(PROGRAM=httpd)(HOST=orfeo.fedepalma.org.centro.net)(USER=apache))))
+
+  VERSION INFORMATION:
+	TNS for Linux: Version 10.2.0.3.0 - Production
+	TCP/IP NT Protocol Adapter for Linux: Version 10.2.0.3.0 - Production
+  Time: 12-FEB-2010 17:51:05
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12547
+    TNS-12547: Message 12547 not found; No message file for product=network, facility=TNS
+    ns secondary err code: 12560
+    nt main err code: 517
+    TNS-00517: Message 517 not found; No message file for product=network, facility=TNS
+    nt secondary err code: 104
+    nt OS err code: 0

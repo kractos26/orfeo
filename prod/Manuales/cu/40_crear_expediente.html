@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>CU-ORFEO-40 Crear Expediente</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="Generator" content="Kate, the KDE Advanced Text Editor">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="Autor" content="NCASTRO">
+  <meta name="Creado" content="20051130;17410000">
+  <style>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		P { margin-bottom: 0.21cm }
+	--</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta content="Martha Yaneth Mera Velasco" name="author">
+</head>
+<body>
+<div style="text-align: right;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+<h1
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 153);">CU-ORFEO-40&nbsp;
+Crear Expediente</h1>
+<h2 style="font-family: helvetica,arial,sans-serif;"><br>
+<span style="font-weight: bold;"></span></h2>
+<h2 style="font-family: helvetica,arial,sans-serif;"><span
+ style="font-weight: bold;">Historia de revisi&oacute;n</span><br>
+</h2>
+<table style="text-align: left; width: 965px; height: 124px;" border="1"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">FECHA<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">VERSION<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">DESCRIPCION<br>
+      </td>
+      <td
+ style="vertical-align: top; font-weight: bold; text-align: center; font-family: helvetica,arial,sans-serif;">AUTOR<br>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Noviembre
+30 de 2005<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; font-family: helvetica,arial,sans-serif;">1.0<br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Versi&oacute;n
+inicial
+de acuerdo a los requerimientos entregados<span
+ style="font-weight: bold;"><br>
+      </span></td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Nicol&aacute;s
+Castro<br>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Marzo
+21 de 2005<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; font-family: helvetica,arial,sans-serif;">1.1<br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Ajustes
+realizados teniendo en
+cuenta las necesidades en el m&oacute;dulo de flujos autom&aacute;ticos<br>
+      </td>
+      <td
+ style="vertical-align: top; font-family: helvetica,arial,sans-serif;">Martha
+Mera<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h2 style="font-family: helvetica,arial,sans-serif;">1.
+Descripci&oacute;n</h2>
+<span style="font-family: helvetica,arial,sans-serif;">Permite la
+creaci&oacute;n de un expediente incluyendo dentro de &eacute;ste el
+radicado en el
+cual el usuario se encuentre.</span><br
+ style="font-family: helvetica,arial,sans-serif;">
+<h2 style="font-family: helvetica,arial,sans-serif;">2. Actores</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">2.1
+Creador Expediente</h3>
+<div style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">Usuario
+con permisos para la creaci&oacute;n de expedientes.<span
+ style="font-family: helvetica,arial,sans-serif;"></span><br>
+</div>
+<span style="font-family: helvetica,arial,sans-serif;"></span>
+<h2 style="font-family: helvetica,arial,sans-serif;">3. Flujo de Eventos</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.1.
+Flujo B&aacute;sico &oacute; Normal : Creaci&oacute;n de Expediente.</h3>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.1
+Precondiciones</h4>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+3.1.1.1. El actor debe haber ingresado al sistema.<br>
+3.1.1.2. El actor debe haber invocado la vista &#8220;EXPEDIENTES&#8221; por alguno
+de los v&iacute;nculos establecidos.<br>
+</div>
+<br>
+<div style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">1.
+<span style="font-weight: bold;">A:</span> <span
+ style="font-style: italic; font-weight: bold;">INICIO</span><span
+ style="font-weight: bold;"> -</span>
+Verifica encontrarse en la vista "EXPEDIENTES" (pesta&ntilde;a) del
+&aacute;rea de datos del radicado &oacute; hace click en la
+pesta&ntilde;a del
+mismo nombre.<br>
+</div>
+<p
+ style="margin-left: 80px; font-family: helvetica,arial,sans-serif; text-align: center;"><img
+ alt="imgs/40_vta_crear_expediente0.jpg"
+ src="imgs/40_vta_crear_expediente0.jpg"
+ style="width: 611px; height: 121px;"><br>
+</p>
+<p style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">2.
+<span style="font-weight: bold;">S:</span> Muestra la vista
+"EXPEDIENTES" la cual est&aacute; compuesta por: <br>
+</p>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">2.1.
+Un mensaje con el texto <span style="font-weight: bold;">"ESTE
+DOCUMENTO NO HA SIDO INCLUIDO EN NINGUN EXPEDIENTE Y NO ESTA
+RELACIONADO CON OTROS DOCUMENTOS"</span>.<br>
+2.2. Un v&iacute;nculo rotulado como <span style="font-weight: bold;">"Incluir
+en"</span>.<br>
+2.3. Un v&iacute;nculo rotulado como <span style="font-weight: bold;">"Crear"</span>.<br>
+<br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; text-align: left;">
+<div style="margin-left: 40px; text-align: center;"><img
+ alt="40_vta_crear_expediente1.jpg"
+ src="imgs/40_vta_crear_expediente1.jpg"
+ style="width: 754px; height: 199px;"><br>
+</div>
+</div>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;"><br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.<span
+ style="font-weight: bold;"> A: </span>Selecciona el v&iacute;nculo
+rotulado como<span style="font-weight: bold;"> </span><span
+ style="font-weight: bold;">"Crear"</span>.<br>
+<br>
+4.<span style="font-weight: bold;"> S: </span>Despliega la ventana
+para seleccionar los datos del expediente bas&aacute;ndose en la Tabla
+de Retenci&oacute;n Documental de la dependencia.<br>
+<br>
+<span style="font-weight: bold;"><br>
+</span>
+<div style="text-align: center;"><span style="font-weight: bold;"></span><br>
+<span style="font-weight: bold;"></span></div>
+<div style="text-align: center;"><span style="font-weight: bold;"></span><img
+ alt="40_vta_crear_expediente5.jpg"
+ src="imgs/40_vta_crear_expediente5.jpg"
+ style="width: 513px; height: 382px;"><br>
+<span style="font-weight: bold;"></span></div>
+<span style="font-weight: bold;"><br>
+<br>
+</span>
+<div style="margin-left: 40px;">4.1 Una lista desplegable rotulada <span
+ style="font-weight: bold;">"SERIE"</span> con los datos de serie
+documental que se encuentra asociada a la dependencia.<br>
+4.2 Una lista desplegable rotulada<span style="font-weight: bold;">
+"SUBSERIE" </span>con las subseries pertenecientes a la serie
+seleccionada.<br>
+4.3 Una lista desplegable rotulada <span style="font-weight: bold;">"PROCESO"</span>
+con los diferentes procesos que se hayan parametrizado para las serie y
+subserie seleccionada.<br>
+4.4 Una combinaci&oacute;n de datos rotulada como "NUMERO DE
+EXPEDIENTE", teniendo en cuenta:<br>
+&nbsp;&nbsp;&nbsp; 4.4.1 Lista desplegable con el <span
+ style="font-weight: bold;">a&ntilde;o</span> al cual pertenece el
+expediente.<br>
+&nbsp;&nbsp;&nbsp; 4.4.2 <span style="font-weight: bold;">Dependencia</span>
+que crea el expediente<br>
+&nbsp;&nbsp;&nbsp; 4.4.3 Combinaci&oacute;n de <span
+ style="font-weight: bold;">serie y subserie</span> seleccionada en el
+punto 4.1 y 4.2<br>
+&nbsp;&nbsp;&nbsp; 4.4.4 <span style="font-weight: bold;">N&uacute;mero
+consecutivo</span> que se crea del expediente. Se tiene en cuenta el
+n&uacute;mero que continua de acuerdo a la serie y subserie.<br>
+&nbsp;&nbsp;&nbsp; 4.4.5 Indicador de expediente por medio de la <span
+ style="font-weight: bold;">letra "E"<br>
+</span>4.5 Check box para indicar si se desea generar el <span
+ style="font-weight: bold;">"Consecutivo de Expediente Manual"</span>,
+es decir el usuario digita el n&uacute;mero de expediente a crear.<br>
+4.6 Una secci&oacute;n de cajas de texto de acuerdo a la necesidad de
+la
+dependencia las cuales deben ser parametrizar, con un bot&oacute;n
+"Buscar"<br>
+<span style="font-weight: bold;"></span>4.7 Objeto Calendario que
+permite seleccionar<span style="font-weight: bold;"> </span>la<span
+ style="font-weight: bold;">
+"Fecha de inicio del Proceso"<br>
+</span>4.8 Un bot&oacute;n <span style="font-weight: bold;">"Crear
+Expediente" , </span>el cual se visualiza en el momento que se
+selecciona la serie<span style="font-weight: bold;"><br>
+</span>4.9 Un bot&oacute;n<span style="font-weight: bold;"> "Cerrar"<br>
+</span></div>
+<div style="margin-left: 40px;"><span style="font-weight: bold;"></span></div>
+<span style="font-weight: bold;"><br>
+</span><br>
+5.<span style="font-weight: bold;"> A:</span> Selecciona los datos
+solicitados de serie, subserie, proceso, n&uacute;mero de expediente y
+selecciona el bot&oacute;n "Buscar" en caso de desear alimentar
+informaci&oacute;n adicional al expediente.<br>
+<br>
+6. <span style="font-weight: bold;">S</span>: Despliega el formulario
+de b&uacute;squeda de datos para expedientes con la siguiente
+informaci&oacute;n:<br>
+<br>
+<br>
+<img alt="/40_buscar_exp.jpg" src="imgs/40_buscar_exp.jpg"
+ style="width: 1086px; height: 414px;"><br>
+<br>
+Secci&oacute;n "Buscar por":<br>
+6.1 Una lista desplegable donde se indican las opciones de
+b&uacute;squeda de acuerdo a lo que se haya parametrizado en el sistema.<br>
+6.2 Una caja de texto habilitada para buscar que permita de acuerdo al
+dato seleccionado<br>
+<br>
+Secci&oacute;n "Resultado de b&uacute;squeda":<br>
+6.3 Lista de los nombre o items encontrados de acuerdo al criterio
+seleccionado y el cual se encuentra en la base de datos. Se debe
+visualizar los datos de documento, nombre, prim. apellido / sigla, seg.
+apellido / Rep. Legal, direcci&oacute;n, depto, municipio.<br>
+6.4 Opci&oacute;n de selecci&oacute;n indicado con letra para ubicar
+los datos que se requieran en el expediente.<br>
+<br>
+Secci&oacute;n "Datos a colocar en el expediente":<br>
+6.5&nbsp; Items parametrizados&nbsp; los cuales se&nbsp; actualizan de
+acuerdo a lo que el usuario seleccione en la secci&oacute;n "Resultado
+de B&uacute;squeda".<br>
+<br>
+6.6 Bot&oacute;n habilitado "Pasar datos al Expediente" <br>
+<br>
+<br>
+7. <span style="font-weight: bold;">A</span>: Realiza las opciones de
+b&uacute;squeda diligenciando los datos que requiere y selecciona el
+bot&oacute;n "Pasar Datos al Expediente"<br>
+<br>
+8. <span style="font-weight: bold;">S</span>: Alimenta la
+informaci&oacute;n de acuerdo a lo que ha seleccionado el usuario. <br>
+<br>
+<div style="text-align: center;"><img alt="40_vta_crear_expediente9.jpg"
+ src="imgs/40_vta_crear_expediente9.jpg"
+ style="width: 513px; height: 382px;"><br>
+</div>
+<br>
+7.<span style="font-weight: bold;"> A: </span>Da
+click en el bot&oacute;n "Crear Expediente"<span
+ style="font-weight: bold;"><br>
+<br>
+<br>
+</span>
+<div style="text-align: center;"><span style="font-weight: bold;"><img
+ alt="40_vta_crear_expediente6.jpg"
+ src="imgs/40_vta_crear_expediente6.jpg"
+ style="width: 575px; height: 520px;"></span><br>
+<span style="font-weight: bold;"></span></div>
+<span style="font-weight: bold;"><br>
+<br>
+</span>6.<span style="font-weight: bold;"> S:</span> Despliega la
+confirmaci&oacute;n de la transacci&oacute;n donde se indica:<br>
+<div style="margin-left: 40px;">6.1 ESTA SEGURO DE CREAR EL EXPEDIENTE?
+EL EXPEDIENTE QUE VA A CREAR ES EL: XXXXXXXXXXXXXE<br>
+6.2 Se realiza la observaci&oacute;n al usuario para que tenga en
+cuenta el proceso a realizar:<br>
+<strong><b>Recuerde:</b>No podr&aacute; modificar el numero de
+expediente. Si hay un error en el expediente, mas adelante
+tendr&aacute; que
+excluir este radicado del expediente y si es el caso solicitar la
+anulaci&oacute;n del mismo. Adem&aacute;s debe tener en cuenta que tan
+pronto se cree el expediente, en el &aacute;rea de Archivo crean una
+carpeta f&iacute;sica en la cual
+empezar&aacute;n a incluir los documentos pertenecientes al mismo.</strong><br>
+6.3 Un bot&oacute;n habilitado "Confirmaci&oacute;n Creaci&oacute;n de
+Expediente"<br>
+6.4 Un bot&oacute;n habilitado "Cerrar"<br>
+</div>
+<span style="font-weight: bold;"><br>
+</span>7.<span style="font-weight: bold;"> A: </span>Selecciona el
+bot&oacute;n <span style="font-weight: bold;">"Confirmaci&oacute;n
+Creaci&oacute;n de Expediente"</span><br>
+<br>
+<br>
+8. <span style="font-weight: bold;">S</span>: Valida la
+informaci&oacute;n enviada por el usuario conformando el expediente y
+alimenta las tablas respectivas en la base de datos.<br>
+<br>
+8. <span style="font-weight: bold;">S</span>: Realiza la
+confirmaci&oacute;n de creaci&oacute;n del Expediente indicando los
+par&aacute;metros creados:<br>
+<br>
+<div style="text-align: center;"><img alt="40_vta_crear_expediente7.jpg"
+ src="imgs/40_vta_crear_expediente7.jpg"
+ style="width: 569px; height: 167px;"><br>
+</div>
+<span style="font-weight: bold;"><br>
+<br>
+</span>9.<span style="font-weight: bold;"> A:</span> Da click en el
+bot&oacute;n <span style="font-weight: bold;">"Cerrar"<br>
+<br>
+<br>
+</span>10.<span style="font-weight: bold;"> S: </span>Cierra la
+ventana y actualiza la infomaci&oacute;n en la vista <span
+ style="font-weight: bold;">"EXPEDIENTES"</span>
+presentando al usuario dos secciones con la siguiente
+informaci&oacute;n:<br>
+<br>
+Secci&oacute;n uno: Informaci&oacute;n general del expediente:<br>
+10.1 Lista desplegable con la lista de los expedientes en los cuales se
+encuentra incluido el radicado.<br>
+10.2 Caja de texto inhabilitada rotulada <span
+ style="font-weight: bold;">"N&uacute;mero del expediente"</span>, en
+esta
+caja aparece el nombre del expediente que se haya seleccionado en el
+punto 10.1.<br>
+10.3 Link rotulado <span style="font-weight: bold;">"Incluir En"</span>
+para anexar el radicado en un expediente existente<br>
+10.4 Link rotulado <span style="font-weight: bold;">"Excluir de" </span>si
+se desea sacar el radicado de alg&uacute;n expediente al cual ya se
+encuentra asociado. <br>
+10.5 Link rotulado <span style="font-weight: bold;">"Crear"</span> si
+se desea crear un nuevo expediente donde ir&aacute; el radicado.<br>
+10.6 R&oacute;tulo llamado <span style="font-weight: bold;">"TRD" </span>indicando
+la serie y subserie seleccionada en el punto 4.<br>
+10.7 R&oacute;tulo llamado <span style="font-weight: bold;">"Proceso" </span>al
+cual se
+encuentra asociado dicho expediente, en caso de tenerlo.<br>
+10.8 R&oacute;tulo llamado <span style="font-weight: bold;">"Fecha de
+inicio"</span>, indicando la fecha inicial del proceso.<br>
+10.9 Bot&oacute;n Rotulado con <span style="font-weight: bold;">"Estado"</span><br>
+10.10 Bot&oacute;n Rotulado con <span style="font-weight: bold;">"Historia
+del Expediente"</span><br>
+10.11 R&oacute;tulos de acuerdo a los campos parametrizados con la
+informaci&oacute;n digitada en el punto 6.<br>
+10.12 Mensaje que indica que el Documento no se ha ubicado
+f&iacute;sicamente en el archivo.<br>
+<br>
+Secci&oacute;n dos: Lista con los radicados que pertenecen a dicho
+expediente :<br>
+10.13 N&uacute;mero de radicado<br>
+10.14 Fecha de Radicaci&oacute;n<br>
+10.15 Tipo documental del radicado<br>
+10.16 Asunto del radicado<br>
+10.17 Link con el n&uacute;mero del Subexpediente (en caso de tenerlo)
+en el cual se encuentra
+archivado el radicado (proceso realizado en archivo, con posibilidad de
+ser cambiado desde el expediente)<br>
+10.18 Anexos del radicado con los datos de Tipo de Documento. <span
+ style="font-weight: bold; font-style: italic;">- FIN</span><br>
+<br>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 40px;">
+<div style="margin-left: 40px;"><br>
+</div>
+</div>
+<div style="font-family: helvetica,arial,sans-serif;">
+<div style="text-align: left; margin-left: 40px;">
+<div style="text-align: center;"><img alt="40_vta_crear_expediente8.jpg"
+ src="imgs/40_vta_crear_expediente8.jpg"
+ style="width: 922px; height: 432px;"><br>
+</div>
+<br>
+</div>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">
+</div>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.2
+Post-condiciones</h4>
+<div style="margin-left: 120px;"><span
+ style="font-family: helvetica,arial,sans-serif;">
+3.1.2.1. Todas la
+transacciones que realicen mediante este caso de uso deben dejar
+registro en el
+hist&oacute;rico.<br>
+3.1.2.2 En la lista de carpetas donde se encuentra un radicado debe
+existir un icono que indique que el radicado est&aacute; incluido en un
+expediente.<br>
+3.1.2.3 Se pueden organizar los documentos pertenecientes al expediente
+por n&uacute;mero de radicado, fecha de radicaci&oacute;n, tipo de
+documento</span><span style="font-family: helvetica,arial,sans-serif;"></span>,<span
+ style="font-family: helvetica,arial,sans-serif;"> Subexpediente.</span><br>
+</div>
+<br>
+<div style="font-family: helvetica,arial,sans-serif;">
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.2.
+Flujo Alterno: El Usuario hace click sobre el v&iacute;nculo "Cerrar"
+sin haber especificado Expediente.</h3>
+<div style="margin-left: 80px;">5.<span style="font-weight: bold;"> S: </span><span
+ style="font-style: italic; font-weight: bold;">INICIO </span>Se
+cierra la ventana y se ubica nuevamente en la pesta&ntilde;a
+"Expedientes" sin hacer ninguna creaci&oacute;n de expediente.<br>
+</div>
+</div>
+<div style="margin-left: 80px; font-family: helvetica,arial,sans-serif;"><span
+ style="font-weight: bold;"><br>
+</span></div>
+<div style="font-family: helvetica,arial,sans-serif;">
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.3.
+Flujo Alterno:&nbsp; "Consecutivo manual de expediente"</h3>
+</div>
+<div style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">5.1<span
+ style="font-weight: bold;"> A: </span><span style="font-weight: bold;"><span
+ style="font-style: italic;">INICIO - </span></span>Selecciona el
+cuadro<span style="font-weight: bold;"> "Consecutivo Manual de
+Expediente" <span style="font-style: italic;"><br>
+</span></span>5.2 <span style="font-weight: bold;">S:</span> <span
+ style="font-weight: bold;"><span style="font-style: italic;"></span></span>Se
+habilita la caja de texto del n&uacute;mero consecutivo del expediente
+para que el usuario digite el n&uacute;mero a crear. <br>
+5.2 <span style="font-weight: bold;">A:</span> Digita el n&uacute;mero
+a crear y selecciona el bot&oacute;n "Crear Expediente"<br>
+5.3 S: Despliega la
+confirmaci&oacute;n de la transacci&oacute;n donde se indica:<br>
+<div style="margin-left: 40px;">5.3.1 ESTA SEGURO DE CREAR EL
+EXPEDIENTE?
+EL EXPEDIENTE QUE VA A CREAR ES EL: XXXXXXXXXXXXXE<br>
+5.3.2 Se realiza la observaci&oacute;n al usuario para que tenga en
+cuenta el proceso a realizar:<br>
+<strong><b>Recuerde:</b>No podr&aacute; modificar el numero de
+expediente. Si hay un error en el expediente, mas adelante
+tendr&aacute; que
+excluir este radicado del expediente y si es el caso solicitar la
+anulaci&oacute;n del mismo. Adem&aacute;s debe tener en cuenta que tan
+pronto se cree el expediente, en el &aacute;rea de Archivo crean una
+carpeta f&iacute;sica en la cual
+empezar&aacute;n a incluir los documentos pertenecientes al mismo.</strong><br>
+5.3.3 Un bot&oacute;n habilitado "Confirmaci&oacute;n Creaci&oacute;n
+de
+Expediente"<br>
+5.3.4 Un bot&oacute;n habilitado "Cerrar"Genera el mensaje indicando
+que se crear&aacute; el expediente<br>
+</div>
+</div>
+<div style="font-family: helvetica,arial,sans-serif; margin-left: 40px;">
+<div style="margin-left: 40px;">5.4 A: Selecciona el
+bot&oacute;n <span style="font-weight: bold;">"Confirmaci&oacute;n
+Creaci&oacute;n de Expediente"<br>
+</span>5.5<span style="font-weight: bold;"> S:</span> Realiza la
+creaci&oacute;n del expediente.<span style="font-weight: bold;"> -<span
+ style="font-style: italic;"> FIN</span><br>
+</span></div>
+</div>
+<div style="margin-left: 80px; font-family: helvetica,arial,sans-serif;">
+<div style="margin-left: 40px;"><br>
+</div>
+<span style="font-weight: bold;"></span></div>
+<br>
+<br style="font-family: helvetica,arial,sans-serif;">
+<a style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a><br
+ style="font-family: helvetica,arial,sans-serif;">
+<br>
+</body>
+</html>

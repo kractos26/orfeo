@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>44_solicitar_documentos</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="Generator" content="Kate, the KDE Advanced Text Editor">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="AUTHOR" content="MMERA">
+  <meta name="CREATED" content="20051201;17410000">
+  <meta content="Martha Yaneth Mera V" name="author">
+  <meta content="Orfeo" name="description">
+</head>
+<body>
+<div style="text-align: right;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+<h1
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 153);">CU-ORFEO-44&nbsp;
+Solicitar Documento f&iacute;sico<br>
+</h1>
+<h2 style="font-family: helvetica,arial,sans-serif;">1.
+Descripci&oacute;n</h2>
+<span style="font-family: helvetica,arial,sans-serif;">Permite
+solicitar los documentos f&iacute;sicos correspondientes a los
+radicados generados a trav&eacute;s del aplicativo.</span><span
+ style="font-family: helvetica,arial,sans-serif;"></span>
+<h2 style="font-family: helvetica,arial,sans-serif;">2. Actores</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">2.1
+Usuario normal <br>
+</h3>
+<div style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">Usuario
+b&aacute;sico del sistema<br>
+</div>
+<h2 style="font-family: helvetica,arial,sans-serif;">3. Flujo de Eventos</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.1.
+Flujo B&aacute;sico &oacute; Normal : Solicitar documento f&iacute;sico<br>
+</h3>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.1
+Precondiciones</h4>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+3.1.1.1.
+El actor debe haber ingresado al sistema<br>
+3.1.1.2. El usuario tiene asignado
+radicados en alguna de sus carpetas<br>
+3.1.1.3. El usuario se encuentra ubicado
+en una carpeta<br>
+<br>
+<br>
+<br>
+1.
+A:<span style="font-weight: bold; font-style: italic;"> INICIO </span>-
+Selecciona
+el radicado ingresando por
+la fecha de
+radicaci&oacute;n de un documento<br>
+<br>
+<img src="imgs/39_vta_lista_carpetas.jpg" title=""
+ alt="39_vta_lista_carpetas.jpg" style="width: 1066px; height: 352px;"><br>
+<br>
+<br>
+2. S: Despliega la informaci&oacute;n
+general del radicado
+seleccionado, con los datos grabados en el proceso de
+radicaci&oacute;n.
+En la parte superior aparece un v&iacute;nculo&nbsp; para "Solicitar
+F&iacute;sico"
+<br>
+<br>
+<img alt="44_vta_solicitar_documento1.jpg"
+ src="imgs/44_vta_solicitar_documento1.jpg"
+ style="width: 1044px; height: 388px;"><br>
+<br>
+3. A:&nbsp; Selecciona el v&iacute;nculo "Solicitar F&iacute;sico".<br>
+4. S:&nbsp; Despliega el m&oacute;dulo de Reservar el documento.<br>
+5. A:&nbsp; Selecciona de la lista desplegable la "Acci&oacute;n"
+deseada "Solicitar". <br>
+6. A:&nbsp; Selecciona de la lista desplegable el "Requerimiento"
+deseado, este puede ser Documento o Anexo. <br>
+7. A:&nbsp; Selecciona el bot&oacute;n "Enviar Solicitud".<br>
+<br>
+<div style="text-align: center;"><img
+ alt="44_vta_solicitar_documento2.jpg"
+ src="imgs/44_vta_solicitar_documento2.jpg"
+ style="width: 252px; height: 260px;"><br>
+</div>
+<br>
+<br>
+8. S: Se realiza una reserva de este documento en la tabla PRESTAMO,
+guardando los datos del usuario que lo solicita teniendo en cuenta:<br>
+&nbsp;&nbsp;&nbsp; N&uacute;mero de radicado &nbsp; <br>
+&nbsp;&nbsp;&nbsp; Login<br>
+&nbsp;&nbsp;&nbsp; Dependencia<br>
+&nbsp;&nbsp;&nbsp; Fecha de pedido&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; Documento (usua_doc) &nbsp; <br>
+&nbsp;&nbsp;&nbsp; Tipo de requerimiento (Documento=1, Anexo=2,
+Documento y Anexo=3)<br>
+<br>
+9. S: Se realiza la confirmaci&oacute;n del documento solicitado.<br>
+</div>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.2
+Post-condiciones</h4>
+<div style="margin-left: 80px;">1. Si el documento se encuentra en la
+dependencia de salida (999), al realizar la consulta se podr&aacute;
+hacer la solicitud de pr&eacute;stamo de dicho documento.<br>
+2. Si se ha prestado un documento, tambi&eacute;n se debe poder hacer
+una nueva transacci&oacute;n para prestar el anexo, o viceversa.<br>
+3.Si un documento ya se encuentra en pr&eacute;stamo, se podr&aacute;
+prestar el anexo. Si ya se prestaron los dos no se debe poder
+volver a realizar la solicitud del documento o anexo prestado. <br>
+4. Se debe guardar un registro de la transacci&oacute;n realizada,
+indicando
+que se realiz&oacute; una solicitud de prestamo del documento o del
+anexo.<br>
+</div>
+<br>
+<h3 style="font-family: helvetica,arial,sans-serif;">3.2.
+Flujo Alterno :&nbsp; Solicitar documento<br>
+</h3>
+<div style="margin-left: 80px;"><font face="Arial Narrow, sans-serif">7.1.1.
+A: Selecciona el bot&oacute;n Regresar</font><br>
+7.1.2<font face="Arial Narrow, sans-serif">. S: Regresa a la
+informaci&oacute;n general del radicado.</font><br>
+</div>
+<font face="Arial Narrow, sans-serif"><br>
+<br>
+</font>
+<h2 style="font-family: helvetica,arial,sans-serif;">4. Flujo de
+Eventos: Solicitar documento en salida<br>
+</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">4.1.
+Flujo B&aacute;sico &oacute; Normal : Solicitar documento f&iacute;sico<br>
+</h3>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">4.1.1
+Precondiciones</h4>
+<div style="margin-left: 120px;">4.1.1.1.
+El actor debe haber ingresado al sistema<br>
+4.1.1.2. El usuario realiza la consulta de un radicado por el
+m&oacute;dulo de consultas <br>
+4.1.1.3. El radicado buscado debe est&aacute;r en un usuario de la
+dependencia de archivo (999)<br>
+</div>
+<br>
+<br>
+<div style="margin-left: 80px;">1.
+A:<span style="font-weight: bold; font-style: italic;"> INICIO </span>-
+Selecciona
+el radicado ingresando por
+la fecha de
+radicaci&oacute;n de un
+documento<br>
+<br>
+<br>
+<br>
+<h3 style="font-family: helvetica,arial,sans-serif;">cancelar Reserva</h3>
+<img alt="44_vta_solicitar_documento3.jpg"
+ src="imgs/44_vta_solicitar_documento3.jpg"
+ style="width: 885px; height: 361px;"><br>
+<br>
+<br>
+2. S: Despliega la informaci&oacute;n
+general del radicado
+seleccionado, con los datos grabados en el proceso de
+radicaci&oacute;n. En la parte superior aparece un v&iacute;nculo&nbsp;
+para "Solicitar
+F&iacute;sico"
+<br>
+<br>
+<br>
+<img alt="44_vta_solicitar_documento4.jpg"
+ src="imgs/44_vta_solicitar_documento4.jpg"
+ style="width: 1044px; height: 299px;"><br>
+<br>
+3. A:&nbsp; Selecciona el v&iacute;nculo "Solicitar F&iacute;sico".<br>
+4. S:&nbsp; Despliega la informaci&oacute;n de acuerdo al estado de los
+pr&eacute;stamos tanto del documento como del anexo. <br>
+<br>
+<br>
+<div style="text-align: center;"><img
+ alt="44_vta_solicitar_documento5.jpg"
+ src="imgs/44_vta_solicitar_documento5.jpg"
+ style="width: 693px; height: 153px;"><br>
+</div>
+<br>
+<br>
+<br>
+5. A: Selecciona el bot&oacute;n "Solicitar Req"<br>
+6. S: Despliega m&oacute;dulo de Reservar el documento, indicando los
+datos del usuario que solicitar&aacute; los documentos.<br>
+<br>
+<div style="text-align: center;"><img
+ alt="44_vta_solicitar_documento2.jpg"
+ src="imgs/44_vta_solicitar_documento2.jpg"
+ style="width: 252px; height: 260px;"><br>
+</div>
+<br>
+7. A:&nbsp; Selecciona de la lista desplegable la "Acci&oacute;n"
+deseada "Solicitar". <br>
+8. A:&nbsp; Selecciona de la lista desplegable el "Requerimiento"
+deseado, este puede ser Documento o Anexo. <br>
+9. A:&nbsp; Selecciona el bot&oacute;n "Enviar Solicitud".<br>
+</div>
+<div style="text-align: center;"><br>
+</div>
+<br>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">4.1.2
+Post-condiciones</h4>
+<div style="margin-left: 80px;">4.1.2.1 Se debe guardar un registro de
+la transacci&oacute;n realizada,
+indicando
+que se realiz&oacute; una solicitud de pr&eacute;stamo del documento o
+del
+anexo.<br>
+</div>
+<br>
+<br>
+<h3 style="font-family: helvetica,arial,sans-serif;">4.2.
+Flujo Alterno :&nbsp; Solicitar Requerimiento desde consulta<br>
+</h3>
+<div style="margin-left: 80px;"><font face="Arial Narrow, sans-serif">4.1
+S: Se verifica el estado de las reservas. Si los dos requerimientos
+(Documento, Anexo) ya se encuentran en pr&eacute;stamo se envia la
+siguiente pantalla.<br>
+<br>
+<br>
+</font>
+<div style="text-align: center;"><font face="Arial Narrow, sans-serif"><img
+ alt="44_vta_solicitar_documento6.jpg"
+ src="imgs/44_vta_solicitar_documento6.jpg"
+ style="width: 698px; height: 236px;"></font><br>
+</div>
+<br>
+<br>
+4.2 A:<font face="Arial Narrow, sans-serif"> Selecciona el bot&oacute;n
+cerrar.<br>
+4.3 S: Se ubica en la vista de consulta del documento.<br>
+</font></div>
+<font face="Arial Narrow, sans-serif"></font><font
+ face="Arial Narrow, sans-serif"><br>
+</font>
+<br>
+&nbsp;<a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a><br
+ style="font-family: helvetica,arial,sans-serif;">
+<font style="font-size: 11pt;" size="2">
+</font>
+</body>
+</html>

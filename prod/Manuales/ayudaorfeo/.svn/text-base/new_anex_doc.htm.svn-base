@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Documento sin t&iacute;tulo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF">
+<blockquote>
+  <p align="justify"><span class="orfeopar"><a href="instr_ver3_1.htm">Contenido</a></span></p>
+  <p align="justify"><font class="orfeolistnum" align="center">1. En la vista &quot;Documentos&quot; encontrar&aacute; un
+                        v&iacute;nculo
+      llamado &quot;Anexar Archivo&quot; el cual lo llevar&aacute; a una ventana preliminar donde se debe seleccionar el Tipo de documento a anexar. En esta lista desplegable solo se podr&aacute;n anexar aquellos documentos que cada dependencia puede manejar.</font> </p>
+</blockquote>
+<p align="center"><img src="images/win_vinculo_anx.jpg" width="623" height="411"></p>
+<p> <span class="orfeopar">2. Se selecciona el tipo de documento y se da click en el bot&oacute;n &quot;Aceptar&quot;</span></p>
+<p class="orfeopar">3. Inmediatamente se despliega una ventana para seleccionar los datos del destinatario y seleccionar el documento a enviar.</p>
+<p align="center"><img src="images/win_vinculo_anx_2.jpg" width="445" height="465"></p>
+<ol start="4">
+  <blockquote>
+    <ol type="a">
+      <li><font class="orfeolistnum" align="center">Seleccionar el destinatario
+          al cual va dirigido el comunicado.</font></li>
+      <li><font class="orfeolistnum" align="center">Seleccionar de una lista
+            desplegable el tipo de anexo (Doc).</font></li>
+      <li><font class="orfeolistnum" align="center">Marcar la caja de chequeo
+            que indica que el documento que va a anexar requiere ser radicado
+          como de salida.</font></li>
+      <li><font class="orfeolistnum" align="center">Escribir una breve referencia
+          que describa el documento que va a anexar.</font></li>
+      <li><font class="orfeopar" align="center">Adjuntar
+            el documento que ya ha preparado y que va a anexar para su respectiva
+            radicaci&oacute;n.</font> </li>
+    </ol>
+    <p class="orfeolk3"><font class="orfeolistnum" align="justify"></font></p>
+    <ol type="a">
+      <blockquote>
+        <p align="center" class="orfeolk3">&nbsp;</p>
+      </blockquote>
+    </ol>
+  </blockquote>
+</ol>
+<p>4. <font class="orfeolistnum" align="center">Al hacer click sobre el bot&oacute;n
+    &quot;ACTUALIZAR&quot; el archivo ser&aacute; anexado y la ventana mostrar&aacute; un aviso que
+        indica que se llev&oacute; a cabo la operaci&oacute;n con &eacute;xito. Haga click sobre el
+    bot&oacute;n &quot;cerrar&quot; y saldr&aacute; de esta ventana.</font></p>
+<p align="center"><img src="images/close_win_anx.jpg" width="688" height="62"></p>
+<p align="justify">5. <span class="orfeolistnum">La vista &#8220;Documentos&#8221; mostrar&aacute; entonces
+  el registro correspondiente al documento que ha anexado, y la fecha del mismo </span></p>
+<p align="center"><img src="images/win_vinculo_anx_3.jpg" width="809" height="233"></p>
+<p><span class="orfeopar"><a href="instr_ver3_1.htm">Contenido</a></span> </p>
+</body>
+</html>

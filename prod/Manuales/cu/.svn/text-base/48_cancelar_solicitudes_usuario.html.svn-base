@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>48_cancelar_solicitudes_documentos</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="Generator" content="Kate, the KDE Advanced Text Editor">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="AUTHOR" content="MMERA">
+  <meta name="CREATED" content="20051201;17410000">
+  <meta content="Martha Yaneth Mera V" name="author">
+  <meta content="Orfeo" name="description">
+</head>
+<body>
+<div style="text-align: right;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+<h1
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 153);">CU-ORFEO-48&nbsp;
+Cancelar solicitudes<br>
+</h1>
+<h2 style="font-family: helvetica,arial,sans-serif;">1.
+Descripci&oacute;n</h2>
+<span style="font-family: helvetica,arial,sans-serif;">Permite
+verificar y cancelar solicitudes por parte de un usuario de los
+documentos f&iacute;sicos reservados por el mismo.</span><span
+ style="font-family: helvetica,arial,sans-serif;"></span>
+<h2 style="font-family: helvetica,arial,sans-serif;">2. Actores</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">2.1
+Usuario normal <br>
+</h3>
+<div style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">Usuario
+b&aacute;sico del sistema<br>
+</div>
+<h2 style="font-family: helvetica,arial,sans-serif;">3. Flujo de Eventos</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.1.
+Flujo B&aacute;sico &oacute; Normal : Solicitar documento f&iacute;sico<br>
+</h3>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.1
+Precondiciones</h4>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+3.1.1.1.
+El actor debe haber ingresado al sistema<br>
+3.1.1.2. El usuario tiene asignado
+radicados en alguna de sus carpetas<br>
+3.1.1.3. El usuario se encuentra ubicado
+en una carpeta<br>
+<br>
+<br>
+1.
+A:<span style="font-weight: bold; font-style: italic;"> INICIO </span>-
+Selecciona
+el radicado ingresando por
+la fecha de
+radicaci&oacute;n de un
+radicado
+<br>
+<br>
+<br>
+<img src="imgs/39_vta_lista_carpetas.jpg" title=""
+ alt="39_vta_lista_carpetas.jpg" style="width: 1066px; height: 352px;"><br>
+<br>
+<br>
+2. S: Despliega la informaci&oacute;n
+general del radicado
+seleccionado, con los datos grabados en el proceso de
+radicaci&oacute;n.
+En la parte superior aparece un v&iacute;nculo&nbsp; para "Solicitar
+F&iacute;sico"
+<br>
+<br>
+<img alt="48_vta_ver_solicitados.jpg"
+ src="imgs/48_vta_ver_solicitados.jpg"
+ style="width: 1050px; height: 349px;"><br>
+<br>
+3. A:&nbsp; Selecciona el v&iacute;nculo "Solicitados".<br>
+4. S:&nbsp; Despliega la vista con las reservas que se han hecho del
+documento o del anexo.<br>
+<br>
+<div style="text-align: center;"><img alt="48_vta_reservas.jpg"
+ src="imgs/48_vta_reservas.jpg" style="width: 803px; height: 156px;"><br>
+</div>
+<br>
+5. A:&nbsp; Selecciona al final del registros del radicado que desea
+cancelar el link "Cancelar Solicitud".<br>
+6. S:&nbsp; Se realiza la confirmaci&oacute;n de la cancelaci&oacute;n
+del documento.<br>
+<br>
+<div style="text-align: center;"><img
+ alt="48_vta_confirmacion_cancelacion.jpg"
+ src="imgs/48_vta_confirmacion_cancelacion.jpg"
+ style="width: 523px; height: 192px;"><br>
+</div>
+<br>
+</div>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.2
+Post-condiciones</h4>
+<div style="margin-left: 80px;">3.1.2.1. Se debe guardar un registro de
+la transacci&oacute;n realizada,
+indicando
+que se cancel&oacute; la solicitud de pr&eacute;stamo del documento o
+del
+anexo.<br>
+3.1.2.2 Para los documentos o anexos que est&eacute;n ya prestados a
+este usuario no se podr&aacute; realizar la cancelaci&oacute;n del
+mismo por parte del usuario solicitante, esta operaci&oacute;n la debe
+hacer el usuario autorizado en archivo. <br>
+3.1.2.3 Si ya se ha realizado el pr&eacute;stamo de un documento, el
+mismo usuario no podr&aacute; realizar la cancelaci&oacute;n del
+pedido. Simplemente no debe aparecer la acci&oacute;n "Cancelar
+Solicitud"<br>
+</div>
+<br>
+<h3 style="font-family: helvetica,arial,sans-serif;">3.2.
+Flujo Alterno :<br>
+</h3>
+<br>
+&nbsp;<a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a><br
+ style="font-family: helvetica,arial,sans-serif;">
+<font style="font-size: 11pt;" size="2">
+</font>
+</body>
+</html>

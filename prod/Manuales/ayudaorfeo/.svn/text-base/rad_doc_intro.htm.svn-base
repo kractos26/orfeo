@@ -1,0 +1,319 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Radicacion de Entrada</title>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link
+ href="file://///Apolo/OFICINA_INFORMATICA/ORFEO/AyudaOrfeo/styles.css"
+ rel="stylesheet" type="text/css">
+  <style type="text/css">
+<!--
+.style7 {	font-family: "Arial Narrow";
+	font-size: 14pt;
+}
+.style12 {
+	font-family: "Arial Narrow";
+	font-size: 14pt;
+	font-style: italic;
+	font-weight: bold;
+}
+-->
+  </style>
+  <meta content="Martha Yaneth Mera Velasco" name="author">
+  <meta content="Orfeo 3.5" name="description">
+</head>
+<body>
+<p class="orfeot2" align="center"><span class="orfeot1">Radicaci&oacute;n
+de entrada de documentos</span><span class="orfeot1"></span><span
+ class="orfeot1"></span></p>
+<p class="orfeot2" align="right"><span class="orfeopar"><br>
+<strong><a href="content.htm"><span class="orfeolk1"><font
+ face="Arial Narrow">Contenido</font></span></a></strong></span></p>
+<h3 style="text-align: justify;" class="orfeopar">Consiste
+en capturar la informaci&oacute;n b&aacute;sica de todos los documentos
+que son
+recibidos en la SSPD a los cuales se le asignar&aacute; un
+n&uacute;mero de radicado,
+y este a su vez, ser&aacute; quien lo identifique dentro de los
+diferentes
+tr&aacute;mites de la entidad. </h3>
+<p style="text-align: justify;" class="orfeopar">La opciones de
+radicaci&oacute;n de entrada son asignadas por permisos a los usuarios
+establecidos, que conforman las diferentes dependencias que tienen la
+opci&oacute;n de radicar documentos de entrada.</p>
+<table align="center" border="1" width="351">
+  <tbody>
+    <tr class="orfeopar">
+      <td width="77">
+      <div align="center"><strong>CODIGO</strong></div>
+      </td>
+      <td width="258">
+      <div align="center"><strong>DEPENDENCIA</strong></div>
+      </td>
+    </tr>
+    <tr class="orfeopar">
+      <td>
+      <div align="center">529</div>
+      </td>
+      <td>Correspondencia</td>
+    </tr>
+    <tr class="orfeopar">
+      <td>
+      <div align="center">810</div>
+      </td>
+      <td>Direcci&oacute;n Territorial Centro</td>
+    </tr>
+    <tr class="orfeopar">
+      <td>
+      <div align="center">820</div>
+      </td>
+      <td>Direcci&oacute;n Territorial Norte </td>
+    </tr>
+    <tr class="orfeopar">
+      <td>
+      <div align="center">830</div>
+      </td>
+      <td>Direcci&oacute;n Territorial Occidente </td>
+    </tr>
+    <tr class="orfeopar">
+      <td>
+      <div align="center">840</div>
+      </td>
+      <td>Direcci&oacute;n Territorial Oriente </td>
+    </tr>
+    <tr class="orfeopar">
+      <td>
+      <div align="center">850</div>
+      </td>
+      <td>Direcci&oacute;n Territorial Sur Occidente</td>
+    </tr>
+  </tbody>
+</table>
+<p class="orfeopar"><br>
+Para radicar un documento de entrada se deben
+seguir los siguientes pasos:</p>
+<p class="orfeopar">1. Seleccionar el vinculo de Entrada, en la
+secci&oacute;n de RADICACION</p>
+<div style="text-align: center;"><img alt="view_rad_intro1.jpg"
+ src="images/view_rad_intro1.jpg" style="width: 163px; height: 146px;"><br>
+</div>
+<p class="orfeopar">
+2. El sistema despliega una vista donde se realiza una
+verificaci&oacute;n
+previa para saber si el documento ha sido recibido por otro medio y ya
+se
+encuentra radicado, o para realizar las relaciones de anexo y asociado
+seg&uacute;n sea el caso.<br>
+</p>
+<div style="margin-left: 40px; text-align: center;"><big><img
+ alt="view_rad_intro2.jpg" src="images/view_rad_intro2.jpg"
+ style="width: 815px; height: 337px;"></big><br>
+</div>
+<p style="margin-left: 40px; text-align: justify;" class="orfeopar"><br>
+Se
+puede realizar
+b&uacute;squedas de acuerdo los
+siguientes criterios: </p>
+<p style="margin-left: 40px; text-align: justify;" class="orfeopar">Referencia
+(Cuenta
+interna, No. de Oficio), No. de
+Radicado, Expediente, Identificacion (T.I.,C.C.,Nit), Nombres. </p>
+<p style="margin-left: 40px; text-align: justify;" class="orfeopar">Adem&aacute;s
+existe un
+rango de fecha para
+realizar la
+b&uacute;squeda. Por defecto el sistema siempre busca en el
+&uacute;ltimo mes de
+acuerdo a los par&aacute;metros solicitados. Si se desea realizar la
+b&uacute;squeda
+en otra fecha diferente se debe ampliar el rango.</p>
+<p class="orfeopar">3.
+Existen 3 formas de radicar un documento:</p>
+<div style="text-align: center;"><img alt="view_rad_intro3.jpg"
+ src="images/view_rad_intro3.jpg" style="width: 860px; height: 127px;"><br>
+<br>
+<p style="text-align: justify; margin-left: 40px;" class="orfeopar"><span
+ class="Subt_orfeo">a) Nuevo (Copia de datos):</span>
+Se selecciona cuando el documento a radicar no tiene ning&uacute;n
+antecedente en la Entidad. </p>
+<p style="text-align: justify; margin-left: 40px;" class="orfeopar"><span
+ class="Subt_orfeo">b)Como Anexo:</span> Se
+selecciona cuando al realizar la verificaci&oacute;n previa, ya existen
+datos
+en la entidad y el documento a radicar pertenece al mismo expediente.
+En el sistema se crea un v&iacute;nculo que indica que el documento
+ser&aacute; anexo
+de otro. </p>
+<p style="text-align: justify; margin-left: 40px;" class="orfeopar"><span
+ class="Subt_orfeo">c) Asociado: </span>Se
+selecciona para el caso de los documentos que llegan con una carta de
+remisi&oacute;n indicando varios expedientes, por ejemplo el caso de
+los
+Recursos de Apelaci&oacute;n.</p>
+<p style="text-align: justify; margin-left: 40px;" class="orfeopar">3. <span
+ class="orfeopar">El sistema ingresa a un
+m&oacute;dulo de radicaci&oacute;n donde se debe digitar la fecha del
+documento y la cuenta interna y luego pasar a </span><span
+ class="orfeopar">los datos generales del documento que son
+diligenciados en tres pesta&ntilde;as diferentes de acuerdo a las
+siguientes indicaciones:</span></p>
+<div style="text-align: justify;">
+<blockquote>
+  <p style="margin-left: 40px;" class="orfeopar"><span class="orfeopar">Remitente:
+Persona o
+empresa que remite el documento a la SSPD. </span></p>
+  <p style="margin-left: 40px;" class="orfeopar"><span class="orfeopar">Predio:
+Persona o empresa
+que se encuentra afectada.</span></p>
+  <p style="margin-left: 40px;" class="orfeopar"><span class="orfeopar">Empresa:
+Empresa de
+Servicios P&uacute;blicos ESP, contra la que se presenta la denuncia. </span></p>
+</blockquote>
+</div>
+<p style="text-align: justify;" class="orfeopar"><span class="orfeopar">4.
+<a name="buscar"></a>Para alimentar esta
+informaci&oacute;n se da click sobre el bot&oacute;n &#8220;BUSCAR&#8221;, </span></p>
+<br>
+<img alt="view_rad_intro4.jpg" src="images/view_rad_intro4.jpg"
+ style="width: 1047px; height: 552px;"><br>
+<br>
+</div>
+<p class="orfeopar" align="justify">5. El sistema env&iacute;a una
+nueva pantalla para
+realizar el cargue de la informaci&oacute;n que ser&aacute; incluida en
+la radicaci&oacute;n de entrada y debe ser previamente buscada en una
+base de datos con el fin de garantizar que
+la informaci&oacute;n est&eacute; completa y sea la correcta.</p>
+<div style="text-align: center;"><img alt="view_look_for2.jpg"
+ src="images/view_look_for2.jpg" style="width: 830px; height: 71px;"><br>
+</div>
+<p style="font-style: italic;" class="orfeopar" align="justify"><small><strong></strong></small></p>
+<blockquote>
+  <div align="justify">
+  <p><span class="orfeopar"> a) Seleccionar los datos que se necesitan
+de acuerdo al tipo de documento usuario, ESP u Otro tipo de empresa.<br>
+b) Si se tiene el n&uacute;mero de documento o de identificaci&oacute;n
+se puede buscar por este campo.<br>
+c) Si se tiene el nombre del destinatario.<br>
+d) Seleccionar el bot&oacute;n &#8220;BUSCAR&#8221;, para realizar la
+b&uacute;squeda.</span></p>
+  </div>
+</blockquote>
+<p class="orfeopar">6. Cuando la b&uacute;squeda ha sido efectiva, se
+selecciona en la parte derecha al final del registro (COLOCAR COMO) el
+link, dependiendo el papel que va a desempe&ntilde;ar durante el
+tr&aacute;mite del documento.<br>
+<br>
+</p>
+<p style="font-style: italic; text-align: center;" class="orfeopar"><small><strong><img
+ alt="view_rad_intro5.jpg" src="images/view_rad_intro5.jpg"
+ style="width: 1034px; height: 196px;"><br>
+</strong></small></p>
+<p style="font-style: italic;" class="orfeopar" align="justify"><small><strong><br>
+</strong></small></p>
+<p style="font-style: italic;" class="orfeopar" align="justify">7. <span
+ class="orfeopar">Los datos seleccionados
+aparecer&aacute; ubic&aacute;ndose en el m&oacute;dulo DATOS A COLOCAR
+EN LA RADICACION, y si la informaci&oacute;n es correcta se debe dar
+clic en el v&iacute;nculo PASAR
+DATOS AL FORMULARIO DE RADICACION.</span></p>
+<p style="font-style: italic; text-align: center;" class="orfeopar"><small><strong><img
+ alt="view_rad_intro6.jpg" src="images/view_rad_intro6.jpg"
+ style="width: 1077px; height: 186px;"><br>
+</strong></small></p>
+<p style="font-style: italic;" class="orfeopar" align="justify"><span
+ class="orfeopar">8. En este momento se
+cierra esta ventana y los datos escogidos son ubicados en el primer
+m&oacute;dulo, para que se complete la informaci&oacute;n como:<br>
+</span></p>
+<p style="font-style: italic; text-align: center;" class="orfeopar"><span
+ class="orfeopar"><img alt="view_rad_intro7.jpg"
+ src="images/view_rad_intro7.jpg" style="width: 1053px; height: 550px;"><br>
+</span></p>
+<ol start="7" class="orfeopar">
+  <ol type="a">
+    <li>
+      <div class="orfeopar" align="justify">Dignatario: Corresponde a
+la persona que firma el documento (para el caso de empresas) </div>
+    </li>
+    <li><span class="orfeopar">Asunto </span> </li>
+    <li>
+      <div class="orfeopar" align="justify">Medio de Recepci&oacute;n</div>
+    </li>
+    <li>
+      <div align="justify"><span class="orfeopar"> Descripci&oacute;n
+de anexos</span></div>
+    </li>
+    <li>
+      <div align="justify"><span class="orfeopar"> Dependencia a la
+cual ser&aacute; radicada (Responsable del tr&aacute;mite del documento)</span><br>
+      </div>
+    </li>
+  </ol>
+</ol>
+<blockquote>
+  <p class="orfeopar">Cuando se realiza la radicaci&oacute;n a un
+documento Anexo, para el campo dependencia se pueden presentar varias
+situaciones:</p>
+  <p class="orfeopar" style="margin-left: 40px;">a. Si el radicado se
+encuentra en la
+dependencia Salida, al hacer click sobre el campo se despliega la lista
+de todas las dependencias para seleccionar la dependencia
+correspondiente. El documento se direcciona al Jefe de la Dependencia
+seleccionada. </p>
+  <p class="orfeopar" style="margin-left: 40px;">b. Si el radicado se
+encuentra en una
+dependencia X, el campo
+dependencia est&aacute; ubicada en esta, pero con la posibilidad de
+cambiarla. Se puede radicar el documento al Usuario Actual, y el
+sistema genera un informado al Jefe de dicha dependencia. </p>
+</blockquote>
+<p class="orfeopar" style="margin-left: 80px;">c. Si un radicado se
+encuentra en la
+dependencia X, pero
+ser&aacute; radicado a la dependencia Y, se radica a &eacute;sta
+&uacute;ltima dirigida al Jefe y autom&aacute;ticamente el sistema
+env&iacute;a un informado a la dependencia actual X, siempre y cuando
+&eacute;sta no sea la Dependencia de Salida.<br>
+</p>
+<p class="orfeopar" style="margin-left: 40px;">&nbsp;g. Cuando la
+informaci&oacute;n se
+encuentra completa se da clic en el
+bot&oacute;n
+"RADICAR"<br>
+</p>
+<ol start="7" class="orfeopar">
+  <li><span class="orfeopar" align="justify">El
+sistema despliega una pantalla con el n&uacute;mero de
+radicaci&oacute;n de entrada
+(-2) de acuerdo al consecutivo correspondiente para la dependencia que
+se encuentra radicando. Este n&uacute;mero ser&aacute; el que va a
+identificar el
+documento durante todo el proceso. </span></li>
+</ol>
+<div style="text-align: center;"><img alt="view_rad_intro8.jpg"
+ src="images/view_rad_intro8.jpg" style="width: 561px; height: 68px;"><br>
+</div>
+<p style="font-style: italic;" class="orfeopar" align="justify"><small><strong></strong></small></p>
+<p style="font-style: italic;" class="orfeopar" align="justify"><small><strong><br>
+</strong></small></p>
+<br>
+<ol start="8" class="orfeopar">
+  <li>El documento que ha sido radicado queda
+ubicado en la carpeta de entrada del Jefe de la dependencia a la cual
+se envi&oacute;.</li>
+</ol>
+<p class="orfeopar">En este momento queda creado el registro para
+iniciar su tr&aacute;mite.</p>
+<p class="orfeopar">Los documentos f&iacute;sicos se deben digitalizar
+y encadenar el registro creado con la im&aacute;gen correspondiente.</p>
+<p style="font-style: italic;" class="orfeopar" align="justify"><small><strong><br>
+</strong></small></p>
+<p style="font-style: italic;" class="orfeopar" align="justify"><small><strong><a
+ href="content.htm"><font face="Arial Narrow">Contenido</font></a><br>
+<br>
+</strong></small></p>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+
+		<title>Zapatec DHTML Calendar</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link rel="stylesheet" type="text/css" media="all" href="../themes/winxp.css" title="winxp" />
+		<link href="../doc/css/zpcal.css" rel="stylesheet" type="text/css">
+		<link href="../doc/css/template.css" rel="stylesheet" type="text/css">
+		<link rel="SHORTCUT ICON" href="./favicon.ico">
+
+
+
+		<style type="text/css">
+			/*
+			Define navigation elements for use in examples
+			*/
+			.navigation {
+				text-align:left;
+				vertical-align:top;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 140%;
+				line-height: 16px;
+				font-weight: bold;
+				background-color: #DAE5EF;
+				color: #003066;
+				text-decoration:none;
+				margin-top: .5em;
+				padding:.5em;
+				border:solid 1px;
+			}
+		</style>
+
+				<!-- import the calendar script -->
+				<script type="text/javascript" src="../src/utils.js"></script>
+				<script type="text/javascript" src="../src/calendar.js"></script>
+
+				<!-- import the language module -->
+				<script type="text/javascript" src="../lang/calendar-en.js"></script>
+
+				<!-- other languages might be available in the lang directory; please check
+				your distribution archive. -->
+
+				<!-- import the calendar setup script -->
+				<script type="text/javascript" src="../src/calendar-setup.js"></script>
+			</head>
+			<body>
+				<div class="topMenuHeader">
+					<div class="logo">
+						<a href='http://www.zapatec.com'><img src='../doc/images/logoNew.gif' alt='Zapatec logo' border='0'></a>
+					</div>
+				</div>
+
+			<a href='example6.html' style='float:left; margin-left:2em'> <img border='0' src='previous.gif' alt='previous Javascript Calendar Example'></a>
+			<a href='example8.html' style='float:right; margin-right:2em'><img border='0' src='next.gif' alt='previous Javascript Calendar Example'></a>
+<div class='zpCalSubheader' style='text-align:center'> Choose Multiple Days  </div>
+
+<div class='zpCalDemoText'>
+	<ol>
+		<li> Click on the '...' button to display the calendar. </li>
+		<li> You can now choose multiple days in the calendar. </li>
+		<li> The following dates have been programmatically chosen
+		<ul>
+			<li> 2004 April 25 </li>
+			<li> 2004 April 18 </li>
+			<li> 2004 April 22 </li>
+			<li> 2004 April 05 </li>
+		</ul>
+		You can uncheck these.
+		</li>
+		<li> When finished click on the 'X' located in the top right hand corner to close the calendar.</li>
+		<li> The dates are displayed in the text area.</li>
+	</ol>
+</div>
+
+<textarea name="date7" id="sel7" rows='15' cols='40'>
+</textarea>
+<input type="reset" value=" ... " id='button7'>
+
+
+<script type="text/javascript">//<![CDATA[
+	<!--  to hide script contents from old browsers
+	// the default multiple dates selected, first time the calendar is instantiated
+	var MA = [ new Date(2004, 3, 25), new Date(2004, 3, 18), new Date(2004, 3, 22), new Date(2004, 3, 5) ];
+
+	function closed(cal) {
+
+		// here we'll write the output; this is only for example.  You
+		// will normally fill an input field or something with the dates.
+		var el = document.getElementById("sel7");
+
+		// reset initial content.
+		el.value = "";
+
+		// Reset the "MA", in case one triggers the calendar again.
+		// CAREFUL!  You don't want to do "MA = [];".  We need to modify
+		// the value of the current array, instead of creating a new one.
+		// Zapatec.Calendar.setup is called only once! :-)  So be careful.
+		MA.length = 0;
+
+		// walk the calendar's multiple dates selection hash
+		for (var i in cal.multiple) {
+			var currentDate = cal.multiple[i];
+			// sometimes the date is not actually selected, that's why we need to check.
+			if (currentDate) {
+				// OK, selected.  Fill an input field.  Or something.  Just for example,
+				// we will display all selected dates in the element having the id "output".
+				el.value += currentDate.print("%B %d %Y\n");
+
+				// and push it in the "MA", in case one triggers the calendar again.
+				MA[MA.length] = currentDate;
+			}
+		}
+		cal.hide();
+		return true;
+	};
+
+	Zapatec.Calendar.setup({
+		align      : "BR",
+		showOthers : true,
+		multiple   : MA, // pass the initial or computed array of multiple dates to be initially selected
+		onClose    : closed,
+		button     : "button7"
+	});
+	// end hiding contents from old browsers  -->
+</script>
+<noscript>
+	<br/>
+	This page uses a <a href='http://www.zapatec.com/website/main/products/prod1/'> Javascript Calendar </a>, but
+	your browser does not support Javascript. 
+	<br/>
+	Either enable Javascript in your Browser or upgrade to
+	a newer version.
+</noscript>
+
+	<div class="footer" style='text-align:center; margin-top:2em'>
+		<br/>
+		&copy; 2004 <strong> <a href='http://www.zapatec.com/'>Zapatec, Inc.</a> </strong>
+	</div>
+
+</body>
+</html>

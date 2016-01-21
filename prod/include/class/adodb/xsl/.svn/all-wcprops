@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/xsl
+END
+convert-0.1-0.3.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/xsl/convert-0.1-0.3.xsl
+END
+remove-0.2.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/xsl/remove-0.2.xsl
+END
+convert-0.2-0.3.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/xsl/convert-0.2-0.3.xsl
+END
+remove-0.3.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/xsl/remove-0.3.xsl
+END
+convert-0.1-0.2.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/xsl/convert-0.1-0.2.xsl
+END
+convert-0.2-0.1.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/class/adodb/xsl/convert-0.2-0.1.xsl
+END

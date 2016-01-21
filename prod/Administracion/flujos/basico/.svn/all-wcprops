@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/basico
+END
+listadoEtapas.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/basico/listadoEtapas.php
+END
+modEtapas.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/basico/modEtapas.php
+END
+confirmaFlujo.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/basico/confirmaFlujo.php
+END
+creaArista.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/basico/creaArista.php
+END
+modificaArista.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/basico/modificaArista.php
+END
+seleccionaProceso.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/basico/seleccionaProceso.php
+END
+mnuFlujosBasico.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/basico/mnuFlujosBasico.php
+END
+creaEtapa.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/basico/creaEtapa.php
+END
+creaProceso.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/basico/creaProceso.php
+END
+listadoAristas.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/basico/listadoAristas.php
+END
+modAristas.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/basico/modAristas.php
+END
+modificaEtapa.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/Administracion/flujos/basico/modificaEtapa.php
+END

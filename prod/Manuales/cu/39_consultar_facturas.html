@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>39_consultar_facturas</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="Generator" content="Kate, the KDE Advanced Text Editor">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="AUTHOR" content="MMERA">
+  <meta name="CREATED" content="20051201;17410000">
+</head>
+<body>
+<div style="text-align: right;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+<h1
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 153);">CU-ORFEO-39&nbsp;
+Consultar Facturas</h1>
+<h2 style="font-family: helvetica,arial,sans-serif;">1.
+Descripci&oacute;n</h2>
+<span style="font-family: helvetica,arial,sans-serif;">Permite&nbsp;</span><big><font
+ face="Arial Narrow, sans-serif"><font size="2" style="font-size: 11pt;"><big>consultar
+desde Orfeo, informaci&oacute;n de la
+facturaci&oacute;n de un usuario teniendo en cuenta el sector y la
+cuenta interna. Se puede obtener un registro hist&oacute;rico
+de la facturaci&oacute;n en periodos de tres meses. En este caso de
+uso se realiza la integraci&oacute;n con la informaci&oacute;n
+registrada en el Sistema Unico de Informaci&oacute;n SUI</big></font></font></big><span
+ style="font-family: helvetica,arial,sans-serif;">.</span>
+<h2 style="font-family: helvetica,arial,sans-serif;">2. Actores</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">2.1
+Usuario normal <br>
+</h3>
+<div style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">Usuario
+b&aacute;sico del sistema<br>
+</div>
+<h2 style="font-family: helvetica,arial,sans-serif;">3. Flujo de Eventos</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.1.
+Flujo B&aacute;sico &oacute; Normal : Consultar Factura<br>
+</h3>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.1
+Precondiciones</h4>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+3.1.1.1.
+El actor debe haber ingresado al sistema<br>
+3.1.1.2. El usuario tiene asignado
+radicados en alguna de sus carpetas<br>
+3.1.1.3. El usuario se encuentra ubicado
+en una carpeta<br>
+3.1.1.4. El radicado tiene grabado
+Cuenta Interna
+<br>
+<br>
+<br>
+1.
+A:<span style="font-weight: bold; font-style: italic;"> INICIO </span>-
+Selecciona
+el radicado ingresando por
+la fecha de
+radicaci&oacute;n de un
+radicado
+<br>
+<br>
+<img src="imgs/39_vta_lista_carpetas.jpg" title=""
+ alt="39_vta_lista_carpetas.jpg" style="width: 1066px; height: 352px;"><br>
+<br>
+<br>
+2. S: Despliega la informaci&oacute;n
+general del radicado
+seleccionado con los datos grabados en el proceso de radicaci&oacute;n.
+<br>
+<br>
+<img src="imgs/39_vta_info_general.jpg" title=""
+ alt="39_vta_info_general.jpg" style="width: 974px; height: 512px;"><br>
+<br>
+3. A: Realiza el caso de uso
+Tipificar Sector, selecciona el sector &#8220;TELEFONIA&#8221;
+y presiona el bot&oacute;n <i>&#8220;Grabar
+Cambio&#8221; <br>
+</i><br>
+<div style="text-align: center;"><img src="imgs/39_vta_sector.jpg"
+ title="" alt="39_vta_sector.jpg" style="width: 284px; height: 38px;"><br>
+</div>
+<br>
+4. S: Realiza el cambio de Sector en la base de datos&nbsp; y presenta
+un bot&oacute;n al lado de &#8220;Ref/Oficio/Cuenta Interna&#8221; que indica
+&#8220;Ver factura&#8221;<br>
+<br>
+<div style="text-align: center;"><img src="imgs/39_vta_ver_factura.jpg"
+ title="" alt="39_vta_ver_factura.jpg"
+ style="width: 968px; height: 514px;"><br>
+<br>
+</div>
+5. A: Selecciona el bot&oacute;n Ver Facturas<br>
+<br>
+6. S: Despliega la informaci&oacute;n de la facturaci&oacute;n de la
+cuenta interna del
+usuario, correspondiente al mes de radicado el documento, mas los 2
+meses anteriores, con la informaci&oacute;n de:
+<br>
+<br>
+<div style="margin-left: 40px;">Empresa <br>
+Municipio
+<br>
+Departamento<br>
+N&uacute;mero telef&oacute;nico<br>
+Periodo<br>
+Direcci&oacute;n<br>
+Uso:Residencial (1) No residencial (2)<br>
+Estrato<br>
+Un diagrama de barras donde se realiza la comparaci&oacute;n de la
+facturaci&oacute;n de los meses presentados.<br>
+Un bot&oacute;n direccionado a consulta especializada de SUI<br>
+Un bot&oacute;n para cerrar la ventana.<br>
+</div>
+<br>
+</div>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.2
+Post-condiciones</h4>
+<br>
+<h3 style="font-family: helvetica,arial,sans-serif;">3.2.
+Flujo Alterno :&nbsp; consulta especializada <br>
+</h3>
+<div style="margin-left: 40px;"><font face="Arial Narrow, sans-serif">3.2.1.
+A: Selecciona el bot&oacute;n
+Consulta especializada</font><br>
+<font face="Arial Narrow, sans-serif">3.2.2. S: Se abre una nueva
+ventana el link de la f&aacute;brica de
+reportes donde hace una conexi&oacute;n al SUI para realizar una
+consulta.</font><br>
+</div>
+<br>
+<a style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a><br
+ style="font-family: helvetica,arial,sans-serif;">
+<font size="2" style="font-size: 11pt;">
+</font>
+</body>
+</html>

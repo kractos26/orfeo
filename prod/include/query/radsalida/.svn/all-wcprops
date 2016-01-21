@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/radsalida
+END
+queryGenerar_envio.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/radsalida/queryGenerar_envio.php
+END
+queryListado_planillas_normal.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/radsalida/queryListado_planillas_normal.php
+END
+queryLPlanillaAcuseR.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/radsalida/queryLPlanillaAcuseR.php
+END
+queryCuerpoMasivaRecuperearListado.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/radsalida/queryCuerpoMasivaRecuperearListado.php
+END
+queryCuerpoMasiva.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/radsalida/queryCuerpoMasiva.php
+END
+queryListado_planillas.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/include/query/radsalida/queryListado_planillas.php
+END

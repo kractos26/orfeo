@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+
+		<title>Zapatec DHTML Calendar</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link rel="stylesheet" type="text/css" media="all" href="../themes/winxp.css" title="winxp" />
+		<link href="../doc/css/zpcal.css" rel="stylesheet" type="text/css">
+		<link href="../doc/css/template.css" rel="stylesheet" type="text/css">
+		<link rel="SHORTCUT ICON" href="./favicon.ico">
+
+
+
+		<style type="text/css">
+			/*
+			Define navigation elements for use in examples
+			*/
+			.navigation {
+				text-align:left;
+				vertical-align:top;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 140%;
+				line-height: 16px;
+				font-weight: bold;
+				background-color: #DAE5EF;
+				color: #003066;
+				text-decoration:none;
+				margin-top: .5em;
+				padding:.5em;
+				border:solid 1px;
+			}
+		</style>
+
+				<!-- import the calendar script -->
+				<script type="text/javascript" src="../src/utils.js"></script>
+				<script type="text/javascript" src="../src/calendar.js"></script>
+
+				<!-- import the language module -->
+				<script type="text/javascript" src="../lang/calendar-en.js"></script>
+
+				<!-- other languages might be available in the lang directory; please check
+				your distribution archive. -->
+
+				<!-- import the calendar setup script -->
+				<script type="text/javascript" src="../src/calendar-setup.js"></script>
+			</head>
+			<body>
+				<div class="topMenuHeader">
+					<div class="logo">
+						<a href='http://www.zapatec.com'><img src='../doc/images/logoNew.gif' alt='Zapatec logo' border='0'></a>
+					</div>
+				</div>
+
+			<a href='example8.html' style='float:left; margin-left:2em'> <img border='0' src='previous.gif' alt='previous Javascript Calendar Example'></a>
+<script type="text/javascript">
+	function updateSelect(cal) {
+		var date = cal.date;
+		var selectMonth = document.getElementById("selectMonth");
+		selectMonth.selectedIndex = date.getMonth();
+		var selectDay = document.getElementById("selectDay");
+		selectDay.selectedIndex = (date.getDate() - 1);
+		var selectYear = document.getElementById("selectYear");
+		selectYear.selectedIndex = (date.getFullYear() - 2000);
+	}
+
+</script>
+<div class='zpCalSubheader' style='text-align:center'> Update drop down menus from the calendar</div>
+<div class='zpCalDemoText'>
+
+	Instead of a text box, the dates are saved in drop down menus.
+	<ol>
+		<li> Click on the '...' button to display the calendar. </li>
+		<li> Notice, as you change the dates in the calendar, the drop down menus change too </li>
+		<li> Choose your date, and the drop down menus reflect your choice </li>
+		<li> The results will display in the following format: <br/>
+		Year-Month-Day </li>
+	</ol>
+</div>
+<b>Date #10:</b> 
+<form action="">
+	<SELECT name='month' id='selectMonth'>
+		<OPTION VALUE="0" SELECTED >January</OPTION>
+		<OPTION VALUE="1">February</OPTION>
+		<OPTION VALUE="2">March</OPTION>
+		<OPTION VALUE="3">April</OPTION>
+		<OPTION VALUE="4">May</OPTION>
+		<OPTION VALUE="5">June</OPTION>
+		<OPTION VALUE="6">July</OPTION>
+		<OPTION VALUE="7">August</OPTION>
+		<OPTION VALUE="8">September</OPTION>
+		<OPTION VALUE="9">October</OPTION>
+		<OPTION VALUE="10">November</OPTION>
+		<OPTION VALUE="11">December</OPTION>
+	</SELECT>
+
+	<SELECT name='day' id='selectDay'>
+		<OPTION VALUE="1" SELECTED >1</OPTION>
+		<OPTION VALUE="2">2</OPTION>
+		<OPTION VALUE="3">3</OPTION>
+		<OPTION VALUE="4">4</OPTION>
+		<OPTION VALUE="5">5</OPTION>
+		<OPTION VALUE="6">6</OPTION>
+		<OPTION VALUE="7">7</OPTION>
+		<OPTION VALUE="8">8</OPTION>
+		<OPTION VALUE="9">9</OPTION>
+		<OPTION VALUE="10">10</OPTION>
+		<OPTION VALUE="11" >11</OPTION>
+		<OPTION VALUE="12">12</OPTION>
+		<OPTION VALUE="13">13</OPTION>
+		<OPTION VALUE="14">14</OPTION>
+		<OPTION VALUE="15">15</OPTION>
+		<OPTION VALUE="16">16</OPTION>
+		<OPTION VALUE="17">17</OPTION>
+		<OPTION VALUE="18">18</OPTION>
+		<OPTION VALUE="19">19</OPTION>
+		<OPTION VALUE="20">20</OPTION>
+		<OPTION VALUE="21">21</OPTION>
+		<OPTION VALUE="22">22</OPTION>
+		<OPTION VALUE="23">23</OPTION>
+		<OPTION VALUE="24">24</OPTION>
+		<OPTION VALUE="25">25</OPTION>
+		<OPTION VALUE="26">26</OPTION>
+		<OPTION VALUE="27">27</OPTION>
+		<OPTION VALUE="28">28</OPTION>
+		<OPTION VALUE="29">29</OPTION>
+		<OPTION VALUE="30">30</OPTION>
+		<OPTION VALUE="31">31</OPTION>
+	</SELECT>
+
+	<SELECT name='year' id='selectYear'>
+		<OPTION VALUE="2000" SELECTED >2000</OPTION>
+		<OPTION VALUE="2001">2001</OPTION>
+		<OPTION VALUE="2002">2002</OPTION>
+		<OPTION VALUE="2003">2003</OPTION>
+		<OPTION VALUE="2004">2004</OPTION>
+		<OPTION VALUE="2005">2005</OPTION>
+		<OPTION VALUE="2006">2006</OPTION>
+		<OPTION VALUE="2007">2007</OPTION>
+		<OPTION VALUE="2008">2008</OPTION>
+	</SELECT>
+
+		<input type="reset" value=" ... " id='button10'>
+	</form>
+		<div id="sel10">
+		</div>
+		<script type="text/javascript">
+			<!--  to hide script contents from old browsers
+			Zapatec.Calendar.setup({
+				inputField     :    "sel10",     // id of the input field
+				ifFormat       :    "%Y-%m-%d",     // format of the input field
+				button         :    "button10",  // What will trigger the popup of the calendar
+				onUpdate       :     updateSelect,
+				showsTime      :     false      //don't show time, only date
+			});
+			// end hiding contents from old browsers  -->
+		</script>
+		<noscript>
+			<br/>
+			This page uses a <a href='http://www.zapatec.com/website/main/products/prod1/'> Javascript Calendar </a>, but
+			your browser does not support Javascript. 
+			<br/>
+			Either enable Javascript in your Browser or upgrade to
+			a newer version.
+		</noscript>
+
+	<div class="footer" style='text-align:center; margin-top:2em'>
+		<br/>
+		&copy; 2004 <strong> <a href='http://www.zapatec.com/'>Zapatec, Inc.</a> </strong>
+	</div>
+
+</body>
+</html>

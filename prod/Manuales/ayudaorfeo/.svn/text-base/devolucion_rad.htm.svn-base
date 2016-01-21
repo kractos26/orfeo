@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Documento sin t&iacute;tulo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="file://///Apolo/OFICINA_INFORMATICA/ORFEO/AyudaOrfeo/styles.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style2 {font-size: 12px}
+.style3 {font-size: 12pt}
+-->
+</style>
+<p align="center" class="orfeot2"><span class="orfeot1">Devoluci&oacute;n  de Radicados </span></p>
+<p align="right" class="orfeot2"><span class="orfeopar"><br>
+  <strong><a href="content.htm"><span class="orfeolk1"><font face="Arial Narrow">Contenido</font></span></a></strong></span></p>
+<p align="justify" class="orfeopar">Este procedimiento se realiza por parte del Grupo de Correspondencia, para indicarle a la dependencia los radicados que son devueltos por los tres motivos principales que son: devoluciones por tiempo de espera, devoluciones de correo y devoluci&oacute;n de radicados que se encuentran mal y no se pueden enviar.</p>
+<p align="justify" class="orfeopar"><strong>1. Devoluciones por tiempo de espera:</strong></p>
+<p class="orfeopar">Una vez radicados los documentos por cada dependencia, estos deben ser entregados dentro de las siguientes 24 horas al Grupo Centro de Gesti&oacute;n Documental y Correspondencia para su env&iacute;o; pasado este t&eacute;rmino, el sistema&nbsp; actualizar&aacute; la carpeta de impresi&oacute;n del area, desmarcando la validaci&oacute;n de impresi&oacute;n&nbsp; de los documentos,  lo cual obligar&aacute; a realizar nuevamente el procedimiento de env&iacute;o de dichos documentos. </p>
+<p class="orfeopar">Cuando un documento es devuelto por correspondencia, en la carpeta de impresi&oacute;n se desmarca la validaci&oacute;n de documento marcado como impreso (tercer chulo) y en su lugar asigna un icono en forma de reloj, indicando que ese documento ha sido devuelto.</p>
+<p align="center" class="orfeopar"><img src="images/devol_1.jpg" width="835" height="313"></p>
+<p class="orfeopar">Para volver a enviar este documento simplemente se debe marcar nuevamente como impreso y entregar el documento f&iacute;sico a correspondencia.</p>
+<p class="orfeopar">En el flujo hist&oacute;rico del documento queda registrada la devoluci&oacute;n del radicado y el tiempo de espera.</p>
+<p align="center" class="orfeopar"><img src="images/devol_2.jpg" width="845" height="248"></p>
+<p class="orfeopar"><strong>2. Otras Devoluciones:</strong></p>
+<p class="orfeopar"> Se permite controlar los documentos radicados de salida que han sido enviados a su destinatario por parte del grupo de correspondencia, pero que a vuelta de correo son devueltos por la misma agencia de correo por encontrar diferentes causales de devoluci&oacute;n ya establecidas como: </p>
+<table cellspacing="0" cellpadding="0"  align="center"  border="1">
+  <tr bordercolor="1" class="orfeopar">
+    <td width="25" align="right" class="xl22"><div align="center" class="style2">1 </div></td>
+    <td width="252" class="xl22 style2">CASA DESOCUPADA </td>
+  </tr>
+  <tr bordercolor="1" class="orfeopar">
+    <td align="right" class="xl22"><div align="center" class="style2">2 </div></td>
+    <td class="xl22 style2">CAMBIO DE DOMICILIO </td>
+  </tr>
+  <tr bordercolor="1" class="orfeopar">
+    <td align="right" class="xl22"><div align="center" class="style2">3 </div></td>
+    <td class="xl22 style2">CERRADO </td>
+  </tr>
+  <tr bordercolor="1" class="orfeopar">
+    <td align="right" class="xl22"><div align="center" class="style2">4 </div></td>
+    <td class="xl22 style2">DESCONOCIDO </td>
+  </tr>
+  <tr bordercolor="1" class="orfeopar">
+    <td align="right" class="xl22"><div align="center" class="style2">5 </div></td>
+    <td class="xl22 style2">DEVUELTO DE PORTERIA </td>
+  </tr>
+  <tr bordercolor="1" class="orfeopar">
+    <td align="right" class="xl22"><div align="center" class="style2">6 </div></td>
+    <td class="xl22 style2">DIRECCION DEFICIENTE </td>
+  </tr>
+  <tr bordercolor="1" class="orfeopar">
+    <td align="right" class="xl22"><div align="center" class="style2">7 </div></td>
+    <td class="xl22 style2">FALLECIDO </td>
+  </tr>
+  <tr bordercolor="1" class="orfeopar">
+    <td align="right" class="xl22"><div align="center" class="style2">8 </div></td>
+    <td class="xl22 style2">NO EXISTE NUMERO </td>
+  </tr>
+  <tr bordercolor="1" class="orfeopar">
+    <td align="right" class="xl22"><div align="center" class="style2">9 </div></td>
+    <td class="xl22 style2">NO RESIDE </td>
+  </tr>
+  <tr bordercolor="1" class="orfeopar">
+    <td align="right" class="xl22"><div align="center" class="style2">10 </div></td>
+    <td class="xl22 style2">NO RECLAMADO </td>
+  </tr>
+  <tr bordercolor="1" class="orfeopar">
+    <td align="right" class="xl22"><div align="center" class="style2">11 </div></td>
+    <td class="xl22 style2">REHUSADO </td>
+  </tr>
+  <tr bordercolor="1" class="orfeopar">
+    <td align="right" class="xl22"><div align="center" class="style2">12 </div></td>
+    <td class="xl22 style2">SE TRASLADO </td>
+  </tr>
+  <tr bordercolor="1" class="orfeopar">
+    <td align="right" class="xl22"><div align="center" class="style2">13 </div></td>
+    <td bgcolor="#FFFFFF" class="xl22 style2">NO EXISTE EMPRESA </td>
+  </tr>
+  <tr bordercolor="1" class="orfeopar">
+    <td align="right" class="xl22"><div align="center" class="style2">14 </div></td>
+    <td class="xl22 style2">ZONA DE ALTO RIESGO </td>
+  </tr>
+  <tr bordercolor="1" class="orfeopar">
+    <td align="right" class="xl22"><div align="center" class="style2">15 </div></td>
+    <td class="xl22 style2">SOBRE DESOCUPADO </td>
+  </tr>
+  <tr bordercolor="1" class="orfeopar">
+    <td align="right" class="xl22"><div align="center" class="style2">16 </div></td>
+    <td class="xl22 style2">FUERA PERIMETRO URBANO </td>
+  </tr>
+  <tr bordercolor="1" class="orfeopar">
+    <td align="right" class="xl22"><div align="center" class="style2">17 </div></td>
+    <td class="xl22 style2">ENVIADO A ADPOSTAL, CONTROL DE CALIDAD </td>
+  </tr>
+  <tr bordercolor="1" class="orfeopar">
+    <td align="right" class="xl22"><div align="center" class="style2">18 </div></td>
+    <td class="xl22 style2">SIN SELLO </td>
+  </tr>
+</table>
+<p class="orfeopar">En correspondencia realizan la devoluci&oacute;n del radicado mediante el sistema, y estos radicados llegan a una carpeta p&uacute;blica por dependencia llamada DEV_CORREO, la cual ser&aacute; creada mediante permisos otorgados al usuario encargado de realizar este procedimiento.</p>
+<p align="center" class="orfeopar"><img src="images/devol_3.jpg" width="138" height="357"></p>
+<p class="orfeopar">Esta carpeta se debe consultar para verificar si existen documentos devueltos, y solicitar los documentos f&iacute;sicos en correspondencia.</p>
+<p class="orfeopar">Para realizar la verificaci&oacute;n de los datos se debe realizar el siguiente procedimiento:</p>
+<p class="orfeopar">1. Ingresar a la carpeta DEV_CORREO</p>
+<p class="orfeopar">2. Consultar No. de radicado y verificar datos de envio.</p>
+<p class="orfeopar">3. Si los datos del envio del radicado se encuentra con inconsistencias, (por ejemplo, la direcci&oacute;n estaba mal, el departamento, etc) y se decide hacer la correcci&oacute;n para volver a enviarlo, se debe ir al radicado padre, hacer las modificaciones respectivas en el radicado de salida modificando los datos y el documento anexo, regenerar y marcar nuevamente el documento como impreso para enviarlo otra vez.</p>
+<p class="orfeopar">4 El documento f&iacute;sico debe ser entregado a correspondencia. </p>
+<p class="orfeopar">Como se va a realizar un reenvio del documento, el radicado ser&aacute; el mismo n&uacute;mero. </p>
+<p class="orfeopar">Despu&eacute;s de hacer las correcciones o si se determina que el documento no ser&aacute; enviado nuevamente se debe ingresar a la carpeta &quot;DEV_CORREO&quot; y::</p>
+<p class="orfeopar">a. Seleccionar el radicado al final del registro</p>
+<p class="orfeopar">b. Dar click en el bot&oacute;n &quot;Cerrar Env&iacute;o&quot;</p>
+<p align="center" class="orfeopar"><img src="images/devol_5.jpg" width="865" height="309"></p>
+<p class="orfeopar">c. Diligenciar el comentario, justificando si se reenv&iacute;a nuevamente el radicado o si definitivamente no ser&aacute; enviado.</p>
+<p align="justify" class="orfeopar">d. Dar click en el bot&oacute;n &quot;Realizar&quot;</p>
+<p align="center" class="orfeopar"><img src="images/devol_6.jpg" width="841" height="190"></p>
+<p class="orfeopar">e. El sistema envia la confirmaci&oacute;n de cerrado el envio.</p>
+<p align="center" class="orfeopar"><img src="images/devol_7.jpg" width="531" height="207"></p>
+<p class="orfeopar">f. El radicado desaparece de la carpeta DEV_CORREO.</p>
+<p class="orfeopar">&nbsp;</p>
+<p class="orfeopar"><strong>3. Documentos mal radicados y no se pueden enviar</strong></p>
+<p class="orfeopar">En esta misma carpeta DEV_CORREO, quedan los radicados que se encuentran con inconsistencias y que no se han podido enviar. (Por ejemplo, entregan un documento sin crear las copias, los datos de envio no se encuentran completos como la direcci&oacute;n, depto, municipio, etc) </p>
+<p class="orfeopar">Se pueden reconocer porque en la lista de los radicados aparece una columna llamada Empresa de Envio y el comentario dice: &quot;NO ENVIADO&quot; </p>
+<p align="center" class="orfeopar"><img src="images/devol_4.jpg" width="865" height="309"></p>
+<p align="justify" class="orfeopar">Para este tipo de devoluci&oacute;n se debe verificar el porqu&eacute; se encuentra mal radicado, verificar el hist&oacute;rico del porqu&eacute; de la devoluci&oacute;n y realizar bien el proceso de radicaci&oacute;n, para entregarlo nuevamente a Correspondencia. </p>
+<p class="orfeopar"><strong><a href="content.htm"><font face="Arial Narrow">Contenido</font></a></strong></p>

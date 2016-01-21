@@ -1,0 +1,181 @@
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<title>Javascript Calendar</title>
+ <meta name="description" content="Zapatec's Javascript Calendar is a cross browser calendar that includes a wizard for easy configuration">
+ <meta name="keywords" content="dhtml calendar, javascript, DHTML Calendar, Javascript, calendar control, simple javascript calendar">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <META Name="Robots" Content="index,follow">
+ <META Name="Googlebot" Content="index,follow">
+ <META http-equiv="Pragma" content="no-cache">
+<link href="./css/zpcal.css" rel="stylesheet" type="text/css">
+<link href="./css/template.css" rel="stylesheet" type="text/css">
+<link rel="SHORTCUT ICON" href="./favicon.ico">
+
+
+
+<script type="text/javascript" src="../src/utils.js"></script>
+ <!-- Left - STart -->
+<div class="leftSide">
+	<div class="leftBGTab"><div class="leftTab"><strong>Zapatec Calendar</strong></div></div>
+
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Point arrow' src="./images/arrow-grey.gif" >&nbsp;&nbsp;&nbsp;<a href="coding.html" class="lnksubpage">Wizard</a></div></div>
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Point arrow'  src="./images/arrow-grey.gif" >&nbsp;&nbsp;&nbsp;<a href="demo.html" class="lnksubpage">Demos</a></div></div>
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Point arrow' src="./images/arrow-grey.gif" >&nbsp;&nbsp;&nbsp;<a href="docs.html" class="lnksubpage">Quick Guide</a></div></div>
+	<div class="leftBGMenu"><div class="leftMenu"><img alt='Point arrow' src="./images/arrow-grey.gif" >&nbsp;&nbsp;&nbsp;<a href="tutorial.html" class="lnksubpage">Reference Manual</a></div></div>
+
+</div>
+
+<!-- Left - End -->
+<!-- start - Page content -->
+	<div class="rightSide">
+		<div class="pageImage"></div>
+
+		<div class="frameContent">
+			<div class="pageContent">
+
+ 
+
+<div class='zpCalHeader'>Calendar Demos</div>
+
+The following demos show various ways that you can configure and use the
+Zapatec<strong> DHTML calendar.</strong> 
+Read the <a class='lnkblue' href='#commonFeatures'> Common Features </a>
+section to learn about the features that you can try in any of the demos.  <br/>
+
+
+
+<script type="text/javascript">
+//helper function to make things a little cleaner
+var newWindow = null;
+function demoWindow (path) {
+	if (newWindow == null || newWindow.closed) {
+		newWindow = Zapatec.Utils.newCenteredWindow(path, "demo", 800, 600, 'yes', true);
+		} else {
+		newWindow.location = path;
+	}
+	newWindow.focus();
+}
+</script>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="../doc/images/box_blue.gif">
+	<a href='../demo/example1.html' class='lnkblue'>Basic Calendar, Single click</a><br/>
+	Shows a basic popup calendar, and demonstrates some of the common features.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="../doc/images/box_blue.gif">
+	<a href='../demo/example2.html' class='lnkblue'>Double click, with time </a><br/>
+	Shows a basic popup calendar where you can choose time and closes on two clicks
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="../doc/images/box_blue.gif">
+	<a href='../demo/example3.html' class='lnkblue'>Use An Icon, Disable Weekend Days</a><br/>
+	Shows a calendar that pops up on clicking an icon instead of a button and
+	where the user can pick a weekend. This is a specific example of the general purpose
+	disabling date mechanism.
+
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="../doc/images/box_blue.gif">
+	<a href='../demo/example4.html' class='lnkblue'>Different Alignment</a><br/>
+	Calendar pops up above the button rather than under it.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="../doc/images/box_blue.gif">
+	<a href='../demo/example5.html' class='lnkblue'>Flat Calendar different look for certain days</a><br/>
+	Shows a flat, in the page, calendar that is always visible. Specific days are displayed differently.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="../doc/images/box_blue.gif">
+	<a href='../demo/example6.html' class='lnkblue'>Flat Calendar extra information for certain days</a><br/>
+	Flat calendar with some dates containing extra information.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="../doc/images/box_blue.gif">
+	<a href='../demo/example7.html' class='lnkblue'>Popup calendar choose multiple dates</a><br/>
+	A popup calendar where the user can choose more than one date.
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="../doc/images/box_blue.gif">
+	<a href='../demo/example8.html' class='lnkblue'>online reservation date picker</a><br/>
+	Two calendars for arrival and departure with many features to make online reservation inuitive. 
+</div>
+
+<div class='zpCalPoint'> 
+	<img class='zpCalPointBullet' alt='bullet' src="../doc/images/box_blue.gif">
+	<a href='../demo/example9.html' class='lnkblue'>Popup calendar update drop downs</a><br/>
+	 Instead of a text box, the dates are saved in drop down menus.
+</div>
+
+<a name='commonFeatures'></a>
+<div class='zpCalHeader'>Common Features</div>
+
+<div class='zpCalSubHeader'>Changing Months/Years</div>
+Use the navigation buttons
+("&lt;&lt;", "&lt;", "&gt;", "&gt;&gt;") to move to the prev/next
+year/month.  Keep the mouse button pressed over one of these buttons to get a drop-down
+menu with a list of months/years.
+
+<div class='zpCalSubHeader'>Today and History</div>
+Click on the today button and it will take you to today's date. Keep it pressed
+and it will show you your last ten choices. You can select one of these as
+your choice.
+
+<div class='zpCalSubHeader'>Changing the first day of the week</div>
+You can click on "Mo", "Su", etc to make that day the first day of the week.
+This change is persistent and will apply to other <strong> DHTML Calendars</strong> on your site.
+
+<div class='zpCalSubHeader'>Keyboard Navigation</div>
+
+Use the keyboard to select
+dates (does <em>not</em> work with Opera 7 or Konqueror/Safari).  The following keys are available:<br/>
+
+<ul>
+
+	<li><span class="key">&larr;</span> , <span class="key">&rarr;</span> ,
+	<span class="key">&uarr;</span> , <span class="key">&darr;</span> -- select date</li>
+	<li><span class="key">CTRL</span> + <span class="key">&larr;</span> ,
+	<span class="key">&rarr;</span> -- select month</li>
+	<li><span class="key">CTRL</span> + <span class="key">&uarr;</span> ,
+	<span class="key">&darr;</span> -- select year</li>
+	<li><span class="key">SPACE</span> -- go to <em>today</em> date</li>
+	<li><span class="key">ENTER</span> -- accept the currently selected date</li>
+	<li><span class="key">ESC</span> -- cancel selection</li>
+
+</ul>
+
+
+
+<div class='zpCalSubHeader'>Moving the DHTML Calendar</div>
+You can drag the "status
+bar" (that's where the tooltips appear) or title bar (that's where the
+currently selected month/year shows up) to move the whole calendar.<br/>
+
+
+
+		</div>
+	</div>
+</div>
+
+<div class="footer" align=center> 
+<a href="./contact.jsp" class="lnkblue">Contact Us</a> | <a href="./employment.jsp" class="lnkblue">Employment</a> 
+            <br>
+<br>
+&copy; 2004 <strong>Zapatec, Inc.</strong>
+</div>
+
+</body>
+</html>
+

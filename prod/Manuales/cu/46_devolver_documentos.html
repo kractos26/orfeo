@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>46_Devolver_documentos</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="Generator" content="Kate, the KDE Advanced Text Editor">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <meta name="AUTHOR" content="MMERA">
+  <meta name="CREATED" content="20051201;17410000">
+  <meta content="Martha Yaneth Mera V" name="author">
+  <meta content="Orfeo" name="description">
+</head>
+<body>
+<div style="text-align: right;"><a
+ style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a></div>
+<h1
+ style="font-family: helvetica,arial,sans-serif; color: rgb(0, 0, 153);">CU-ORFEO-46&nbsp;
+Devolver Documento f&iacute;sico<br>
+</h1>
+<h2 style="font-family: helvetica,arial,sans-serif;">1.
+Descripci&oacute;n</h2>
+<span style="font-family: helvetica,arial,sans-serif;">Permite devolver
+los documentos f&iacute;sicos que un usuario ha solicitado a
+trav&eacute;s del sistema.</span><span
+ style="font-family: helvetica,arial,sans-serif;"></span>
+<h2 style="font-family: helvetica,arial,sans-serif;">2. Actores</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">2.1
+Usuario normal <br>
+</h3>
+<div style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">Usuario
+b&aacute;sico del sistema<br>
+</div>
+<h2 style="font-family: helvetica,arial,sans-serif;">3. Flujo de Eventos</h2>
+<h3 style="margin-left: 40px; font-family: helvetica,arial,sans-serif;">3.1.
+Flujo B&aacute;sico &oacute; Normal : Prestar documento f&iacute;sico<br>
+</h3>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.1
+Precondiciones</h4>
+<div
+ style="margin-left: 120px; font-family: helvetica,arial,sans-serif;">
+3.1.1.1.
+El usuario debe tener el permiso asignado en la tabla de usuario
+correspondiente al campo: USUA_ADMIN=1<br>
+3.1.1.2. El actor debe haber ingresado al sistema<br>
+3.1.1.3. Deben existir documentos prestados en el sistema<br>
+3.1.1.4. Se debe realizar una configuraci&oacute;n especial en el
+archivo
+config.php donde se determine si el campo de contrase&ntilde;a para los
+pr&eacute;stamos y devoluciones debe ser obligatorio o no. La entidad
+que lo
+requiera lo habilita.<br>
+<br>
+<br>
+1.
+A:<span style="font-weight: bold; font-style: italic;"> INICIO </span>-
+ingresa al m&oacute;dulo de pr&eacute;stamo de documentos en la lista
+de permisos especiales del sistema<br>
+<br>
+<div style="text-align: center;"><img alt="45_ingreso_prestamos.jpg"
+ src="imgs/45_ingreso_prestamos.jpg"
+ style="width: 158px; height: 197px;"><br>
+</div>
+<br>
+<br>
+2. S: Despliega el men&uacute; principal del m&oacute;dulo de
+pr&eacute;stamos:<br>
+<br>
+<div style="text-align: center;"><img alt="45_menu_prestamos.jpg"
+ src="imgs/45_menu_prestamos.jpg" style="width: 341px; height: 219px;"><br>
+<br>
+</div>
+3. A: Selecciona Devolucion de Documentos<br>
+4. S: Despliega una vista para realizar la b&uacute;squeda de los
+radicados que han sido prestados.<br>
+5. A: Selecciona uno o varios
+criterios que permitan buscar los documentos prestados a los usuarios y
+presiona el bot&oacute;n "B&uacute;squeda". <br>
+6. S: Se podr&aacute; hacer b&uacute;squeda de documentos que por el
+N&uacute;mero de Radicado, Login, Dependencia,
+Nombre de usuario solicitante.<br>
+<br>
+<div style="text-align: center;"><img alt="46_devolver_documentos.jpg"
+ src="imgs/46_devolver_documentos.jpg"
+ style="width: 813px; height: 312px;"><br>
+<br>
+</div>
+<div style="text-align: justify;"><br>
+7. S: En la lista de resultados aparece el n&uacute;mero de radicado
+(link), usuario al que se prest&oacute;, dependencia, fecha de
+solicitud,&nbsp;
+Requerimiento (Anexo, Documento), fecha de pr&eacute;stamo.<br>
+8. A: Selecciona el radicado o radicados que ser&aacute;n devueltos,
+marcando el check box al final de cada registro. Se podr&aacute;
+seleccionar uno o varios radicados a la vez. Da click en el
+bot&oacute;n
+"Devolver"<br>
+9. S: Ingresa a una ventana con la siguiente informaci&oacute;n:<br>
+<br>
+</div>
+<div style="text-align: center;"><img alt="46_devolver_documentos1.jpg"
+ src="imgs/46_devolver_documentos1.jpg"
+ style="width: 1026px; height: 452px;"><br>
+</div>
+<br>
+Lista de los radicados que ser&aacute;n devueltos con:<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; N&uacute;mero de expediente: Si
+se encuentra incluido en alg&uacute;n expediente<br>
+<div style="margin-left: 40px;">Nombre de usuario: Del usuario que
+solicita el pr&eacute;stamo<br>
+Dependencia Usuario: A la cual pertenece el usuario que solicita<br>
+Fecha de pedido: Fecha en que se solicit&oacute; el documento<br>
+Fecha de pr&eacute;stamo: Fecha en que fue prestado el documento<br>
+Requerimiento: si se prest&oacute; el documento o el anexo.<br>
+Cuadro de selecci&oacute;n de radicado<br>
+</div>
+<br>
+Comentarios o Descripci&oacute;n: que ser&aacute;n registrados en la
+transacci&oacute;n<br>
+<br>
+Contrase&ntilde;a Usuario: (En caso de haberse configurado para
+pedirla) Para que el usuario que solicit&oacute; el
+pr&eacute;stamo digite su contrase&ntilde;a y pueda ser validada por el
+sistema, dando la garantia que se devuelve el documento f&iacute;sico.<br>
+<br>
+Un bot&oacute;n: "Realizar"<br>
+<br>
+10. A: El usuario a quien se prest&oacute; el documento digita su
+contrase&ntilde;a, el usuario
+que devuelve diligencia el campo de comentario y selecciona el
+bot&oacute;n&nbsp; "Realizar"<br>
+<br>
+10.1. S: Valida que la contrase&ntilde;a digitada sea v&aacute;lida y
+realiza la devoluci&oacute;n del documento o documentos.<br>
+<br>
+10.2. S: Realiza la siguiente confirmaci&oacute;n:<br>
+<br>
+<div style="text-align: center;"><img alt="46_devolver_confirmacion.jpg"
+ src="imgs/46_devolver_confirmacion.jpg"
+ style="width: 435px; height: 355px;"><br>
+</div>
+<br>
+</div>
+<h4 style="font-family: helvetica,arial,sans-serif; margin-left: 80px;">3.1.2
+Post-condiciones</h4>
+<div style="margin-left: 120px;">3.1.2.1 Se debe guardar el registro
+hist&oacute;rico de la devoluci&oacute;n del documento donde se guarde
+el dato de quien realiza la devoluci&oacute;n en el sistema.<br>
+</div>
+<br>
+<h3 style="font-family: helvetica,arial,sans-serif;">3.2.
+Flujo Alterno : Prestar Documentos<br>
+</h3>
+<div style="margin-left: 40px;"><font face="Arial Narrow, sans-serif"><br>
+</font>
+<div style="margin-left: 80px;">9.1.&nbsp;<font
+ face="Arial Narrow, sans-serif"> A: No se digita correctamente la
+contrase&ntilde;a del usuario solicitante. Selecciona bot&oacute;n
+"Realizar"</font><br>
+<font face="Arial Narrow, sans-serif">9.2.&nbsp; S: Genera un mensaje
+indicando. "La contrase&ntilde;a del usuario solicitante es incorrecta,
+intente de nuevo" con un bot&oacute;n "Aceptar"<br>
+9.3&nbsp; A: Selecciona el bot&oacute;n "Aceptar"<br>
+</font>9.4&nbsp; S: Se ubica nuevamente en la pantalla de solicitud de
+contrase&ntilde;a, teniendo en cuenta que los comentarios ya digitados
+no se borren.<br>
+<font face="Arial Narrow, sans-serif"></font></div>
+<br>
+</div>
+&nbsp;
+<div style="margin-left: 40px;"></div>
+<a style="font-style: italic; font-family: helvetica,arial,sans-serif;"
+ href="index.html">Volver al indice</a><br
+ style="font-family: helvetica,arial,sans-serif;">
+<font style="font-size: 11pt;" size="2">
+</font>
+</body>
+</html>

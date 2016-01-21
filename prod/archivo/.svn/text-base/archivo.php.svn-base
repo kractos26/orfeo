@@ -1,0 +1,80 @@
+<?php
+$krdOld = $krd;
+$per=1;
+session_start();
+
+if(!$krd) $krd = $krdOld;
+if (!$ruta_raiz) $ruta_raiz = "..";
+include "$ruta_raiz/rec_session.php";
+include_once("$ruta_raiz/include/db/ConnectionHandler.php");
+$db = new ConnectionHandler("$ruta_raiz");
+$encabezadol = "$PHP_SELF?".session_name()."=".session_id()."&krd=$krd";
+if($db)
+{
+    $contPrestamo='0';
+    $contExp='0';
+    if($_SESSION["usua_admin_archivo"]==1)$where=" AND d.DEPE_CODI_TERRITORIAL=".$_SESSION["depe_codi_territorial"];
+    $isql = "select count(*) as CONTADOR from PRESTAMO p JOIN DEPENDENCIA d ON p.DEPE_CODI=d.DEPE_CODI where p.PRES_ESTADO=1 and p.SGD_EXP_NUMERO is not null $where";
+    $rs=$db->conn->Execute($isql);
+    if($rs->fields["CONTADOR"])$contPrestamo = $rs->fields["CONTADOR"];
+    $isql = "select count(*) as CONTADOR from SGD_SEXP_SECEXPEDIENTES exp JOIN DEPENDENCIA d ON exp.DEPE_CODI=d.DEPE_CODI where exp.SGD_SEXP_FASEEXP=1  $where";
+    $rs=$db->conn->Execute($isql);
+    if($rs->fields["CONTADOR"])$contExp = $rs->fields["CONTADOR"];
+}
+?>
+<html height=50,width=150>
+<head>
+<title>Men&uacute; Archivo</title>
+<link rel="stylesheet" href="../estilos/orfeo.css">
+<body bgcolor="#FFFFFF">
+<div id="spiffycalendar" class="text"></div>
+ <link rel="stylesheet" type="text/css" href="../js/spiffyCal/spiffyCal_v2_1.css">
+ <script language="JavaScript" src="../js/spiffyCal/spiffyCal_v2_1.js">
+ </script>
+ <script>
+ 
+ function verTrans()
+ { 	
+ 	if(document.getElementById('subTransf').style.display=='none')
+ 	document.getElementById('subTransf').style.display='';
+ 	else
+ 	document.getElementById('subTransf').style.display='none';
+ }
+ function verPrest()
+ {
+ 	if(document.getElementById('subPrest').style.display=='none')
+ 	document.getElementById('subPrest').style.display='';
+ 	else
+ 	document.getElementById('subPrest').style.display='none';
+ }
+ </script>
+<form name=fromMenuArch action="<?=$encabezadol?>" method='post' action='archivo.php?<?=session_name()?>=<?=trim(session_id())?>&krd=<?=$krd?>'>
+<?php include "$ruta_raiz/archivo/archivo2.php"; ?>
+<center>
+<table border=0 width=30% cellpadding="0" cellspacing="5" class="borde_tab">
+<tr>
+	<td class=titulos2 align="center" >Transferencias</td>
+</tr>
+<tr>
+<td class=listado2><span class="leidos2"><a href='javascript:verTrans();' target='mainFrame' class="menu_princ"><b>1. Transferencias (<?=$contExp?>) </a></span>
+  <br>
+  <table>
+        <tr>
+          <td class="listado2"><span class="leidos2"><a href='../archivo/solicitudesTranferencias.php?<?=$phpsession?>&krd=<?=$krd?>&tip=1' target='mainFrame' class="menu_princ"><b>&nbsp;1.1 Solicitud de Transferencia</a></td>
+        </tr>
+        <tr>
+          <td class="listado2"><span class="leidos2"><a href='../archivo/transferencias.php?<?=session_name()."=".session_id()."&krd=$krd&tip=1"?>' target='mainFrame' class="menu_princ"><b>&nbsp;1.2 Legalizaci&oacute;n de Transferencias </a></td>
+        </tr>
+        <tr>
+          <td class="listado2"><span class="leidos2"><a href='../archivo/transferencias.php?<?=session_name()."=".session_id()."&krd=$krd&tip=2"?>' target='mainFrame' class="menu_princ"><b>&nbsp;1.3 Administraci&oacute;n de Expedientes </a></td>
+        </tr>
+        <tr>
+          <td class="listado2"><span class="leidos2"><a href='../archivo/solicitudesTranferencias.php?<?=session_name()."=".session_id()."&krd=$krd"?>&tip=2' target='mainFrame' class="menu_princ"><b>&nbsp;1.4 Reporte Final de Transferencias </a></td>
+        </tr>
+  </table>
+</td>
+</tr>
+</table>
+</center>
+</form>
+</html>

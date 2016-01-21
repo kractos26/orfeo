@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/instalacion
+END
+oci8.sql
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/instalacion/oci8.sql
+END
+postgres.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/instalacion/postgres.sql
+END
+secuencias_oracle.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/instalacion/secuencias_oracle.sql
+END
+carpeta_bodega.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/instalacion/carpeta_bodega.php
+END
+secuencias_postgres.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/instalacion/secuencias_postgres.sql
+END
+cambiosSQL.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/instalacion/cambiosSQL.sql
+END
+mssql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/instalacion/mssql.sql
+END
+llena_bd.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/instalacion/llena_bd.sql
+END

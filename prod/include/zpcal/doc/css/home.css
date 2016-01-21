@@ -1,0 +1,252 @@
+/*
+*
+* Copyright (c) 2004 by Zapatec, Inc.
+* http://www.zapatec.com
+* 1700 MLK Way, Berkeley, California,
+* 94709, U.S.A.
+* All rights reserved.
+*
+* CSS for home page
+*
+*/
+
+body {
+	font-family:arial, times,sans-serif;
+	font-size:11px;
+	color:#000000;
+	background-color:white;
+	width:778px;
+	margin-left:10px;
+	margin-right:auto;
+	margin-top:0px;
+}
+
+.topMenuHeader
+{
+	border-top: 20px solid #003066;
+	border-bottom: 3px solid #AFAFB8;
+	width:778px;
+	float:left;
+	height:71px;
+
+}
+
+.logo
+{
+
+	float:left;
+	margin-top:0px;
+	margin-left:10px;
+	margin-bottom:0px;
+	HEIGHT: 71px;
+}
+
+.btn1
+{
+	width:100px;
+	float:right;
+	margin-top:42px;
+	margin-bottom:-3px;
+	margin-right:0px;
+	margin-left: auto;
+
+}
+
+.btn2
+{
+
+	float:right;
+	margin-top:42px;
+	margin-bottom:-3px;
+	margin-right:0px;
+
+}
+.homeMain
+{
+	margin-top:1px;
+	width:778px;
+	margin-bottom:1px;
+	float:left;
+}
+
+.homeImage
+{
+
+	margin:0px;
+	float:left;
+	margin-top:0px;
+}
+
+.homeText
+{
+	background: #F0F2F5;
+	padding:5px 5px 5px 5px;
+	margin-top:-1px;
+    width:268px;   
+	height:168px;
+	margin-left:0px;
+	margin-bottom:-1px;
+	
+	float:right;
+	font-family:normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	line-height: 16px;
+	
+
+}
+
+
+.homeColumn
+{
+	float:left;
+	width:778px;
+	border-bottom:18px solid white;
+}
+.homeColumn1
+{
+	float:left;
+	width:200px;
+	border-bottom:3px solid #6F8DB9;
+	height:380px;
+}
+
+.homeTab1
+{
+
+	background-color: #6F8DB9;
+	margin:0px;
+	float:left;
+	margin-top:0px;
+	margin-left:0px;
+	margin-bottom:0px;
+	width:200px;
+	height:20px;
+	BACKGROUND: url(../images/tab_onlineservices.gif) no-repeat left top; HEIGHT: 20px; left: 0px; TOP: 20px; WIDTH: 200px
+
+
+}
+.fastBuzz
+{
+	margin-top:0px;
+	border: 2px solid #AFAFB8; 
+	padding:5px 5px 5px 5px;
+	width:90%;
+	
+
+}
+
+.columnContent
+{
+	margin-top:0px;
+	margin-bottom:10px;
+	padding:5px 5px 5px 5px;
+	width:90%;
+	
+
+}
+
+
+
+.homeColumn2
+{
+	margin-left:1px;
+	border-left:1px solid #6F8DB9;
+	float:left;
+	width:297px;
+	border-bottom:3px solid #6F8DB9;
+	height:380px;
+}
+.homeTab2
+{
+
+	background-color: #6F8DB9;
+	margin:0px;
+	float:left;
+	margin-top:0px;
+	margin-left:0px;
+	margin-bottom:-3px;
+	width:297px;
+	height:20px;
+	BACKGROUND: url(../images/tab_javascripttools.gif) no-repeat left top; HEIGHT: 20px; left: 0px; TOP: 20px; WIDTH: 297px
+
+
+}
+
+.homeColumn3
+{
+	margin-left:1px;
+	border-left:1px solid #6F8DB9;
+	float:left;
+	width:277px;
+	border-bottom:3px solid #6F8DB9;
+	height:380px;
+}
+.homeTab3
+{
+
+	background-color: #6F8DB9;
+	margin:0px;
+	float:left;
+	margin-top:0px;
+	margin-left:0px;
+	margin-bottom:-3px;
+	width:277px;
+	height:20px;
+	BACKGROUND: url(../images/tab_news.gif) no-repeat left top; HEIGHT: 20px; left: 0px; TOP: 20px; WIDTH: 277px
+
+
+}
+
+.homeTab4
+{
+
+	background-color: #6F8DB9;
+	margin:0px;
+	float:left;
+	margin-top:0px;
+	margin-left:0px;
+	margin-bottom:-20px;
+	width:277px;
+	height:20px;
+	BACKGROUND: url(../images/tab_pressrelease.gif) no-repeat left top; HEIGHT: 20px; left: 0px; TOP: 20px; WIDTH: 277px
+
+
+}
+
+
+.footer
+{
+	border-top: 1px solid #6F8DB9;
+	width:778px;
+	border-bottom:10px;
+	padding:5px 5px 5px 5px;
+	float:left;
+}
+
+/* ----------------- --------------------------------*/
+.content {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	line-height: 16px;
+}
+.lnkblue {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #003066;
+	text-decoration: none;
+}
+.lnkblue:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #003066;
+	text-decoration: underline;
+}
+
+
+
+

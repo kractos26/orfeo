@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/tx
+END
+Expediente.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/tx/Expediente.php
+END
+verifSession.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/tx/verifSession.php
+END
+imgRadicado.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/tx/imgRadicado.php
+END
+incluirExpMasiva.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/tx/incluirExpMasiva.php
+END
+formEnvio.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/orfeoSGC/!svn/ver/15/branches/3.7.5/secure/prod/tx/formEnvio.php
+END
+realizarTx.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/tx/realizarTx.php
+END
+cTxSeguridad.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/tx/cTxSeguridad.php
+END
+txOrfeo.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/tx/txOrfeo.php
+END
+diasHabiles.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/tx/diasHabiles.php
+END

@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR
+END
+Validate.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/Validate.php
+END
+Remote.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/Remote.php
+END
+PackageFile.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/PackageFile.php
+END
+Installer.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/Installer.php
+END
+Downloader.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/Downloader.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/Exception.php
+END
+Autoloader.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/Autoloader.php
+END
+Dependency2.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/Dependency2.php
+END
+RunTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/RunTest.php
+END
+Config.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/Config.php
+END
+ChannelFile.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/ChannelFile.php
+END
+Registry.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/Registry.php
+END
+Packager.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/Packager.php
+END
+REST.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/REST.php
+END
+XMLParser.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/XMLParser.php
+END
+Dependency.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/Dependency.php
+END
+Command.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/Command.php
+END
+ErrorStack.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/ErrorStack.php
+END
+Frontend.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/Frontend.php
+END
+DependencyDB.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/DependencyDB.php
+END
+Builder.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/Builder.php
+END
+Common.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/pear/PEAR/Common.php
+END

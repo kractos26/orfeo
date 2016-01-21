@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-1">
+	<TITLE>Documento sin t&iacute;tulo</TITLE>
+	<META NAME="GENERATOR" CONTENT="StarOffice 7  (Linux)">
+	<META NAME="CREATED" CONTENT="20051010;16563800">
+	<META NAME="CHANGED" CONTENT="20051011;15404900">
+	<STYLE>
+	<!--
+		P.orfeot2-western { font-size: 18pt; font-weight: bold }
+		P.orfeot2-cjk { font-family: "Arial Narrow"; font-size: 18pt; font-weight: bold }
+		P.orfeot2-ctl { font-family: "Arial Narrow"; font-size: 18pt; font-weight: bold }
+		P.orfeopar-western { font-size: 14pt }
+		P.orfeopar-cjk { font-family: "Arial Narrow"; font-size: 14pt }
+		P.orfeopar-ctl { font-family: "Arial Narrow"; font-size: 14pt }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="es-ES" DIR="LTR">
+<P CLASS="orfeot2-western" ALIGN=CENTER><FONT COLOR="#000066"><FONT FACE="Arial Narrow"><FONT SIZE=5><I><B><SPAN STYLE="background: #cccccc">Generaci&oacute;n
+de radicados de salida con c&oacute;digo de barras </SPAN></B></I></FONT></FONT></FONT>
+</P>
+<P CLASS="orfeot2-western" ALIGN=RIGHT><SPAN STYLE="font-weight: medium"><FONT SIZE=4><BR><STRONG><A HREF="content.htm"><I><FONT SIZE=3>Contenido</FONT></I></A></STRONG></FONT></SPAN></P>
+<P CLASS="orfeopar-western" ALIGN=RIGHT><A HREF="cod_barr_concepto.htm"><I><FONT SIZE=3>Qu&eacute;
+son c&oacute;digos de barras?</FONT></I></A></P>
+<P CLASS="orfeopar-western">Generar documentos de salida utilizando
+c&oacute;digo de barras que identifique su n&uacute;mero de
+radicaci&oacute;n, es tan sencillo si tiene en cuenta las siguientes
+indicaciones:</P>
+<OL>
+	<LI><P CLASS="orfeopar-western">Debe estar instalado en el equipo
+	que se realiza la radicaci&oacute;n, la fuente Code3of9 (Esta tarea
+	es realizada por el Servicio de Soporte GTS)</P>
+	<LI><P CLASS="orfeopar-western">Descargue a un directorio local la
+	plantilla creada para tal fin, que se encuentra ubicada en:
+	//apolo/orfeo/papeleria/Carta_membrete_con_radicado.doc 
+	</P>
+	<LI><P CLASS="orfeopar-western">Abra el archivo que acaba de
+	guardar, el cual debe tener la siguiente presentaci&oacute;n:</P>
+	<P><IMG SRC="images/cod_barras1.jpg" NAME="Imagen1" ALIGN=LEFT WIDTH=880 HEIGHT=244 BORDER=0><BR CLEAR=LEFT></P>
+</OL>
+<P CLASS="orfeopar-western"><BR><BR>
+</P>
+<OL START=4>
+	<LI><P CLASS="orfeopar-western">En la parte superior se indica el
+	c&oacute;digo de barras que corresponde al campo del N&uacute;mero
+	de radicado, el cual antes de haberse generado su presentaci&oacute;n
+	debe ser como se indica en la gr&aacute;fica</P>
+	<LI><P CLASS="orfeopar-western">Realice su carta sobre esta
+	plantilla y gu&aacute;rdela en un directorio local.</P>
+	<LI><P CLASS="orfeopar-western">Realice el procedimiento en Orfeo de
+	<A HREF="att_doc.htm">anexar </A>y <A HREF="rad_att_in_doc.htm">radicar
+	</A>el archivo al radicado que desea dar contestaci&oacute;n 
+	</P>
+	<LI><P CLASS="orfeopar-western">Luego de generado el radicado,
+	consulte el archivo el cual debe tener la siguiente presentaci&oacute;n:</P>
+	<P CLASS="orfeopar-western"></P>
+	<P><IMG SRC="images/cod_barras2.jpg" NAME="Imagen2" ALIGN=LEFT WIDTH=859 HEIGHT=212 BORDER=0><BR CLEAR=LEFT></P>
+</OL>
+<P CLASS="orfeopar-western">Este c&oacute;digo de barras generado
+identifica al n&uacute;mero de radicado para este documento.</P>
+<P CLASS="orfeopar-western">El documento se encuentra listo para
+imprimir y realizar su respectivo envio.</P>
+<P CLASS="orfeopar-western"><BR><BR>
+</P>
+<P CLASS="orfeopar-western"><STRONG><A HREF="content.htm"><I><FONT SIZE=3>Contenido</FONT></I></A></STRONG></P>
+<P CLASS="orfeopar-western" ALIGN=LEFT><A HREF="cod_barr_concepto.htm"><I><FONT SIZE=3>Qu&eacute;
+son c&oacute;digos de barras?</FONT></I></A></P>
+<P CLASS="orfeopar-western"><BR><BR>
+</P>
+<P CLASS="orfeopar-western"><BR><BR>
+</P>
+</BODY>
+</HTML>

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/LICENSE
+END
+changelog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/changelog.txt
+END
+docs.ini
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/docs.ini
+END
+class.phpmailer.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/class.phpmailer.php
+END
+class.pop3.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/class.pop3.php
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/README
+END
+class.smtp.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/orfeoSGC/!svn/ver/5/branches/3.7.5/secure/prod/auxLib/PHPMailer/class.smtp.php
+END

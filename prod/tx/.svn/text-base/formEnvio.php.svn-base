@@ -1,0 +1,893 @@
+<?
+$krdOld = $krd;
+$carpetaOld = $carpeta;
+$tipoCarpOld = $tipo_carp;
+session_start();
+
+if (!$krd)
+    $krd = $krdOsld;
+
+$ruta_raiz = "..";
+$mensaje_error = false;
+if (!isset($_SESSION['dependencia']))
+    include "$ruta_raiz/rec_session.php";
+
+/**
+ * Inclusion de archivos para utilizar la libreria ADODB
+ *
+ */
+include_once "$ruta_raiz/include/db/ConnectionHandler.php";
+if (!isset($db))
+    $db = new ConnectionHandler("$ruta_raiz");
+$db->conn->SetFetchMode(ADODB_FETCH_ASSOC);
+//$db->conn->debug=true;
+require_once("$ruta_raiz/class_control/Dependencia.php");
+$objDep = new Dependencia($db);
+/*
+ * Genreamos el encabezado que envia las variable a la paginas siguientes.
+ * Por problemas en las sesiones enviamos el usuario.
+ * @$encabezado  Incluye las variables que deben enviarse a la singuiente pagina.
+ * @$linkPagina  Link en caso de recarga de esta pagina.
+ */
+$encabezado = "" . session_name() . "=" . session_id() . "&krd=$krd&depeBuscada=$depeBuscada&filtroSelect=$filtroSelect&tpAnulacion=$tpAnulacion&codTx=$codTx&usCodSelect=$usCodSelect";
+$linkPagina = "$PHP_SELF?$encabezado&orderTipo=$orderTipo&orderNo=";
+
+/*  FILTRO DE DATOS
+ */
+if (isset($_POST['checkValue'])) {
+    $num = count($_POST['checkValue']);
+    reset($_POST['checkValue']);
+    $i = 0;
+    $jglCounter = 0;
+    $resultadoJGL = "";
+    while (list($recordid, $tmp) = each($_POST['checkValue'])) {
+        $record_id = $recordid;
+        switch ($codTx) {
+            case 7:
+            case 8: {
+                    if (strpos($record_id, '-')) { //Si trae el informador concatena el informador con el radicado sino solo concatena los radicados.
+                        $tmp = explode('-', $record_id);
+                        if ($tmp[0]) {
+                            $whereFiltro .= ' (b.radi_nume_radi = ' . $tmp[1] . ' and i.info_codi=\'' . $tmp[0] . '\') or';
+                            $tmp_arr_id = 2;
+                        } else {
+                            $whereFiltro .= ' b.radi_nume_radi = ' . $tmp[1] . ' or';
+                            $tmp_arr_id = 1;
+                        }
+                    } else {
+                        $whereFiltro .= ' b.radi_nume_radi = ' . $record_id . ' or';
+                        $tmp_arr_id = 0;
+                    }
+                    $record_id = $tmp[1];
+                }break;
+            case 9:
+            case 12:
+
+            case 13: {
+                    $condicionAnexBorrados = " and anex_borrado = 'N'";
+                    /*
+                     * Se crea condicion de obligatoriedad clasificacion TRD  and ($dependencia!=100 and $codusuario != 1)
+                     */
+                    if ((($codTx == 9 or $codTx == 12 or $codTx == 16 ) and $codusuario != 1) or ($codTx == 13 and $codusuario != 0)) {
+                        include_once "$ruta_raiz/include/db/ConnectionHandler.php";
+                        $db = new ConnectionHandler("$ruta_raiz");
+
+                        include_once("../include/query/busqueda/busquedaPiloto1.php");
+                        /*
+                         * Condicion Radicado Padre
+                         */
+                        $anoRad = substr($record_id, 0, 4);
+                        $isqlTRDP = "select $radi_nume_radi as RADI_NUME_RADI from SGD_RDF_RETDOCF r where r.RADI_NUME_RADI = '$record_id'";
+                        if ($anoRad == "2005" or $anoRad == "2004" or $anoRad == "2003")
+                            $pasaFiltro = "Si";
+                        $db->conn->SetFetchMode(ADODB_FETCH_ASSOC);
+                        $rsTRDP = $db->conn->Execute($isqlTRDP);
+                        $radiNumero = $rsTRDP->fields["RADI_NUME_RADI"];
+
+                        if (!($anoRad == "2005" or $anoRad == "2004" or $anoRad == "2003") && strlen(trim($radiNumero) == 0)) {
+                            $pasaFiltro = "No";
+                            $setFiltroSinTRD .= $record_id;
+                            if ($i <= ($num)) {
+                                $setFiltroSinTRD .= ",";
+                            }
+                            break;
+                        }
+
+                        /*
+                         * Condicion Anexos Radicados
+                         */
+                        $isqlTRDA = "select $radi_nume_salida as RADI_NUME_SALIDA from anexos
+						where ANEX_RADI_NUME = '$record_id' and RADI_NUME_SALIDA != 0
+						and RADI_NUME_SALIDA not in(select RADI_NUME_RADI from SGD_RDF_RETDOCF)";
+
+                        if ($codTx == 12 || $codTx == 13 || $codTx == 9) {
+                            $isqlTRDA .= $condicionAnexBorrados;
+                        }
+                        $rsTRDA = $db->conn->Execute($isqlTRDA);
+
+                        while ($rsTRDA && !$rsTRDA->EOF && $pasaFiltro != "No") {
+                            $radiNumero = $rsTRDA->fields["RADI_NUME_SALIDA"];
+                            $anoRadsal = substr($radiNumero, 0, 4);
+
+                            if ($radiNumero != '' && !($anoRadsal == "2005" or $anoRadsal == "2004" or $anoRadsal == "2003")) {
+                                $pasaFiltro = "No";
+                                $setFiltroSinTRD .= $record_id;
+                                if ($i <= ($num)) {
+                                    $setFiltroSinTRD .= ",";
+                                }break;
+                            }
+                            $rsTRDA->MoveNext();
+                        }
+                        $i++;
+                    }
+                    $whereFiltro.= ' b.radi_nume_radi = ' . $record_id . ' or';
+
+
+
+                    /**
+                     * Modificaciones Febrero de 2007, por SSPD para el DNP
+                     * Archivar:
+                     * Se verifica si el radicado se encuentra o no en un expediente,
+                     * si es negativa la verificacion, ese radicado no se puede archivar
+                     */
+                    if ($codTx == 13 && $archivado_requiere_exp) {
+
+                        include_once "$ruta_raiz/include/db/ConnectionHandler.php";
+                        $db = new ConnectionHandler("$ruta_raiz");
+
+                        $isqlExp = "select SGD_EXP_NUMERO as NumExpediente from SGD_EXP_EXPEDIENTE
+						where RADI_NUME_RADI = '$record_id'";
+                        $rsExp = $db->conn->Execute($isqlExp);
+                        $resultadoJGL .= "CONSULTA: $isqlExp ";
+                        if ($rsExp && !$rsExp->EOF) {
+                            $expNumero = $rsExp->fields[0];
+
+                            if ($expNumero == '' || $expNumero == null) {
+                                $setFiltroSinEXP .= $record_id;
+                                if ($jglCounter <= ($num)) {
+                                    $setFiltroSinEXP .= ",";
+                                }
+                                break;
+                            }
+                            $sqlSec = "select a.SGD_SPUB_CODIGO AS NIVEL_SEGURIDAD
+                                        FROM radicado a
+                                        WHERE a.radi_nume_radi = '$record_id' ";
+                            $rsSec = $db->conn->Execute($sqlSec);
+                            if ($rsSec->fields['NIVEL_SEGURIDAD'] != 0) {
+                                $alertSec = true;
+                            }
+
+                            $rsExp->MoveNext();
+                        } else {
+                            $setFiltroSinEXP .= $record_id;
+                            if ($jglCounter <= ($num)) {
+                                $setFiltroSinEXP .= ",";
+                            }
+                        }
+                        $jglCounter++;
+                    }
+                }break;
+            case 16: {
+                    /*
+                     * Se crea condicion de obligatoriedad clasificacion TRD
+                     */
+                    include_once "$ruta_raiz/include/db/ConnectionHandler.php";
+                    $db = new ConnectionHandler("$ruta_raiz");
+                    include_once("../include/query/busqueda/busquedaPiloto1.php");
+                    /*
+                     * Condicion Radicado Padre
+                     */
+                    $anoRad = substr($record_id, 0, 4);
+                    $isqlTRDP = "select $radi_nume_radi as RADI_NUME_RADI from SGD_RDF_RETDOCF r where r.RADI_NUME_RADI = '$record_id'";
+                    if ($anoRad == "2005" or $anoRad == "2004" or $anoRad == "2003")
+                        $pasaFiltro = "Si";
+                    $db->conn->SetFetchMode(ADODB_FETCH_ASSOC);
+                    $rsTRDP = $db->conn->Execute($isqlTRDP);
+                    $radiNumero = $rsTRDP->fields["RADI_NUME_RADI"];
+
+                    if (!($anoRad == "2005" or $anoRad == "2004" or $anoRad == "2003") && strlen(trim($radiNumero) == 0)) {
+                        $pasaFiltro = "No";
+                        $setFiltroSinTRD .= $record_id;
+                        if ($i <= ($num)) {
+                            $setFiltroSinTRD .= ",";
+                        }
+                        break;
+                    }
+
+
+                    /*
+                     * Condicion Anexos Radicados
+                     */
+                    $isqlTRDA = "select $radi_nume_salida as RADI_NUME_SALIDA from anexos
+						where ANEX_RADI_NUME = '$record_id' and RADI_NUME_SALIDA != 0
+						and RADI_NUME_SALIDA not in(select RADI_NUME_RADI from SGD_RDF_RETDOCF)";
+                    $condicionAnexBorrados = " and anex_borrado = 'N'";
+
+                    $isqlTRDA .= $condicionAnexBorrados;
+
+                    $rsTRDA = $db->conn->Execute($isqlTRDA);
+
+                    while ($rsTRDA && !$rsTRDA->EOF && $pasaFiltro != "No") {
+                        $radiNumero = $rsTRDA->fields["RADI_NUME_SALIDA"];
+                        $anoRadsal = substr($radiNumero, 0, 4);
+
+                        if ($radiNumero != '' && !($anoRadsal == "2005" or $anoRadsal == "2004" or $anoRadsal == "2003")) {
+                            $pasaFiltro = "No";
+                            $setFiltroSinTRD .= $record_id;
+                            if ($i <= ($num)) {
+                                $setFiltroSinTRD .= ",";
+                            }break;
+                        }
+                        $rsTRDA->MoveNext();
+                    }
+                    $i++;
+
+                    $whereFiltro.= ' b.radi_nume_radi = ' . $record_id . ' or';
+
+
+                    /**
+                     * Modificaciones Febrero de 2007, por SSPD para el DNP
+                     * Archivar:
+                     * Se verifica si el radicado se encuentra o no en un expediente,
+                     * si es negativa la verificacion, ese radicado no se puede archivar
+                     */
+                    //echo $codTx;&& $archivado_requiere_exp
+
+                    /* 						
+                      include_once "$ruta_raiz/include/db/ConnectionHandler.php";
+                      $db = new ConnectionHandler("$ruta_raiz");
+
+                      $isqlExp = "select SGD_EXP_NUMERO as NumExpediente from SGD_EXP_EXPEDIENTE
+                      where RADI_NUME_RADI = '$record_id'";
+                      $rsExp = $db->conn->Execute($isqlExp);
+                      $resultadoJGL .= "CONSULTA: $isqlExp ";
+                      if ( $rsExp && !$rsExp->EOF )
+                      {
+                      $expNumero = $rsExp->fields[0];
+
+                      if ( $expNumero =='' || $expNumero == null )
+                      {
+                      $setFiltroSinEXP .= $record_id ;
+                      if($jglCounter<=($num))
+                      {
+                      $setFiltroSinEXP .= ",";
+                      }
+                      break;
+                      }
+
+                      $rsExp->MoveNext();
+                      }else {
+                      $setFiltroSinEXP .= $record_id ;
+                      if($jglCounter<=($num))
+                      {
+                      $setFiltroSinEXP .= ",";
+                      }
+                      }
+                      $jglCounter++;
+                     */
+                }break;
+            default: {
+                    $whereFiltro.= ' b.radi_nume_radi = ' . $record_id . ' or';
+                }break;
+        }
+
+        $setFiltroSelect .= "$record_id,";
+    }
+    if ($setFiltroSinTRD and $pasaFiltro == "No") {
+        //Modificado idrd para aplicar trd
+        $mensaje_error = "NO SE PERMITE ESTA OPERACION PARA LOS RADICADOS <BR> < $setFiltroSinTRD > <BR> FALTA CLASIFICACION TRD PARA ESTOS O PARA SUS ANEXOS <BR> FAVOR APLICAR TRD";
+    }
+
+    /**
+     * Modificaciones Febrero de 2007, por SSPD para el DNP
+     * Archivar:
+     * si la variable $setFiltroSinEXP tiene algo, es porque algun radicado no esta en expediente
+     */
+    if ($setFiltroSinEXP) {
+        $mensaje_errorEXP = "<br>NO SE PERMITE ESTA OPERACION PARA LOS RADICADOS <BR> < $setFiltroSinEXP > <BR> PORQUE NO SE ENCUENTRAN EN NING&Uacute;N EXPEDIENTE";
+    }
+
+    if (substr($whereFiltro, -2) == "or") {
+        $whereFiltro = substr($whereFiltro, 0, strlen($whereFiltro) - 2);
+    }
+    if (trim($whereFiltro)) {
+        $whereFiltro = "and ( $whereFiltro ) ";
+    }
+} else {
+    $mensaje_error = "NO HAY REGISTROS SELECCIONADOS";
+}
+?>
+<html>
+    <head>
+        <title>Enviar Datos</title>
+        <link rel="stylesheet" href="<?= $ruta_raiz; ?>/estilos/orfeo.css">
+        <script language="javascript" src="<?= $ruta_raiz; ?>/js/funciones.js"></script>
+        <script type="text/javascript" src="<?= $ruta_raiz; ?>/jquery/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="<?= $ruta_raiz; ?>/jquery/charCount.js"></script>
+        <style>
+            body {
+                margin:0;
+                padding:20px 40px;
+                background:#fff;
+                font:80% Arial, Helvetica, sans-serif;
+                color:#555;
+                line-height:180%;
+            }
+            h1{
+                font-size:180%;
+                font-weight:normal;
+            }
+            h2{
+                font-size:160%;
+                font-weight:normal;
+            }	
+            h3{
+                font-size:140%;
+                font-weight:normal;
+            }	
+            pre{
+                display:block;
+                font:12px "Courier New", Courier, monospace;
+                padding:10px;
+                border:1px solid #bae2f0;
+                background:#e3f4f9;	
+                margin:.5em 0;
+                width:500px;
+            }		
+            .clear{
+                clear:both;
+            }	
+            img{border:none;}
+
+            /* Character Count styles */	
+
+            /*            form{width:500px;}*/
+            label{
+                display:block;
+                font-size:14px;
+            }
+            textarea{
+                width:490px;
+                height:60px;
+                border:2px solid #ccc;
+                padding:3px;
+                color:#555;
+                font:16px Arial, Helvetica, sans-serif;
+            }
+            form div{position:relative;margin:1em 0;}
+            form .counter{
+                position:absolute;
+                right:0;
+                top:0;
+                font-size:20px;
+                font-weight:bold;
+                color:#ccc;
+            }
+            form .warning{color:#600;}	
+            form .exceeded{color:#e00;}	
+
+        </style>
+        <script>
+            function notSupported()
+            { alert('Su browser no soporta las funciones Javascript de esta pagina.'); }
+
+            /*
+             * OPERACIONES EN JAVASCRIPT
+             * @marcados Esta variable almacena el numeo de chaeck seleccionados.
+             * @document.realizarTx  Este subNombre de variable me indica el formulario principal del listado generado.
+             * @tipoAnulacion Define si es una solicitud de anulacion  o la Anulacion Final del Radicado.
+             *
+             * Funciones o Metodos EN JAVA SCRIPT
+             * Anular()  Anula o solicita esta dependiendo del tipo de anulacin.  Previamente verifica que este seleccionado algun  radicado.
+             * markAll() Marca o desmarca los check de la pagina.
+             *
+             */
+
+            function Anular(tipoAnulacion)
+            {
+                marcados = 0;
+                for(i=0;i<document.realizarTx.elements.length;i++)
+                {	if(document.realizarTx.elements[i].checked==1 )
+                    {
+                        marcados++;
+                    }
+        
+                }
+                if(document.realizarTx.checkAll.checked==1)marcados=marcados-1;
+                if(document.realizarTx.chkNivel)if(document.realizarTx.chkNivel.checked==1)marcados=marcados-1;
+                if(marcados>=1)
+                {
+                    return 1;
+                }
+                else
+                {
+                    alert("Debe marcar un elemento");
+                    return 0;
+                }
+            }
+
+            function markAll(noRad)
+            {
+                if( noRad >=1)
+                {
+                    for(i=3;i<document.realizarTx.elements.length;i++)
+                    {
+                        document.realizarTx.elements[i].checked=1;
+                    }
+                }
+                else
+                {
+                    for(i=3;i<document.realizarTx.elements.length;i++)
+                    {
+                        document.realizarTx.elements[i].checked=0;
+                    }
+                }
+            }
+            function CheckSecOkTx(){
+<? if ($alertSec && $codTx == 13) { ?>
+            show_confirm();
+<? } else {
+    ?>
+                document.realizarTx.submit();  
+<? }
+?>
+                
+    }
+    $(document).ready(function(){
+        function show_confirm()
+        {
+            var r=confirm("Desea conservar el nivel de seguridad actual?");
+            if (r==true)
+            {   
+                alert("El radicado conservar\xE1 el nivel de seguridad actual");
+                $('input[name="secCons"]').val("S");
+                document.realizarTx.submit();  
+            }
+            else
+            {
+                alert("Por favor, realice el cambio de seguridad para archivar el radicado");
+            }
+        }
+    });
+      
+
+    function okTxReasigInf()
+    {
+        var hayError=false;
+        var mess = 'Atenci\xf3n:\n';
+        valCheck = Anular(0);
+        if(valCheck==0) return 0;
+        numCaracteres = document.realizarTx.observa.value.length;
+        if(numCaracteres>=6)
+        {	
+            if (!valMaxChars(document.realizarTx.observa,550,0,false)){
+                hayError=true;
+                mess = mess + 'Demasiados caracteres en la Observaci\xF3n de Reasignar, solo se permiten 550\n';
+                createSelection(document.getElementById('observa'),550,$('#observa').val().length);
+            }
+        }else{
+            //mess = mess + 'El numero de Caracteres minimo el la Observacion de Reasignar es de 6. (Digito :'+numCaracteres+')\n';
+            mess = mess + 'El n\xfamero de caracteres m\xednimo en la observaci\xf3n de reasignaci\xf3n es 6, actualmente:'+numCaracteres+'\n';
+            hayError=true;
+        }
+
+        if (document.realizarTx.usCodInfo.value!=0)
+        {
+            /*if (document.realizarTx.usCodInfo.selectedIndex!=-1)
+            {
+                
+            }
+            else
+            {
+                mess = mess + 'Debes seleccionar al menos 1 destinatario en la parte de Informar.';
+                hayError=true;
+            }*/
+            numCaracteresInf = document.realizarTx.observaInf.value.length; //forzar a escoger un usuario a informar
+
+            if(numCaracteresInf>=6)
+            {	
+                if (!valMaxChars(document.realizarTx.observaInf,550,0,false)){
+                    hayError=true;
+                    mess = mess + 'Demasiados caracteres en la Observaci\xF3n de Informar, solo se permiten 550\n';
+                    createSelection(document.getElementById('observaInf'),550,$('#observaInf').val().length);
+                }
+            }else
+            {
+                //mess = mess + 'El numero de Caracteres minimo el la Observacion de Informar es de 6. (Digito :'+numCaracteresInf+')\n';
+                mess = mess + 'El n\xfamero de caracteres m\xednimo en la observaci\xf3n de informado es 6, actualmente:'+numCaracteresInf+'\n';
+                hayError=true;
+            }
+        }
+
+        if (hayError) {alert(mess);}
+        else {
+            CheckSecOkTx();//document.realizarTx.submit();
+        }
+    }
+
+    function okTx()
+    {
+        var hayError=false;
+        var mess = 'Atenci\xf3n:\n';
+        valCheck = Anular(0);
+        if(valCheck==0) return 0;
+        numCaracteres = document.realizarTx.observa.value.length;
+        if(numCaracteres>=6)
+        {	
+            if (!valMaxChars(document.realizarTx.observa,550,0,false)){
+                hayError=true;
+                mess = mess + 'Demasiados caracteres en la Observaci\xF3n, solo se permiten 550\n';
+                createSelection(document.getElementById('observa'),550,$('#observa').val().length);
+            }
+        }else
+        {
+            //mess = mess + 'El numero de Caracteres minimo el la Observacion es de 6. (Digito :'+numCaracteres+')\n';
+            mess = mess + 'El n\xfamero de caracteres m\xednimo en la observaci\xf3n es 6, actualmente:'+numCaracteres+'\n';
+            hayError=true;
+        }
+
+        if (document.realizarTx.usCodSelect)
+        {
+            if (document.realizarTx.usCodSelect.selectedIndex!=-1)
+            {
+            }
+            else
+            {
+                mess = mess + 'Debes seleccionar al menos 1 destinatario.';
+                hayError=true;
+            }
+        }
+
+        if (hayError){ alert(mess);
+        }
+        else{ 
+            //document.realizarTx.submit();
+            CheckSecOkTx();    
+        }
+    }
+    function actURL(obj)
+    {
+        var y = obj.href+'&txtSeleccionados='+document.getElementById('txtSeleccionados').value;
+        obj.href = y;
+    }
+    function verSeguridad(rad,nvSeg)
+    {
+        window.open('<?= $ruta_raiz ?>/seguridad/radicado.php?krd=<?= $krd ?>&numRad='+rad+'&nivelRad='+nvSeg,'Cambio Nivel de Seguridad Radicado', 'height=350, width=700, scrollbars=yes,resizable=yes')
+    }
+    function regresar()
+    {	//window.history.go(0);
+        window.location.reload();
+    }
+        </script>
+    </head>
+    <body bgcolor="#FFFFFF" topmargin="0" onLoad="markAll(1);">
+        <?PHP
+        /**
+         * Modificaciones Febrero de 2007, por SSPD para el DNP
+         * Archivar:
+         * Hay algun error, ya sea por tipificacion o por Expediente, luego se muestra mensaje
+         * donde se indica que no se puede archivar el(los) radicado(s)
+         */
+        if ($mensaje_errorEXP || $mensaje_error) {
+            DIE("<center><table class='borde_tab' width=100% CELSPACING=5><tr class=titulosError><td align='center'>$mensaje_errorEXP <br> $mensaje_error</td></tr></table></CENTER>");
+        } else {
+            ?>
+            <form action='realizarTx.php?<?= $encabezado ?>' method=post name="realizarTx" >
+                <table border=0 width=100% cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width=100%>
+                            <br>
+
+                            <input type='hidden' name=depsel8 value='<?= implode($depsel8, ',') ?>'>
+                            <input type='hidden' name=codTx value='<?= $codTx ?>'>
+                            <input type='hidden' name=EnviaraV value='<?= $EnviaraV ?>'>
+                            <input type='hidden' name=fechaAgenda value='<?= $fechaAgenda ?>'>
+                            <table width="98%" border="0" cellpadding="0" cellspacing="5" class="borde_tab">
+                                <TR>
+                                    <TD width=30% class="titulos4">USUARIO:<br><br><?= $_SESSION['usua_nomb'] ?> </TD>
+                                    <TD width='30%' class="titulos4">DEPENDENCIA:<br><br><?= $_SESSION['depe_nomb'] ?><br></TD>
+                                    <td class="titulos4">
+                                        <?
+                                        switch ($codTx) {
+                                            case 7: {
+                                                    print "Borrar Informados ";
+                                                    echo "<input type='hidden' name='info_doc' value='" . $tmp_arr_id . "'>";
+                                                }break;
+                                            case 8: $usDefault = 1;
+                                                $cad = $db->conn->Concat("(u.depe_codi)", "'-'", "(u.usua_codi)");
+                                                $cad2 = $db->conn->Concat($db->conn->IfNull("d.DEP_SIGLA", "'N.N.'"), "'-'", "(u.usua_nomb)");
+                                                $sql = "select $cad2 as usua_nomb, $cad as usua_codi from usuario u,dependencia d where u.depe_codi in(" . implode($depsel8, ',') . ")
+					$whereReasignar and u.USUA_ESTA='1' and u.depe_codi = d.depe_codi ORDER BY usua_nomb";
+                                                $rs = $db->conn->Execute($sql);
+                                                $usuario = $codUsuario;
+                                                print "Informados";
+                                                print $rs->GetMenu2('usCodSelect[]', $usDefault, false, true, 10, " id='usCodSelect' class='select' ");
+                                                break;
+                                            case 9:
+                                                if ($EnviaraV == "VoBo") {
+                                                    if ($_SESSION["usua_vobo_perm"] != 1 && $_SESSION["usuario_reasignacion"] != 1) {
+                                                        $whereReasignar = " and depe_codi = " . $_SESSION['dependencia'];
+                                                    } else {
+                                                        $whereReasignar = "";
+                                                    }
+                                                } else {
+                                                    if ($_SESSION["codusuario"] != 1 && $_SESSION["usuario_reasignacion"] != 1) {
+                                                        $whereReasignar = " and depe_codi = " . $_SESSION['dependencia'];
+                                                    } else {
+                                                        $whereReasignar = "";
+                                                    }
+                                                }
+                                                $lstDep = implode(' , ', $depsel8);
+
+                                                $sql = "SELECT DEPENDENCIA_OBSERVA, DEPENDENCIA_VISIBLE FROM DEPENDENCIA_VISIBILIDAD WHERE DEPENDENCIA_OBSERVA=" . $_SESSION['dependencia'] . " and DEPENDENCIA_VISIBLE in ($lstDep)";
+                                                if ($EnviaraV != "VoBo") {
+                                                    $txtReasignar = " <font class='titulos2'>Texto para Reasignar</font>";
+                                                    $whereDep = " and u.depe_codi in ($lstDep) ";
+                                                    if (in_array($dependencia, $depsel8)) {
+                                                        $sql = "SELECT DEPENDENCIA_OBSERVA, DEPENDENCIA_VISIBLE FROM DEPENDENCIA_VISIBILIDAD WHERE DEPENDENCIA_OBSERVA=" . $_SESSION['dependencia'];
+                                                        $whereDep .=" or (u.depe_codi = $dependencia and u.usua_esta='1') ";
+                                                    }
+                                                } else {
+                                                    $whereDep = " and depe_codi = $dependencia ";
+                                                }
+
+
+                                                $rs1 = $db->conn->Execute($sql);
+                                                $usuario_publico = "";
+                                                if (!$rs1->EOF) { //Se adicionan las dependencias que puedan ver a otras en la consulta
+                                                    $usuario_publico = "or u.DEPE_CODI in (";
+                                                    while (!$rs1->EOF) {
+                                                        $usuario_publico = $usuario_publico . $rs1->fields["DEPENDENCIA_VISIBLE"] . ",";
+                                                        $rs1->MoveNext();
+                                                    }
+                                                    $usuario_publico = substr($usuario_publico, 0, strlen($usuario_publico) - 1) . ") AND u.USUARIO_PUBLICO = 1 ";
+                                                }
+                                                if ((($codusuario == 1 || ($_SESSION["usua_vobo_perm"] == 1 && $EnviaraV == "VoBo") || $usuario_reasignacion == 1)) || ( ($_SESSION["usua_vobo_perm"] != 1 || $usuario_reasignacion != 1) && $EnviaraV == "VoBo")) {
+                                                    if ($EnviaraV == "VoBo") {
+                                                        $whereReasignar .= " and u.usua_vobo_perm = 1 ";
+                                                        $usDefault = 1;
+                                                    } else {
+                                                        $whereReasignar .= " and u.usua_codi=1";
+                                                        $usDefault = 1;
+                                                    }
+                                                }
+
+                                                if (($_SESSION["usua_vobo_perm"] == 1 || $usuario_reasignacion == 1) && $EnviaraV == "VoBo") {
+                                                    if ($objDep->Dependencia_codigo($dependencia)) {
+                                                        $depPadre = $objDep->getDepe_codi_padre();
+                                                    }
+                                                    print ("La dependencia  padre es ($depPadre)");
+                                                    $whereDep = " and u.depe_codi=$depPadre  and u.usua_vobo_perm = 1 ";
+                                                    $depsel = $depPadre;
+                                                }
+
+                                                if ($EnviaraV == "VoBo") {
+                                                    $vobo = true;
+                                                    $proccarp = "Visto Bueno";
+                                                    $usuario_publico = "";
+                                                    if ($_SESSION["usua_vobo_perm"] == 1) {
+                                                        if ($objDep->Dependencia_codigo($dependencia)) {
+                                                            $depPadre = $objDep->getDepe_codi_padre();
+                                                        }
+                                                        print ("La dependencia  padre es ($depPadre)");
+                                                        $whereDep = " and u.depe_codi=$depPadre  and u.usua_vobo_perm = 1 ";
+                                                        $depsel = $depPadre;
+                                                    } else {
+                                                        $whereDep = " and u.depe_codi=" . $_SESSION['dependencia'] . " and u.usua_vobo_perm = 1 ";
+                                                        $depsel = $_SESSION['dependencia'];
+                                                    }
+                                                }
+                                                $cad = $db->conn->Concat("(u.depe_codi)", "'-'", "(u.usua_codi)");
+                                                $sql = "select u.USUA_NOMB, $cad as USUA_COD, u.DEPE_CODI 
+					from   usuario u
+					where  u.USUA_ESTA='1'
+					$whereReasignar
+					$whereDep
+					$usuario_publico
+					ORDER BY USUA_NOMB";
+                                                $rs = $db->conn->Execute($sql);
+                                                $usuario = $codusuario;
+                                                ?>
+                                                Reasignar
+                                                <? if ($rs && !$rs->EOF) { ?>
+                                                    <p><select name=usCodSelect class=select title="Reasignar"></p>
+
+                                                    <?
+                                                    while (!$rs->EOF) {
+                                                        $depCodiP = $rs->fields["DEPE_CODI"];
+                                                        $usuNombP = $rs->fields["USUA_NOMB"];
+                                                        $usuCodiP = $rs->fields["USUA_COD"];
+                                                        $valOptionP = "";
+                                                        $valOptionP = $usuNombP;
+                                                        $class = "";
+                                                        if ($depCodiP != $dependencia) {
+                                                            $sql = "select DEPE_NOMB from dependencia where depe_codi=$depCodiP";
+                                                            $rs2 = $db->conn->Execute($sql);
+                                                            $depNombP = $rs2->fields["DEPE_NOMB"];
+                                                            $valOptionP .= " [ " . $depNombP . "] ";
+                                                            $class = " class='leidos'";
+                                                        }
+                                                        ?>
+                                                <option <?= $class ?> value=<?= $usuCodiP ?>><?= $valOptionP ?></option>
+                                                <?
+                                                $rs->MoveNext();
+                                            }
+                                        } else {
+                                            if ($EnviaraV == "VoBo") {
+                                                ?>
+                                                <br><p> Sin parametrizar, Comuniquese con el administrador </p><br>
+                                                <?
+                                            }
+                                        }
+
+                                        if ($codTx == 9 and $EnviaraV != "VoBo") {
+                                            ?>
+                                            </select><p>Informar</p>
+                                            <?php
+                                            $usDefault = 1;
+                                            $lstDep = implode(' , ', $depsel8);
+                                            $cad = $db->conn->Concat("(u.depe_codi)", "'-'", "(u.usua_codi)");
+                                            $cad2 = $db->conn->Concat($db->conn->IfNull("d.DEP_SIGLA", "'N.N.'"), "'-'", "(u.usua_nomb)");
+                                            $sql = "select $cad2 as usua_nomb, $cad as usua_codi from usuario u,dependencia d where u.depe_codi in($lstDep)
+						 and u.USUA_ESTA='1' and u.depe_codi = d.depe_codi ORDER BY usua_nomb";
+                                            $rs = $db->conn->Execute($sql);
+                                            $usuario = $codUsuario;
+                                            //print "Informados";
+                                            print $rs->GetMenu2('usCodInfo[]', $usDefault, false, true, 3, " id='usCodInfo' class='select' ");
+                                        }
+                                        break;
+                                    case 10:
+                                        $carpetaTipo = substr($carpSel, 1, 1);
+                                        $carpetaCodigo = intval(substr($carpSel, -3));
+                                        if ($carpetaTipo == 1) {
+                                            $sql = "select NOMB_CARP as carp_desc from CARPETA_PER
+					   where
+					     codi_carp=$carpetaCodigo
+						 and usua_codi=$codusuario
+						 and depe_codi=$dependencia";
+                                        } else {
+                                            $sql = "select carp_desc from carpeta where carp_codi=$carpetaCodigo";
+                                        }
+                                        $rs = $db->conn->Execute($sql); # Ejecuta la busqueda y obtiene el recordset vacio
+                                        $carpetaNombre = $rs->fields['carp_desc'];
+                                        print "Movimiento a Carpeta <b>$carpetaNombre</b>
+				<input type=hidden name='carpetaCodigo' value=$carpetaCodigo>
+				<input type=hidden name='carpetaTipo' value=$carpetaTipo>
+				<input type=hidden name='carpetaNombre' value=$carpetaNombre>
+				";
+                                        break;
+                                    case 12:
+                                        print "Devolver documentos a Usuario Anterior ";
+                                        break;
+                                    case 13:
+                                        print "Archivo de Documentos";
+                                        break;
+                                    case 16:
+                                        print "Archivo de NRR";
+                                        break;
+                                }
+                                ?>
+                                <BR>
+                                </td>
+                                <td width='5' class="grisCCCCCC">
+                                    <input type=button value=REALIZAR onClick="<?
+                            if ($codTx == 9 and $EnviaraV != "VoBo") {
+                                echo "okTxReasigInf()";
+                            } else {
+                                echo "okTx();";
+                            }
+                                ?>" name=enviardoc align=bottom class=botones id=REALIZAR>
+                                </td>
+                    </TR>
+                    <tr align="center">
+                        <td colspan="4" class="celdaGris" align=center>
+
+                            <br>
+                            <?
+                            if ((($codusuario == 1) || $_SESSION["usua_vobo_perm"] == 1) || ($usuario_reasignacion == 1)) {
+                                ?>
+                                <input type=checkbox name=chkNivel checked class=ebutton>
+                                <span class="info">El documento tomar&aacute; el nivel del usuario destino.</span><br>
+                                <?
+                            }
+                            ?>
+                    <center>
+                        <table width="500"  border=0 align="center" bgcolor="White">
+                            <TR bgcolor="White"><TD width="100">
+                            <center>
+                                <img src="<?= $ruta_raiz ?>/iconos/tuxTx.gif" alt="Tux Transaccion" title="Tux Transaccion">
+                            </center>
+                        </td><TD align="left"><center><? echo $txtReasignar ?></center>
+                    <span class="etextomenu">
+                    </span>
+                    <textarea name=observa id="observa" cols=70 rows=3  class=ecajasfecha></textarea><div id="observaCount" class="leidos"></div>
+                    </TD></TR>
+            </center>
+            <tr>	
+                <?php if ($codTx == 9 and $EnviaraV != "VoBo") { ?>
+                    <!-- Caja de texto para informar -->
+
+
+                    <td width="100"></td>
+                    <td align="left"><font  class="titulos2"><br><center>Texto para Informar</center><br>
+                <span class="etextomenu">
+                </span>
+                <center>
+                    <textarea name=observaInf id="observaInf" cols=70 rows=3  class=ecajasfecha></textarea><div id="observaInfCount" class="leidos"></div>
+                </center>
+                </td>
+                </tr>
+            <? } ?>
+            <input type=hidden name=enviar value=enviarsi/>
+            <input type=hidden name=enviara value='9'/>
+            <input type=hidden name=carpeta value=12/>
+            <input type=hidden name=carpper value=10001/>
+            <input type="hidden" name="secCons" value="N"/>
+            </td>
+            </tr>
+        </table>
+        <br>
+        <?
+        /*  GENERACION LISTADO DE RADICADOS
+         *  Aqui utilizamos la clase adodb para generar el listado de los radicados
+         *  Esta clase cuenta con una adaptacion a las clases utiilzadas de orfeo.
+         *  el archivo original es adodb-pager.inc.php la modificada es adodb-paginacion.inc.php
+         */
+        error_reporting(0);
+        if (!$orderNo)
+            $orderNo = 0;
+        $order = $orderNo + 1;
+
+        $sqlFecha = $db->conn->SQLDate("d-m-Y H:i A", "b.RADI_FECH_RADI");
+        include_once "../include/query/tx/queryFormEnvio.php";
+        switch ($codTx) {
+            case 12: {
+                    $isql = str_replace("Enviado Por", "Devolver a", $isql);
+                }break;
+            default:break;
+        }
+        $pager = new ADODB_Pager($db, $isql, 'adodb', true, $orderNo, $orderTipo);
+        $pager->toRefLinks = $linkPagina;
+        $pager->toRefVars = $encabezado;
+        $pager->checkAll = true;
+        $pager->checkTitulo = true;
+        $pager->btnReg = true; //variable para mostrar el boton que llama el javascript
+        $pager->btnCol = 9; //nuemro de columna de la consulta la cual tendrá el boton
+        $pager->btnRefJS = "verSeguridad"; // nombre de la funcion java script del boton;
+        $pager->btnRefJSParam = array("1", "6"); //numeros de columnas con el valor de los parametros para la funcion del javascript
+        $pager->Render($rows_per_page = 20, $linkPagina, $checkbox = chkAnulados);
+        ?>
+        <input type='hidden' name=depsel value='<?= $depsel ?>'>
+    </form>
+    <?
+}
+?>
+<script type="text/javascript">
+    function createSelection(field, start, end) {
+        if( field.createTextRange ) {
+            var selRange = field.createTextRange();
+            selRange.collapse(true);
+            selRange.moveStart('character', start);
+            selRange.moveEnd('character', end);
+            selRange.select();
+        } else if( field.setSelectionRange ) {
+            field.setSelectionRange(start, end);
+        } else if( field.selectionStart ) {
+            field.selectionStart = start;
+            field.selectionEnd = end;
+        }
+        field.focus();
+    }
+    $("#observa").charCount({
+        allowed: 550,		
+        warning: 20,
+        counterText: 'Caracteres restantes: '	
+    });
+    $("#ObservaInf").charCount({
+        allowed: 550,		
+        warning: 20,
+        counterText: 'Caracteres restantes: '	
+    });
+</script>
+</body>
+</html>
