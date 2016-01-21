@@ -15,7 +15,7 @@ class ManejoTablas {
     //put your code here
     function Crear()
     {
-        
+        echo "hola";
     }
     function modificar()
     {
