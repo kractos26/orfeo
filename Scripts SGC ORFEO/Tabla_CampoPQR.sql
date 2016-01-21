@@ -1,0 +1,84 @@
+--------------------------------------------------------
+-- Archivo creado  - martes-enero-12-2016   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table CAMPOPQR
+--------------------------------------------------------
+
+  CREATE TABLE "CAMPOPQR" 
+   (	"ID" NUMBER(*,0), 
+	"IDGRUPO" NUMBER(*,0), 
+	"NOMBRE" VARCHAR2(100 BYTE), 
+	"DESCRIPCION" VARCHAR2(200 BYTE), 
+	"TIPOCAMPO" VARCHAR2(20 BYTE), 
+	"NAME" VARCHAR2(20 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+REM INSERTING into CAMPOPQR
+SET DEFINE OFF;
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('16','1','CUENTA DE CORREO SGC 4',null,'checkbox','correosgc4');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('1','1','ANÓNIMO',null,'checkbox','anonimo');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('2','1','TIPO DE IDENTIFICACIÓN',null,'select','tipoid');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('3','1','NÚMERO DE IDENTIFICACIÓN',null,'number','numid');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('4','1','PRIMER NOMBRE / NOMBRE DE LA EMPRESA',null,'text','primernombre');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('5','1','SEGUNDO NOMBRE',null,'text','segunnombre');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('6','1','PRIMER APELLIDO',null,'text','primerapellido');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('7','1','SEGUNDO APELLIDO',null,'text','segundoapellido');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('8','1','TEMA O ASUNTO',null,'textarea','tema');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('9','1','MENSAJE/MOTIVO CONSULTA',null,'select','mensaje');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('10','1','ANEXO',null,'select','anexo');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('11','1','ORIGEN(LLAMADO DE FORMULARIO)',null,'textarea','video');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('12','1','VIDEO',null,'text','cuenta');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('13','1','CUENTA DE CORREO SGC 1',null,'checkbox','correosgc1');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('14','1','CUENTA DE CORREO SGC 2',null,'number','correosgc2');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('15','1','CUENTA  DE CORREO SGC 3',null,'button','correosgc3');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('17','1','CUENTA DE CORREO SGC 4',null,'textarea','correosgc4');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('18','2','E-MAIL',null,'email','email');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('19','2','DEPARTAMENTO RESIDENCIA',null,'text','departamentoresi');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('20','2','MUNICIPIO RESIDENCIA',null,'number','munisipioresi');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('21','2','DIRECCION DE RESIDENCIA',null,'text','direcion');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('22','2','TELEFONO OFICINA',null,'tel','telefonooficina');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('23','2','TELEFONO MOVIL',null,'text','telefonomovil');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('24','2','FAX',null,'tel','fax');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('25','2','OCUPACION / CARGO',null,'tel','ocupacion');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('26','2','PROFESION',null,'select','profesion');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('27','3','DEPARTAMENTO CONTACTO',null,'select','departaconta');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('28','3','MUNICIPIO CONTACTO',null,'email','municonta');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('29','3','EMAIL CONTACTO',null,'text','emailconta');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('30','3','DIRECCION CONTACTO',null,'tel','direcioncontac');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('31','3','TELEFONO CONTACTO',null,'tel','telefonocontac');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('32','3','CELULAR CONTACTO',null,'email','celularcontac');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('33','4','CAPTCHA',null,'email','captcha');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('34','4','CORREO DESTINATARIO 3',null,'email','correodes1');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('35','4','CORREO DESTINATARIO 4',null,'email','correodes2');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('36','2','PAIS DONDE RESIDE',null,null,'paisresi');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('37','3','PAIS CONTACTO',null,null,'paisconta');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('38','2','CONTINENTE RECIDE',null,null,'continenteresi');
+Insert into CAMPOPQR (ID,IDGRUPO,NOMBRE,DESCRIPCION,TIPOCAMPO,NAME) values ('39','3','CONTINENTE CONTACTO',null,null,'conticonta');
+--------------------------------------------------------
+--  DDL for Index SYS_C0014431
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SYS_C0014431" ON "CAMPOPQR" ("ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  Constraints for Table CAMPOPQR
+--------------------------------------------------------
+
+  ALTER TABLE "CAMPOPQR" ADD PRIMARY KEY ("ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table CAMPOPQR
+--------------------------------------------------------
+
+  ALTER TABLE "CAMPOPQR" ADD FOREIGN KEY ("IDGRUPO")
+	  REFERENCES "GRUPOPQR" ("ID") ENABLE;
