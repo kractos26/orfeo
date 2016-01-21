@@ -50,10 +50,10 @@ $ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
 <form action="UpdateDatosPersonales.php"  method="post">
 <?php include 'TablaAdministrador.php'; ?>
  
-    <input id="u211_input" type="submit" value="CONTINUAR" tabindex="0">
+    <input id="u211_input" type="submit" value="CONTINUAR" class="btn btn-primary" tabindex="0">
     <input type="hidden" name="ids" value="<?=$ids?>">
     <input type="hidden" name="formulario" value="<?=$_REQUEST['formulario']?>">
-    <a href="VistaDatosGenerales.php?formulario=<?=$_REQUEST['formulario']?>">Anterior</a>
+    <a href="VistaDatosGenerales.php?formulario=<?=$_REQUEST['formulario']?>" class="btn btn-primary">ANTERIOR</a>
 </form>       
     </body>
 </html>

@@ -82,13 +82,15 @@ $ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
 		 
                         <span class="icon-bar">
-                        </span> <span class="icon-bar">
+                        </span> 
+                        <span class="icon-bar">
 
                         </span>
                          <span class="icon-bar">
+                         </span>
 	        </button> 
                   
-                    <img src="../../logoEntidad1.jpg" alt="" class="img-circle">
+<!--                    <img src="../../logoEntidad1.jpg" alt="" class="img-circle">-->
                 
             </div>
           

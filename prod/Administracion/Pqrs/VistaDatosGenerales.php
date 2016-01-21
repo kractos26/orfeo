@@ -48,8 +48,8 @@ $ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
             <?php include 'TablaAdministrador.php'; ?>
             <input type="hidden" name="formulario" value="<?=$_REQUEST['formulario']?>">
             <input type="hidden" name="ids" value="<?=$ids?>">
-            <input id="u211_input" type="submit" value="CONTINUAR" tabindex="0">  
-            <a href="AdministradorTablas/VistaDeSelecionPqr.php" class="btn btn-link">Anterior</a>
+            <input id="u211_input" type="submit" value="CONTINUAR" class="btn btn-primary glyphicon glyphicon-align-left" tabindex="0">  
+            <a href="AdministradorTablas/VistaDeSelecionPqr.php" class="btn btn-primary">ANTERIOR</a>
     </form>
     
         

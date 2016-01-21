@@ -14,7 +14,7 @@ session_start();
  */
 $ruta_raiz = "../..";
 include 'claseformunlario.php';
-include 'cofigpqrs.php';
+include_once "$ruta_raiz/config.php";
 include $ruta_raiz."/include/tx/Historico.php";
 include "radicar/Radicacion.php";
 foreach ($_GET as $key => $valor)   ${$key} = $valor;//iconv("ISO-8859-1","UTF-8",$valor);
@@ -100,7 +100,7 @@ else
        
 include 'funciones.php';   
 require('barcode.php');
-include_once "../config.php";
+
 
 $textpdf= ("Señor(a) " .$primernombre." ".$segunnombre."".$primerapellido." ".$segundoapellido.", Número de identificación: ".$numid.", gracias por utilizar los canales de Atención al Ciudadano del servicio geologico colombiano, usted ha recibido el radicado de su PQR número " .$numeroRadicado. " de fecha ".date("Y/m/d")." a las " .date("H:i:s").
         ", con este podrá realizar el seguimiento de su solicitud y conocer su estado,  para realizarlo usted deberá consultar el siguiente link: http://sgc.gov.co Al ingresar usted deberá digitar el número del radicado y verificar (".$codigoverificacion.") el estado de su PQR.");
@@ -184,8 +184,15 @@ $objclaseformulario->db->conn->Execute($sqlu);
 //
 
 
+if($email && $emailconta)
+{
+  $correo=  $email.",".$emailconta;
+}
+ else {
+    $correo = ($email)?$email:$emailconta;
+}
 $objclaseformulario->updateRadicado($tema, $formulario, $numeroRadicado,$rutaPdf,$tipoid);
-$objclaseformulario->enviarcorreo($mensaje, $email,$rutaPdf,$tema,$formulario);
+$objclaseformulario->enviarcorreo($mensaje, $correo,$rutaPdf,$tema,$formulario);
 
 
 

@@ -8,7 +8,7 @@ define('ADODB_FETCH_ASSOC',2);
 
 $ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
   
-    $sql = "SELECT ID,NOMBRE FROM FORMULARIOPQR WHERE ESTADO = 1";
+    $sql = "SELECT ID,NOMBRE FROM FORMULARIOPQR";
     
    $resultado = $db->query($sql);
 

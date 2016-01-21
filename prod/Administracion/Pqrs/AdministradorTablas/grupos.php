@@ -137,9 +137,10 @@
   </form>
     <button id="Guardar" class="btn-primary" >Guardar</button>
     
-    <br>
-    <br>
+    
 <!--       <button id="Listar" class="btn-primary">Listar</button>-->
+<br>
+    <br>
   <div id="mensage"></div>
 <div id="listar">     
 </div>

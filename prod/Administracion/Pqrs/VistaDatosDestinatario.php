@@ -49,10 +49,10 @@ $ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
       <H2>DATOS DE SEGURIDAD</H2>   
       <form action="UpdateDatosDestinatario.php"  method="post">
           <?php include 'TablaAdministrador.php'; ?>
-          <input id="u211_input" type="submit" value="GUARDAR" tabindex="0" onclick="javascript:alert('Formulario parametrizado con exito')">
+          <input id="u211_input" type="submit" value="GUARDAR" tabindex="0" class="btn btn-primary" onclick="javascript:alert('Formulario parametrizado con exito')">
     <input type="hidden" name="ids" value="<?=$ids?>">
      <input type="hidden" name="formulario" value="<?=$_REQUEST['formulario']?>">
-     <a href="VistaDatosContacto.php?formulario=<?=$_REQUEST['formulario']?>">Anterior</a>
+     <a href="VistaDatosContacto.php?formulario=<?=$_REQUEST['formulario']?>" class="btn btn-primary">ANTERIOR</a>
  </form>        
     </body>
 </html>

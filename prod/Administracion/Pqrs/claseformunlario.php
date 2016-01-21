@@ -319,13 +319,21 @@ class claseformunlario {
                     $mail->AddBCC($usuario->fields['USUA_EMAIL'], $usuario->fields['USUA_NOMB']);
                     $url=true;
                     $mail->AddAttachment("$this->rutaraiz/poolsgc2013/$rutaPdf");
-                    $mail->AddAddress($correo);
+                    
+                    $correo = explode(",", $correo);
+                    
+                    for($i=0;$i<count($correo);$i++)
+                    {
+                    $mail->AddAddress($correo[$i]);
+                    }
+                    
+                    
                     $asu .= "<hr>Sistema de gestion Orfeo. http://www.sgc.gov.co";
                     
                     $mail->MsgHTML($mensaje);
                             
                     if ($mail->Send()) {
- 
+                        
                     }
                 }
                     

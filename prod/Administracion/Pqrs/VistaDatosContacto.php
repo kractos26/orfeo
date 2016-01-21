@@ -1,9 +1,9 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/*
+ * Desarrollado por: Julian Andres Ortiz Moreno
+ * correo: julecci@gmail.com
+ * cel: 3213006681 3215884827
  */
 $ruta_raiz = "../..";
     session_start();
@@ -50,10 +50,10 @@ $ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
  ?>
     <?php include 'TablaAdministrador.php'; ?>
  
-    <input id="u211_input" type="submit" value="CONTINUAR" tabindex="0">
+    <input id="u211_input" type="submit" value="CONTINUAR" class="btn btn-primary" tabindex="0">
     <input type="hidden" name="ids" value="<?=$ids?>">
     <input type="hidden" name="formulario" value="<?=$_REQUEST['formulario']?>">
-    <a href="VistaDatosPersonales.php?formulario=<?=$_REQUEST['formulario']?>">Anterior</a>
+    <a href="VistaDatosPersonales.php?formulario=<?=$_REQUEST['formulario']?>" class="btn btn-primary">ANTERIOR</a>
 </form>       
     </body>
 </html>

@@ -19,27 +19,27 @@
     
     	<ul class="nav navbar-nav"> 
     		<li>
-                    <a href="VistaDeSelecionPqr.php" target="_blank">PQRS ADMINISTRADOR</a>
+                    <a href="VistaDeSelecionPqr.php" target="_blank">PQRD ADMINISTRADOR</a>
 					
 	        </li>
     		<li>
                     <a href="index.php" class="btn-link" target="_blank">
 						
-						<span>Tablas</span>
+						<span>TABLAS</span>
 					</a>
 					
 				</li>
                 <li >
                     <a href="grupos.php" class="btn-link" target="_blank">
 						
-						<span>Categorias de información</span>
+						<span>CATEGORÍAS DE INFORMACIÓN</span>
 					</a>
 					
 				</li>
 	         <li >
                      <a href="../FormularioCiudadano.php" class="btn-link" target="_blank">
 						
-						<span>Sistema de pqrs: grupo: sgc</span>
+						<span>SISTEMA DE PQRD: GRUPO: SGC</span>
 					</a>
 					
 				</li>

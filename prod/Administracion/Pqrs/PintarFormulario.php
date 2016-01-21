@@ -125,11 +125,12 @@ class PintarFormulario {
    
    function PintarListas($name, $tabla, $value, $option,$ayuda,$obligatorio,$evento,$funcionjs,$selectdefault,$tabindex){
        
+        $where = ($tabla == "FORMULARIOPQR")?"WHERE ESTADO = 1":"";
         $tabindex = ($tabindex > 0)?"tabindex='$tabindex'":"";
         $clasepubli = ($publico)?"publico":"";
          $fun = ($evento && $funcionjs)?"".$evento."='".$funcionjs.";'":"";
         $claseobligatorio = ($obligatorio == 1)?"required":"";
-        $sql = "SELECT $option as OPCION,$value as NOMBRE FROM $tabla order by NOMBRE ASC";
+        $sql = "SELECT $option as OPCION,$value as NOMBRE FROM $tabla  $where order by NOMBRE ASC";
        
    
         $resultado = $this->db->conn->Execute($sql);
